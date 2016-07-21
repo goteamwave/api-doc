@@ -2,18 +2,24 @@
 
 ### Project Object
 
+```
+Sample Object 
+```
 
 ```json
  {
 	"name": "Explore teamwave",
-	"description": "Unified Platform for Collaboration, Sales, Marketing & Support",
-	  "logo": "https://twprofile.s3.amazonaws.com/project/project-280-1df41b3a-1437-415c-ad77-be917d6ec3f8-image.jpg",
+	"description": "Unified Platform for Collaboration, Sales, 
+	Marketing & Support",
+	"logo": "https://twprofile.s3.amazonaws.com/image.jpg",
 	"Invite_data": [11],
-	"Invite_note": "I invite you to work with me on this project. Please feel free to share ideas, participate in discussions and give feedback. ",
+	"Invite_note": "I invite you to work with me on this project. 
+	Please feel free to share ideas, participate in discussions and give feedback. ",
 	"label_txt": "Ex",
 	"new_invite_data": [ ],
 	"share_data": null,
-	"share_note": "We invite you to collaborate with us on TeamWave for this project. We use TeamWave to manage tasks, share ideas and discuss issues.",
+	"share_note": "We invite you to collaborate with us on TeamWave 
+	for this project. We use TeamWave to manage tasks, share ideas and discuss issues.",
 	"share_type": "c"
  }
 ```
@@ -28,11 +34,24 @@ label_txt (*string*)| Label text of the project
 new_invite_data (*string*)| New email ids to be invited to the project
 share_data (*string*)| client’s email id . eg.,john@casio.com
 share_note (*string*)| shared message to be send to the client’s email 
-share_type (*string*)| (('C', 'Client'), ('V', 'Vendor'), ('O', 'Other'))
+share_type (*string*)| (*(*'C', 'Client'*), (*'V', 'Vendor'*), (*'O', 'Other'*)*)
 
 ### Create Project
 
-
-
-
-
+ ```json
+{
+   "id": 1194,
+    "name": "Explore teamwave",
+    "description": “Unified Platform for Collaboration, Sales, Marketing & Support”,
+   "logo": "https://twprofile.s3.amazonaws.com/project/project-280-1df41b3a-1437-415c-ad77-be917d6ec3f8-image.jpg”,
+    "label_color": "#9da2a6",
+    "tags": null,
+    "owner_id": 1,
+    "label_txt": "EX",
+    "resource_url": "/projects/1194",
+    "last_updated": "2016-07-15T13:22:12.982873Z",
+    "is_active": true,
+    "owner_name": "DoubleSpring",
+    "creating": false
+}
+```

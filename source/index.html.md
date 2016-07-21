@@ -14,6 +14,9 @@ includes:
   - introduction
   - pm/pm
   - pm/pm-project
+  - pm/pm-project-taskgroup
+  - pm/pm-project-task
+  - pm/pm-project-file
   - crm/crm
   - crm/crm-deals
   - crm/crm-mails

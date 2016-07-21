@@ -170,11 +170,12 @@ class_name (*string*)| class name for the acitivity
 organization_id | Organization ID number
 created_on (*string*)| datetime of the creation of the activity
 is_deleted (*boolean*)| whether the activity is deleted
-[actor](#user-object) | user who added the activity(comment,..)
-[action_obj](#action-obj) | object to understand context of activity
-[source_obj](#source-obj)_ | activity data (comment details)
+[actor](#user-object) (*object*) | user who added the activity(comment,..)
+[action_obj](#action-obj) (*object*) | object to understand context of activity
+[source_obj](#source-obj) (*object*) | activity data (comment details)
 
 #### Action Object
+
 Attribute | Description 
 --------- | ----------- 
 id (*integer*)| ID of the activity
@@ -186,8 +187,6 @@ Atribute | Description
 comment_detail (*string*)| comment text
 id (*integer*)| comment ID number
 ctype (*string*)| type of comment
-
-
 
 #### Returns
 
