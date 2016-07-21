@@ -197,19 +197,19 @@
 
 <h3 id="create-project">Create Project</h3>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
-   </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1194</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1194</span><span class="p">,</span><span class="w">
     </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Explore teamwave"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="err">“Unified</span><span class="w"> </span><span class="err">Platform</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">Collaboration</span><span class="p">,</span><span class="w"> </span><span class="err">Sales,</span><span class="w"> </span><span class="err">Marketing</span><span class="w"> </span><span class="err">&amp;</span><span class="w"> </span><span class="err">Support”,</span><span class="w">
-   </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/project/project-280-1df41b3a-1437-415c-ad77-be917d6ec3f8-image.jpg”,
-    "</span><span class="err">label_color</span><span class="s2">": "</span><span class="err">#</span><span class="mi">9</span><span class="err">da</span><span class="mi">2</span><span class="err">a</span><span class="mi">6</span><span class="s2">",
-    "</span><span class="err">tags</span><span class="s2">": null,
-    "</span><span class="err">owner_id</span><span class="s2">": 1,
-    "</span><span class="err">label_txt</span><span class="s2">": "</span><span class="err">EX</span><span class="s2">",
-    "</span><span class="err">resource_url</span><span class="s2">": "</span><span class="err">/projects/</span><span class="mi">1194</span><span class="s2">",
-    "</span><span class="err">last_updated</span><span class="s2">": "</span><span class="mi">2016-07-15</span><span class="err">T</span><span class="mi">13</span><span class="err">:</span><span class="mi">22</span><span class="err">:</span><span class="mf">12.982873</span><span class="err">Z</span><span class="s2">",
-    "</span><span class="err">is_active</span><span class="s2">": true,
-    "</span><span class="err">owner_name</span><span class="s2">": "</span><span class="err">DoubleSpring</span><span class="s2">",
-    "</span><span class="err">creating":</span><span class="w"> </span><span class="kc">false</span><span class="w">
+    </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unified Platform for Collaboration, Sales, Marketing &amp; Support"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/project/project-280-1df41b3a-1437-415c-ad77-be917d6ec3f8-image.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"label_color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#9da2a6"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"owner_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EX"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/projects/1194"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-15T13:22:12.982873Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"creating"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
@@ -1402,6 +1402,741 @@ Content-Type: application/json
 </span></code></pre>
 
 <aside>PATCH api/projects/{project_id}/files/{file_id}/trash</aside>
+
+          <h2 id="notes">Notes</h2>
+
+<h3 id="note-object">Note Object</h3>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">518</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Creating a Template from an Existing Project"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;p&gt;Create a template by copying the customizations of an existing project. &lt;br/&gt;You will be given option to either include or exclude the assigned tasks&lt;br/&gt; to the new template. The new template will have all the discussions, &lt;br/&gt;tasks, files, notes, milestones and team members of the existing &lt;br/&gt;project. The completed tasks will be reopened automatically in the new &lt;br/&gt;template.&lt;br/&gt;&lt;/p&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"modified_by"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/projects/1190/notes/518"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T10:53:26.663830Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T10:53:26.663857Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"comment_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"created_by"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_crm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_crm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_pm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_hrm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"organization"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsq"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_login"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T06:24:04.037715Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"job_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Asia/Kolkata"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7452387e2f1d4eda952cb12ffbefb6b1"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_noticeboard_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_user_directory_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"versions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">972</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Creating a Template from an Existing Project"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T10:53:26.773477Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"is_current"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"created_by"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"is_crm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"is_crm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"is_pm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"is_hrm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"organization"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@doublespring.com"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsq"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"last_login"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T06:24:04.037715Z"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"job_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Asia/Kolkata"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7452387e2f1d4eda952cb12ffbefb6b1"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"is_noticeboard_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"is_user_directory_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/projects/1190/notes/518/version/972"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nt">"is_private"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>int</em>)</td>
+<td>Identificatoin number of the Note</td>
+</tr>
+<tr>
+<td>name (<em>string</em>)</td>
+<td>title given of the Note</td>
+</tr>
+<tr>
+<td>content (<em>string</em>)</td>
+<td>Description of the Note</td>
+</tr>
+<tr>
+<td><a href="#pm-user-object">modified_by</a> (<em>object</em>)</td>
+<td>user object who modified the Note</td>
+</tr>
+<tr>
+<td>resource_url (<em>string</em>)</td>
+<td>Note&rsquo;s detail page access url</td>
+</tr>
+<tr>
+<td>is_trashed (<em>boolean</em>)</td>
+<td>Status to check note is trashed or not</td>
+</tr>
+<tr>
+<td>created_on (<em>date</em>)</td>
+<td>Note created date</td>
+</tr>
+<tr>
+<td>modified_on (<em>date</em>)</td>
+<td>Date on which the note is modified</td>
+</tr>
+<tr>
+<td>comment_count (<em>int</em>)</td>
+<td>No of comments for the note</td>
+</tr>
+<tr>
+<td><a href="#pm-user-object">created_by</a> (<em>object</em>)</td>
+<td>User object who created the note</td>
+</tr>
+<tr>
+<td><a href="#version-object">versions</a> (<em>array of objects</em>)</td>
+<td>Version of the note</td>
+</tr>
+<tr>
+<td>is_private (<em>boolean</em>)</td>
+<td>Status to check note is private or not</td>
+</tr>
+</tbody></table>
+
+<h4 id="version-object">Version Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>int</em>)</td>
+<td>Identificatoin number of the version</td>
+</tr>
+<tr>
+<td>name (<em>string</em>)</td>
+<td>title given of the Note</td>
+</tr>
+<tr>
+<td>created_on (<em>date</em>)</td>
+<td>Note created date</td>
+</tr>
+<tr>
+<td>version (<em>int</em>)</td>
+<td>version number</td>
+</tr>
+<tr>
+<td>is_current (<em>boolean</em>)</td>
+<td>Status to identify this is the current version of the note  or not</td>
+</tr>
+<tr>
+<td>created_by (<em>object</em>)</td>
+<td>User object who created the note version</td>
+</tr>
+<tr>
+<td>resource_url (<em>string</em>)</td>
+<td>Note Version&rsquo;s detail page access url</td>
+</tr>
+</tbody></table>
+
+<h3 id="create-note">Create Note</h3>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">api/projects/{project_id}/notes/{note_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"project"</span><span class="p">:</span><span class="s2">"1190"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Creating a Template from an Existing Project"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"content"</span><span class="p">:</span><span class="w">
+    </span><span class="s2">"&lt;p&gt;Create a template
+        by copying the customizations of an existing project. &lt;br/&gt;You will be given option to either include
+        or exclude the assigned tasks&lt;br/&gt; to the new template. The new template will have all the discussions
+        , &lt;br/&gt;tasks, files, notes, milestones and team members of the existing &lt;br/&gt;project. The completed tasks
+        will be reopened automatically in the new &lt;br/&gt;template.&lt;br/&gt;
+    &lt;/p&gt;"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="err">&lt;aside&gt;POST</span><span class="w">  </span><span class="err">api/projects/</span><span class="p">{</span><span class="err">project_id</span><span class="p">}</span><span class="err">/notes/</span><span class="p">{</span><span class="err">note_id</span><span class="p">}</span><span class="err">&lt;/aside&gt;</span><span class="w">
+
+
+</span><span class="err">###</span><span class="w"> </span><span class="err">Update</span><span class="w"> </span><span class="err">Note</span><span class="w">
+
+</span><span class="err">```http</span><span class="w">
+</span><span class="err">PATCH</span><span class="w"> </span><span class="err">api/projects/</span><span class="p">{</span><span class="err">project_id</span><span class="p">}</span><span class="err">/notes/</span><span class="p">{</span><span class="err">note_id</span><span class="p">}</span><span class="w"> </span><span class="err">HTTP/</span><span class="mf">1.1</span><span class="w">
+</span><span class="err">Accept:</span><span class="w"> </span><span class="err">application/json</span><span class="w">
+</span><span class="err">Authorization:</span><span class="w"> </span><span class="err">Token</span><span class="w"> </span><span class="s2">"YOUR ACCESS TOKEN"</span><span class="w">
+
+</span><span class="err">HTTP/</span><span class="mf">1.1</span><span class="w"> </span><span class="mi">200</span><span class="w"> </span><span class="err">OK</span><span class="w">
+</span><span class="err">Content-Type:</span><span class="w"> </span><span class="err">application/json</span><span class="w">
+</span></code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+</span><span class="nt">"id"</span><span class="p">:</span><span class="mi">520</span><span class="p">,</span><span class="w">
+</span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Creating a Template from an Existing Project"</span><span class="p">,</span><span class="w">
+</span><span class="nt">"content"</span><span class="p">:</span><span class="w">
+    </span><span class="s2">"&lt;p&gt;&lt;b&gt;Create a template by
+        copying the customizations&lt;/b&gt; of an existing project. &lt;br/&gt;You will be given option to either include
+        or exclude the assigned tasks&lt;br/&gt; to the new template. The new template will have all the discussions
+        , &lt;br/&gt;tasks, files, notes, milestones and team members of the existing &lt;br/&gt;project. The completed tasks
+        will be reopened automatically in the new &lt;br/&gt;template.&lt;br/&gt;
+    &lt;/p&gt;"</span><span class="p">,</span><span class="w">
+</span><span class="nt">"modified_by"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+</span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/1190/notes/520"</span><span class="p">,</span><span class="w">
+</span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+</span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-21T11:08:40.692271Z"</span><span class="p">,</span><span class="w">
+</span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-07-21T11:08:40.692310Z"</span><span class="p">,</span><span class="w">
+</span><span class="nt">"comment_count"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+</span><span class="nt">"created_by"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_crm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_crm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_pm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_hrm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"organization"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsq"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"last_login"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T06:24:04.037715Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"job_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Asia/Kolkata"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7452387e2f1d4eda952cb12ffbefb6b1"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_noticeboard_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_user_directory_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="nt">"versions"</span><span class="p">:[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">972</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Creating a Template from an Existing Project"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T10:53:26.773477Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_current"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"created_by"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"is_crm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"is_crm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"is_pm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"is_hrm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"organization"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@doublespring.com"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsq"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"last_login"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T06:24:04.037715Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"job_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Asia/Kolkata"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7452387e2f1d4eda952cb12ffbefb6b1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"is_noticeboard_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"is_user_directory_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/projects/1190/notes/518/version/972"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">],</span><span class="w">
+</span><span class="nt">"is_private"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+</span><span class="err">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH api/projects/{project_id}/notes/{note_id}</aside>
+
+<h4 id="returns">Returns</h4>
+
+<p>If the call succeeds, it will return the Note object.</p>
+
+<h3 id="delete-note">Delete Note</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/projects/{project_id}/notes/{note_id}/trash</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"trashed"</span><span class="p">:</span><span class="s2">"success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH api/projects/{project_id}/notes/{note_id}/trash</aside>
+
+          <h2 id="milestone">Milestone</h2>
+
+<h3 id="milestone-object">Milestone Object</h3>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">682</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Customer issue completely fixed"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"completed"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"completed_on"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"task_groups"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="nt">"created_by"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_crm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_crm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_pm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_hrm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"organization"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsq"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_login"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T06:24:04.037715Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"job_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Asia/Kolkata"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7452387e2f1d4eda952cb12ffbefb6b1"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_noticeboard_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_user_directory_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"post_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/projects/1190/milestones/682"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T11:42:02.351870Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"modified_by"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-22"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T11:42:02.199063Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"assigned_to"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_crm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_crm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_pm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_hrm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"organization"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsq"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_login"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T06:24:04.037715Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"job_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Asia/Kolkata"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7452387e2f1d4eda952cb12ffbefb6b1"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_noticeboard_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_user_directory_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"notify_when"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"notify_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"06:00:00"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fix all the issues"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"project"</span><span class="p">:</span><span class="w"> </span><span class="mi">1190</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_private"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"tmp_start"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Pro_11"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>Identificatoin number of the milestone,</td>
+</tr>
+<tr>
+<td>title (<em>string</em>)</td>
+<td>title given of the milestone,</td>
+</tr>
+<tr>
+<td>completed (<em>boolean</em>)</td>
+<td>Status to check milestone is completed or not,</td>
+</tr>
+<tr>
+<td>completed_on (<em>date</em>)</td>
+<td>completed date given of the milestone,</td>
+</tr>
+<tr>
+<td>task_groups (<em>array</em>)</td>
+<td>task groups which belogns to the milestone,</td>
+</tr>
+<tr>
+<td>created_by (<em>object</em>)</td>
+<td>User object who created the milestone,</td>
+</tr>
+<tr>
+<td>post_count (<em>integer</em>)</td>
+<td>post count of the milestone,</td>
+</tr>
+<tr>
+<td>resource_url (<em>string</em>)</td>
+<td>Milestone&rsquo;s detail access url,</td>
+</tr>
+<tr>
+<td>modified_on (<em>date</em>)</td>
+<td>Date on which the milestone is modified,</td>
+</tr>
+<tr>
+<td>modified_by (<em>object</em>)</td>
+<td>user object who modified the milestone,</td>
+</tr>
+<tr>
+<td>start (<em>date</em>)</td>
+<td>Start date of the milestone,</td>
+</tr>
+<tr>
+<td>created_on (<em>date</em>)</td>
+<td>Date on which the milestone is created,</td>
+</tr>
+<tr>
+<td>assigned_to (<em>object</em>)</td>
+<td>User object who is assigned to the milestone to complete,</td>
+</tr>
+<tr>
+<td>notify_when (<em>string</em>)</td>
+<td>get a notification of the milestone on notify time,</td>
+</tr>
+<tr>
+<td>notify_time (<em>time</em>)</td>
+<td>notification time of the milestone,</td>
+</tr>
+<tr>
+<td>description (<em>string</em>)</td>
+<td>Description of the milestone,</td>
+</tr>
+<tr>
+<td>is_trashed (boolean)</td>
+<td>Status to check milestone is trashed or not,</td>
+</tr>
+<tr>
+<td>project (integer)</td>
+<td>Identificatoin number of the project,</td>
+</tr>
+<tr>
+<td>is_private (boolean)</td>
+<td>Status to check milestone is private or not,</td>
+</tr>
+<tr>
+<td>tmp_start (date)</td>
+<td>Temporary start date of the milestone,</td>
+</tr>
+<tr>
+<td>project_name (string)</td>
+<td>name of the project,</td>
+</tr>
+</tbody></table>
+
+<h3 id="create-milestone">Create Milestone</h3>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">api/projects/{project_id}/milestones</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Customer issue completely fixed"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_milestone"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"notify_when"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"notify_time"</span><span class="p">:</span><span class="s2">"06:00:00"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"start"</span><span class="p">:</span><span class="s2">"2016-08-10"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"assigned_to"</span><span class="p">:</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"fix all the issues"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"object_id"</span><span class="p">:</span><span class="s2">"1190"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_private"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST api/projects/{project_id}/milestones</aside>
+
+<h3 id="update-milestone">Update Milestone</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/projects/{project_id}/milestones/{milestone_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">683</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Customer issue completely fixed"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"completed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"completed_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"task_groups"</span><span class="p">:[],</span><span class="w">
+    </span><span class="nt">"created_by"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_crm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_crm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_pm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_hrm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"organization"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsq"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_login"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T06:24:04.037715Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"job_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Asia/Kolkata"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7452387e2f1d4eda952cb12ffbefb6b1"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_noticeboard_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_user_directory_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"post_count"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/1190/milestones/683"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-07-21T11:59:54.589285Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"modified_by"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"start"</span><span class="p">:</span><span class="s2">"2016-08-11"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-21T11:59:54.589259Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"assigned_to"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_crm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_crm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_pm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_hrm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"organization"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsq"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_login"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T06:24:04.037715Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"job_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Asia/Kolkata"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7452387e2f1d4eda952cb12ffbefb6b1"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_noticeboard_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_user_directory_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+    </span><span class="p">},</span><span class="w">          
+    </span><span class="nt">"notify_when"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"notify_time"</span><span class="p">:</span><span class="s2">"06:00:00"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"fix all the issues"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"project"</span><span class="p">:</span><span class="mi">1190</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_private"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"tmp_start"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"project_name"</span><span class="p">:</span><span class="s2">"Pro_11"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"action_type"</span><span class="p">:</span><span class="s2">"added"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_milestone"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"_id"</span><span class="p">:</span><span class="s2">"683"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"_start"</span><span class="p">:</span><span class="s2">"2016-08-09T18:30:00.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"end"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"_end"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"allDay"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"className"</span><span class="p">:[]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<h3 id="complete-the-milestone">Complete the Milestone</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/projects/{project_id}/milestones/{milestone_id}/complete</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"completed"</span><span class="p">:</span><span class="s2">"success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH  api/projects/{project_id}/milestones/{milestone_id}/complete</aside>
+
+<h3 id="delete-milestone">Delete Milestone</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/projects/{project_id}/milestones/{milestone_id}/trash</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"trashed"</span><span class="p">:</span><span class="s2">"success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH  api/projects/{project_id}/milestones/{milestone_id}/trash</aside>
 
           <h1 id="crm">CRM</h1>
 

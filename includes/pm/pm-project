@@ -70,18 +70,18 @@
 
 <h3 id="create-project">Create Project</h3>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
-   </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1194</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1194</span><span class="p">,</span><span class="w">
     </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Explore teamwave"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="err">“Unified</span><span class="w"> </span><span class="err">Platform</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">Collaboration</span><span class="p">,</span><span class="w"> </span><span class="err">Sales,</span><span class="w"> </span><span class="err">Marketing</span><span class="w"> </span><span class="err">&amp;</span><span class="w"> </span><span class="err">Support”,</span><span class="w">
-   </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/project/project-280-1df41b3a-1437-415c-ad77-be917d6ec3f8-image.jpg”,
-    "</span><span class="err">label_color</span><span class="s2">": "</span><span class="err">#</span><span class="mi">9</span><span class="err">da</span><span class="mi">2</span><span class="err">a</span><span class="mi">6</span><span class="s2">",
-    "</span><span class="err">tags</span><span class="s2">": null,
-    "</span><span class="err">owner_id</span><span class="s2">": 1,
-    "</span><span class="err">label_txt</span><span class="s2">": "</span><span class="err">EX</span><span class="s2">",
-    "</span><span class="err">resource_url</span><span class="s2">": "</span><span class="err">/projects/</span><span class="mi">1194</span><span class="s2">",
-    "</span><span class="err">last_updated</span><span class="s2">": "</span><span class="mi">2016-07-15</span><span class="err">T</span><span class="mi">13</span><span class="err">:</span><span class="mi">22</span><span class="err">:</span><span class="mf">12.982873</span><span class="err">Z</span><span class="s2">",
-    "</span><span class="err">is_active</span><span class="s2">": true,
-    "</span><span class="err">owner_name</span><span class="s2">": "</span><span class="err">DoubleSpring</span><span class="s2">",
-    "</span><span class="err">creating":</span><span class="w"> </span><span class="kc">false</span><span class="w">
+    </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unified Platform for Collaboration, Sales, Marketing &amp; Support"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/project/project-280-1df41b3a-1437-415c-ad77-be917d6ec3f8-image.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"label_color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#9da2a6"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"owner_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EX"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/projects/1194"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-15T13:22:12.982873Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"creating"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
