@@ -40,10 +40,10 @@ share_type (*string*)| (*(*'C', 'Client'*), (*'V', 'Vendor'*), (*'O', 'Other'*)*
 
  ```json
 {
-   "id": 1194,
+    "id": 1194,
     "name": "Explore teamwave",
-    "description": “Unified Platform for Collaboration, Sales, Marketing & Support”,
-   "logo": "https://twprofile.s3.amazonaws.com/project/project-280-1df41b3a-1437-415c-ad77-be917d6ec3f8-image.jpg”,
+    "description": "Unified Platform for Collaboration, Sales, Marketing & Support",
+    "logo": "https://twprofile.s3.amazonaws.com/project/project-280-1df41b3a-1437-415c-ad77-be917d6ec3f8-image.jpg",
     "label_color": "#9da2a6",
     "tags": null,
     "owner_id": 1,

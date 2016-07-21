@@ -17,6 +17,8 @@ includes:
   - pm/pm-project-taskgroup
   - pm/pm-project-task
   - pm/pm-project-file
+  - pm/pm-project-notes
+  - pm/pm-project-milestone
   - crm/crm
   - crm/crm-deals
   - crm/crm-mails
