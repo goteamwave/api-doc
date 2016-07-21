@@ -1,0 +1,230 @@
+<h2 id="files">Files</h2>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4412</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"images_006.jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://mediatw.s3.amazonaws.com/projects/1190/1469097342438_images_006.jpeg?Signature=ZiE9Qvf1LK%2BxA4gxNkLrx4%2Bzx8c%3D&amp;Expires=1469100966&amp;AWSAccessKeyId=AKIAJ3L5LCTCJXCFVTYA"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_drivebox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"modified_by"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"project"</span><span class="p">:</span><span class="w"> </span><span class="mi">1190</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"size"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7114"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"for_comment"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"content_object_detail"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+    </span><span class="nt">"created_by"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_crm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_crm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_pm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_hrm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"organization"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsq"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_login"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T06:24:04.037715Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"job_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Asia/Kolkata"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7452387e2f1d4eda952cb12ffbefb6b1"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_noticeboard_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_user_directory_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T10:35:48.556209Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_live"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"thumbnail"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"comment_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T10:35:48.556252Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_shared"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"shared_note"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"content_type"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"ext"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/projects/1190/files/4412"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"download_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://192.168.1.51:9002/projects/1190/files/download/4412"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_private"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"tgs"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">       
+</span></code></pre>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>Identification number of the attachment,</td>
+</tr>
+<tr>
+<td>title (<em>string</em>)</td>
+<td>Name of the attachment,</td>
+</tr>
+<tr>
+<td>attachment (<em>string</em>)</td>
+<td>URL of the attachment,</td>
+</tr>
+<tr>
+<td>object_id (<em>integer</em>)</td>
+<td>id of the task,</td>
+</tr>
+<tr>
+<td>is_drivebox (<em>boolean</em>)</td>
+<td>Status to check attachment is from drivebox(google drive or drop box) or not,</td>
+</tr>
+<tr>
+<td>is_trashed (<em>boolean</em>)</td>
+<td>Status to check attachment is trashed or not,</td>
+</tr>
+<tr>
+<td><a href="#pm-user-object">modified_by</a> (<em>object</em>)</td>
+<td>user object who modified the attachment,</td>
+</tr>
+<tr>
+<td>project (<em>integer</em>)</td>
+<td>Id of the project,</td>
+</tr>
+<tr>
+<td>size (<em>string</em>)</td>
+<td>Size of the attachment,</td>
+</tr>
+<tr>
+<td>for_comment (<em>boolean</em>)</td>
+<td>Status to check attachment is for comments or not,</td>
+</tr>
+<tr>
+<td><a href="#content-object-detail">content_object_detail</a> (<em>object</em>)</td>
+<td>Detail of the content_object,</td>
+</tr>
+<tr>
+<td><a href="#pm-user-object">created_by</a> (<em>object</em>)</td>
+<td>user who created the attachment,</td>
+</tr>
+<tr>
+<td>created_on (<em>date</em>)</td>
+<td>date on which the attachment is created,</td>
+</tr>
+<tr>
+<td>is_live (<em>boolean</em>)</td>
+<td>Status to check attachment is live or not,</td>
+</tr>
+<tr>
+<td>thumbnail (<em>string</em>)</td>
+<td>URL of the attachment&rsquo;s thumbnail,</td>
+</tr>
+<tr>
+<td>comment_count(<em>inr</em>)</td>
+<td>Comment count of the attachment&rsquo;s thumbnail,</td>
+</tr>
+<tr>
+<td>modified_on (<em>date</em>)</td>
+<td>date on which the attachment is modified,</td>
+</tr>
+<tr>
+<td>is_shared (<em>boolean</em>)</td>
+<td>Status to check attachment is shared or not,</td>
+</tr>
+<tr>
+<td>shared_note (<em>string</em>)</td>
+<td>Shared note of the attachment,</td>
+</tr>
+<tr>
+<td>content_type (<em>string</em>)</td>
+<td>Content type of the attachment. eg,.task,</td>
+</tr>
+<tr>
+<td>ext (<em>string</em>)</td>
+<td>Extension type of the attachment,</td>
+</tr>
+<tr>
+<td>resource_url (<em>string</em>)</td>
+<td>Attachments detail page access url,</td>
+</tr>
+<tr>
+<td>download_url  (<em>string</em>)</td>
+<td>URL to download the attachment,</td>
+</tr>
+<tr>
+<td>is_private (<em>boolean</em>)</td>
+<td>Status to check attachment is private or not,</td>
+</tr>
+<tr>
+<td>tags (<em>array</em>)</td>
+<td>tags belongs to the attachment.</td>
+</tr>
+</tbody></table>
+
+<h3 id="create-file">Create File</h3>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">/api/projects/{project_id}/files</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"A"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"images_002.jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"attachment"</span><span class="p">:</span><span class="s2">"http://amazons.com/projects/1190/1469097941615_images_002.jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"ext"</span><span class="p">:</span><span class="s2">"jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"project"</span><span class="p">:</span><span class="s2">"1190"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"file_size"</span><span class="p">:</span><span class="mi">8773</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST  api/projects/{project_id}/files</aside>
+
+<h3 id="activate-file">Activate File</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">/api/projects/{project_id}/files/activate</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"ids"</span><span class="p">:[</span><span class="mi">4413</span><span class="p">],</span><span class="w">
+    </span><span class="nt">"is_private"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH api/projects/{project_id}/files/activate</aside>
+
+<h3 id="delete-file">Delete File</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">/api/projects/{project_id}/files/{file_id}/trash</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"trashed"</span><span class="p">:</span><span class="s2">"success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH api/projects/{project_id}/files/{file_id}/trash</aside>

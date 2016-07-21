@@ -294,15 +294,15 @@ Content-Type: application/json
 <td>whether the activity is deleted</td>
 </tr>
 <tr>
-<td><a href="#user-object">actor</a></td>
+<td><a href="#user-object">actor</a> (<em>object</em>)</td>
 <td>user who added the activity(comment,..)</td>
 </tr>
 <tr>
-<td><a href="#action-obj">action_obj</a></td>
+<td><a href="#action-obj">action_obj</a> (<em>object</em>)</td>
 <td>object to understand context of activity</td>
 </tr>
 <tr>
-<td><a href="#source-obj">source_obj</a>_</td>
+<td><a href="#source-obj">source_obj</a> (<em>object</em>)</td>
 <td>activity data (comment details)</td>
 </tr>
 </tbody></table>
