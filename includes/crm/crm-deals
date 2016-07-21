@@ -1,0 +1,886 @@
+<h2 id="deal">Deal</h2>
+
+<h3 id="deal-object">Deal Object</h3>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+ </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3374</span><span class="p">,</span><span class="w">
+ </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+    </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+ </span><span class="p">},</span><span class="w">
+ </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+    </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+ </span><span class="p">},</span><span class="w">
+ </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"d3"</span><span class="p">,</span><span class="w">
+ </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+ </span><span class="nt">"stage"</span><span class="p">:{</span><span class="w">
+    </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"total_stage"</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Prospect Lead"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"rotting_days"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_deal_rotting"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">529</span><span class="w">
+ </span><span class="p">},</span><span class="w">
+ </span><span class="nt">"deal_value"</span><span class="p">:</span><span class="s2">"0.00"</span><span class="p">,</span><span class="w">
+ </span><span class="nt">"currency"</span><span class="p">:{</span><span class="w">
+    </span><span class="nt">"is_custom"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"code"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">191</span><span class="w">
+ </span><span class="p">},</span><span class="w">
+ </span><span class="nt">"expected_close"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+ </span><span class="nt">"last_activity_on"</span><span class="p">:</span><span class="s2">"2016-07-13"</span><span class="p">,</span><span class="w">
+ </span><span class="nt">"next_activity_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+ </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+ </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"open"</span><span class="p">,</span><span class="w">
+ </span><span class="nt">"people"</span><span class="p">:[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">17591</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathishv@dsss.com"</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"first_name"</span><span class="p">:</span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"last_name"</span><span class="p">:</span><span class="s2">"v"</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"phone"</span><span class="p">:</span><span class="s2">"212121"</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"wqwqwqw"</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"sathish v"</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"profile_image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"company"</span><span class="p">:</span><span class="mi">10150</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"company_name"</span><span class="p">:</span><span class="s2">"DSSS"</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">5664</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"first_name"</span><span class="p">:</span><span class="s2">"sathisgg"</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"last_name"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"phone"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"sathisgg"</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"profile_image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"company"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"company_name"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+ </span><span class="p">],</span><span class="w">
+ </span><span class="nt">"company"</span><span class="p">:{</span><span class="w">
+    </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"satsss"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"company"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"phone"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"address"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">10206</span><span class="w">
+ </span><span class="p">},</span><span class="w">
+ </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-13T10:04:51.246672Z"</span><span class="p">,</span><span class="w">
+ </span><span class="nt">"tags"</span><span class="p">:</span><span class="err">'Cloud'</span><span class="p">,</span><span class="w">
+ </span><span class="nt">"custom_fields"</span><span class="p">:{</span><span class="w">
+    </span><span class="nt">"77"</span><span class="p">:{</span><span class="w">
+       </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"checkbox"</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"wedwd"</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"value"</span><span class="p">:{</span><span class="w">
+          </span><span class="nt">"wedwd"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+       </span><span class="p">},</span><span class="w">
+       </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"wedwd"</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"options"</span><span class="p">:[</span><span class="w">
+          </span><span class="s2">"wedwd"</span><span class="w">
+       </span><span class="p">],</span><span class="w">
+       </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+ </span><span class="p">},</span><span class="w">
+ </span><span class="nt">"won_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+ </span><span class="nt">"lost_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+ </span><span class="nt">"closed_on"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID of the deal</td>
+</tr>
+<tr>
+<td><a href="#user-object">created_by</a></td>
+<td>info about the creator of the deal</td>
+</tr>
+<tr>
+<td><a href="#user-object">owner</a></td>
+<td>info about the owner of the deal, can be changed(by default, owner is creator)</td>
+</tr>
+<tr>
+<td>title (<em>string</em>)</td>
+<td>title of the deal</td>
+</tr>
+<tr>
+<td>index (<em>integer</em>)</td>
+<td>order of the deal to show</td>
+</tr>
+<tr>
+<td><a href="#stage-object">stage</a></td>
+<td>stage details</td>
+</tr>
+<tr>
+<td>deal_value (<em>integer</em>)</td>
+<td>Value set for the deal</td>
+</tr>
+<tr>
+<td><a href="#currency-object">currency</a></td>
+<td>Currency set for the deal</td>
+</tr>
+<tr>
+<td>expected_close (<em>string</em>)</td>
+<td>expected closing date for the deal</td>
+</tr>
+<tr>
+<td>last_activity_on (<em>string</em>)</td>
+<td>date of the last activity done on the deal</td>
+</tr>
+<tr>
+<td>next_activity_on (<em>string</em>)</td>
+<td>date of the next activity on the deal</td>
+</tr>
+<tr>
+<td>is_trashed (<em>boolean</em>)</td>
+<td>is the deal removed</td>
+</tr>
+<tr>
+<td><a href="#people-object">people</a></td>
+<td>contacts involved in the deal</td>
+</tr>
+<tr>
+<td><a href="#company-object">company</a></td>
+<td>company info</td>
+</tr>
+<tr>
+<td>created_on (<em>string</em>)</td>
+<td>date of creation of the deal</td>
+</tr>
+<tr>
+<td>tags (<em>string</em>)</td>
+<td>tags added to the deal</td>
+</tr>
+<tr>
+<td><a href="#custom_fields-object">custom_fields</a></td>
+<td>objects of custom fields</td>
+</tr>
+<tr>
+<td>won_on (<em>string</em>)</td>
+<td>date of winning the deal</td>
+</tr>
+<tr>
+<td>lost_on (<em>string</em>)</td>
+<td>date of losing the deal</td>
+</tr>
+<tr>
+<td>closed_on (<em>string</em>)</td>
+<td>date of closing the deal</td>
+</tr>
+</tbody></table>
+
+<h4 id="stage-object">Stage Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>index (<em>integer</em>)</td>
+<td>order of the stage</td>
+</tr>
+<tr>
+<td>title (<em>string</em>)</td>
+<td>stage name</td>
+</tr>
+<tr>
+<td>total_stage (<em>integer</em>)</td>
+<td>total number of stages</td>
+</tr>
+<tr>
+<td>rotting_days (<em>integer</em>)</td>
+<td>number of set days for rotting</td>
+</tr>
+<tr>
+<td>is_deal_rotting (<em>boolean</em>)</td>
+<td>is the deal rotten or not</td>
+</tr>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID of the deal in the stage</td>
+</tr>
+</tbody></table>
+
+<h4 id="currency-object">Currency Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>is_custom (<em>boolean</em>)</td>
+<td>if currency is customized</td>
+</tr>
+<tr>
+<td>symbol (<em>string</em>)</td>
+<td>symbol used to represent the currency</td>
+</tr>
+<tr>
+<td>code (<em>string</em>)</td>
+<td>code for the currency</td>
+</tr>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>currency ID</td>
+</tr>
+</tbody></table>
+
+<h4 id="people-object">People Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID of the contact</td>
+</tr>
+<tr>
+<td>email (<em>string</em>)</td>
+<td>email address</td>
+</tr>
+<tr>
+<td>first_name (<em>string</em>)</td>
+<td>first name of the contact</td>
+</tr>
+<tr>
+<td>last_name (<em>string</em>)</td>
+<td>last name of the contact</td>
+</tr>
+<tr>
+<td>phone (<em>string</em>)</td>
+<td>phone number of the contact</td>
+</tr>
+<tr>
+<td>job_title (<em>string</em>)</td>
+<td>Desgination of the contact</td>
+</tr>
+<tr>
+<td>full_name (<em>string</em>)</td>
+<td>full name of the contact</td>
+</tr>
+<tr>
+<td>profile_image (<em>string</em>)</td>
+<td>image url for the contact</td>
+</tr>
+<tr>
+<td>company (<em>string</em>)</td>
+<td>company ID of the contact</td>
+</tr>
+<tr>
+<td>company_name (<em>string</em>)</td>
+<td>company name of the contact</td>
+</tr>
+<tr>
+<td>tags (<em>string</em>)</td>
+<td>tags for the contact</td>
+</tr>
+</tbody></table>
+
+<h4 id="custom-fields-object">Custom Fields Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>field_type (<em>string</em>)</td>
+<td>type of field added</td>
+</tr>
+<tr>
+<td>name (<em>string</em>)</td>
+<td>label of the field</td>
+</tr>
+<tr>
+<td>value (<em>string</em>)</td>
+<td>default value for the field</td>
+</tr>
+<tr>
+<td>key (<em>string</em>)</td>
+<td>key value for the field</td>
+</tr>
+<tr>
+<td>options (<em>string</em>)</td>
+<td>options for the checkbox</td>
+</tr>
+<tr>
+<td>is_add_field (<em>boolean</em>)</td>
+<td>if the field should appear in the add deal form</td>
+</tr>
+</tbody></table>
+
+<h3 id="create-deal-object">Create Deal Object</h3>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">api/crm/deals</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"stage"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">529</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Prospect Lead"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_deal_rotting"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"rotting_days"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"no_of_deals"</span><span class="p">:</span><span class="mi">136</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"custom_fields"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"73"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"text"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"sdsd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"sdsd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"74"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"select"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"ed"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"ed"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:[</span><span class="w">
+            </span><span class="s2">"ewded"</span><span class="w">
+         </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"75"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"textarea"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"wedwed"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"wedwed"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"76"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"radio"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"sdwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"sdwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:[</span><span class="w">
+            </span><span class="s2">"dwdw"</span><span class="w">
+         </span><span class="p">],</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:</span><span class="s2">"dwdw"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"77"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"checkbox"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"wedwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"wedwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"wedwd"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"wedwd"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"78"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"date"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"wedwdwqdw"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"wedwdwqdw"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:</span><span class="s2">"2016-07-02"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"currency"</span><span class="p">:</span><span class="mi">194</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"pipeline"</span><span class="p">:</span><span class="mi">39</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Test Deal"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"deal_value"</span><span class="p">:</span><span class="s2">"25000"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"expected_close"</span><span class="p">:</span><span class="s2">"2016-07-29"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3379</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-8011f79c-007c-4943-a968-1d13dd13b1d9-image
+.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"test deal"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"stage"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"total_stage"</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Prospect Lead"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"rotting_days"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_deal_rotting"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">529</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"deal_value"</span><span class="p">:</span><span class="s2">"25000.00"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"currency"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"is_custom"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"symbol"</span><span class="p">:</span><span class="s2">"₹"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"code"</span><span class="p">:</span><span class="s2">"INR"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">194</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"company"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"expected_close"</span><span class="p">:</span><span class="s2">"2016-07-20"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"last_activity_on"</span><span class="p">:</span><span class="s2">"2016-07-14"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"next_activity_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"open"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"people"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"pipeline"</span><span class="p">:</span><span class="mi">39</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"custom_fields"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"77"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"checkbox"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"wedwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"wedwd"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"wedwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:[</span><span class="w">
+            </span><span class="s2">"wedwd"</span><span class="w">
+         </span><span class="p">],</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"74"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"select"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"ed"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:</span><span class="s2">"ewded"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"ed"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:[</span><span class="w">
+            </span><span class="s2">"ewded"</span><span class="w">
+         </span><span class="p">],</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"won_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"lost_on"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST api/crm/deals</aside>
+
+<h4 id="returns">Returns</h4>
+
+<p>If the call succeeds, it will return the <a href="#deal-object">deal object</a>.</p>
+
+<h3 id="update-deal">Update Deal</h3>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">api/crm/deals</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3379</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-8011f79c-007c-4943-a968-1d13dd13b1d9-image
+.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-8011f79c-007c-4943-a968-1d13dd13b1d9-image
+.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"test deal"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"stage"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">529</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Prospect Lead"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_deal_rotting"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"rotting_days"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"no_of_deals"</span><span class="p">:</span><span class="mi">140</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"deal_value"</span><span class="p">:</span><span class="s2">"225000.00"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"currency"</span><span class="p">:</span><span class="mi">194</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"expected_close"</span><span class="p">:</span><span class="s2">"2016-07-20"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"last_activity_on"</span><span class="p">:</span><span class="s2">"2016-07-14"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"next_activity_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"open"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"people"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"company"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-14T10
+:14:53.831473Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"custom_fields"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"73"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"text"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"sdsd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"sdsd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"74"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"select"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"ed"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:</span><span class="s2">"ewded"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"ed"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:[</span><span class="w">
+            </span><span class="s2">"ewded"</span><span class="w">
+         </span><span class="p">],</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"75"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"textarea"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"wedwed"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"wedwed"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"76"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"radio"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"sdwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"sdwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:[</span><span class="w">
+            </span><span class="s2">"dwdw"</span><span class="w">
+         </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"77"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"checkbox"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"wedwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"wedwd"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"wedwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:[</span><span class="w">
+            </span><span class="s2">"wedwd"</span><span class="w">
+         </span><span class="p">],</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"78"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"date"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"wedwdwqdw"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"wedwdwqdw"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"won_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"lost_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"closed_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"pipeline"</span><span class="p">:</span><span class="mi">39</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3379</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.comimage.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"test deal"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"stage"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"total_stage"</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Prospect Lead"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"rotting_days"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_deal_rotting"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">529</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"deal_value"</span><span class="p">:</span><span class="s2">"225000.00"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"currency"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"is_custom"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"symbol"</span><span class="p">:</span><span class="s2">"
+₹"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"code"</span><span class="p">:</span><span class="s2">"INR"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">194</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"expected_close"</span><span class="p">:</span><span class="s2">"2016-07-20"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"last_activity_on"</span><span class="p">:</span><span class="s2">"2016-07-14"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"next_activity_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"open"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"people"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"company"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-14T10:14:53
+.831473Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"custom_fields"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"77"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"checkbox"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"wedwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"wedwd"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"wedwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:[</span><span class="w">
+            </span><span class="s2">"wedwd"</span><span class="w">
+         </span><span class="p">],</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"74"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"select"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"ed"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:</span><span class="s2">"ewded"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"ed"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:[</span><span class="w">
+            </span><span class="s2">"ewded"</span><span class="w">
+         </span><span class="p">],</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"won_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"lost_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"closed_on"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<h4 id="returns">Returns</h4>
+
+<p>If the call succeeds, it will return the <a href="#deal-object">deal object</a>.</p>
+
+<h3 id="delete-deal">Delete Deal</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/crm/deals/{deal_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3380</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"DA10"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"stage"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"total_stage"</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Prospect Lead"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"rotting_days"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_deal_rotting"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">529</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"deal_value"</span><span class="p">:</span><span class="s2">"0.00"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"currency"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"is_custom"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"code"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">191</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"expected_close"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"last_activity_on"</span><span class="p">:</span><span class="s2">"2016-07-15"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"next_activity_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"open"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"people"</span><span class="p">:[</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"company"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-14T11:33:39.610202Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"custom_fields"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"77"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"checkbox"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"wedwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"wedwd"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"wedwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:[</span><span class="w">
+            </span><span class="s2">"wedwd"</span><span class="w">
+         </span><span class="p">],</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"won_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"lost_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"closed_on"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH api/crm/deals/{deal_id}</aside>
+
+<h4 id="returns">Returns</h4>
+
+<p>If the patch call succeeds, it will return the <a href="#deal-object">deal object</a></p>
+
+<h3 id="make-a-deal-won-lost">Make a Deal Won/Lost</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/crm/deals/{deal_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request 
+</code></pre>
+<pre class="highlight json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"won"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3379</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"test deal"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"stage"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"total_stage"</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Prospect Lead"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"rotting_days"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_deal_rotting"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">529</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"deal_value"</span><span class="p">:</span><span class="s2">"225000.00"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"currency"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"is_custom"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"symbol"</span><span class="p">:</span><span class="s2">"
+₹"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"code"</span><span class="p">:</span><span class="s2">"INR"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">194</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"expected_close"</span><span class="p">:</span><span class="s2">"2016-07-20"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"last_activity_on"</span><span class="p">:</span><span class="s2">"2016-07-15"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"next_activity_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"won"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"people"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"company"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-14T10:14:53
+.831473Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"custom_fields"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"77"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"checkbox"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"wedwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"wedwd"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"wedwd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:[</span><span class="w">
+            </span><span class="s2">"wedwd"</span><span class="w">
+         </span><span class="p">],</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"74"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"select"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"ed"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:</span><span class="s2">"ewded"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"ed"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:[</span><span class="w">
+            </span><span class="s2">"ewded"</span><span class="w">
+         </span><span class="p">],</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"won_on"</span><span class="p">:</span><span class="s2">"2016-07-15T06:35:22.694755Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"lost_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"closed_on"</span><span class="p">:</span><span class="s2">"2016-07-15"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>status</td>
+<td>&lsquo;won&rsquo;</td>
+<td>deal is won</td>
+</tr>
+<tr>
+<td>status</td>
+<td>&#39;lost&rsquo;</td>
+<td>deal is lost</td>
+</tr>
+</tbody></table>
+
+<h4 id="returns">Returns</h4>
+
+<p>If the call succeeds, it will return the <a href="#deal-object">deal object</a> with updated data </p>

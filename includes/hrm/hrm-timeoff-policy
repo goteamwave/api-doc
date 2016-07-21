@@ -1,0 +1,322 @@
+<h2 id="time-off-policy">Time Off Policy</h2>
+
+<h3 id="time-off-policy-object">Time off Policy Object</h3>
+<pre class="highlight http"><code><span class="nf">GET</span> <span class="nn">/api/hrm/people/{id}/timeoff</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"used_timeoff"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"availabale_timeoff"</span><span class="p">:</span><span class="w"> </span><span class="mf">13.0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"policy_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"policy_details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"working_hours"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">130</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-06-20T12:47:22.427736Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-06-20T12:47:58.514672Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"notes"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"mon_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"09:00 AM"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"mon_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05:00 PM"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"tue_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"09:00 AM"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"tue_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05:00 PM"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"wed_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"09:00 AM"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"wed_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05:00 PM"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"thu_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"09:00 AM"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"thu_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05:00 PM"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"fri_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"09:00 AM"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"fri_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05:00 PM"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"sat_start"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"sat_end"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"sun_start"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"sun_end"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"P"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"created_by"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"modified_by"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"total_timeoff"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"policy_renew_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"YF"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"renew_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-01"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"carry_over"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"timeoff_interval"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"policy_emp_timeoff"</span><span class="p">:</span><span class="w"> </span><span class="mf">20.0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"policy"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"pending_timeoff"</span><span class="p">:</span><span class="w"> </span><span class="mf">7.0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"approved_timeoff"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>GET /api/hrm/people/{id}/timeoff </aside>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>used_timeoff (<em>integer</em>)</td>
+<td>Number of used timeoff days</td>
+</tr>
+<tr>
+<td>available_timeoff (<em>integer</em>)</td>
+<td>Number of available timeoff days</td>
+</tr>
+<tr>
+<td>policy_status (<em>boolean</em>)</td>
+<td>Policy active or not</td>
+</tr>
+<tr>
+<td><a href="#policy-details-object">policy_details</a> (<em>object</em>)</td>
+<td>Details about the policy</td>
+</tr>
+<tr>
+<td>policy_emp_timeoff (<em>integer</em>)</td>
+<td>total number of timeoff days</td>
+</tr>
+<tr>
+<td>policy (<em>boolean</em>)</td>
+<td>is policy is activated for the specific employee</td>
+</tr>
+<tr>
+<td>pending_timeoff (<em>integer</em>)</td>
+<td>Number of timeoff days left</td>
+</tr>
+<tr>
+<td>approved_timeoff (<em>integer</em>)</td>
+<td>Number of timeoff days approved</td>
+</tr>
+<tr>
+<td>id</td>
+<td>ID of the Timeoff policy</td>
+</tr>
+</tbody></table>
+
+<h4 id="policy-details-object">Policy Details Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="#working-hours-object">working_hours</a> (<em>object</em>)</td>
+<td>details about the working hours</td>
+</tr>
+<tr>
+<td>total_timeoff (<em>integer</em>)</td>
+<td>total number of timeoff days</td>
+</tr>
+<tr>
+<td>name (<em>string</em>)</td>
+<td>name of the policy</td>
+</tr>
+<tr>
+<td>policy_renew_type (<em>string</em>)</td>
+<td>Policy renewal type- first of every year or half year</td>
+</tr>
+<tr>
+<td>renew_date (<em>string</em>)</td>
+<td>next renewal date</td>
+</tr>
+<tr>
+<td>carry_over (<em>boolean</em>)</td>
+<td>is timeoff balance can be carried over to next year</td>
+</tr>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID of the timeoff policy</td>
+</tr>
+<tr>
+<td>timeoff_interval (<em>integer</em>)</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h4 id="working-hours-object">Working Hours Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>id of the object</td>
+</tr>
+<tr>
+<td>created_on (<em>datefield</em>)</td>
+<td>working hours creation date</td>
+</tr>
+<tr>
+<td>modified_on</td>
+<td>date on which modified the working hours</td>
+</tr>
+<tr>
+<td>notes</td>
+<td>description of the working hours</td>
+</tr>
+<tr>
+<td>mon_start (<em>string</em>)</td>
+<td>work start time on monday</td>
+</tr>
+<tr>
+<td>mon_end (<em>string</em>)</td>
+<td>work end time on monday</td>
+</tr>
+<tr>
+<td>tue_start (<em>string</em>)</td>
+<td>work start time on tuesday</td>
+</tr>
+<tr>
+<td>tue_end (<em>string</em>)</td>
+<td>work end time on tuesday</td>
+</tr>
+<tr>
+<td>wed_start (<em>string</em>)</td>
+<td>work start time on wednesday</td>
+</tr>
+<tr>
+<td>wed_end (<em>string</em>)</td>
+<td>work end time on wednesday</td>
+</tr>
+<tr>
+<td>thu_start (<em>string</em>)</td>
+<td>work start time on thursday</td>
+</tr>
+<tr>
+<td>thu_end (<em>string</em>)</td>
+<td>work end time on thursday</td>
+</tr>
+<tr>
+<td>fri_start (<em>string</em>)</td>
+<td>work start time on friday</td>
+</tr>
+<tr>
+<td>fri_end (<em>string</em>)</td>
+<td>work end time on friday</td>
+</tr>
+<tr>
+<td>sat_start (<em>string</em>)</td>
+<td>work start time on saturday</td>
+</tr>
+<tr>
+<td>sat_end (<em>string</em>)</td>
+<td>work end time on saturday</td>
+</tr>
+<tr>
+<td>sun_start (<em>string</em>)</td>
+<td>work start time on sunday</td>
+</tr>
+<tr>
+<td>sun_end (<em>string</em>)</td>
+<td>work end time on sunday</td>
+</tr>
+<tr>
+<td>status (<em>string</em>)</td>
+<td></td>
+</tr>
+<tr>
+<td>created_by (<em>integer</em>)</td>
+<td>ID of user who created the working hours</td>
+</tr>
+<tr>
+<td>modified_by (<em>integer</em>)</td>
+<td>ID of user who modified the working hours</td>
+</tr>
+</tbody></table>
+
+<h3 id="create-time-off-policy">Create Time off Policy</h3>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">/api/hrm/people/{id}/timeoff</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test Policy DS"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"total_timeoff"</span><span class="p">:</span><span class="mi">15</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"policy_effective_date"</span><span class="p">:</span><span class="s2">"2016-07-13"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"policy_renew_type"</span><span class="p">:</span><span class="s2">"YF"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"day_hours"</span><span class="p">:</span><span class="mi">9</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_interval"</span><span class="p">:</span><span class="mi">20</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">76</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test Policy DS"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"policy_effective_date"</span><span class="p">:</span><span class="s2">"2016-07-13"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"total_timeoff"</span><span class="p">:</span><span class="mi">15</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"schedule"</span><span class="p">:</span><span class="mi">76</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_interval"</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_public"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_type"</span><span class="p">:</span><span class="s2">"D"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_disply_type"</span><span class="p">:</span><span class="s2">"D"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"day_hours"</span><span class="p">:</span><span class="mi">9</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"policy_renew_type"</span><span class="p">:</span><span class="s2">"YF"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"total_employees"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-07-12T07:58:46.687121Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_default"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"assigned_users"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST /api/hrm/people/{id}/timeoff</aside>
+
+<p>Create new Time off Policy.</p>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>Name of the Time off policy</td>
+</tr>
+<tr>
+<td>total_timeoff</td>
+<td>total number of timeoff</td>
+</tr>
+<tr>
+<td>policy_effective_date</td>
+<td>policy effective from date</td>
+</tr>
+<tr>
+<td>policy_renew_type</td>
+<td>time of renewal of policy</td>
+</tr>
+<tr>
+<td>day_hours</td>
+<td>total work hours per day</td>
+</tr>
+<tr>
+<td>timeoff_interval</td>
+<td>number of days after which new hire can apply for leave</td>
+</tr>
+</tbody></table>
+
+<h4 id="returns">Returns</h4>
+
+<p>If the call succeeds, the <a href="#time-off-policy-object">timeoff policy</a> object is returned with all the information about the timeoff policy.</p>
+
+<h3 id="delete-time-off-policy">Delete Time Off Policy</h3>
+
+<aside>DELETE api/hrm/organization/settings/timeoff-policy/{id}</aside>

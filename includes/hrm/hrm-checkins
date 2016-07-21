@@ -1,0 +1,335 @@
+<h2 id="automatic-check-ins">Automatic Check-ins</h2>
+
+<h3 id="automatic-check-ins-object">Automatic Check-ins Object</h3>
+<pre class="highlight plaintext"><code>Samle Object
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">34</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"question"</span><span class="p">:</span><span class="s2">"This  is a checkin question"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_public"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"schedule_day"</span><span class="p">:</span><span class="s2">"EFR"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"schedule_time"</span><span class="p">:</span><span class="s2">"ED"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"people_count"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"assigned_to"</span><span class="p">:[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2015-10-26"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"dev"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/201"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">201</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo Jacob"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geo.jacob11@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"GJ"</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">224</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="s2">"FT"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2016-05-13"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/274"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-13T09:59:44.840079Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"scheduled_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_responded"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>GET   /api/hrm/checkins/questions</aside>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID for the checkin</td>
+</tr>
+<tr>
+<td>question (<em>string</em>)</td>
+<td>question text</td>
+</tr>
+<tr>
+<td>is_active (<em>boolean</em>)</td>
+<td>if the checkin is active</td>
+</tr>
+<tr>
+<td>is_public (<em>boolean</em>)</td>
+<td>the checkin is public or private</td>
+</tr>
+<tr>
+<td>created_by (<em>integer</em>)</td>
+<td>ID of the creator of the checkin</td>
+</tr>
+<tr>
+<td>schedule_day (<em>string</em>)</td>
+<td>day on which checkin mail will be sent</td>
+</tr>
+<tr>
+<td>schedule_time (<em>string</em>)</td>
+<td>time of the day, to send the mail</td>
+</tr>
+<tr>
+<td>people_count (<em>integer</em>)</td>
+<td>number of people assigned</td>
+</tr>
+<tr>
+<td><a href="#assigned_to-object">assigned_to</a></td>
+<td>info about people assigned to the checkin</td>
+</tr>
+<tr>
+<td>created_on (<em>string</em>)</td>
+<td>date of creation of checkin</td>
+</tr>
+<tr>
+<td>schedule_on (<em>string</em>)</td>
+<td>date of next schedule the checkin</td>
+</tr>
+<tr>
+<td>is_responded (<em>boolean</em>)</td>
+<td>if user has responded to the scheduled checkin</td>
+</tr>
+</tbody></table>
+
+<h4 id="assigned-to-object">Assigned To Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID of the employee</td>
+</tr>
+<tr>
+<td>emp_type (<em>string</em>)</td>
+<td>employment type</td>
+</tr>
+<tr>
+<td>start_date (<em>string</em>)</td>
+<td>employee joining date</td>
+</tr>
+<tr>
+<td>job_description (<em>string</em>)</td>
+<td>description of the job</td>
+</tr>
+<tr>
+<td>emp_status (<em>string</em>)</td>
+<td>active or resigned or terminated</td>
+</tr>
+<tr>
+<td>job_title (<em>string</em>)</td>
+<td>Designation</td>
+</tr>
+<tr>
+<td><a href="#user-object">user</a></td>
+<td>employee info details</td>
+</tr>
+</tbody></table>
+
+<h3 id="create-check-in">Create Check-in</h3>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">api/hrm/checkins/questions</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"question"</span><span class="p">:</span><span class="s2">"Test Check-in ?"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"assigned_to"</span><span class="p">:[</span><span class="w">
+      </span><span class="mi">145</span><span class="p">,</span><span class="w">
+      </span><span class="mi">224</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"schedule_day"</span><span class="p">:</span><span class="s2">"EFR"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"schedule_time"</span><span class="p">:</span><span class="s2">"ED"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_public"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">33</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"question"</span><span class="p">:</span><span class="s2">"Test Check-in ?"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_public"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"schedule_day"</span><span class="p">:</span><span class="s2">"EFR"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"schedule_time"</span><span class="p">:</span><span class="s2">"ED"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"people_count"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"assigned_to"</span><span class="p">:[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">145</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2015-09-12"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Designr1"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/186"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">186</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"sachin n"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sachin@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SN"</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">224</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="s2">"FT"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2016-05-13"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/274"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-13T07:23:06.225149Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"scheduled_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_responded"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST api/hrm/checkins/questions</aside>
+
+<h4 id="returns">Returns</h4>
+
+<p>If this call succeeds, the checkin object will be returned, else , if the request has got invalid data, it throws an error.</p>
+
+<h3 id="update-check-in">Update Check-in</h3>
+<pre class="highlight http"><code><span class="nf">PUT</span> <span class="nn">api/hrm/checkins/questions/{checkin_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"question"</span><span class="p">:</span><span class="s2">"Test Check-ins ?"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"assigned_to"</span><span class="p">:[</span><span class="w">
+      </span><span class="mi">45</span><span class="p">,</span><span class="w">
+      </span><span class="mi">145</span><span class="p">,</span><span class="w">
+      </span><span class="mi">224</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"schedule_day"</span><span class="p">:</span><span class="s2">"EFR"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"schedule_time"</span><span class="p">:</span><span class="s2">"ED"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_public"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">33</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"question"</span><span class="p">:</span><span class="s2">"Test Check-ins ?"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_public"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"schedule_day"</span><span class="p">:</span><span class="s2">"EFR"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"schedule_time"</span><span class="p">:</span><span class="s2">"ED"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"people_count"</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"assigned_to"</span><span class="p">:[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">45</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2015-04-02"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Admin"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/17"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">17</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Jerrin Tom"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"jerry@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"JT"</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">145</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2015-09-12"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Designr1"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/186"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">186</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"sachin n"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sachin@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SN"</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">224</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="s2">"FT"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2016-05-13"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/274"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users
+/user-ad08f561-54a1-4623-975e-c996ddca7416-image.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith
+.paul@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-13T07:23:06.225149Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"scheduled_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_responded"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PUT api/hrm/checkins/questions</aside>
+
+<h4 id="returns">Returns</h4>
+
+<p>If the call succeeds, it will return the Checkin object. If the call fails, it will throw an error.</p>
+
+<h3 id="delete-check-in">Delete Check-in</h3>
+<pre class="highlight http"><code><span class="nf">DELETE</span> <span class="nn">api/hrm/checkins/questions/{checkin_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+
+<aside>DELETE api/hrm/checkins/questions/{id}(checkinID)</aside>

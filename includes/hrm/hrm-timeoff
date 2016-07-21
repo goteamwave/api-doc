@@ -1,0 +1,583 @@
+<h2 id="time-off-requests">Time Off Requests</h2>
+<pre class="highlight http"><code><span class="nf">GET</span> <span class="nn">/api/hrm/people/{id}/time-off-request</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">[</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">208</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2016-06-22"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"end_date"</span><span class="p">:</span><span class="s2">"2016-06-24"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"time_off_policy"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"AP"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-06-22T11:57:19.317340Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"act_on"</span><span class="p">:</span><span class="s2">"2016-06-22T11:57:19.294813Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"comment"</span><span class="p">:</span><span class="s2">"this is a leave application"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"modified_by"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://pexels.com/image.jpg"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"days_of_leave"</span><span class="p">:</span><span class="mf">3.0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"activities"</span><span class="p">:[</span><span class="w">
+         </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">443</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"act_on"</span><span class="p">:</span><span class="s2">"2016-06-22T11:57:36.295290Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"action_type"</span><span class="p">:</span><span class="s2">"replied"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"action_field"</span><span class="p">:</span><span class="s2">"comment"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"verb"</span><span class="p">:</span><span class="s2">"replied"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"class_name"</span><span class="p">:</span><span class="s2">"replied"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"organization_id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-06-22T11:57:36.295290Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"is_deleted"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"actor"</span><span class="p">:{</span><span class="w">
+               </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://example.com/image.jpg"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"action_obj"</span><span class="p">:{</span><span class="w">
+               </span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"208"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"employeetimeoff"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"source_obj"</span><span class="p">:{</span><span class="w">
+               </span><span class="nt">"comment_detail"</span><span class="p">:</span><span class="s2">"hello test"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"126"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"hrmcomment"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"target_obj"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">444</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"act_on"</span><span class="p">:</span><span class="s2">"2016-06-22T11:57:47.566159Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"action_type"</span><span class="p">:</span><span class="s2">"replied"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"action_field"</span><span class="p">:</span><span class="s2">"comment"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"verb"</span><span class="p">:</span><span class="s2">"replied"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"class_name"</span><span class="p">:</span><span class="s2">"replied"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"organization_id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-06-22T11:57:47.566159Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"is_deleted"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"actor"</span><span class="p">:{</span><span class="w">
+               </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://example.com/image.jpg"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"action_obj"</span><span class="p">:{</span><span class="w">
+               </span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"208"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"employeetimeoff"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"source_obj"</span><span class="p">:{</span><span class="w">
+               </span><span class="nt">"comment_detail"</span><span class="p">:</span><span class="s2">"hello test2"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"127"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"hrmcomment"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"target_obj"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nt">"can_approve"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w"> 
+         </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/274"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://example.com/mage.jpg"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@doublespring.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-06-22T11:57:19.296021Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"policy_detail"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"is_expired"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"entered_by"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://example.com/image.jpg"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"is_entered"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+
+<p>API endpoint for the list of all time-off requests made by the employee.</p>
+
+<aside>GET /api/hrm/people/{id}/time-off-request</aside>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>request ID number</td>
+</tr>
+<tr>
+<td>start_date (<em>string</em>)</td>
+<td>timeoff starting date</td>
+</tr>
+<tr>
+<td>end_date (<em>string</em>)</td>
+<td>timeoff ending date</td>
+</tr>
+<tr>
+<td>time_off_policy (<em>integer</em>)</td>
+<td>policy ID number</td>
+</tr>
+<tr>
+<td>status (<em>string</em>)</td>
+<td>status of the timeoff(approved)</td>
+</tr>
+<tr>
+<td>modified_on (<em>string</em>)</td>
+<td>datetime on which modified</td>
+</tr>
+<tr>
+<td>act_on (<em>string</em>)</td>
+<td>datetime of Action to timeoff(approve or reject)</td>
+</tr>
+<tr>
+<td>comment (<em>string</em>)</td>
+<td>comment on the timeoff</td>
+</tr>
+<tr>
+<td><a href="#user-object">modified_by</a></td>
+<td>details of the person who modified the timeoff request</td>
+</tr>
+<tr>
+<td>days_of_leave (<em>integer</em>)</td>
+<td>number of days of leave applied</td>
+</tr>
+<tr>
+<td><a href="#activities-object">activities</a></td>
+<td>array of all activities of the request</td>
+</tr>
+<tr>
+<td>can_approve (<em>boolean</em>)</td>
+<td>possible to approve or not</td>
+</tr>
+<tr>
+<td><a href="#user-object">created_by</a></td>
+<td>Details about the creator of the request</td>
+</tr>
+<tr>
+<td>created_on (<em>string</em>)</td>
+<td>datetime of the creation</td>
+</tr>
+<tr>
+<td><a href="#policy-detail">policy_detail</a></td>
+<td>Info on the policy (id,name ..)</td>
+</tr>
+<tr>
+<td><a href="#user-object">entered_by</a> (object)</td>
+<td>details about the user who entered the timeoff</td>
+</tr>
+<tr>
+<td>is_entered (<em>boolean</em>)</td>
+<td>is the timeoff entered (timeoff entered by admin or owner)</td>
+</tr>
+</tbody></table>
+
+<h4 id="user-object">User Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>url (<em>string</em>)</td>
+<td>url of the profile</td>
+</tr>
+<tr>
+<td>image (<em>string</em>)</td>
+<td>url of the profile image</td>
+</tr>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID of the employee</td>
+</tr>
+<tr>
+<td>full_name (<em>string</em>)</td>
+<td>full name of the user</td>
+</tr>
+<tr>
+<td>email (<em>string</em>)</td>
+<td>email address of the user</td>
+</tr>
+<tr>
+<td>label_txt (<em>string</em>)</td>
+<td>label text for profile default avatar</td>
+</tr>
+</tbody></table>
+
+<h4 id="policy-detail-object">Policy Detail Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>is_expired (<em>boolean</em>)</td>
+<td>is the policy expired</td>
+</tr>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID number of the policy</td>
+</tr>
+<tr>
+<td>name (<em>string</em>)</td>
+<td>name of the policy</td>
+</tr>
+</tbody></table>
+
+<h4 id="activities-object">Activities Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID of the activity</td>
+</tr>
+<tr>
+<td>act_on (<em>string</em>)</td>
+<td>datetime of the activity</td>
+</tr>
+<tr>
+<td>action_type (<em>string</em>)</td>
+<td>type of activity</td>
+</tr>
+<tr>
+<td>action_field (<em>string</em>)</td>
+<td>field type of the activity</td>
+</tr>
+<tr>
+<td>verb (<em>string</em>)</td>
+<td>verb text for displaying of the activity</td>
+</tr>
+<tr>
+<td>class_name (<em>string</em>)</td>
+<td>class name for the acitivity</td>
+</tr>
+<tr>
+<td>organization_id</td>
+<td>Organization ID number</td>
+</tr>
+<tr>
+<td>created_on (<em>string</em>)</td>
+<td>datetime of the creation of the activity</td>
+</tr>
+<tr>
+<td>is_deleted (<em>boolean</em>)</td>
+<td>whether the activity is deleted</td>
+</tr>
+<tr>
+<td><a href="#user-object">actor</a></td>
+<td>user who added the activity(comment,..)</td>
+</tr>
+<tr>
+<td><a href="#action-obj">action_obj</a></td>
+<td>object to understand context of activity</td>
+</tr>
+<tr>
+<td><a href="#source-obj">source_obj</a>_</td>
+<td>activity data (comment details)</td>
+</tr>
+</tbody></table>
+
+<h4 id="action-object">Action Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID of the activity</td>
+</tr>
+<tr>
+<td>ctype (<em>string</em>)</td>
+<td>type of the activity applying to</td>
+</tr>
+</tbody></table>
+
+<h4 id="source-object">Source Object</h4>
+
+<table><thead>
+<tr>
+<th>Atribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>comment_detail (<em>string</em>)</td>
+<td>comment text</td>
+</tr>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>comment ID number</td>
+</tr>
+<tr>
+<td>ctype (<em>string</em>)</td>
+<td>type of comment</td>
+</tr>
+</tbody></table>
+
+<h4 id="returns">Returns</h4>
+
+<p>Returns the object with all the information about the employee time off.</p>
+
+<h3 id="create-time-off-request">Create Time Off Request</h3>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">/api/hrm/people/{id}/time-off-request</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2016-07-12"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"end_date"</span><span class="p">:</span><span class="s2">"2016-07-12"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"time_off_policy"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"comment"</span><span class="p">:</span><span class="s2">"test timeoff"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">208</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2016-06-22"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"end_date"</span><span class="p">:</span><span class="s2">"2016-06-24"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"time_off_policy"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"AP"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-06-22T11:57:19.317340Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"act_on"</span><span class="p">:</span><span class="s2">"2016-06-22T11:57:19.294813Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"comment"</span><span class="p">:</span><span class="s2">"this is a leave application"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://pexels.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"days_of_leave"</span><span class="p">:</span><span class="mf">3.0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"activities"</span><span class="p">:[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">443</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"act_on"</span><span class="p">:</span><span class="s2">"2016-06-22T11:57:36.295290Z"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"action_type"</span><span class="p">:</span><span class="s2">"replied"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"action_field"</span><span class="p">:</span><span class="s2">"comment"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"verb"</span><span class="p">:</span><span class="s2">"replied"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"class_name"</span><span class="p">:</span><span class="s2">"replied"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"organization_id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-06-22T11:57:36.295290Z"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"is_deleted"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"actor"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://example.com/image.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"action_obj"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"208"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"employeetimeoff"</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"source_obj"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"comment_detail"</span><span class="p">:</span><span class="s2">"hello test"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"126"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"hrmcomment"</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"target_obj"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">444</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"act_on"</span><span class="p">:</span><span class="s2">"2016-06-22T11:57:47.566159Z"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"action_type"</span><span class="p">:</span><span class="s2">"replied"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"action_field"</span><span class="p">:</span><span class="s2">"comment"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"verb"</span><span class="p">:</span><span class="s2">"replied"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"class_name"</span><span class="p">:</span><span class="s2">"replied"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"organization_id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-06-22T11:57:47.566159Z"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"is_deleted"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"actor"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://example.com/image.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"action_obj"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"208"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"employeetimeoff"</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"source_obj"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"comment_detail"</span><span class="p">:</span><span class="s2">"hello test2"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"127"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"hrmcomment"</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"target_obj"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"can_approve"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/274"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://example.com/mage.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-06-22T11:57:19.296021Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"policy_detail"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"is_expired"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"entered_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://example.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"is_entered"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST /api/hrm/people/{id}/time-off-request</aside>
+
+<p>Create a new request for applying for timeoff. </p>
+
+<h4 id="returns">Returns</h4>
+
+<p>This call, if succeeded will return the <a href="#time-off-requests">timeoff request</a> object. </p>
+
+<h3 id="update-time-off-request">Update Time Off Request</h3>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">/api/hrm/people/{id}/time-off-request/{id}(requestID)</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">219</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2016-07-13"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"end_date"</span><span class="p">:</span><span class="s2">"2016-07-13"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"time_off_policy"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"AP"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-07-12T09:42:45.324789Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"act_on"</span><span class="p">:</span><span class="s2">"2016-07-12T09:42:45.301599Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"comment"</span><span class="p">:</span><span class="s2">"test 123"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-77abb729-773e-41f5-9244-4a5fd337bdba-image
+.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"days_of_leave"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"activities"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"can_approve"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws
+.com/users/user-77abb729-773e-41f5-9244-4a5fd337bdba-image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-12T09:42:45.303024Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"policy_detail"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"is_expired"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"entered_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile
+.s3.amazonaws.com/users/user-77abb729-773e-41f5-9244-4a5fd337bdba-image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish
+ Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"is_entered"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"statusLabel"</span><span class="p">:</span><span class="s2">"Approved"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"editMode"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH /api/hrm/people/{id}(profileID)/time-off-request/{id}(timeoffrequestID)</aside>
+
+<h4 id="returns">Returns</h4>
+
+<p>If the call succeeds, it will return an <a href="#time-off-requests">time off request</a>  with two extra fields, &lsquo;statusLabel&rsquo; and &#39;editMode&rsquo; and without <a href="#activities-object">activities</a> object.</p>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>statusLabel (<em>string</em>)</td>
+<td>if the request is approved it will show &ldquo;approved&rdquo;</td>
+</tr>
+<tr>
+<td>editMode (<em>boolean</em>)</td>
+<td>if the request has been edited, it will be true.</td>
+</tr>
+</tbody></table>
+
+<h3 id="cancel-time-off-request">Cancel Time Off Request</h3>
+<pre class="highlight plaintext"><code>Sample Request 
+</code></pre>
+<pre class="highlight http"><code><span class="nf">PUT</span> <span class="nn">/api/hrm/people/{id}/time-off-request/cancel</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+
+<aside>PUT /api/hrm/people/{id}/time-off-request/cancel</aside>

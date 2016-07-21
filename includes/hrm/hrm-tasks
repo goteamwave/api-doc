@@ -1,0 +1,230 @@
+<h2 id="tasks">Tasks</h2>
+
+<p>Lists all the tasks assigned to the employee</p>
+
+<h3 id="task-object">Task Object</h3>
+<pre class="highlight http"><code><span class="nf">GET</span> <span class="nn">api/hrm/people/{id}/tasks</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">141</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Task to aravind"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"Finish it"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-01-14T12:21:47.924548Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"due_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"assigned_to"</span><span class="p">:{</span><span class="w">
+     </span><span class="nt">"user_id"</span><span class="p">:</span><span class="mi">11</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">32</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Aravind dsSpring"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"related_to"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"task_type"</span><span class="p">:</span><span class="s2">"G"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"timeoff_id"</span><span class="p">:</span><span class="s2">"None"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"can_edit"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+     </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3
+.amazonaws.com/users/user-77abb729-773e-41f5-9244-4a5fd337bdba-image.jpg"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish
+Venkat"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"task_url"</span><span class="p">:</span><span class="s2">"tasks/11"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"default_policy_id"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>GET api/hrm/people/{id}/tasks </aside>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>ID of the task</td>
+</tr>
+<tr>
+<td>title (<em>string</em>)</td>
+<td>task title</td>
+</tr>
+<tr>
+<td>description (<em>string</em>)</td>
+<td>Description of the task to be completed</td>
+</tr>
+<tr>
+<td>created_on (<em>string</em>)</td>
+<td>creation date</td>
+</tr>
+<tr>
+<td>due_date (<em>string</em>)</td>
+<td>Date before task needs to be completed</td>
+</tr>
+<tr>
+<td><a href="#asigned_to-object">assigned_to</a></td>
+<td>task assigned to employee details</td>
+</tr>
+<tr>
+<td>task_type (<em>string</em>)</td>
+<td>Type of task (&lsquo;G&rsquo; for general task,..)</td>
+</tr>
+<tr>
+<td>timeoff_id</td>
+<td>timeoff id for timeoff task</td>
+</tr>
+<tr>
+<td>can_edit</td>
+<td>if task can be edited</td>
+</tr>
+<tr>
+<td><a href="#created_by-object">created_by</a></td>
+<td>info about the creator of the task</td>
+</tr>
+<tr>
+<td>task_url (<em>string</em>)</td>
+<td>url of the task</td>
+</tr>
+<tr>
+<td>default_policy_id (<em>integer</em>)</td>
+<td>default policy ID</td>
+</tr>
+</tbody></table>
+
+<h3 id="create-task">Create Task</h3>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">api/hrm/people/{id}/tasks</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Test task"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"assigned_to"</span><span class="p">:</span><span class="mi">224</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"due_date"</span><span class="p">:</span><span class="s2">"2016-07-01"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"This is a test task."</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">297</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Test task"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"This is a test task."</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-13T06:11:24.679141Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"due_date"</span><span class="p">:</span><span class="s2">"2016-07-01"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"assigned_to"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"user_id"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">224</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul M"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"related_to"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"task_type"</span><span class="p">:</span><span class="s2">"G"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_id"</span><span class="p">:</span><span class="s2">"None"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"can_edit"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"task_url"</span><span class="p">:</span><span class="s2">"tasks/274"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"default_policy_id"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST api/hrm/people/{id}/tasks</aside>
+
+<h3 id="update-task">Update Task</h3>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight http"><code><span class="nf">PUT</span> <span class="nn">api/hrm/people/{profile_id}/tasks/{task_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">297</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Test tasks"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"This is a test task."</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-13T06:11:24.679141Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"due_date"</span><span class="p">:</span><span class="s2">"2016-07-06"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"assigned_to"</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"related_to"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"task_type"</span><span class="p">:</span><span class="s2">"G"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_id"</span><span class="p">:</span><span class="s2">"None"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"can_edit"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"task_url"</span><span class="p">:</span><span class="s2">"tasks/274"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"default_policy_id"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">297</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Test tasks"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"This is a test task."</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-13T06:11:24.679141Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"due_date"</span><span class="p">:</span><span class="s2">"2016-07-06"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"assigned_to"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"user_id"</span><span class="p">:</span><span class="mi">96</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"alok vats"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"related_to"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"task_type"</span><span class="p">:</span><span class="s2">"G"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_id"</span><span class="p">:</span><span class="s2">"None"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"can_edit"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"task_url"</span><span class="p">:</span><span class="s2">"tasks/96"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"default_policy_id"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST api/hrm/people/{id}/tasks</aside>
+
+<h4 id="returns">Returns</h4>
+
+<p>If the call succeeds, it will return the task object. If any of the fields have invalid values, it will throw an error.</p>
+
+<h3 id="delete-task">Delete Task</h3>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight http"><code><span class="nf">DELETE</span> <span class="nn">api/hrm/people/{profile_id}/tasks/{task_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+
+<aside>DELETE api/hrm/people/{profile_id}/tasks/{task_id}</aside>

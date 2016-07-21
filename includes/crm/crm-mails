@@ -1,0 +1,297 @@
+<h2 id="mails">Mails</h2>
+
+<h3 id="mail-object">Mail Object</h3>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"deal"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Test IPL"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"deal"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"deal_value"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/221"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">221</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Prasad Vara"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"prasad@doublespring.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"PV"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3244</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"stage"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"total_stage"</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Prospect Lead"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"rotting_days"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"is_deal_rotting"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">529</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"people"</span><span class="p">:[</span><span class="w">
+     </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sachin@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"first_name"</span><span class="p">:</span><span class="s2">"Sachin"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_name"</span><span class="p">:</span><span class="s2">"N"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"phone"</span><span class="p">:</span><span class="s2">"8884546564"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Designer"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sachin N"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"profile_image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"company"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"company_name"</span><span class="p">:</span><span class="s2">"Gensis"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+     </span><span class="p">},</span><span class="w">
+     </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1910</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"deal-265@sandbox4ace1c73643542298f3f7cbc08cdc826.mailgun.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"first_name"</span><span class="p">:</span><span class="s2">"deal-265"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_name"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"phone"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"job_title"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"deal-265"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"profile_image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"company"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"company_name"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+     </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nt">"from_str"</span><span class="p">:</span><span class="s2">"Sathish Kumar &lt;sathish@doublespring.com&gt;"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"subject"</span><span class="p">:</span><span class="s2">"test"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"body_html"</span><span class="p">:</span><span class="s2">"&lt;div dir=\"ltr\"&gt;test&lt;br clear=\"all\"&gt;&lt;div&gt;&lt;br&gt;&lt;/div
+    &gt;-- &lt;br&gt;&lt;div class=\"gmail_signature\"&gt;&lt;div&gt;&lt;font color=\"#333333\"&gt;Regards,&lt;/font&gt;&lt;div&gt;&lt;font color=
+    \"#333333\"&gt;Sathishkumar V&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;font color=\"#333333\"&gt;&lt;a href=\"http://www.doublespring
+    .com/\" target=\"_blank\"&gt;Double Spring Media India  (P) Ltd&lt;/a&gt;&lt;/font&gt;&lt;div&gt;&lt;font color=\"#333333\"&gt;
+    &lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font color=\"#333333\" face=\"arial, sans-serif\" size=\"3\"&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div
+    &gt;&lt;/div&gt;\r\n&lt;/div&gt;\r\n"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+     </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"received"</span><span class="p">:</span><span class="s2">"2015-10-30T13:50:31.081463Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"is_archived"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"is_private"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"is_read"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"act_on"</span><span class="p">:</span><span class="s2">"2015-10-30T13:50:31.081463Z"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID of the mail</td>
+</tr>
+<tr>
+<td><a href="#deals-object">deal</a></td>
+<td>object with data about deal or company.</td>
+</tr>
+<tr>
+<td><a href="#people-object">people</a></td>
+<td>array of contacts connected to the mail(To,CC)</td>
+</tr>
+<tr>
+<td>from_str (<em>string</em>)</td>
+<td>Name and mail of the sender</td>
+</tr>
+<tr>
+<td>subject (<em>string</em>)</td>
+<td>subject for the mail</td>
+</tr>
+<tr>
+<td>body_html (<em>string</em>)</td>
+<td>body content in html format</td>
+</tr>
+<tr>
+<td><a href="#user-object">created_by</a></td>
+<td>user details of creator</td>
+</tr>
+<tr>
+<td>received (<em>string</em>)</td>
+<td>date of receiving the mail</td>
+</tr>
+<tr>
+<td>is_archived (<em>boolean</em>)</td>
+<td>is the mail archived</td>
+</tr>
+<tr>
+<td>is_private (<em>boolean</em>)</td>
+<td>is the mail private</td>
+</tr>
+<tr>
+<td>is_read (<em>boolean</em>)</td>
+<td>is the mail read</td>
+</tr>
+<tr>
+<td>act_on (<em>string</em>)</td>
+<td>date for the mail activity</td>
+</tr>
+</tbody></table>
+
+<h4 id="deal-object">Deal Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>title (<em>string</em>)</td>
+<td>title of the deal connected</td>
+</tr>
+<tr>
+<td>ctype (<em>string</em>)</td>
+<td>it will change according to the content it is sending to the frontend.</td>
+</tr>
+<tr>
+<td>deal_value (<em>integer</em>)</td>
+<td>value of the deal</td>
+</tr>
+<tr>
+<td>currency_symbol (<em>string</em>)</td>
+<td>currency symbol</td>
+</tr>
+<tr>
+<td><a href="#user-object">owner</a></td>
+<td>owner data</td>
+</tr>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID for the deal</td>
+</tr>
+<tr>
+<td><a href="#stage-object">stage</a></td>
+<td>stage info</td>
+</tr>
+</tbody></table>
+
+<h4 id="people-object">People Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID of the contact</td>
+</tr>
+<tr>
+<td>email (<em>string</em>)</td>
+<td>email address</td>
+</tr>
+<tr>
+<td>first_name (<em>string</em>)</td>
+<td>first name of the contact</td>
+</tr>
+<tr>
+<td>last_name (<em>string</em>)</td>
+<td>last name</td>
+</tr>
+<tr>
+<td>phone (<em>string</em>)</td>
+<td>phone number of the contact</td>
+</tr>
+<tr>
+<td>job_title (<em>string</em>)</td>
+<td>desgination of the contact</td>
+</tr>
+<tr>
+<td>full_name (<em>string</em>)</td>
+<td>full name of the contact</td>
+</tr>
+<tr>
+<td>profile_image (<em>string</em>)</td>
+<td>image url of the contact</td>
+</tr>
+<tr>
+<td>company (<em>string</em>)</td>
+<td>company ID</td>
+</tr>
+<tr>
+<td>company (<em>string</em>)</td>
+<td>company name</td>
+</tr>
+<tr>
+<td>tags (<em>string</em>)</td>
+<td>tags related to the contact</td>
+</tr>
+</tbody></table>
+
+<h3 id="connect-deal-to-mail">Connect Deal To Mail</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">/api/crm/emails/{mail_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nt">"deal"</span><span class="p">:</span><span class="mi">3375</span><span class="w">
+ </span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"deal"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Test IPL"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"deal"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"deal_value"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/221"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">221</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Prasad Vara"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"prasad@doublespring.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"PV"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3244</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"stage"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"total_stage"</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Prospect Lead"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"rotting_days"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"is_deal_rotting"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">529</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"people"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"from_str"</span><span class="p">:</span><span class="s2">"Sathish Kumar &lt;sathish@doublespring.com&gt;"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"subject"</span><span class="p">:</span><span class="s2">"test"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"body_html"</span><span class="p">:</span><span class="s2">"&lt;div dir=\"ltr\"&gt;test&lt;br clear=\"all\"&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;-- &lt;br&gt;&lt;div class=\"gmail_signature
+     \&gt;&lt;div&gt;&lt;font color=\"#333333\"&gt;Regards,&lt;/font&gt;&lt;div&gt;&lt;font color=\"#333333\"&gt;Sathishkumar V&lt;/font&gt;&lt;/div
+         Media India  (P) Ltd&lt;/a&gt;&lt;/font&gt;&lt;div&gt;&lt;font color=\"#333333\"&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font color=\"#333333\"
+      face=\"arial, sans-serif\" size=\"3\"&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;\r\n&lt;/div&gt;\r\n"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"received"</span><span class="p">:</span><span class="s2">"2015-10-30T13:22:55.528585Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_archived"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_private"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_read"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"act_on"</span><span class="p">:</span><span class="s2">"2015-10-30T13:22:55.528585Z"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<h4 id="returns">Returns</h4>
+
+<p>If the call succeeds, it will return the <a href="#mail-object">mail object</a> with updated deal name.</p>

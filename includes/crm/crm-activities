@@ -1,0 +1,460 @@
+<h2 id="activities">Activities</h2>
+
+<h3 id="activity-object">Activity Object</h3>
+<pre class="highlight json"><code><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">409</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"act_type"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"icon"</span><span class="p">:</span><span class="s2">"icon-send"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">463</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Email"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"assigned_to"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/272"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">272</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Rajdeep Sharma"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"rajdeep@doublespring.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"RS"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"person"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"phone"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"testContsct"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"testContsct"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"job_title"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">15435</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"person"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"company"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"domain"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Doublespring"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"company"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"phone"</span><span class="p">:</span><span class="s2">"96633"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"address"</span><span class="p">:</span><span class="s2">"15/1"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">8452</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"deal"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">2757</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"deal"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"dealname"</span><span class="p">:</span><span class="s2">"Segment Deal"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"activity_due_on"</span><span class="p">:</span><span class="s2">"2016-07-13T08:15:00"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"due_time"</span><span class="p">:</span><span class="s2">"08:15 AM"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"act_on"</span><span class="p">:</span><span class="s2">"2016-07-13T08:15:00"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"add_next"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Email"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"note"</span><span class="p">:</span><span class="s2">"Please fill in your Folio No., Name, PAN &amp; Bank Account
+        details in Section 2 &amp; 3, and then proceed to Section 5"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"due_date"</span><span class="p">:</span><span class="s2">"2016-07-13"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"duration"</span><span class="p">:</span><span class="s2">"00:30"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_completed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"completed_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>GET api/crm/activities/{activity_id}</aside>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>Activity ID</td>
+</tr>
+<tr>
+<td><a href="#act_type-object">act_type</a></td>
+<td>activity type</td>
+</tr>
+<tr>
+<td><a href="#user-object">assigned_to</a></td>
+<td>list of people assigned to the activity</td>
+</tr>
+<tr>
+<td><a href="#person-object">person</a></td>
+<td>contact person details</td>
+</tr>
+<tr>
+<td><a href="#company-object">company</a></td>
+<td>organisation details</td>
+</tr>
+<tr>
+<td><a href="#deals-object">deal</a></td>
+<td>deals info</td>
+</tr>
+<tr>
+<td>activity_due_on</td>
+<td>due date-time for the activity</td>
+</tr>
+<tr>
+<td>due_time</td>
+<td>due time of the activity</td>
+</tr>
+<tr>
+<td>due_date</td>
+<td>due date of the activity</td>
+</tr>
+<tr>
+<td>add_next</td>
+<td>if the activity added next</td>
+</tr>
+<tr>
+<td>title</td>
+<td>title of the activity</td>
+</tr>
+<tr>
+<td>note</td>
+<td>description of the activity</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>duration of the activity</td>
+</tr>
+<tr>
+<td>is_completed</td>
+<td>is the activity completed</td>
+</tr>
+<tr>
+<td>completed_on</td>
+<td>date of complete</td>
+</tr>
+<tr>
+<td>is_trashed</td>
+<td>is the activity deleted</td>
+</tr>
+</tbody></table>
+
+<h4 id="activity-type-object-act_type">Activity Type Object(act_type)</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>icon</td>
+<td>icon name for the activity type</td>
+</tr>
+<tr>
+<td>id</td>
+<td>ID of the activity type</td>
+</tr>
+<tr>
+<td>title</td>
+<td>title of the activity type</td>
+</tr>
+</tbody></table>
+
+<h4 id="person-object">Person Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>phone</td>
+<td>phone number of the contact person</td>
+</tr>
+<tr>
+<td>name</td>
+<td>name of the contact person</td>
+</tr>
+<tr>
+<td>full_name</td>
+<td>full name of the contact person</td>
+</tr>
+<tr>
+<td>image</td>
+<td>image url for the contact</td>
+</tr>
+<tr>
+<td>job_title</td>
+<td>Desgination</td>
+</tr>
+<tr>
+<td>id</td>
+<td>ID of the contact person</td>
+</tr>
+<tr>
+<td>ctype</td>
+<td>content type (&lsquo;person&rsquo;)</td>
+</tr>
+<tr>
+<td>email</td>
+<td>email address</td>
+</tr>
+</tbody></table>
+
+<h4 id="company-object">Company Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>domain</td>
+<td>domain name for the company</td>
+</tr>
+<tr>
+<td>name</td>
+<td>name of the company</td>
+</tr>
+<tr>
+<td>image</td>
+<td>image url for the company logo</td>
+</tr>
+<tr>
+<td>ctype</td>
+<td>content type (&#39;company&rsquo;)</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>phone number</td>
+</tr>
+<tr>
+<td>address</td>
+<td>Company address</td>
+</tr>
+<tr>
+<td>id</td>
+<td>Company ID</td>
+</tr>
+</tbody></table>
+
+<h4 id="deals-object">Deals object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>ID of the deal</td>
+</tr>
+<tr>
+<td>ctype</td>
+<td>content type (&#39;deal&rsquo;)</td>
+</tr>
+<tr>
+<td>dealname</td>
+<td>Deal name</td>
+</tr>
+</tbody></table>
+
+<h3 id="create-activity">Create Activity</h3>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">api/crm/activities</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+   </span><span class="nt">"due_date"</span><span class="p">:</span><span class="s2">"2016-07-18"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Email"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"act_type"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">463</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Email"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"icon"</span><span class="p">:</span><span class="s2">"icon-send"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"assigned_to"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"person"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"company"</span><span class="p">:</span><span class="mi">10141</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"deal"</span><span class="p">:</span><span class="mi">3376</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"note"</span><span class="p">:</span><span class="s2">"This is a test deadline activity"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"due_time"</span><span class="p">:</span><span class="s2">"08:00 AM"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"duration"</span><span class="p">:</span><span class="s2">"01:00"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">424</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"act_type"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"icon"</span><span class="p">:</span><span class="s2">"icon-send"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">463</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Email"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"assigned_to"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"person"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"phone"</span><span class="p">:</span><span class="s2">"8884546564"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Sachin N"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sachin N"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Designer"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"person"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sachin@doublespring.com"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"company"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"www.google.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"DoubleSpring
+ Media India pvt Ltd"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"company"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"phone"</span><span class="p">:</span><span class="s2">"080-41250414"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"address"</span><span class="p">:</span><span class="s2">"Frazer Town"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">10141</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"deal"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3376</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"deal"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"dealname"</span><span class="p">:</span><span class="s2">"Test Deal"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"activity_due_on"</span><span class="p">:</span><span class="s2">"2016-07-18T08:00
+:00"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"due_time"</span><span class="p">:</span><span class="s2">"08:00 AM"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"act_on"</span><span class="p">:</span><span class="s2">"2016-07-18T08:00:00"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"add_next"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Email"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"note"</span><span class="p">:</span><span class="s2">"This
+ is a test deadline activity"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"due_date"</span><span class="p">:</span><span class="s2">"2016-07-18"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"duration"</span><span class="p">:</span><span class="s2">"01:00"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_completed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"completed_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST api/crm/activities</aside>
+
+<h4 id="returns">Returns</h4>
+
+<p>If the call succeeds, it will return the activity object with <a href="#activity-object">given data</a>.</p>
+
+<h3 id="update-activity">Update Activity</h3>
+<pre class="highlight http"><code><span class="nf">PUT</span> <span class="nn">api/crm/activities/{activity_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">389</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"act_type"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"icon"</span><span class="p">:</span><span class="s2">"icon-send"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">463</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Email"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"assigned_to"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">221</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Prasad Vara"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"person"</span><span class="p">:</span><span class="mi">17561</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"company"</span><span class="p">:</span><span class="mi">10121</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"deal"</span><span class="p">:</span><span class="mi">3207</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"activity_due_on"</span><span class="p">:</span><span class="s2">"2016-05-27"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"due_time"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"act_on"</span><span class="p">:</span><span class="s2">"2016-05-27T00:00:00"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"add_next"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Email"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"note"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"due_date"</span><span class="p">:</span><span class="s2">"2016-05-28"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"duration"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_completed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"completed_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">389</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"act_type"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"icon"</span><span class="p">:</span><span class="s2">"icon-send"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">463</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Email"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"assigned_to"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/221"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">221</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Prasad Vara"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"prasad@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"PV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"person"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"phone"</span><span class="p">:</span><span class="s2">"9663078168"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Akenani Nagarujina"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Akenani Nagarujina"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"job_title"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">17561</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"person"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"contactprasad1983@gmail.com"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"company"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"domain"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Operi productions"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"company"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"phone"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"address"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">10121</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"deal"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3207</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"ctype"</span><span class="p">:</span><span class="s2">"deal"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"dealname"</span><span class="p">:</span><span class="s2">"Operi"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"activity_due_on"</span><span class="p">:</span><span class="s2">"2016-05-28"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"due_time"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"act_on"</span><span class="p">:</span><span class="s2">"2016-05-28T00
+:00:00"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"add_next"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Email"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"note"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"due_date"</span><span class="p">:</span><span class="s2">"2016-05-28"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"duration"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_completed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"completed_on"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PUT api/crm/activities/{activity_id}</aside>
+
+<h4 id="returns">Returns</h4>
+
+<p>If the call succeeds, it will return the <a href="#activity-object">activity object</a> with  updated data.</p>
+
+<h3 id="delete-activity">Delete Activity</h3>
+<pre class="highlight http"><code><span class="nf">DELETE</span> <span class="nn">api/crm/activities/{activity_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+
+<aside>DELETE api/crm/activities/{activity_id} </aside>

@@ -1,0 +1,286 @@
+<h3 id="organization-object">Organization Object</h3>
+<pre class="highlight json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+     </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">18</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"domain"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"address"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"phone"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+        </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+     </span><span class="p">},</span><span class="w">
+     </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+        </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+     </span><span class="p">},</span><span class="w">
+     </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-08-29T14:49:13.838853Z"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"people"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"deals"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"custom_fields"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>Organization ID</td>
+</tr>
+<tr>
+<td>domain (<em>string</em>)</td>
+<td>domain used by the organization</td>
+</tr>
+<tr>
+<td>name (<em>string</em>)</td>
+<td>name of organization</td>
+</tr>
+<tr>
+<td>address (<em>string</em>)</td>
+<td>address of organization</td>
+</tr>
+<tr>
+<td>phone (<em>string</em>)</td>
+<td>phone number</td>
+</tr>
+<tr>
+<td><a href="#user-object">created_by</a></td>
+<td>organization added-by user details</td>
+</tr>
+<tr>
+<td><a href="#user-object">owner</a></td>
+<td>owner details</td>
+</tr>
+<tr>
+<td>created_on (<em>string</em>)</td>
+<td>creation date</td>
+</tr>
+<tr>
+<td>people (<em>integer</em>)(<em>integer</em>)</td>
+<td>total people added to the organization</td>
+</tr>
+<tr>
+<td>deals (<em>integer</em>)</td>
+<td>total deals added</td>
+</tr>
+<tr>
+<td>tags (<em>string</em>)</td>
+<td>tags related to organization</td>
+</tr>
+<tr>
+<td><a href="#custom_fields-object">custom_fields</a></td>
+<td>custom fields added to the organization add-form</td>
+</tr>
+</tbody></table>
+
+<h3 id="create-organization">Create Organization</h3>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">api/contacts/companies</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"custom_fields"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"25"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"text"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"test"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:</span><span class="s2">"Custom
+ field"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"26"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"text"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test 123"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"test-123"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:</span><span class="s2">"Custom
+ field2"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Twitter"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"twitter.com"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"address"</span><span class="p">:</span><span class="s2">"1502/22 Twitter Inc"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"phone"</span><span class="p">:</span><span class="s2">"245112212454"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">10231</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"twitter.com"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Twitter"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"address"</span><span class="p">:</span><span class="s2">"1502/22 Twitter Inc"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"phone"</span><span class="p">:</span><span class="s2">"245112212454"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/274"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-19T07:26:57.157037Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"people"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"deals"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"custom_fields"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"25"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"text"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:</span><span class="s2">"Custom field"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"test"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"26"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"text"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test 123"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:</span><span class="s2">"Custom field2"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"test-123"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST api/contacts/companies</aside>
+
+<h3 id="update-organization">Update Organization</h3>
+<pre class="highlight http"><code><span class="nf">PUT</span> <span class="nn">api/contacts/companies/{organization_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">10231</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"twitter.com"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Twitter"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"address"</span><span class="p">:</span><span class="s2">"1502/22 Twitter Inc"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"phone"</span><span class="p">:</span><span class="s2">"40015222542323"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-19T07:26:57.157037Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"people"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"deals"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"custom_fields"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"25"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"text"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:</span><span class="s2">"Custom field1"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"test"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"26"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"text"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test 123"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:</span><span class="s2">"Custom field2"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"test-123"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+
+<p>Sample Response
+&ldquo;`</p>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">10231</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"twitter.com"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Twitter"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"address"</span><span class="p">:</span><span class="s2">"1502/22 Twitter Inc"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"phone"</span><span class="p">:</span><span class="s2">"40015222542323"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/274"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-19T07:26:57.157037Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"people"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"deals"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"custom_fields"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"25"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"text"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:</span><span class="s2">"Custom field1"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"test"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"26"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"field_type"</span><span class="p">:</span><span class="s2">"text"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test 123"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"value"</span><span class="p">:</span><span class="s2">"Custom field2"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"key"</span><span class="p">:</span><span class="s2">"test-123"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"options"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"is_add_field"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PUT api/contacts/companies/{organization_id}</aside>
+
+<h3 id="delete-organisation">Delete Organisation</h3>
+<pre class="highlight http"><code><span class="nf">DELETE</span> <span class="nn">api/contacts/companies/{organization_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+
+<aside>DELETE api/contacts/companies/{organization_id}</aside>
