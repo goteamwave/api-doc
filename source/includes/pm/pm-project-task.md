@@ -112,73 +112,73 @@
 
 Attribute | Description 
 ----------| ------------
-name (*string*) | Name of the Task,
-index (*integer*) | index no of the Task,
-id (*integer*) | Identification number of the Task,
-[assigned_to](#pm-user-object) (*object*)| assign a user for this task to complete,
-due_date (*data*) | duedate for the particular task,
-[completed_by](#pm-user-object) (*object*) | user who completed the task,
-[modified_by](#pm-user-object) (*object*) | user who modified the task,
-[created_by](#pm-user-object) (*object*) | user who created the task,
-estimate (*integer*) | estimate cost for the task,
-completed_date (*date*) | completed date of the task,
-is_completed (*boolean*) | Status to identify task is completed or not,
-timelog (*date*) | time log for the particular task,
-created_on (*date*) | task created date, 
-modified_on (*date*) | date on which the task is modified,
-taskgroup_is_private (*boolean*) | Status to check taskgroup is private or not,
-project_name (*string*) | Name of the project,
-project_id (*integer*) | Id of the project,
+name (*string*) | Name of the Task
+index (*integer*) | index no of the Task
+id (*integer*) | Identification number of the Task
+[assigned_to](#pm-user-object) (*object*)| assign a user for this task to complete
+due_date (*data*) | duedate for the particular task
+[completed_by](#pm-user-object) (*object*) | user who completed the task
+[modified_by](#pm-user-object) (*object*) | user who modified the task
+[created_by](#pm-user-object) (*object*) | user who created the task
+estimate (*integer*) | estimate cost for the task
+completed_date (*date*) | completed date of the task
+is_completed (*boolean*) | Status to identify task is completed or not
+timelog (*date*) | time log for the particular task
+created_on (*date*) | task created date 
+modified_on (*date*) | date on which the task is modified
+taskgroup_is_private (*boolean*) | Status to check taskgroup is private or not
+project_name (*string*) | Name of the project
+project_id (*integer*) | Id of the project
 tags (*array*) | Tags belongs to the task
-taskgroup_name (*string*) | Name of the taskgroup,
-taskgroup_id (*integer*) | Id of the taskgroup,
-taskgroup_is_trashed (*boolean*) | Status to check taskgroup is trashed or not,
-is_trashed (*boolean*) | Status to check task is trashed or not,
-comment_count (*integer*) | No of comments for the task,
-resource_url (*string*)  | Task detail page access url,
-tmp_due_date (*date*) | Temporary due date for the task,
-attachments (*array*) | Attachments object id like file,image belongs to the task,
+taskgroup_name (*string*) | Name of the taskgroup
+taskgroup_id (*integer*) | Id of the taskgroup
+taskgroup_is_trashed (*boolean*) | Status to check taskgroup is trashed or not
+is_trashed (*boolean*) | Status to check task is trashed or not
+comment_count (*integer*) | No of comments for the task
+resource_url (*string*)  | Task detail page access url
+tmp_due_date (*date*) | Temporary due date for the task
+attachments (*array*) | Attachments object id like fileimage belongs to the task
 [attachments_detail](#attachments-detail) (*array of object*)| Details of the attachments belonging to the task
 
 #### Attachments Detail
 
 Attribute | Description 
 ----------| ------------
-id (*integer*) | Identification number of the attachment,
-title (*string*) | Name of the attachment,
-attachment (*string*) | URL of the attachment,
-object_id (*integer*) | id of the task,
-is_drivebox (*boolean*) | Status to check attachment is from drivebox(google drive or drop box) or not,
-is_trashed (*boolean*) | Status to check attachment is trashed or not,
-[modified_by](#pm-user-object) (*object*) | user object who modified the attachment,
-project (*integer*) | Id of the project,
-size (*string*) | Size of the attachment,
-for_comment (*boolean*) | Status to check attachment is for comments or not,
-[content_object_detail](#content-object-detail) (*object*) | Detail of the content_object,
-[created_by](#pm-user-object) (*object*) | user who created the attachment,
-created_on (*date*) | date on which the attachment is created,
-is_live (*boolean*) | Status to check attachment is live or not,
-thumbnail (*string*) | URL of the attachment's thumbnail,
-comment_count(*inr*) | Comment count of the attachment's thumbnail,
-modified_on (*date*) | date on which the attachment is modified,
-is_shared (*boolean*) | Status to check attachment is shared or not,
-shared_note (*string*) |Shared note of the attachment,
-content_type (*string*) | Content type of the attachment. eg,.task,
-ext (*string*) | Extension type of the attachment,
-resource_url (*string*)  | Attachments detail page access url,
-download_url  (*string*) | URL to download the attachment,
-is_private (*boolean*) | Status to check attachment is private or not,
+id (*integer*) | Identification number of the attachment
+title (*string*) | Name of the attachment
+attachment (*string*) | URL of the attachment
+object_id (*integer*) | id of the task
+is_drivebox (*boolean*) | Status to check attachment is from drivebox(google drive or drop box) or not
+is_trashed (*boolean*) | Status to check attachment is trashed or not
+[modified_by](#pm-user-object) (*object*) | user object who modified the attachment
+project (*integer*) | Id of the project
+size (*string*) | Size of the attachment
+for_comment (*boolean*) | Status to check attachment is for comments or not
+[content_object_detail](#content-object-detail) (*object*) | Detail of the content_object
+[created_by](#pm-user-object) (*object*) | user who created the attachment
+created_on (*date*) | date on which the attachment is created
+is_live (*boolean*) | Status to check attachment is live or not
+thumbnail (*string*) | URL of the attachment's thumbnail
+comment_count(*inr*) | Comment count of the attachment's thumbnail
+modified_on (*date*) | date on which the attachment is modified
+is_shared (*boolean*) | Status to check attachment is shared or not
+shared_note (*string*) |Shared note of the attachment
+content_type (*string*) | Content type of the attachment. eg.task
+ext (*string*) | Extension type of the attachment
+resource_url (*string*)  | Attachments detail page access url
+download_url  (*string*) | URL to download the attachment
+is_private (*boolean*) | Status to check attachment is private or not
 tags (*array*) | tags belongs to the attachment.
 
 #### Content Object Detail
 
 Attribute | Description 
 ----------| ------------
-display_name (*string*) | Display name of the content object,
-url (*string*) | URL to access the task detail page,
-group_name (*string*) | Task group name,
-group_url (*string*) | Task group's URL,
-group_id (*integer*) | Id of the Task group,
+display_name (*string*) | Display name of the content object
+url (*string*) | URL to access the task detail page
+group_name (*string*) | Task group name
+group_url (*string*) | Task group's URL
+group_id (*integer*) | Id of the Task group
 id"(*integer*) | Id of the task.
 
 

@@ -19,6 +19,7 @@ includes:
   - pm/pm-project-notes
   - pm/pm-project-milestone
   - pm/pm-project-timelog
+  - pm/pm-project-events
   - crm/crm
   - crm/crm-deals
   - crm/crm-mails

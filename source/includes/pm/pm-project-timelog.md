@@ -166,21 +166,21 @@
 
 Attribute | Description
 ----------| -----------
-id (*integer*) | Identification number of the time log,
-description (*string*) | Description for the time log,
-project (*integer*) | Identification number of the Project,
-task (*integer*) | Identification number of the task for the time log,
-logdate (*date*)  | log date of the time log,
-logtime (*time*) | Total time spend for the task,
-is_billable (*boolean*) | Status to check time log is billable or not,
-[task_object](#task-object) (*object*) | Particular task object for the time log,
+id (*integer*) | Identification number of the time log
+description (*string*) | Description for the time log
+project (*integer*) | Identification number of the Project
+task (*integer*) | Identification number of the task for the time log
+logdate (*date*)  | log date of the time log
+logtime (*time*) | Total time spend for the task
+is_billable (*boolean*) | Status to check time log is billable or not
+[task_object](#task-object) (*object*) | Particular task object for the time log
 log_month (*string*) | Month and Year on which the time log is created
-created_on (*date*) | Time log created date,
-[created_by](#pm-user-object) (*object*) | User object who created the timelog,
-resource_url (*string*)  | Timelog's detail page access url,
-modified_on (*date*) | Date on which the time log is modified,
-billed (*boolean*) | Status to check time log is billed or not,
-[modified_by](#pm-user-object) (*object*) | user object who modified the time log,
+created_on (*date*) | Time log created date
+[created_by](#pm-user-object) (*object*) | User object who created the timelog
+resource_url (*string*)  | Timelog's detail page access url
+modified_on (*date*) | Date on which the time log is modified
+billed (*boolean*) | Status to check time log is billed or not
+[modified_by](#pm-user-object) (*object*) | user object who modified the time log
 
 ### Create Time log
 
