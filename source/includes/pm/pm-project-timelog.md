@@ -232,7 +232,7 @@ Content-Type: application/json
 ### Delete Time log
 
 ```http
-DELETE projects/{project_id}/timelogs/{timelog_id} HTTP/1.1
+DELETE api/projects/{project_id}/timelogs/{timelog_id} HTTP/1.1
 Accept: application/json
 Authorization: Token "YOUR ACCESS TOKEN"
 
