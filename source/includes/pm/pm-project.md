@@ -95,6 +95,88 @@ Sample Object
    "tags":null
 }
 ```
+Attribute | Description
+----------| -----------
+id | ID for the project
+name | Name of the project
+description | description for the project
+logo | logo url for the project logo
+[owner](#owner-object) | owner details
+clients | clients ID's
+users (*array*)| users(ID) involved with projects
+is_trashed | if the project is trashed
+start_date | starting date for the project
+end_date | project end date
+budget | budget value
+privacy_enabled | if privacy is enabled or not
+[permissions](#permissions-object) | array of all the permissions for the project
+last_updated | last updated datetime
+taskes_enabled | if the tasks are enabled for the project
+created_by | ID of the creator
+milestones_enabled | Enable milestones 
+files_enabled | Files enabled or not
+time_enabled | time enabled or not
+notes_enabled | notes enabled or not
+calendar_enabled | calendar enabled or not
+label_color | label text color
+label_txt | label text characters
+created_on | creation datetime
+modified_on | modified datetime
+resource_url | resource url link
+drive_access | drive access details
+drop_box_access | drop box access details
+is_active | if the project is active or not
+owner_name | Owner of the project
+is_template | if the project is also a template in templates section
+creating | creating 
+tags | tags given for the project
+
+Attrbute | Description
+---------| -----------
+can_add_messages | can add new messages
+can_delete_messages |
+can_add_tasks | 
+can_delete_tasks |
+can_add_milestones | 
+can_delete_milestones |
+can_add_timelogs | 
+can_delete_timelogs |
+can_add_files | 
+can_delete_files |
+can_add_notebooks |
+can_delete_notebooks |
+can_add_events |
+can_delete_events |
+project |
+is_active |
+calendar_enabled |
+messages_enabled |
+tasks_enabled |
+notes_enabled | notes are enabled for the project
+milestones_enabled | milestones feature enable in the project
+files_enabled | files are enabled for this project
+time_enabled | time is enabled for the project
+
+
+
+"id":280,
+   "name":"Explore teamwave",
+   "description":"This template will give you to create sample project",
+   "logo":"https://twprofile.s3.amazonaws.com/image.jpg",
+   "owner":{
+      "id":2,
+      "name":"DoubleSpring",
+      "domain":"doublespring",
+      "logo":null,
+      "email":"shuhaib@doublespring.com",
+      "tenant_domain":"doublespring.com",
+      "created_on":"2015-06-04",
+      "default_currency":"USD",
+      "default_currency_symbol":"$",
+      "label_txt":null,
+      "orgkey":"doublespring",
+      "status":"paying",
+      "trial_end_on":"2016-07-07"
 
 
 ### Create Project
