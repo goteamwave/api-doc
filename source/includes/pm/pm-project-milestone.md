@@ -106,27 +106,27 @@
 
 Attribute | Description
 ----------| ------------
-id (*integer*) | Identificatoin number of the milestone,
+id (*integer*) | Identification number of the milestone,
 title (*string*) | title given of the milestone,
 completed (*boolean*) | Status to check milestone is completed or not,
 completed_on (*date*) | completed date given of the milestone,
-task_groups (*array*) | task groups which belogns to the milestone,
-created_by (*object*) | User object who created the milestone,
+task_groups (*array*) | task groups which belongs to the milestone,
+[created_by](#pm-user-object) (*object*) | User object who created the milestone,
 post_count (*integer*) | post count of the milestone,
 resource_url (*string*)  | Milestone's detail access url,
 modified_on (*date*) | Date on which the milestone is modified,
-modified_by (*object*) | user object who modified the milestone,
+[modified_by](#pm-user-object) (*object*) | user object who modified the milestone,
 start (*date*) | Start date of the milestone,
 created_on (*date*) | Date on which the milestone is created,
-assigned_to (*object*) | User object who is assigned to the milestone to complete,
+[assigned_to](#pm-user-object) (*object*) | User object who is assigned to the milestone to complete,
 notify_when (*string*) | get a notification of the milestone on notify time,
 notify_time (*time*) | notification time of the milestone,
 description (*string*) | Description of the milestone,
-is_trashed (boolean) | Status to check milestone is trashed or not,
-project (integer) | Identificatoin number of the project,
-is_private (boolean) | Status to check milestone is private or not,
-tmp_start (date) | Temporary start date of the milestone,
-project_name (string) | name of the project,
+is_trashed (*boolean*) | Status to check milestone is trashed or not,
+project (*integer*) | Identification number of the project,
+is_private (*boolean*) | Status to check milestone is private or not,
+tmp_start (*date*) | Temporary start date of the milestone,
+project_name (*string*) | name of the project,
 
 ### Create Milestone
 

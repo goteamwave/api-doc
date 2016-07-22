@@ -7,8 +7,7 @@ title: API Reference
   - javascript -->
 
 toc_footers:
-  - <a href='http://teamwave.com'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
+  - <a href='http://teamwave.com'>Sign Up Today</a>
 
 includes:
   - introduction
@@ -19,6 +18,7 @@ includes:
   - pm/pm-project-file
   - pm/pm-project-notes
   - pm/pm-project-milestone
+  - pm/pm-project-timelog
   - crm/crm
   - crm/crm-deals
   - crm/crm-mails

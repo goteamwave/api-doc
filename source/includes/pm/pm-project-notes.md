@@ -107,7 +107,7 @@
 
 Attribute | Description
 ----------| ------------
-id (*int*) | Identificatoin number of the Note
+id (*int*) | Identification number of the Note
 name (*string*) | title given of the Note
 content (*string*) | Description of the Note
 [modified_by](#pm-user-object) (*object*) | user object who modified the Note
@@ -124,7 +124,7 @@ is_private (*boolean*) | Status to check note is private or not
 
 Attribute | Description
 ----------| ------------
-id (*int*) | Identificatoin number of the version
+id (*int*) | Identification number of the version
 name (*string*) | title given of the Note
 created_on (*date*) | Note created date
 version (*int*) | version number
