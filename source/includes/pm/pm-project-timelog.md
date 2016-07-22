@@ -240,5 +240,5 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-<aside>DELETE projects/{project_id}/timelogs/{timelog_id}</aside>
+<aside>DELETE  api/projects/{project_id}/timelogs/{timelog_id}</aside>
 
