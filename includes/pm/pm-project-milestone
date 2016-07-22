@@ -110,7 +110,7 @@
 </thead><tbody>
 <tr>
 <td>id (<em>integer</em>)</td>
-<td>Identificatoin number of the milestone,</td>
+<td>Identification number of the milestone,</td>
 </tr>
 <tr>
 <td>title (<em>string</em>)</td>
@@ -126,10 +126,10 @@
 </tr>
 <tr>
 <td>task_groups (<em>array</em>)</td>
-<td>task groups which belogns to the milestone,</td>
+<td>task groups which belongs to the milestone,</td>
 </tr>
 <tr>
-<td>created_by (<em>object</em>)</td>
+<td><a href="#pm-user-object">created_by</a> (<em>object</em>)</td>
 <td>User object who created the milestone,</td>
 </tr>
 <tr>
@@ -145,7 +145,7 @@
 <td>Date on which the milestone is modified,</td>
 </tr>
 <tr>
-<td>modified_by (<em>object</em>)</td>
+<td><a href="#pm-user-object">modified_by</a> (<em>object</em>)</td>
 <td>user object who modified the milestone,</td>
 </tr>
 <tr>
@@ -157,7 +157,7 @@
 <td>Date on which the milestone is created,</td>
 </tr>
 <tr>
-<td>assigned_to (<em>object</em>)</td>
+<td><a href="#pm-user-object">assigned_to</a> (<em>object</em>)</td>
 <td>User object who is assigned to the milestone to complete,</td>
 </tr>
 <tr>
@@ -173,23 +173,23 @@
 <td>Description of the milestone,</td>
 </tr>
 <tr>
-<td>is_trashed (boolean)</td>
+<td>is_trashed (<em>boolean</em>)</td>
 <td>Status to check milestone is trashed or not,</td>
 </tr>
 <tr>
-<td>project (integer)</td>
-<td>Identificatoin number of the project,</td>
+<td>project (<em>integer</em>)</td>
+<td>Identification number of the project,</td>
 </tr>
 <tr>
-<td>is_private (boolean)</td>
+<td>is_private (<em>boolean</em>)</td>
 <td>Status to check milestone is private or not,</td>
 </tr>
 <tr>
-<td>tmp_start (date)</td>
+<td>tmp_start (<em>date</em>)</td>
 <td>Temporary start date of the milestone,</td>
 </tr>
 <tr>
-<td>project_name (string)</td>
+<td>project_name (<em>string</em>)</td>
 <td>name of the project,</td>
 </tr>
 </tbody></table>

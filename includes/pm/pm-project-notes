@@ -111,7 +111,7 @@
 </thead><tbody>
 <tr>
 <td>id (<em>int</em>)</td>
-<td>Identificatoin number of the Note</td>
+<td>Identification number of the Note</td>
 </tr>
 <tr>
 <td>name (<em>string</em>)</td>
@@ -169,7 +169,7 @@
 </thead><tbody>
 <tr>
 <td>id (<em>int</em>)</td>
-<td>Identificatoin number of the version</td>
+<td>Identification number of the version</td>
 </tr>
 <tr>
 <td>name (<em>string</em>)</td>
