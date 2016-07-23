@@ -68,7 +68,7 @@
 <td>Activity ID</td>
 </tr>
 <tr>
-<td><a href="#act_type-object">act_type</a></td>
+<td><a href="#activity-type-object">act_type</a></td>
 <td>activity type</td>
 </tr>
 <tr>
@@ -129,7 +129,7 @@
 </tr>
 </tbody></table>
 
-<h4 id="activity-type-object-act_type">Activity Type Object(act_type)</h4>
+<h4 id="activity-type-object">Activity Type Object</h4>
 
 <table><thead>
 <tr>

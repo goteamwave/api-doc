@@ -1,1 +1,3 @@
-<h1 id="hrm">HRM</h1>
+<h1 id="hrms">HRMS</h1>
+
+<p>Human Resource Management System(HRMS) has got api endpoints for <a href="#employees">employees</a>, <a href="#time-off-requests">time off</a>, <a href="#tasks">tasks</a>, <a href="#automatic-check-ins">check-ins</a>.</p>

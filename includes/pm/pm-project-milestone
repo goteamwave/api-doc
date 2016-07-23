@@ -338,6 +338,8 @@ Content-Type: application/json
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
+<aside>PATCH api/projects/{project_id}/milestones/{milestone_id}</aside>
+
 <h3 id="complete-the-milestone">Complete the Milestone</h3>
 <pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/projects/{project_id}/milestones/{milestone_id}/complete</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>

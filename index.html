@@ -118,11 +118,13 @@
         
           <h1 id="introduction">Introduction</h1>
 
-<p>Welcome to the TeamwaveAPI! You can use our API to access Teamwave API endpoints, which can get information on various PM, CRM, and HRMS in our database.</p>
+<p>Welcome to the TeamwaveAPI! You can use our API to access Teamwave API endpoints, which can get you all the information on PM, CRM, and HRMS in our database.</p>
 
-<p>You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p>You can view request/response examples in the dark area to the right.</p>
 
           <h1 id="pm">PM</h1>
+
+<p>Project Management api contains <a href="#projects">projects</a>, <a href="#milestone">milestones</a>, <a href="#events">events</a>, <a href="#notes">notes</a>, <a href="#files">files</a>, <a href="#tasks">tasks</a> and <a href="#time-log">timelog</a>.</p>
 
           <h2 id="projects">Projects</h2>
 
@@ -225,27 +227,27 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>id</td>
+<td>id (<em>integer</em>)</td>
 <td>ID for the project</td>
 </tr>
 <tr>
-<td>name</td>
+<td>name (<em>string</em>)</td>
 <td>Name of the project</td>
 </tr>
 <tr>
-<td>description</td>
+<td>description (<em>string</em>)</td>
 <td>description for the project</td>
 </tr>
 <tr>
-<td>logo</td>
+<td>logo (<em>url string</em>)</td>
 <td>logo url for the project logo</td>
 </tr>
 <tr>
-<td><a href="#owner-object">owner</a></td>
+<td><a href="#pm-user-object">owner</a></td>
 <td>owner details</td>
 </tr>
 <tr>
-<td>clients</td>
+<td>clients (<em>integer</em>)</td>
 <td>clients ID&rsquo;s</td>
 </tr>
 <tr>
@@ -253,23 +255,23 @@
 <td>users(ID) involved with projects</td>
 </tr>
 <tr>
-<td>is_trashed</td>
+<td>is_trashed (<em>boolean</em>)</td>
 <td>if the project is trashed</td>
 </tr>
 <tr>
-<td>start_date</td>
+<td>start_date (<em>string</em>)</td>
 <td>starting date for the project</td>
 </tr>
 <tr>
-<td>end_date</td>
+<td>end_date (<em>string</em>)</td>
 <td>project end date</td>
 </tr>
 <tr>
-<td>budget</td>
+<td>budget (<em>integer</em>)</td>
 <td>budget value</td>
 </tr>
 <tr>
-<td>privacy_enabled</td>
+<td>privacy_enabled (<em>boolean</em>)</td>
 <td>if privacy is enabled or not</td>
 </tr>
 <tr>
@@ -277,35 +279,35 @@
 <td>array of all the permissions for the project</td>
 </tr>
 <tr>
-<td>last_updated</td>
+<td>last_updated (<em>string</em>)</td>
 <td>last updated datetime</td>
 </tr>
 <tr>
-<td>taskes_enabled</td>
+<td>taskes_enabled (<em>boolean</em>)</td>
 <td>if the tasks are enabled for the project</td>
 </tr>
 <tr>
-<td>created_by</td>
+<td>created_by (<em>integer</em>)</td>
 <td>ID of the creator</td>
 </tr>
 <tr>
-<td>milestones_enabled</td>
+<td>milestones_enabled (<em>boolean</em>)</td>
 <td>Enable milestones</td>
 </tr>
 <tr>
-<td>files_enabled</td>
+<td>files_enabled (<em>boolean</em>)</td>
 <td>Files enabled or not</td>
 </tr>
 <tr>
-<td>time_enabled</td>
+<td>time_enabled (<em>boolean</em>)</td>
 <td>time enabled or not</td>
 </tr>
 <tr>
-<td>notes_enabled</td>
+<td>notes_enabled (<em>boolean</em>)</td>
 <td>notes enabled or not</td>
 </tr>
 <tr>
-<td>calendar_enabled</td>
+<td>calendar_enabled (<em>boolean</em>)</td>
 <td>calendar enabled or not</td>
 </tr>
 <tr>
@@ -313,19 +315,19 @@
 <td>label text color</td>
 </tr>
 <tr>
-<td>label_txt</td>
+<td>label_txt (<em>string</em>)</td>
 <td>label text characters</td>
 </tr>
 <tr>
-<td>created_on</td>
+<td>created_on (<em>string</em>)</td>
 <td>creation datetime</td>
 </tr>
 <tr>
-<td>modified_on</td>
+<td>modified_on (<em>string</em>)</td>
 <td>modified datetime</td>
 </tr>
 <tr>
-<td>resource_url</td>
+<td>resource_url (<em>string</em>)</td>
 <td>resource url link</td>
 </tr>
 <tr>
@@ -337,26 +339,28 @@
 <td>drop box access details</td>
 </tr>
 <tr>
-<td>is_active</td>
+<td>is_active (<em>boolean</em>)</td>
 <td>if the project is active or not</td>
 </tr>
 <tr>
-<td>owner_name</td>
+<td>owner_name (<em>string</em>)</td>
 <td>Owner of the project</td>
 </tr>
 <tr>
-<td>is_template</td>
+<td>is_template (<em>boolean</em>)</td>
 <td>if the project is also a template in templates section</td>
 </tr>
 <tr>
-<td>creating</td>
+<td>creating (<em>boolean</em>)</td>
 <td>creating</td>
 </tr>
 <tr>
-<td>tags</td>
+<td>tags (<em>string</em>)</td>
 <td>tags given for the project</td>
 </tr>
 </tbody></table>
+
+<h4 id="permissions-object">Permissions Object</h4>
 
 <table><thead>
 <tr>
@@ -365,95 +369,95 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>can_add_messages</td>
+<td>can_add_messages (<em>boolean</em>)</td>
 <td>can add new messages</td>
 </tr>
 <tr>
-<td>can_delete_messages</td>
+<td>can_delete_messages (<em>boolean</em>)</td>
 <td>can delete messages</td>
 </tr>
 <tr>
-<td>can_add_tasks</td>
+<td>can_add_tasks (<em>boolean</em>)</td>
 <td>can add tasks</td>
 </tr>
 <tr>
-<td>can_delete_tasks</td>
+<td>can_delete_tasks (<em>boolean</em>)</td>
 <td>can delete task</td>
 </tr>
 <tr>
-<td>can_add_milestones</td>
+<td>can_add_milestones (<em>boolean</em>)</td>
 <td>can add milestone</td>
 </tr>
 <tr>
-<td>can_delete_milestones</td>
+<td>can_delete_milestones (<em>boolean</em>)</td>
 <td>can delete milestone</td>
 </tr>
 <tr>
-<td>can_add_timelogs</td>
+<td>can_add_timelogs (<em>boolean</em>)</td>
 <td>can add timelog</td>
 </tr>
 <tr>
-<td>can_delete_timelogs</td>
+<td>can_delete_timelogs (<em>boolean</em>)</td>
 <td>can delete timelog</td>
 </tr>
 <tr>
-<td>can_add_files</td>
+<td>can_add_files (<em>boolean</em>)</td>
 <td>can add files</td>
 </tr>
 <tr>
-<td>can_delete_files</td>
+<td>can_delete_files (<em>boolean</em>)</td>
 <td>can delete files</td>
 </tr>
 <tr>
-<td>can_add_notebooks</td>
+<td>can_add_notebooks (<em>boolean</em>)</td>
 <td>can add notebook</td>
 </tr>
 <tr>
-<td>can_delete_notebooks</td>
+<td>can_delete_notebooks (<em>boolean</em>)</td>
 <td>can delete notebooks</td>
 </tr>
 <tr>
-<td>can_add_events</td>
+<td>can_add_events (<em>boolean</em>)</td>
 <td>can add events</td>
 </tr>
 <tr>
-<td>can_delete_events</td>
+<td>can_delete_events (<em>boolean</em>)</td>
 <td>can delete events</td>
 </tr>
 <tr>
-<td>project</td>
+<td>project (<em>integer</em>)</td>
 <td>ID of the project</td>
 </tr>
 <tr>
-<td>is_active</td>
+<td>is_active (<em>boolean</em>)</td>
 <td>is the project active</td>
 </tr>
 <tr>
-<td>calendar_enabled</td>
+<td>calendar_enabled (<em>boolean</em>)</td>
 <td>calender enabled or not for the project</td>
 </tr>
 <tr>
-<td>messages_enabled</td>
+<td>messages_enabled (<em>boolean</em>)</td>
 <td>messages enabled or not for the project</td>
 </tr>
 <tr>
-<td>tasks_enabled</td>
+<td>tasks_enabled (<em>boolean</em>)</td>
 <td>tasks enabled for the project or not</td>
 </tr>
 <tr>
-<td>notes_enabled</td>
+<td>notes_enabled (<em>boolean</em>)</td>
 <td>notes are enabled for the project</td>
 </tr>
 <tr>
-<td>milestones_enabled</td>
+<td>milestones_enabled (<em>boolean</em>)</td>
 <td>milestones feature enable in the project</td>
 </tr>
 <tr>
-<td>files_enabled</td>
+<td>files_enabled (<em>boolean</em>)</td>
 <td>files are enabled for this project</td>
 </tr>
 <tr>
-<td>time_enabled</td>
+<td>time_enabled (<em>boolean</em>)</td>
 <td>time is enabled for the project</td>
 </tr>
 </tbody></table>
@@ -504,7 +508,7 @@ Content-Type: application/json
 <td>Logo url of the project</td>
 </tr>
 <tr>
-<td>Invite_data (<em>string</em>)</td>
+<td>Invite_data (<em>array</em>)</td>
 <td>List of user who already exists in the organization</td>
 </tr>
 <tr>
@@ -516,7 +520,7 @@ Content-Type: application/json
 <td>Label text of the project</td>
 </tr>
 <tr>
-<td>new_invite_data (<em>string</em>)</td>
+<td>new_invite_data (<em>array</em>)</td>
 <td>New email ids to be invited to the project</td>
 </tr>
 <tr>
@@ -529,7 +533,7 @@ Content-Type: application/json
 </tr>
 <tr>
 <td>share_type (<em>string</em>)</td>
-<td>(<em>(</em>&lsquo;C&rsquo;, &#39;Client&rsquo;<em>), (</em>&#39;V&rsquo;, &#39;Vendor&rsquo;<em>), (</em>&#39;O&rsquo;, &#39;Other&rsquo;<em>)</em>)</td>
+<td>((&lsquo;C&rsquo;, &#39;Client&rsquo;), (&#39;V&rsquo;, &#39;Vendor&rsquo;), (&#39;O&rsquo;, &#39;Other&rsquo;))</td>
 </tr>
 </tbody></table>
 
@@ -606,7 +610,7 @@ Content-Type: application/json
 </tr>
 <tr>
 <td>label_txt (<em>string</em>)</td>
-<td>Label text of the project</td>
+<td>Label text for the project</td>
 </tr>
 <tr>
 <td>owner_id</td>
@@ -2623,6 +2627,8 @@ Content-Type: application/json
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
+<aside>PATCH api/projects/{project_id}/milestones/{milestone_id}</aside>
+
 <h3 id="complete-the-milestone">Complete the Milestone</h3>
 <pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/projects/{project_id}/milestones/{milestone_id}/complete</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
@@ -3173,6 +3179,7 @@ Content-Type: application/json
 
 <aside>DELETE api/projects/{project_id}/events/{event_id}</aside>
 
+          
           <h1 id="crm">CRM</h1>
 
           <h2 id="deal">Deal</h2>
@@ -4430,7 +4437,7 @@ Content-Type: application/json
 <td>Activity ID</td>
 </tr>
 <tr>
-<td><a href="#act_type-object">act_type</a></td>
+<td><a href="#activity-type-object">act_type</a></td>
 <td>activity type</td>
 </tr>
 <tr>
@@ -4491,7 +4498,7 @@ Content-Type: application/json
 </tr>
 </tbody></table>
 
-<h4 id="activity-type-object-act_type">Activity Type Object(act_type)</h4>
+<h4 id="activity-type-object">Activity Type Object</h4>
 
 <table><thead>
 <tr>
@@ -5444,7 +5451,9 @@ Content-Type: application/json
 
 <aside>DELETE api/contacts/companies/{organization_id}</aside>
 
-          <h1 id="hrm">HRM</h1>
+          <h1 id="hrms">HRMS</h1>
+
+<p>Human Resource Management System(HRMS) has got api endpoints for <a href="#employees">employees</a>, <a href="#time-off-requests">time off</a>, <a href="#tasks">tasks</a>, <a href="#automatic-check-ins">check-ins</a>.</p>
 
           <h2 id="time-off-policy">Time Off Policy</h2>
 
@@ -6069,11 +6078,11 @@ Content-Type: application/json
 <td>user who added the activity(comment,..)</td>
 </tr>
 <tr>
-<td><a href="#action-obj">action_obj</a> (<em>object</em>)</td>
+<td><a href="#action-object">action_obj</a> (<em>object</em>)</td>
 <td>object to understand context of activity</td>
 </tr>
 <tr>
-<td><a href="#source-obj">source_obj</a> (<em>object</em>)</td>
+<td><a href="#source-object">source_obj</a> (<em>object</em>)</td>
 <td>activity data (comment details)</td>
 </tr>
 </tbody></table>

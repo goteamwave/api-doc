@@ -298,11 +298,11 @@ Content-Type: application/json
 <td>user who added the activity(comment,..)</td>
 </tr>
 <tr>
-<td><a href="#action-obj">action_obj</a> (<em>object</em>)</td>
+<td><a href="#action-object">action_obj</a> (<em>object</em>)</td>
 <td>object to understand context of activity</td>
 </tr>
 <tr>
-<td><a href="#source-obj">source_obj</a> (<em>object</em>)</td>
+<td><a href="#source-object">source_obj</a> (<em>object</em>)</td>
 <td>activity data (comment details)</td>
 </tr>
 </tbody></table>
