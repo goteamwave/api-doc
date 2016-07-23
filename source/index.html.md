@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: Teamwave API Documentation
 
 <!-- language_tabs:
   - HTTP
