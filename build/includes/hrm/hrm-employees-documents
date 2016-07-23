@@ -1,0 +1,156 @@
+<h2 id="documents">Documents</h2>
+
+<h3 id="document-object">Document Object</h3>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">85</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"images_004.jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://mediatw.s3.amazonaws.com/hrm/1466509302976_images_004.jpeg?Signature=Fx1mcacqtpi%2B7YpbIY5LejDFLjc%3D&amp;Expires=1469185988&amp;AWSAccessKeyId=AKIAJ3L5LCTCJXCFVTYA"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_drivebox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"modified_by"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-03-15"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"size"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4612"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"created_by"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-03-15"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"thumbnail"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"directory"</span><span class="p">:</span><span class="w"> </span><span class="mi">59</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_live"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"ext"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"download_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://192.168.1.51:8000/hrm/files/download/85"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-06-21"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="nt">"is_shared"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>Identificatoin number of the file</td>
+</tr>
+<tr>
+<td>title (<em>string</em>)</td>
+<td>Title of the file</td>
+</tr>
+<tr>
+<td>attachment (<em>string</em>)</td>
+<td>URl of the file</td>
+</tr>
+<tr>
+<td>is_drivebox (<em>boolean</em>)</td>
+<td>Status to check file is from drivebox(google drive or drop box) or not</td>
+</tr>
+<tr>
+<td>is_trashed (<em>boolean</em>)</td>
+<td>Status to check Cfile is trashed or not</td>
+</tr>
+<tr>
+<td><a href="#user-object">modified_by</a> (<em>object</em>)</td>
+<td>user object who modified the file</td>
+</tr>
+<tr>
+<td>size (<em>string</em>)</td>
+<td>Size of the file</td>
+</tr>
+<tr>
+<td><a href="#user-object">created_by</a> (<em>object</em>)</td>
+<td>user who created the file</td>
+</tr>
+<tr>
+<td>thumbnail (<em>string</em>)</td>
+<td>URL of the file&rsquo;s thumbnail</td>
+</tr>
+<tr>
+<td>directory (<em>integer</em>)</td>
+<td>Identificatoin number of the files&rsquo;s directory</td>
+</tr>
+<tr>
+<td>is_live (<em>boolean</em>)</td>
+<td>Status to check file is live or not</td>
+</tr>
+<tr>
+<td>ext (<em>string</em>)</td>
+<td>Extension type of the file</td>
+</tr>
+<tr>
+<td>download_url (<em>string</em>)</td>
+<td>URL to download the file</td>
+</tr>
+<tr>
+<td>created_on (<em>date</em>)</td>
+<td>date on which the file is created</td>
+</tr>
+<tr>
+<td>tags (<em>array</em>)</td>
+<td>tags belongs to the file.</td>
+</tr>
+<tr>
+<td>is_shared (<em>boolean</em>)</td>
+<td>Status to check file is shared or not</td>
+</tr>
+</tbody></table>
+
+<h3 id="create-document">Create Document</h3>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">api/hrm/people/{people_id}/files</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"images_007.jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"attachment"</span><span class="p">:</span><span class="s2">"hrm/1469182994232_images_007.jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"ext"</span><span class="p">:</span><span class="s2">"jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"directory"</span><span class="p">:</span><span class="mi">59</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"file_size"</span><span class="p">:</span><span class="mi">7218</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_shared"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_live"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+ </span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST  api/hrm/people/{people_id}/files</aside>
+
+<h3 id="activate-document">Activate Document</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/hrm/people/{people_id}/files/activate</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"file_ids"</span><span class="p">:[</span><span class="mi">234</span><span class="p">],</span><span class="w">
+    </span><span class="nt">"is_shared"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH api/hrm/people/{people_id}/files/activate</aside>
+
+<h3 id="delete-document">Delete Document</h3>
+<pre class="highlight http"><code><span class="nf">DELETE</span> <span class="nn">api/hrm/people/{people_id}/files/{file_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+
+<aside>DELETE api/hrm/people/{people_id}/files/{file_id}</aside>

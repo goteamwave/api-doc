@@ -3,7 +3,346 @@
 <h3 id="project-object">Project Object</h3>
 <pre class="highlight plaintext"><code>Sample Object 
 </code></pre>
-<pre class="highlight json"><code><span class="w"> </span><span class="p">{</span><span class="w">
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">280</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Explore teamwave"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"This template will give you to create sample project"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"logo"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"shuhaib@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-06-04"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"clients"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"users"</span><span class="p">:[</span><span class="w">
+      </span><span class="mi">537</span><span class="p">,</span><span class="w">
+      </span><span class="mi">3300</span><span class="p">,</span><span class="w">
+      </span><span class="mi">3692</span><span class="p">,</span><span class="w">
+      </span><span class="mi">3858</span><span class="p">,</span><span class="w">
+      </span><span class="mi">3633</span><span class="p">,</span><span class="w">
+      </span><span class="mi">491</span><span class="p">,</span><span class="w">
+      </span><span class="mi">493</span><span class="p">,</span><span class="w">
+      </span><span class="mi">58</span><span class="p">,</span><span class="w">
+      </span><span class="mi">4</span><span class="p">,</span><span class="w">
+      </span><span class="mi">8</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"start_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"end_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"budget"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"privacy_enabled"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"permissions"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"can_add_messages"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_delete_messages"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_add_tasks"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_delete_tasks"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_add_milestones"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_delete_milestones"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_add_timelogs"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_delete_timelogs"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_add_files"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_delete_files"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_add_notebooks"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_delete_notebooks"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_add_events"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_delete_events"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"project"</span><span class="p">:</span><span class="mi">280</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"calendar_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"messages_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tasks_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"notes_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"milestones_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"files_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"time_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="s2">"2016-07-22T09:36:11.442229Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tasks_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"milestones_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"messages_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"files_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"time_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"notes_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"calendar_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_color"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Ex"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-10-15T07:49:41.957253Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2015-10-15T07:49:43.119392Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/280"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drive_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drop_box_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_template"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID for the project</td>
+</tr>
+<tr>
+<td>name (<em>string</em>)</td>
+<td>Name of the project</td>
+</tr>
+<tr>
+<td>description (<em>string</em>)</td>
+<td>description for the project</td>
+</tr>
+<tr>
+<td>logo (<em>url string</em>)</td>
+<td>logo url for the project logo</td>
+</tr>
+<tr>
+<td><a href="#pm-user-object">owner</a></td>
+<td>owner details</td>
+</tr>
+<tr>
+<td>clients (<em>integer</em>)</td>
+<td>clients ID&rsquo;s</td>
+</tr>
+<tr>
+<td>users (<em>array</em>)</td>
+<td>users(ID) involved with projects</td>
+</tr>
+<tr>
+<td>is_trashed (<em>boolean</em>)</td>
+<td>if the project is trashed</td>
+</tr>
+<tr>
+<td>start_date (<em>string</em>)</td>
+<td>starting date for the project</td>
+</tr>
+<tr>
+<td>end_date (<em>string</em>)</td>
+<td>project end date</td>
+</tr>
+<tr>
+<td>budget (<em>integer</em>)</td>
+<td>budget value</td>
+</tr>
+<tr>
+<td>privacy_enabled (<em>boolean</em>)</td>
+<td>if privacy is enabled or not</td>
+</tr>
+<tr>
+<td><a href="#permissions-object">permissions</a></td>
+<td>array of all the permissions for the project</td>
+</tr>
+<tr>
+<td>last_updated (<em>string</em>)</td>
+<td>last updated datetime</td>
+</tr>
+<tr>
+<td>taskes_enabled (<em>boolean</em>)</td>
+<td>if the tasks are enabled for the project</td>
+</tr>
+<tr>
+<td>created_by (<em>integer</em>)</td>
+<td>ID of the creator</td>
+</tr>
+<tr>
+<td>milestones_enabled (<em>boolean</em>)</td>
+<td>Enable milestones</td>
+</tr>
+<tr>
+<td>files_enabled (<em>boolean</em>)</td>
+<td>Files enabled or not</td>
+</tr>
+<tr>
+<td>time_enabled (<em>boolean</em>)</td>
+<td>time enabled or not</td>
+</tr>
+<tr>
+<td>notes_enabled (<em>boolean</em>)</td>
+<td>notes enabled or not</td>
+</tr>
+<tr>
+<td>calendar_enabled (<em>boolean</em>)</td>
+<td>calendar enabled or not</td>
+</tr>
+<tr>
+<td>label_color</td>
+<td>label text color</td>
+</tr>
+<tr>
+<td>label_txt (<em>string</em>)</td>
+<td>label text characters</td>
+</tr>
+<tr>
+<td>created_on (<em>string</em>)</td>
+<td>creation datetime</td>
+</tr>
+<tr>
+<td>modified_on (<em>string</em>)</td>
+<td>modified datetime</td>
+</tr>
+<tr>
+<td>resource_url (<em>string</em>)</td>
+<td>resource url link</td>
+</tr>
+<tr>
+<td>drive_access</td>
+<td>drive access details</td>
+</tr>
+<tr>
+<td>drop_box_access</td>
+<td>drop box access details</td>
+</tr>
+<tr>
+<td>is_active (<em>boolean</em>)</td>
+<td>if the project is active or not</td>
+</tr>
+<tr>
+<td>owner_name (<em>string</em>)</td>
+<td>Owner of the project</td>
+</tr>
+<tr>
+<td>is_template (<em>boolean</em>)</td>
+<td>if the project is also a template in templates section</td>
+</tr>
+<tr>
+<td>creating (<em>boolean</em>)</td>
+<td>creating</td>
+</tr>
+<tr>
+<td>tags (<em>string</em>)</td>
+<td>tags given for the project</td>
+</tr>
+</tbody></table>
+
+<h4 id="permissions-object">Permissions Object</h4>
+
+<table><thead>
+<tr>
+<th>Attrbute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>can_add_messages (<em>boolean</em>)</td>
+<td>can add new messages</td>
+</tr>
+<tr>
+<td>can_delete_messages (<em>boolean</em>)</td>
+<td>can delete messages</td>
+</tr>
+<tr>
+<td>can_add_tasks (<em>boolean</em>)</td>
+<td>can add tasks</td>
+</tr>
+<tr>
+<td>can_delete_tasks (<em>boolean</em>)</td>
+<td>can delete task</td>
+</tr>
+<tr>
+<td>can_add_milestones (<em>boolean</em>)</td>
+<td>can add milestone</td>
+</tr>
+<tr>
+<td>can_delete_milestones (<em>boolean</em>)</td>
+<td>can delete milestone</td>
+</tr>
+<tr>
+<td>can_add_timelogs (<em>boolean</em>)</td>
+<td>can add timelog</td>
+</tr>
+<tr>
+<td>can_delete_timelogs (<em>boolean</em>)</td>
+<td>can delete timelog</td>
+</tr>
+<tr>
+<td>can_add_files (<em>boolean</em>)</td>
+<td>can add files</td>
+</tr>
+<tr>
+<td>can_delete_files (<em>boolean</em>)</td>
+<td>can delete files</td>
+</tr>
+<tr>
+<td>can_add_notebooks (<em>boolean</em>)</td>
+<td>can add notebook</td>
+</tr>
+<tr>
+<td>can_delete_notebooks (<em>boolean</em>)</td>
+<td>can delete notebooks</td>
+</tr>
+<tr>
+<td>can_add_events (<em>boolean</em>)</td>
+<td>can add events</td>
+</tr>
+<tr>
+<td>can_delete_events (<em>boolean</em>)</td>
+<td>can delete events</td>
+</tr>
+<tr>
+<td>project (<em>integer</em>)</td>
+<td>ID of the project</td>
+</tr>
+<tr>
+<td>is_active (<em>boolean</em>)</td>
+<td>is the project active</td>
+</tr>
+<tr>
+<td>calendar_enabled (<em>boolean</em>)</td>
+<td>calender enabled or not for the project</td>
+</tr>
+<tr>
+<td>messages_enabled (<em>boolean</em>)</td>
+<td>messages enabled or not for the project</td>
+</tr>
+<tr>
+<td>tasks_enabled (<em>boolean</em>)</td>
+<td>tasks enabled for the project or not</td>
+</tr>
+<tr>
+<td>notes_enabled (<em>boolean</em>)</td>
+<td>notes are enabled for the project</td>
+</tr>
+<tr>
+<td>milestones_enabled (<em>boolean</em>)</td>
+<td>milestones feature enable in the project</td>
+</tr>
+<tr>
+<td>files_enabled (<em>boolean</em>)</td>
+<td>files are enabled for this project</td>
+</tr>
+<tr>
+<td>time_enabled (<em>boolean</em>)</td>
+<td>time is enabled for the project</td>
+</tr>
+</tbody></table>
+
+<h3 id="create-project">Create Project</h3>
+<pre class="highlight http"><code><span class="nf">POST</span>  <span class="nn">api/projects</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
     </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Explore teamwave"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unified Platform for Collaboration, Sales, 
     Marketing &amp; Support"</span><span class="p">,</span><span class="w">
@@ -19,6 +358,8 @@
     </span><span class="nt">"share_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c"</span><span class="w">
  </span><span class="p">}</span><span class="w">
 </span></code></pre>
+
+<aside>POST  api/projects</aside>
 
 <table><thead>
 <tr>
@@ -39,7 +380,7 @@
 <td>Logo url of the project</td>
 </tr>
 <tr>
-<td>Invite_data (<em>string</em>)</td>
+<td>Invite_data (<em>array</em>)</td>
 <td>List of user who already exists in the organization</td>
 </tr>
 <tr>
@@ -51,7 +392,7 @@
 <td>Label text of the project</td>
 </tr>
 <tr>
-<td>new_invite_data (<em>string</em>)</td>
+<td>new_invite_data (<em>array</em>)</td>
 <td>New email ids to be invited to the project</td>
 </tr>
 <tr>
@@ -64,24 +405,103 @@
 </tr>
 <tr>
 <td>share_type (<em>string</em>)</td>
-<td>(<em>(</em>&lsquo;C&rsquo;, &#39;Client&rsquo;<em>), (</em>&#39;V&rsquo;, &#39;Vendor&rsquo;<em>), (</em>&#39;O&rsquo;, &#39;Other&rsquo;<em>)</em>)</td>
+<td>((&lsquo;C&rsquo;, &#39;Client&rsquo;), (&#39;V&rsquo;, &#39;Vendor&rsquo;), (&#39;O&rsquo;, &#39;Other&rsquo;))</td>
 </tr>
 </tbody></table>
 
-<h3 id="create-project">Create Project</h3>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1194</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Explore teamwave"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unified Platform for Collaboration, Sales, Marketing &amp; Support"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/project/project-280-1df41b3a-1437-415c-ad77-be917d6ec3f8-image.jpg"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"label_color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#9da2a6"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"owner_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EX"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/projects/1194"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-15T13:22:12.982873Z"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"creating"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span><span class="p">}</span><span class="w">
+<h3 id="list-all-projects">List all Projects</h3>
+<pre class="highlight http"><code><span class="nf">GET</span>  <span class="nn">api/projects</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">[</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">280</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Explore teamwave"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"This template will give you to create sample project"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_color"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"owner_id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Ex"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/280"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="s2">"2016-07-22T09:36:11.442229Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">253</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"TeamWave"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"Unified Platform for Collaboration, Sales, Marketing &amp; Support"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_color"</span><span class="p">:</span><span class="s2">"#9da2a6"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tags"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"28"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"color"</span><span class="p">:</span><span class="s2">"label-color-6"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"tag"</span><span class="p">:</span><span class="s2">"TeamWave"</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"owner_id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Te"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/253"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="s2">"2016-07-22T08:09:24.534065Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
 </span></code></pre>
+
+<aside>GET   api/projects</aside>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Id (<em>integer</em>)</td>
+<td>Identification number of the project</td>
+</tr>
+<tr>
+<td>name (<em>string</em>)</td>
+<td>Name of the project</td>
+</tr>
+<tr>
+<td>description (<em>string</em>)</td>
+<td>Description of the project</td>
+</tr>
+<tr>
+<td>logo (<em>uel string</em>)</td>
+<td>Logo of the project</td>
+</tr>
+<tr>
+<td>label_txt (<em>string</em>)</td>
+<td>Label text for the project</td>
+</tr>
+<tr>
+<td>owner_id</td>
+<td>owner of the project</td>
+</tr>
+<tr>
+<td>resource_url (<em>url string</em>)</td>
+<td>project access url</td>
+</tr>
+<tr>
+<td>last_updated (<em>date string</em>)</td>
+<td>Last updated time of the project</td>
+</tr>
+<tr>
+<td>owner_name (<em>string</em>)</td>
+<td>Project’s organization Name</td>
+</tr>
+<tr>
+<td>creating (<em>boolean</em>)</td>
+<td>status whether the project is still creating by the celery or not. If it is still creating , the status is True else false</td>
+</tr>
+</tbody></table>

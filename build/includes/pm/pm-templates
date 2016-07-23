@@ -1,0 +1,65 @@
+<h2 id="templates">Templates</h2>
+
+<h3 id="template-object">Template Object</h3>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">929</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"cv"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"logo"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Doublespring Media India Pvt ltd"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"doublespringmediaindiapvtltd"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"clients"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"users"</span><span class="p">:[</span><span class="w">
+      </span><span class="mi">272</span><span class="p">,</span><span class="w">
+      </span><span class="mi">1</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"start_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"end_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"budget"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"privacy_enabled"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"permissions"</span><span class="p">:{</span><span class="w">
+
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="s2">"2016-06-14T06:37:43.336521Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tasks_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"milestones_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"messages_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"files_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"time_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"notes_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"calendar_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_color"</span><span class="p">:</span><span class="s2">"#9da2a6"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"cv"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-06-14T06:37:42.617356Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-06-14T06:37:43.336495Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/929"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drive_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drop_box_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"Doublespring Media India Pvt ltd"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_template"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="err">This</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">project</span><span class="w"> </span><span class="err">object(refer</span><span class="w"> </span><span class="p">[</span><span class="err">Project</span><span class="w"> </span><span class="err">Object</span><span class="p">]</span><span class="err">(#project-object)).</span><span class="w">
+
+</span><span class="err">###</span><span class="w"> 
+</span></code></pre>

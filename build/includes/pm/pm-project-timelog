@@ -170,35 +170,35 @@
 </thead><tbody>
 <tr>
 <td>id (<em>integer</em>)</td>
-<td>Identification number of the time log,</td>
+<td>Identification number of the time log</td>
 </tr>
 <tr>
 <td>description (<em>string</em>)</td>
-<td>Description for the time log,</td>
+<td>Description for the time log</td>
 </tr>
 <tr>
 <td>project (<em>integer</em>)</td>
-<td>Identification number of the Project,</td>
+<td>Identification number of the Project</td>
 </tr>
 <tr>
 <td>task (<em>integer</em>)</td>
-<td>Identification number of the task for the time log,</td>
+<td>Identification number of the task for the time log</td>
 </tr>
 <tr>
 <td>logdate (<em>date</em>)</td>
-<td>log date of the time log,</td>
+<td>log date of the time log</td>
 </tr>
 <tr>
 <td>logtime (<em>time</em>)</td>
-<td>Total time spend for the task,</td>
+<td>Total time spend for the task</td>
 </tr>
 <tr>
 <td>is_billable (<em>boolean</em>)</td>
-<td>Status to check time log is billable or not,</td>
+<td>Status to check time log is billable or not</td>
 </tr>
 <tr>
 <td><a href="#task-object">task_object</a> (<em>object</em>)</td>
-<td>Particular task object for the time log,</td>
+<td>Particular task object for the time log</td>
 </tr>
 <tr>
 <td>log_month (<em>string</em>)</td>
@@ -206,27 +206,27 @@
 </tr>
 <tr>
 <td>created_on (<em>date</em>)</td>
-<td>Time log created date,</td>
+<td>Time log created date</td>
 </tr>
 <tr>
 <td><a href="#pm-user-object">created_by</a> (<em>object</em>)</td>
-<td>User object who created the timelog,</td>
+<td>User object who created the timelog</td>
 </tr>
 <tr>
 <td>resource_url (<em>string</em>)</td>
-<td>Timelog&rsquo;s detail page access url,</td>
+<td>Timelog&rsquo;s detail page access url</td>
 </tr>
 <tr>
 <td>modified_on (<em>date</em>)</td>
-<td>Date on which the time log is modified,</td>
+<td>Date on which the time log is modified</td>
 </tr>
 <tr>
 <td>billed (<em>boolean</em>)</td>
-<td>Status to check time log is billed or not,</td>
+<td>Status to check time log is billed or not</td>
 </tr>
 <tr>
 <td><a href="#pm-user-object">modified_by</a> (<em>object</em>)</td>
-<td>user object who modified the time log,</td>
+<td>user object who modified the time log</td>
 </tr>
 </tbody></table>
 

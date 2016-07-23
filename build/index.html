@@ -118,18 +118,359 @@
         
           <h1 id="introduction">Introduction</h1>
 
-<p>Welcome to the TeamwaveAPI! You can use our API to access Teamwave API endpoints, which can get information on various PM, CRM, and HRMS in our database.</p>
+<p>Welcome to the TeamwaveAPI! You can use our API to access Teamwave API endpoints, which can get you all the information on PM, CRM, and HRMS in our database.</p>
 
-<p>You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p>You can view request/response examples in the dark area to the right.</p>
 
           <h1 id="pm">PM</h1>
+
+<p>Project Management api contains <a href="#projects">projects</a>, <a href="#milestone">milestones</a>, <a href="#events">events</a>, <a href="#notes">notes</a>, <a href="#files">files</a>, <a href="#tasks">tasks</a> and <a href="#time-log">timelog</a>.</p>
 
           <h2 id="projects">Projects</h2>
 
 <h3 id="project-object">Project Object</h3>
 <pre class="highlight plaintext"><code>Sample Object 
 </code></pre>
-<pre class="highlight json"><code><span class="w"> </span><span class="p">{</span><span class="w">
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">280</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Explore teamwave"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"This template will give you to create sample project"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"logo"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"shuhaib@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-06-04"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"clients"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"users"</span><span class="p">:[</span><span class="w">
+      </span><span class="mi">537</span><span class="p">,</span><span class="w">
+      </span><span class="mi">3300</span><span class="p">,</span><span class="w">
+      </span><span class="mi">3692</span><span class="p">,</span><span class="w">
+      </span><span class="mi">3858</span><span class="p">,</span><span class="w">
+      </span><span class="mi">3633</span><span class="p">,</span><span class="w">
+      </span><span class="mi">491</span><span class="p">,</span><span class="w">
+      </span><span class="mi">493</span><span class="p">,</span><span class="w">
+      </span><span class="mi">58</span><span class="p">,</span><span class="w">
+      </span><span class="mi">4</span><span class="p">,</span><span class="w">
+      </span><span class="mi">8</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"start_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"end_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"budget"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"privacy_enabled"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"permissions"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"can_add_messages"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_delete_messages"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_add_tasks"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_delete_tasks"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_add_milestones"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_delete_milestones"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_add_timelogs"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_delete_timelogs"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_add_files"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_delete_files"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_add_notebooks"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_delete_notebooks"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_add_events"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"can_delete_events"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"project"</span><span class="p">:</span><span class="mi">280</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"calendar_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"messages_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tasks_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"notes_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"milestones_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"files_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"time_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="s2">"2016-07-22T09:36:11.442229Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tasks_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"milestones_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"messages_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"files_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"time_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"notes_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"calendar_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_color"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Ex"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-10-15T07:49:41.957253Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2015-10-15T07:49:43.119392Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/280"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drive_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drop_box_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_template"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>ID for the project</td>
+</tr>
+<tr>
+<td>name (<em>string</em>)</td>
+<td>Name of the project</td>
+</tr>
+<tr>
+<td>description (<em>string</em>)</td>
+<td>description for the project</td>
+</tr>
+<tr>
+<td>logo (<em>url string</em>)</td>
+<td>logo url for the project logo</td>
+</tr>
+<tr>
+<td><a href="#pm-user-object">owner</a></td>
+<td>owner details</td>
+</tr>
+<tr>
+<td>clients (<em>integer</em>)</td>
+<td>clients ID&rsquo;s</td>
+</tr>
+<tr>
+<td>users (<em>array</em>)</td>
+<td>users(ID) involved with projects</td>
+</tr>
+<tr>
+<td>is_trashed (<em>boolean</em>)</td>
+<td>if the project is trashed</td>
+</tr>
+<tr>
+<td>start_date (<em>string</em>)</td>
+<td>starting date for the project</td>
+</tr>
+<tr>
+<td>end_date (<em>string</em>)</td>
+<td>project end date</td>
+</tr>
+<tr>
+<td>budget (<em>integer</em>)</td>
+<td>budget value</td>
+</tr>
+<tr>
+<td>privacy_enabled (<em>boolean</em>)</td>
+<td>if privacy is enabled or not</td>
+</tr>
+<tr>
+<td><a href="#permissions-object">permissions</a></td>
+<td>array of all the permissions for the project</td>
+</tr>
+<tr>
+<td>last_updated (<em>string</em>)</td>
+<td>last updated datetime</td>
+</tr>
+<tr>
+<td>taskes_enabled (<em>boolean</em>)</td>
+<td>if the tasks are enabled for the project</td>
+</tr>
+<tr>
+<td>created_by (<em>integer</em>)</td>
+<td>ID of the creator</td>
+</tr>
+<tr>
+<td>milestones_enabled (<em>boolean</em>)</td>
+<td>Enable milestones</td>
+</tr>
+<tr>
+<td>files_enabled (<em>boolean</em>)</td>
+<td>Files enabled or not</td>
+</tr>
+<tr>
+<td>time_enabled (<em>boolean</em>)</td>
+<td>time enabled or not</td>
+</tr>
+<tr>
+<td>notes_enabled (<em>boolean</em>)</td>
+<td>notes enabled or not</td>
+</tr>
+<tr>
+<td>calendar_enabled (<em>boolean</em>)</td>
+<td>calendar enabled or not</td>
+</tr>
+<tr>
+<td>label_color</td>
+<td>label text color</td>
+</tr>
+<tr>
+<td>label_txt (<em>string</em>)</td>
+<td>label text characters</td>
+</tr>
+<tr>
+<td>created_on (<em>string</em>)</td>
+<td>creation datetime</td>
+</tr>
+<tr>
+<td>modified_on (<em>string</em>)</td>
+<td>modified datetime</td>
+</tr>
+<tr>
+<td>resource_url (<em>string</em>)</td>
+<td>resource url link</td>
+</tr>
+<tr>
+<td>drive_access</td>
+<td>drive access details</td>
+</tr>
+<tr>
+<td>drop_box_access</td>
+<td>drop box access details</td>
+</tr>
+<tr>
+<td>is_active (<em>boolean</em>)</td>
+<td>if the project is active or not</td>
+</tr>
+<tr>
+<td>owner_name (<em>string</em>)</td>
+<td>Owner of the project</td>
+</tr>
+<tr>
+<td>is_template (<em>boolean</em>)</td>
+<td>if the project is also a template in templates section</td>
+</tr>
+<tr>
+<td>creating (<em>boolean</em>)</td>
+<td>creating</td>
+</tr>
+<tr>
+<td>tags (<em>string</em>)</td>
+<td>tags given for the project</td>
+</tr>
+</tbody></table>
+
+<h4 id="permissions-object">Permissions Object</h4>
+
+<table><thead>
+<tr>
+<th>Attrbute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>can_add_messages (<em>boolean</em>)</td>
+<td>can add new messages</td>
+</tr>
+<tr>
+<td>can_delete_messages (<em>boolean</em>)</td>
+<td>can delete messages</td>
+</tr>
+<tr>
+<td>can_add_tasks (<em>boolean</em>)</td>
+<td>can add tasks</td>
+</tr>
+<tr>
+<td>can_delete_tasks (<em>boolean</em>)</td>
+<td>can delete task</td>
+</tr>
+<tr>
+<td>can_add_milestones (<em>boolean</em>)</td>
+<td>can add milestone</td>
+</tr>
+<tr>
+<td>can_delete_milestones (<em>boolean</em>)</td>
+<td>can delete milestone</td>
+</tr>
+<tr>
+<td>can_add_timelogs (<em>boolean</em>)</td>
+<td>can add timelog</td>
+</tr>
+<tr>
+<td>can_delete_timelogs (<em>boolean</em>)</td>
+<td>can delete timelog</td>
+</tr>
+<tr>
+<td>can_add_files (<em>boolean</em>)</td>
+<td>can add files</td>
+</tr>
+<tr>
+<td>can_delete_files (<em>boolean</em>)</td>
+<td>can delete files</td>
+</tr>
+<tr>
+<td>can_add_notebooks (<em>boolean</em>)</td>
+<td>can add notebook</td>
+</tr>
+<tr>
+<td>can_delete_notebooks (<em>boolean</em>)</td>
+<td>can delete notebooks</td>
+</tr>
+<tr>
+<td>can_add_events (<em>boolean</em>)</td>
+<td>can add events</td>
+</tr>
+<tr>
+<td>can_delete_events (<em>boolean</em>)</td>
+<td>can delete events</td>
+</tr>
+<tr>
+<td>project (<em>integer</em>)</td>
+<td>ID of the project</td>
+</tr>
+<tr>
+<td>is_active (<em>boolean</em>)</td>
+<td>is the project active</td>
+</tr>
+<tr>
+<td>calendar_enabled (<em>boolean</em>)</td>
+<td>calender enabled or not for the project</td>
+</tr>
+<tr>
+<td>messages_enabled (<em>boolean</em>)</td>
+<td>messages enabled or not for the project</td>
+</tr>
+<tr>
+<td>tasks_enabled (<em>boolean</em>)</td>
+<td>tasks enabled for the project or not</td>
+</tr>
+<tr>
+<td>notes_enabled (<em>boolean</em>)</td>
+<td>notes are enabled for the project</td>
+</tr>
+<tr>
+<td>milestones_enabled (<em>boolean</em>)</td>
+<td>milestones feature enable in the project</td>
+</tr>
+<tr>
+<td>files_enabled (<em>boolean</em>)</td>
+<td>files are enabled for this project</td>
+</tr>
+<tr>
+<td>time_enabled (<em>boolean</em>)</td>
+<td>time is enabled for the project</td>
+</tr>
+</tbody></table>
+
+<h3 id="create-project">Create Project</h3>
+<pre class="highlight http"><code><span class="nf">POST</span>  <span class="nn">api/projects</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
     </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Explore teamwave"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unified Platform for Collaboration, Sales, 
     Marketing &amp; Support"</span><span class="p">,</span><span class="w">
@@ -145,6 +486,8 @@
     </span><span class="nt">"share_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c"</span><span class="w">
  </span><span class="p">}</span><span class="w">
 </span></code></pre>
+
+<aside>POST  api/projects</aside>
 
 <table><thead>
 <tr>
@@ -165,7 +508,7 @@
 <td>Logo url of the project</td>
 </tr>
 <tr>
-<td>Invite_data (<em>string</em>)</td>
+<td>Invite_data (<em>array</em>)</td>
 <td>List of user who already exists in the organization</td>
 </tr>
 <tr>
@@ -177,7 +520,7 @@
 <td>Label text of the project</td>
 </tr>
 <tr>
-<td>new_invite_data (<em>string</em>)</td>
+<td>new_invite_data (<em>array</em>)</td>
 <td>New email ids to be invited to the project</td>
 </tr>
 <tr>
@@ -190,27 +533,106 @@
 </tr>
 <tr>
 <td>share_type (<em>string</em>)</td>
-<td>(<em>(</em>&lsquo;C&rsquo;, &#39;Client&rsquo;<em>), (</em>&#39;V&rsquo;, &#39;Vendor&rsquo;<em>), (</em>&#39;O&rsquo;, &#39;Other&rsquo;<em>)</em>)</td>
+<td>((&lsquo;C&rsquo;, &#39;Client&rsquo;), (&#39;V&rsquo;, &#39;Vendor&rsquo;), (&#39;O&rsquo;, &#39;Other&rsquo;))</td>
 </tr>
 </tbody></table>
 
-<h3 id="create-project">Create Project</h3>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1194</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Explore teamwave"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unified Platform for Collaboration, Sales, Marketing &amp; Support"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/project/project-280-1df41b3a-1437-415c-ad77-be917d6ec3f8-image.jpg"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"label_color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#9da2a6"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"owner_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EX"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/projects/1194"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-15T13:22:12.982873Z"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"creating"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span><span class="p">}</span><span class="w">
+<h3 id="list-all-projects">List all Projects</h3>
+<pre class="highlight http"><code><span class="nf">GET</span>  <span class="nn">api/projects</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">[</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">280</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Explore teamwave"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"This template will give you to create sample project"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_color"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"owner_id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Ex"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/280"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="s2">"2016-07-22T09:36:11.442229Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">253</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"TeamWave"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"Unified Platform for Collaboration, Sales, Marketing &amp; Support"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_color"</span><span class="p">:</span><span class="s2">"#9da2a6"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tags"</span><span class="p">:{</span><span class="w">
+         </span><span class="nt">"28"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"color"</span><span class="p">:</span><span class="s2">"label-color-6"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"tag"</span><span class="p">:</span><span class="s2">"TeamWave"</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"owner_id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Te"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/253"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="s2">"2016-07-22T08:09:24.534065Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
 </span></code></pre>
+
+<aside>GET   api/projects</aside>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Id (<em>integer</em>)</td>
+<td>Identification number of the project</td>
+</tr>
+<tr>
+<td>name (<em>string</em>)</td>
+<td>Name of the project</td>
+</tr>
+<tr>
+<td>description (<em>string</em>)</td>
+<td>Description of the project</td>
+</tr>
+<tr>
+<td>logo (<em>uel string</em>)</td>
+<td>Logo of the project</td>
+</tr>
+<tr>
+<td>label_txt (<em>string</em>)</td>
+<td>Label text for the project</td>
+</tr>
+<tr>
+<td>owner_id</td>
+<td>owner of the project</td>
+</tr>
+<tr>
+<td>resource_url (<em>url string</em>)</td>
+<td>project access url</td>
+</tr>
+<tr>
+<td>last_updated (<em>date string</em>)</td>
+<td>Last updated time of the project</td>
+</tr>
+<tr>
+<td>owner_name (<em>string</em>)</td>
+<td>Project’s organization Name</td>
+</tr>
+<tr>
+<td>creating (<em>boolean</em>)</td>
+<td>status whether the project is still creating by the celery or not. If it is still creating , the status is True else false</td>
+</tr>
+</tbody></table>
 
           <h2 id="task-group">Task Group</h2>
 <pre class="highlight plaintext"><code>Sample Object
@@ -950,71 +1372,71 @@ Content-Type: application/json
 </thead><tbody>
 <tr>
 <td>name (<em>string</em>)</td>
-<td>Name of the Task,</td>
+<td>Name of the Task</td>
 </tr>
 <tr>
 <td>index (<em>integer</em>)</td>
-<td>index no of the Task,</td>
+<td>index no of the Task</td>
 </tr>
 <tr>
 <td>id (<em>integer</em>)</td>
-<td>Identification number of the Task,</td>
+<td>Identification number of the Task</td>
 </tr>
 <tr>
 <td><a href="#pm-user-object">assigned_to</a> (<em>object</em>)</td>
-<td>assign a user for this task to complete,</td>
+<td>assign a user for this task to complete</td>
 </tr>
 <tr>
 <td>due_date (<em>data</em>)</td>
-<td>duedate for the particular task,</td>
+<td>duedate for the particular task</td>
 </tr>
 <tr>
 <td><a href="#pm-user-object">completed_by</a> (<em>object</em>)</td>
-<td>user who completed the task,</td>
+<td>user who completed the task</td>
 </tr>
 <tr>
 <td><a href="#pm-user-object">modified_by</a> (<em>object</em>)</td>
-<td>user who modified the task,</td>
+<td>user who modified the task</td>
 </tr>
 <tr>
 <td><a href="#pm-user-object">created_by</a> (<em>object</em>)</td>
-<td>user who created the task,</td>
+<td>user who created the task</td>
 </tr>
 <tr>
 <td>estimate (<em>integer</em>)</td>
-<td>estimate cost for the task,</td>
+<td>estimate cost for the task</td>
 </tr>
 <tr>
 <td>completed_date (<em>date</em>)</td>
-<td>completed date of the task,</td>
+<td>completed date of the task</td>
 </tr>
 <tr>
 <td>is_completed (<em>boolean</em>)</td>
-<td>Status to identify task is completed or not,</td>
+<td>Status to identify task is completed or not</td>
 </tr>
 <tr>
 <td>timelog (<em>date</em>)</td>
-<td>time log for the particular task,</td>
+<td>time log for the particular task</td>
 </tr>
 <tr>
 <td>created_on (<em>date</em>)</td>
-<td>task created date,</td>
+<td>task created date</td>
 </tr>
 <tr>
 <td>modified_on (<em>date</em>)</td>
-<td>date on which the task is modified,</td>
+<td>date on which the task is modified</td>
 </tr>
 <tr>
 <td>taskgroup_is_private (<em>boolean</em>)</td>
-<td>Status to check taskgroup is private or not,</td>
+<td>Status to check taskgroup is private or not</td>
 </tr>
 <tr>
 <td>project_name (<em>string</em>)</td>
-<td>Name of the project,</td>
+<td>Name of the project</td>
 </tr>
 <tr>
 <td>project_id (<em>integer</em>)</td>
-<td>Id of the project,</td>
+<td>Id of the project</td>
 </tr>
 <tr>
 <td>tags (<em>array</em>)</td>
@@ -1022,35 +1444,35 @@ Content-Type: application/json
 </tr>
 <tr>
 <td>taskgroup_name (<em>string</em>)</td>
-<td>Name of the taskgroup,</td>
+<td>Name of the taskgroup</td>
 </tr>
 <tr>
 <td>taskgroup_id (<em>integer</em>)</td>
-<td>Id of the taskgroup,</td>
+<td>Id of the taskgroup</td>
 </tr>
 <tr>
 <td>taskgroup_is_trashed (<em>boolean</em>)</td>
-<td>Status to check taskgroup is trashed or not,</td>
+<td>Status to check taskgroup is trashed or not</td>
 </tr>
 <tr>
 <td>is_trashed (<em>boolean</em>)</td>
-<td>Status to check task is trashed or not,</td>
+<td>Status to check task is trashed or not</td>
 </tr>
 <tr>
 <td>comment_count (<em>integer</em>)</td>
-<td>No of comments for the task,</td>
+<td>No of comments for the task</td>
 </tr>
 <tr>
 <td>resource_url (<em>string</em>)</td>
-<td>Task detail page access url,</td>
+<td>Task detail page access url</td>
 </tr>
 <tr>
 <td>tmp_due_date (<em>date</em>)</td>
-<td>Temporary due date for the task,</td>
+<td>Temporary due date for the task</td>
 </tr>
 <tr>
 <td>attachments (<em>array</em>)</td>
-<td>Attachments object id like file,image belongs to the task,</td>
+<td>Attachments object id like fileimage belongs to the task</td>
 </tr>
 <tr>
 <td><a href="#attachments-detail">attachments_detail</a> (<em>array of object</em>)</td>
@@ -1068,99 +1490,99 @@ Content-Type: application/json
 </thead><tbody>
 <tr>
 <td>id (<em>integer</em>)</td>
-<td>Identification number of the attachment,</td>
+<td>Identification number of the attachment</td>
 </tr>
 <tr>
 <td>title (<em>string</em>)</td>
-<td>Name of the attachment,</td>
+<td>Name of the attachment</td>
 </tr>
 <tr>
 <td>attachment (<em>string</em>)</td>
-<td>URL of the attachment,</td>
+<td>URL of the attachment</td>
 </tr>
 <tr>
 <td>object_id (<em>integer</em>)</td>
-<td>id of the task,</td>
+<td>id of the task</td>
 </tr>
 <tr>
 <td>is_drivebox (<em>boolean</em>)</td>
-<td>Status to check attachment is from drivebox(google drive or drop box) or not,</td>
+<td>Status to check attachment is from drivebox(google drive or drop box) or not</td>
 </tr>
 <tr>
 <td>is_trashed (<em>boolean</em>)</td>
-<td>Status to check attachment is trashed or not,</td>
+<td>Status to check attachment is trashed or not</td>
 </tr>
 <tr>
 <td><a href="#pm-user-object">modified_by</a> (<em>object</em>)</td>
-<td>user object who modified the attachment,</td>
+<td>user object who modified the attachment</td>
 </tr>
 <tr>
 <td>project (<em>integer</em>)</td>
-<td>Id of the project,</td>
+<td>Id of the project</td>
 </tr>
 <tr>
 <td>size (<em>string</em>)</td>
-<td>Size of the attachment,</td>
+<td>Size of the attachment</td>
 </tr>
 <tr>
 <td>for_comment (<em>boolean</em>)</td>
-<td>Status to check attachment is for comments or not,</td>
+<td>Status to check attachment is for comments or not</td>
 </tr>
 <tr>
 <td><a href="#content-object-detail">content_object_detail</a> (<em>object</em>)</td>
-<td>Detail of the content_object,</td>
+<td>Detail of the content_object</td>
 </tr>
 <tr>
 <td><a href="#pm-user-object">created_by</a> (<em>object</em>)</td>
-<td>user who created the attachment,</td>
+<td>user who created the attachment</td>
 </tr>
 <tr>
 <td>created_on (<em>date</em>)</td>
-<td>date on which the attachment is created,</td>
+<td>date on which the attachment is created</td>
 </tr>
 <tr>
 <td>is_live (<em>boolean</em>)</td>
-<td>Status to check attachment is live or not,</td>
+<td>Status to check attachment is live or not</td>
 </tr>
 <tr>
 <td>thumbnail (<em>string</em>)</td>
-<td>URL of the attachment&rsquo;s thumbnail,</td>
+<td>URL of the attachment&rsquo;s thumbnail</td>
 </tr>
 <tr>
 <td>comment_count(<em>inr</em>)</td>
-<td>Comment count of the attachment&rsquo;s thumbnail,</td>
+<td>Comment count of the attachment&rsquo;s thumbnail</td>
 </tr>
 <tr>
 <td>modified_on (<em>date</em>)</td>
-<td>date on which the attachment is modified,</td>
+<td>date on which the attachment is modified</td>
 </tr>
 <tr>
 <td>is_shared (<em>boolean</em>)</td>
-<td>Status to check attachment is shared or not,</td>
+<td>Status to check attachment is shared or not</td>
 </tr>
 <tr>
 <td>shared_note (<em>string</em>)</td>
-<td>Shared note of the attachment,</td>
+<td>Shared note of the attachment</td>
 </tr>
 <tr>
 <td>content_type (<em>string</em>)</td>
-<td>Content type of the attachment. eg,.task,</td>
+<td>Content type of the attachment. eg.task</td>
 </tr>
 <tr>
 <td>ext (<em>string</em>)</td>
-<td>Extension type of the attachment,</td>
+<td>Extension type of the attachment</td>
 </tr>
 <tr>
 <td>resource_url (<em>string</em>)</td>
-<td>Attachments detail page access url,</td>
+<td>Attachments detail page access url</td>
 </tr>
 <tr>
 <td>download_url  (<em>string</em>)</td>
-<td>URL to download the attachment,</td>
+<td>URL to download the attachment</td>
 </tr>
 <tr>
 <td>is_private (<em>boolean</em>)</td>
-<td>Status to check attachment is private or not,</td>
+<td>Status to check attachment is private or not</td>
 </tr>
 <tr>
 <td>tags (<em>array</em>)</td>
@@ -1178,23 +1600,23 @@ Content-Type: application/json
 </thead><tbody>
 <tr>
 <td>display_name (<em>string</em>)</td>
-<td>Display name of the content object,</td>
+<td>Display name of the content object</td>
 </tr>
 <tr>
 <td>url (<em>string</em>)</td>
-<td>URL to access the task detail page,</td>
+<td>URL to access the task detail page</td>
 </tr>
 <tr>
 <td>group_name (<em>string</em>)</td>
-<td>Task group name,</td>
+<td>Task group name</td>
 </tr>
 <tr>
 <td>group_url (<em>string</em>)</td>
-<td>Task group&rsquo;s URL,</td>
+<td>Task group&rsquo;s URL</td>
 </tr>
 <tr>
 <td>group_id (<em>integer</em>)</td>
-<td>Id of the Task group,</td>
+<td>Id of the Task group</td>
 </tr>
 <tr>
 <td>id&quot;(<em>integer</em>)</td>
@@ -1724,20 +2146,18 @@ Content-Type: application/json
         will be reopened automatically in the new &lt;br/&gt;template.&lt;br/&gt;
     &lt;/p&gt;"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-
-</span><span class="err">&lt;aside&gt;POST</span><span class="w">  </span><span class="err">api/projects/</span><span class="p">{</span><span class="err">project_id</span><span class="p">}</span><span class="err">/notes/</span><span class="p">{</span><span class="err">note_id</span><span class="p">}</span><span class="err">&lt;/aside&gt;</span><span class="w">
-
-
-</span><span class="err">###</span><span class="w"> </span><span class="err">Update</span><span class="w"> </span><span class="err">Note</span><span class="w">
-
-</span><span class="err">```http</span><span class="w">
-</span><span class="err">PATCH</span><span class="w"> </span><span class="err">api/projects/</span><span class="p">{</span><span class="err">project_id</span><span class="p">}</span><span class="err">/notes/</span><span class="p">{</span><span class="err">note_id</span><span class="p">}</span><span class="w"> </span><span class="err">HTTP/</span><span class="mf">1.1</span><span class="w">
-</span><span class="err">Accept:</span><span class="w"> </span><span class="err">application/json</span><span class="w">
-</span><span class="err">Authorization:</span><span class="w"> </span><span class="err">Token</span><span class="w"> </span><span class="s2">"YOUR ACCESS TOKEN"</span><span class="w">
-
-</span><span class="err">HTTP/</span><span class="mf">1.1</span><span class="w"> </span><span class="mi">200</span><span class="w"> </span><span class="err">OK</span><span class="w">
-</span><span class="err">Content-Type:</span><span class="w"> </span><span class="err">application/json</span><span class="w">
 </span></code></pre>
+
+<aside>POST  api/projects/{project_id}/notes/{note_id}</aside>
+
+<h3 id="update-note">Update Note</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/projects/{project_id}/notes/{note_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
 </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">520</span><span class="p">,</span><span class="w">
 </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Creating a Template from an Existing Project"</span><span class="p">,</span><span class="w">
@@ -2207,6 +2627,8 @@ Content-Type: application/json
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
+<aside>PATCH api/projects/{project_id}/milestones/{milestone_id}</aside>
+
 <h3 id="complete-the-milestone">Complete the Milestone</h3>
 <pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/projects/{project_id}/milestones/{milestone_id}/complete</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
@@ -2413,35 +2835,35 @@ Content-Type: application/json
 </thead><tbody>
 <tr>
 <td>id (<em>integer</em>)</td>
-<td>Identification number of the time log,</td>
+<td>Identification number of the time log</td>
 </tr>
 <tr>
 <td>description (<em>string</em>)</td>
-<td>Description for the time log,</td>
+<td>Description for the time log</td>
 </tr>
 <tr>
 <td>project (<em>integer</em>)</td>
-<td>Identification number of the Project,</td>
+<td>Identification number of the Project</td>
 </tr>
 <tr>
 <td>task (<em>integer</em>)</td>
-<td>Identification number of the task for the time log,</td>
+<td>Identification number of the task for the time log</td>
 </tr>
 <tr>
 <td>logdate (<em>date</em>)</td>
-<td>log date of the time log,</td>
+<td>log date of the time log</td>
 </tr>
 <tr>
 <td>logtime (<em>time</em>)</td>
-<td>Total time spend for the task,</td>
+<td>Total time spend for the task</td>
 </tr>
 <tr>
 <td>is_billable (<em>boolean</em>)</td>
-<td>Status to check time log is billable or not,</td>
+<td>Status to check time log is billable or not</td>
 </tr>
 <tr>
 <td><a href="#task-object">task_object</a> (<em>object</em>)</td>
-<td>Particular task object for the time log,</td>
+<td>Particular task object for the time log</td>
 </tr>
 <tr>
 <td>log_month (<em>string</em>)</td>
@@ -2449,27 +2871,27 @@ Content-Type: application/json
 </tr>
 <tr>
 <td>created_on (<em>date</em>)</td>
-<td>Time log created date,</td>
+<td>Time log created date</td>
 </tr>
 <tr>
 <td><a href="#pm-user-object">created_by</a> (<em>object</em>)</td>
-<td>User object who created the timelog,</td>
+<td>User object who created the timelog</td>
 </tr>
 <tr>
 <td>resource_url (<em>string</em>)</td>
-<td>Timelog&rsquo;s detail page access url,</td>
+<td>Timelog&rsquo;s detail page access url</td>
 </tr>
 <tr>
 <td>modified_on (<em>date</em>)</td>
-<td>Date on which the time log is modified,</td>
+<td>Date on which the time log is modified</td>
 </tr>
 <tr>
 <td>billed (<em>boolean</em>)</td>
-<td>Status to check time log is billed or not,</td>
+<td>Status to check time log is billed or not</td>
 </tr>
 <tr>
 <td><a href="#pm-user-object">modified_by</a> (<em>object</em>)</td>
-<td>user object who modified the time log,</td>
+<td>user object who modified the time log</td>
 </tr>
 </tbody></table>
 
@@ -2522,6 +2944,242 @@ Content-Type: application/json
 
 <aside>DELETE  api/projects/{project_id}/timelogs/{timelog_id}</aside>
 
+          <h2 id="events">Events</h2>
+
+<h3 id="event-object">Event Object</h3>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3633</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Slide Presentation"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Give a detail about upcoming projects"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"start_dt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-22T16:30:00Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"end_dt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-22T17:30:00Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-22 16:30:00+00:00"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-22 17:30:00+00:00"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"all_day"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"04:30 PM"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05:30 PM"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"rule_txt"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"rule_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"end_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"never"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"occurrence_count"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"end_recurring_period"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_private"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>Identificatoin number of the Event,</td>
+</tr>
+<tr>
+<td>title (<em>string</em>)</td>
+<td>Title of the Event,</td>
+</tr>
+<tr>
+<td>description (<em>string</em>)</td>
+<td>Description given of the Event,</td>
+</tr>
+<tr>
+<td>start_dt (<em>date</em>)</td>
+<td>Start date of the Event,</td>
+</tr>
+<tr>
+<td>end_dt (<em>date</em>)</td>
+<td>End date the Event,</td>
+</tr>
+<tr>
+<td>start (<em>datetime</em>)</td>
+<td>Start date time of the Event,</td>
+</tr>
+<tr>
+<td>end (<em>datetime</em>)</td>
+<td>End date time of the Event,</td>
+</tr>
+<tr>
+<td>all_day (<em>boolean</em>)</td>
+<td>Status to check the event will occur all day or not,</td>
+</tr>
+<tr>
+<td>start_timet (<em>datetime</em>)</td>
+<td>Start time of the Event,</td>
+</tr>
+<tr>
+<td>end_timet (<em>datetime</em>)</td>
+<td>End time of the Event,</td>
+</tr>
+<tr>
+<td>rule_txt (<em>string</em>)</td>
+<td>Event repeat information,</td>
+</tr>
+<tr>
+<td>rule_id (<em>string</em>)</td>
+<td>Id of the repeat mode,</td>
+</tr>
+<tr>
+<td>end_type (<em>string</em>)</td>
+<td>end_type can be &lsquo;never&rsquo;,&#39;occurrence&rsquo; or &#39;date&rsquo;,</td>
+</tr>
+<tr>
+<td>occurrence_count (<em>integer</em>)</td>
+<td>Occurrence count of the event,</td>
+</tr>
+<tr>
+<td>end_recurring_period (<em>string</em>)</td>
+<td>It can be null if end_type is &#39;never&rsquo; or a paricular date if end_type is &#39;date,</td>
+</tr>
+<tr>
+<td>is_private (<em>boolean</em>)</td>
+<td>Status to check note is private or not,</td>
+</tr>
+<tr>
+<td>post_count (<em>integer</em>)</td>
+<td>Post count of the event</td>
+</tr>
+</tbody></table>
+
+<h3 id="create-event">Create Event</h3>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">api/projects/{project_id}/events</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Slide Presentation"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"occurrence_count"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"rule_id"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"end_type"</span><span class="p">:</span><span class="s2">"never"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"start"</span><span class="p">:</span><span class="s2">"2016-07-22"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"start_time"</span><span class="p">:</span><span class="s2">"10:00 PM"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"end_time"</span><span class="p">:</span><span class="s2">"11:00PM"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"end"</span><span class="p">:</span><span class="s2">"2016-07-22"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"all_day"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"end_recurring_period"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"repeat"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"send_email"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"Give a detail about upcoming projects"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"emails"</span><span class="p">:[</span><span class="mi">1</span><span class="p">],</span><span class="w">
+    </span><span class="nt">"is_repeating"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+ </span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST api/projects/{project_id}/events</aside>
+
+<h3 id="update-event">Update Event</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/projects/{project_id}/events/{event_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">13633</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"event"</span><span class="p">:</span><span class="mi">3633</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"all_day"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"order_no"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Slide Presentation Every day"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"created_by"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_crm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_crm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_pm_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_hrm_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"organization"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsq"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"last_login"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-21T06:24:04.037715Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"job_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Asia/Kolkata"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7452387e2f1d4eda952cb12ffbefb6b1"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_noticeboard_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is_user_directory_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"emails"</span><span class="p">:[</span><span class="mi">1</span><span class="p">],</span><span class="w">
+    </span><span class="nt">"is_repeating"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_private"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"start"</span><span class="p">:</span><span class="s2">"2016-07-22"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"start_time"</span><span class="p">:</span><span class="s2">"10:00PM"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"old_start"</span><span class="p">:</span><span class="s2">"2016-07-22"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"old_start_time"</span><span class="p">:</span><span class="s2">"10:00 PM"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"end"</span><span class="p">:</span><span class="s2">"2016-07-22"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"end_time"</span><span class="p">:</span><span class="s2">"11:00 PM"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"old_end"</span><span class="p">:</span><span class="s2">"2016-07-22"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"old_end_time"</span><span class="p">:</span><span class="s2">"11:00 PM"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"Give a detail about upcoming projects"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"rule_txt"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"rule_id"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"end_type"</span><span class="p">:</span><span class="s2">"never"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"occurrence_count"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"end_recurring_period"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"durationEditable"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_milestone"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_count"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"send_email"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"_id"</span><span class="p">:</span><span class="s2">"13633"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"_start"</span><span class="p">:</span><span class="s2">"2016-07-21T18:30:00.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"_end"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"allDay"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"className"</span><span class="p">:[],</span><span class="w">
+    </span><span class="nt">"repeat"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"event_id"</span><span class="p">:</span><span class="mi">3633</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"old_event_data"</span><span class="p">:{</span><span class="w">
+        </span><span class="nt">"event_id"</span><span class="p">:</span><span class="mi">3633</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"SlidePresentation"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"start"</span><span class="p">:</span><span class="s2">"2016-07-22"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"end"</span><span class="p">:</span><span class="s2">"2016-07-22"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"start_time"</span><span class="p">:</span><span class="s2">"10:00 PM"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"end_time"</span><span class="p">:</span><span class="s2">"11:00 PM"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH api/projects/{project_id}/events/{event_id}</aside>
+
+<h3 id="delete-event">Delete Event</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/projects/{project_id}/events/{event_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+
+<aside>DELETE api/projects/{project_id}/events/{event_id}</aside>
+
+          
           <h1 id="crm">CRM</h1>
 
           <h2 id="deal">Deal</h2>
@@ -3779,7 +4437,7 @@ Content-Type: application/json
 <td>Activity ID</td>
 </tr>
 <tr>
-<td><a href="#act_type-object">act_type</a></td>
+<td><a href="#activity-type-object">act_type</a></td>
 <td>activity type</td>
 </tr>
 <tr>
@@ -3840,7 +4498,7 @@ Content-Type: application/json
 </tr>
 </tbody></table>
 
-<h4 id="activity-type-object-act_type">Activity Type Object(act_type)</h4>
+<h4 id="activity-type-object">Activity Type Object</h4>
 
 <table><thead>
 <tr>
@@ -4793,7 +5451,9 @@ Content-Type: application/json
 
 <aside>DELETE api/contacts/companies/{organization_id}</aside>
 
-          <h1 id="hrm">HRM</h1>
+          <h1 id="hrms">HRMS</h1>
+
+<p>Human Resource Management System(HRMS) has got api endpoints for <a href="#employees">employees</a>, <a href="#time-off-requests">time off</a>, <a href="#tasks">tasks</a>, <a href="#automatic-check-ins">check-ins</a>.</p>
 
           <h2 id="time-off-policy">Time Off Policy</h2>
 
@@ -5418,11 +6078,11 @@ Content-Type: application/json
 <td>user who added the activity(comment,..)</td>
 </tr>
 <tr>
-<td><a href="#action-obj">action_obj</a> (<em>object</em>)</td>
+<td><a href="#action-object">action_obj</a> (<em>object</em>)</td>
 <td>object to understand context of activity</td>
 </tr>
 <tr>
-<td><a href="#source-obj">source_obj</a> (<em>object</em>)</td>
+<td><a href="#source-object">source_obj</a> (<em>object</em>)</td>
 <td>activity data (comment details)</td>
 </tr>
 </tbody></table>
@@ -6226,6 +6886,163 @@ Content-Type: application/json
 <h4 id="returns">Returns</h4>
 
 <p>If the call succeeds, it will return the employee object. Else it will return error for invalid attribute values.</p>
+
+          <h2 id="documents">Documents</h2>
+
+<h3 id="document-object">Document Object</h3>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">85</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"images_004.jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://mediatw.s3.amazonaws.com/hrm/1466509302976_images_004.jpeg?Signature=Fx1mcacqtpi%2B7YpbIY5LejDFLjc%3D&amp;Expires=1469185988&amp;AWSAccessKeyId=AKIAJ3L5LCTCJXCFVTYA"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_drivebox"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"modified_by"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-03-15"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"size"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4612"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"created_by"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-03-15"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"thumbnail"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"directory"</span><span class="p">:</span><span class="w"> </span><span class="mi">59</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_live"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"ext"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"download_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://192.168.1.51:8000/hrm/files/download/85"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-06-21"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="nt">"is_shared"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (<em>integer</em>)</td>
+<td>Identificatoin number of the file</td>
+</tr>
+<tr>
+<td>title (<em>string</em>)</td>
+<td>Title of the file</td>
+</tr>
+<tr>
+<td>attachment (<em>string</em>)</td>
+<td>URl of the file</td>
+</tr>
+<tr>
+<td>is_drivebox (<em>boolean</em>)</td>
+<td>Status to check file is from drivebox(google drive or drop box) or not</td>
+</tr>
+<tr>
+<td>is_trashed (<em>boolean</em>)</td>
+<td>Status to check Cfile is trashed or not</td>
+</tr>
+<tr>
+<td><a href="#user-object">modified_by</a> (<em>object</em>)</td>
+<td>user object who modified the file</td>
+</tr>
+<tr>
+<td>size (<em>string</em>)</td>
+<td>Size of the file</td>
+</tr>
+<tr>
+<td><a href="#user-object">created_by</a> (<em>object</em>)</td>
+<td>user who created the file</td>
+</tr>
+<tr>
+<td>thumbnail (<em>string</em>)</td>
+<td>URL of the file&rsquo;s thumbnail</td>
+</tr>
+<tr>
+<td>directory (<em>integer</em>)</td>
+<td>Identificatoin number of the files&rsquo;s directory</td>
+</tr>
+<tr>
+<td>is_live (<em>boolean</em>)</td>
+<td>Status to check file is live or not</td>
+</tr>
+<tr>
+<td>ext (<em>string</em>)</td>
+<td>Extension type of the file</td>
+</tr>
+<tr>
+<td>download_url (<em>string</em>)</td>
+<td>URL to download the file</td>
+</tr>
+<tr>
+<td>created_on (<em>date</em>)</td>
+<td>date on which the file is created</td>
+</tr>
+<tr>
+<td>tags (<em>array</em>)</td>
+<td>tags belongs to the file.</td>
+</tr>
+<tr>
+<td>is_shared (<em>boolean</em>)</td>
+<td>Status to check file is shared or not</td>
+</tr>
+</tbody></table>
+
+<h3 id="create-document">Create Document</h3>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">api/hrm/people/{people_id}/files</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"images_007.jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"attachment"</span><span class="p">:</span><span class="s2">"hrm/1469182994232_images_007.jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"ext"</span><span class="p">:</span><span class="s2">"jpeg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"directory"</span><span class="p">:</span><span class="mi">59</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"file_size"</span><span class="p">:</span><span class="mi">7218</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_shared"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"is_live"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+ </span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST  api/hrm/people/{people_id}/files</aside>
+
+<h3 id="activate-document">Activate Document</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/hrm/people/{people_id}/files/activate</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"file_ids"</span><span class="p">:[</span><span class="mi">234</span><span class="p">],</span><span class="w">
+    </span><span class="nt">"is_shared"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH api/hrm/people/{people_id}/files/activate</aside>
+
+<h3 id="delete-document">Delete Document</h3>
+<pre class="highlight http"><code><span class="nf">DELETE</span> <span class="nn">api/hrm/people/{people_id}/files/{file_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+
+<aside>DELETE api/hrm/people/{people_id}/files/{file_id}</aside>
 
           <h2 id="tasks">Tasks</h2>
 
