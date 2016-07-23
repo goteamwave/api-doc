@@ -134,50 +134,28 @@ tags | tags given for the project
 Attrbute | Description
 ---------| -----------
 can_add_messages | can add new messages
-can_delete_messages |
-can_add_tasks | 
-can_delete_tasks |
-can_add_milestones | 
-can_delete_milestones |
-can_add_timelogs | 
-can_delete_timelogs |
-can_add_files | 
-can_delete_files |
-can_add_notebooks |
-can_delete_notebooks |
-can_add_events |
-can_delete_events |
-project |
-is_active |
-calendar_enabled |
-messages_enabled |
-tasks_enabled |
+can_delete_messages | can delete messages
+can_add_tasks | can add tasks
+can_delete_tasks | can delete task
+can_add_milestones | can add milestone
+can_delete_milestones | can delete milestone
+can_add_timelogs | can add timelog
+can_delete_timelogs | can delete timelog
+can_add_files | can add files
+can_delete_files | can delete files
+can_add_notebooks | can add notebook
+can_delete_notebooks | can delete notebooks
+can_add_events | can add events
+can_delete_events | can delete events
+project | ID of the project
+is_active | is the project active 
+calendar_enabled | calender enabled or not for the project
+messages_enabled | messages enabled or not for the project
+tasks_enabled | tasks enabled for the project or not
 notes_enabled | notes are enabled for the project
 milestones_enabled | milestones feature enable in the project
 files_enabled | files are enabled for this project
 time_enabled | time is enabled for the project
-
-
-
-"id":280,
-   "name":"Explore teamwave",
-   "description":"This template will give you to create sample project",
-   "logo":"https://twprofile.s3.amazonaws.com/image.jpg",
-   "owner":{
-      "id":2,
-      "name":"DoubleSpring",
-      "domain":"doublespring",
-      "logo":null,
-      "email":"shuhaib@doublespring.com",
-      "tenant_domain":"doublespring.com",
-      "created_on":"2015-06-04",
-      "default_currency":"USD",
-      "default_currency_symbol":"$",
-      "label_txt":null,
-      "orgkey":"doublespring",
-      "status":"paying",
-      "trial_end_on":"2016-07-07"
-
 
 ### Create Project
 
