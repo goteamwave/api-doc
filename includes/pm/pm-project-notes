@@ -216,20 +216,18 @@ Content-Type: application/json
         will be reopened automatically in the new &lt;br/&gt;template.&lt;br/&gt;
     &lt;/p&gt;"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-
-</span><span class="err">&lt;aside&gt;POST</span><span class="w">  </span><span class="err">api/projects/</span><span class="p">{</span><span class="err">project_id</span><span class="p">}</span><span class="err">/notes/</span><span class="p">{</span><span class="err">note_id</span><span class="p">}</span><span class="err">&lt;/aside&gt;</span><span class="w">
-
-
-</span><span class="err">###</span><span class="w"> </span><span class="err">Update</span><span class="w"> </span><span class="err">Note</span><span class="w">
-
-</span><span class="err">```http</span><span class="w">
-</span><span class="err">PATCH</span><span class="w"> </span><span class="err">api/projects/</span><span class="p">{</span><span class="err">project_id</span><span class="p">}</span><span class="err">/notes/</span><span class="p">{</span><span class="err">note_id</span><span class="p">}</span><span class="w"> </span><span class="err">HTTP/</span><span class="mf">1.1</span><span class="w">
-</span><span class="err">Accept:</span><span class="w"> </span><span class="err">application/json</span><span class="w">
-</span><span class="err">Authorization:</span><span class="w"> </span><span class="err">Token</span><span class="w"> </span><span class="s2">"YOUR ACCESS TOKEN"</span><span class="w">
-
-</span><span class="err">HTTP/</span><span class="mf">1.1</span><span class="w"> </span><span class="mi">200</span><span class="w"> </span><span class="err">OK</span><span class="w">
-</span><span class="err">Content-Type:</span><span class="w"> </span><span class="err">application/json</span><span class="w">
 </span></code></pre>
+
+<aside>POST  api/projects/{project_id}/notes/{note_id}</aside>
+
+<h3 id="update-note">Update Note</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">api/projects/{project_id}/notes/{note_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
 </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">520</span><span class="p">,</span><span class="w">
 </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Creating a Template from an Existing Project"</span><span class="p">,</span><span class="w">
