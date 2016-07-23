@@ -279,6 +279,8 @@ Content-Type: application/json
 	"className":[]
 }
 ```
+<aside>PATCH api/projects/{project_id}/milestones/{milestone_id}</aside>
+
 
 ### Complete the Milestone
 

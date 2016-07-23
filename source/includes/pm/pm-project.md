@@ -95,67 +95,70 @@ Sample Object
    "tags":null
 }
 ```
+
 Attribute | Description
 ----------| -----------
-id | ID for the project
-name | Name of the project
-description | description for the project
-logo | logo url for the project logo
-[owner](#owner-object) | owner details
-clients | clients ID's
+id (*integer*)| ID for the project
+name (*string*)| Name of the project
+description (*string*)| description for the project
+logo (*url string*)| logo url for the project logo
+[owner](#pm-user-object) | owner details
+clients (*integer*)| clients ID's
 users (*array*)| users(ID) involved with projects
-is_trashed | if the project is trashed
-start_date | starting date for the project
-end_date | project end date
-budget | budget value
-privacy_enabled | if privacy is enabled or not
+is_trashed (*boolean*)| if the project is trashed
+start_date (*string*)| starting date for the project
+end_date (*string*)| project end date
+budget (*integer*)| budget value
+privacy_enabled (*boolean*)| if privacy is enabled or not
 [permissions](#permissions-object) | array of all the permissions for the project
-last_updated | last updated datetime
-taskes_enabled | if the tasks are enabled for the project
-created_by | ID of the creator
-milestones_enabled | Enable milestones 
-files_enabled | Files enabled or not
-time_enabled | time enabled or not
-notes_enabled | notes enabled or not
-calendar_enabled | calendar enabled or not
+last_updated (*string*)| last updated datetime
+taskes_enabled (*boolean*)| if the tasks are enabled for the project
+created_by (*integer*)| ID of the creator
+milestones_enabled (*boolean*)| Enable milestones 
+files_enabled (*boolean*)| Files enabled or not
+time_enabled (*boolean*)| time enabled or not
+notes_enabled (*boolean*)| notes enabled or not
+calendar_enabled (*boolean*)| calendar enabled or not
 label_color | label text color
-label_txt | label text characters
-created_on | creation datetime
-modified_on | modified datetime
-resource_url | resource url link
+label_txt (*string*)| label text characters
+created_on (*string*)| creation datetime
+modified_on (*string*)| modified datetime
+resource_url (*string*)| resource url link
 drive_access | drive access details
 drop_box_access | drop box access details
-is_active | if the project is active or not
-owner_name | Owner of the project
-is_template | if the project is also a template in templates section
-creating | creating 
-tags | tags given for the project
+is_active (*boolean*)| if the project is active or not
+owner_name (*string*)| Owner of the project
+is_template (*boolean*)| if the project is also a template in templates section
+creating (*boolean*)| creating 
+tags (*string*)| tags given for the project
+
+#### Permissions Object
 
 Attrbute | Description
 ---------| -----------
-can_add_messages | can add new messages
-can_delete_messages | can delete messages
-can_add_tasks | can add tasks
-can_delete_tasks | can delete task
-can_add_milestones | can add milestone
-can_delete_milestones | can delete milestone
-can_add_timelogs | can add timelog
-can_delete_timelogs | can delete timelog
-can_add_files | can add files
-can_delete_files | can delete files
-can_add_notebooks | can add notebook
-can_delete_notebooks | can delete notebooks
-can_add_events | can add events
-can_delete_events | can delete events
-project | ID of the project
-is_active | is the project active 
-calendar_enabled | calender enabled or not for the project
-messages_enabled | messages enabled or not for the project
-tasks_enabled | tasks enabled for the project or not
-notes_enabled | notes are enabled for the project
-milestones_enabled | milestones feature enable in the project
-files_enabled | files are enabled for this project
-time_enabled | time is enabled for the project
+can_add_messages (*boolean*)| can add new messages
+can_delete_messages (*boolean*)| can delete messages
+can_add_tasks (*boolean*)| can add tasks
+can_delete_tasks (*boolean*)| can delete task
+can_add_milestones (*boolean*)| can add milestone
+can_delete_milestones (*boolean*)| can delete milestone
+can_add_timelogs (*boolean*)| can add timelog
+can_delete_timelogs (*boolean*)| can delete timelog
+can_add_files (*boolean*)| can add files
+can_delete_files (*boolean*)| can delete files
+can_add_notebooks (*boolean*)| can add notebook
+can_delete_notebooks (*boolean*)| can delete notebooks
+can_add_events (*boolean*)| can add events
+can_delete_events (*boolean*)| can delete events
+project (*integer*)| ID of the project
+is_active (*boolean*)| is the project active 
+calendar_enabled (*boolean*)| calender enabled or not for the project
+messages_enabled (*boolean*)| messages enabled or not for the project
+tasks_enabled (*boolean*)| tasks enabled for the project or not
+notes_enabled (*boolean*)| notes are enabled for the project
+milestones_enabled (*boolean*)| milestones feature enable in the project
+files_enabled (*boolean*)| files are enabled for this project
+time_enabled (*boolean*)| time is enabled for the project
 
 ### Create Project
 
@@ -193,13 +196,13 @@ Attribute | Description
 name (*string*)| Name of the project
 description (*string*)| Description of the project
 logo (*string*)| Logo url of the project
-Invite_data (*string*)| List of user who already exists in the organization
+Invite_data (*array*)| List of user who already exists in the organization
 Invite_note (*string*)| Invite message to be send to the invited user’s email 
 label_txt (*string*)| Label text of the project
-new_invite_data (*string*)| New email ids to be invited to the project
+new_invite_data (*array*)| New email ids to be invited to the project
 share_data (*string*)| client’s email id . eg.,john@casio.com
 share_note (*string*)| shared message to be send to the client’s email 
-share_type (*string*)| (*(*'C', 'Client'*), (*'V', 'Vendor'*), (*'O', 'Other'*)*)
+share_type (*string*)| (('C', 'Client'), ('V', 'Vendor'), ('O', 'Other'))
 
 
 
@@ -263,7 +266,7 @@ Id (*integer*)| Identification number of the project
 name (*string*)| Name of the project
 description (*string*)| Description of the project
 logo (*uel string*)| Logo of the project
-label_txt (*string*)| Label text of the project
+label_txt (*string*)| Label text for the project
 owner_id | owner of the project 
 resource_url (*url string*)| project access url 
 last_updated (*date string*)| Last updated time of the project 

@@ -171,8 +171,8 @@ organization_id | Organization ID number
 created_on (*string*)| datetime of the creation of the activity
 is_deleted (*boolean*)| whether the activity is deleted
 [actor](#user-object) (*object*) | user who added the activity(comment,..)
-[action_obj](#action-obj) (*object*) | object to understand context of activity
-[source_obj](#source-obj) (*object*) | activity data (comment details)
+[action_obj](#action-object) (*object*) | object to understand context of activity
+[source_obj](#source-object) (*object*) | activity data (comment details)
 
 #### Action Object
 

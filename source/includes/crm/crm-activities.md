@@ -62,7 +62,7 @@
 Attribute | Description
 ----------| -----------
 id (*integer*)| Activity ID
-[act_type](#act_type-object) | activity type
+[act_type](#activity-type-object) | activity type
 [assigned_to](#user-object) | list of people assigned to the activity
 [person](#person-object) | contact person details
 [company](#company-object) | organisation details
@@ -78,7 +78,7 @@ is_completed | is the activity completed
 completed_on | date of complete
 is_trashed | is the activity deleted
 
-#### Activity Type Object(act_type)
+#### Activity Type Object
 
 Attribute | Description 
 ----------| -----------
