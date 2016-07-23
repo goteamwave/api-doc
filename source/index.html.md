@@ -30,6 +30,7 @@ includes:
   - hrm/hrm-timeoff-policy
   - hrm/hrm-timeoff
   - hrm/hrm-employees
+  - hrm/hrm-employees-documents
   - hrm/hrm-tasks
   - hrm/hrm-checkins
   - errors

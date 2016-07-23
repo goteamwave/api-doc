@@ -155,6 +155,7 @@ Content-Type: application/json
         will be reopened automatically in the new <br/>template.<br/>
     </p>"
 }
+```
 
 <aside>POST  api/projects/{project_id}/notes/{note_id}</aside>
 
