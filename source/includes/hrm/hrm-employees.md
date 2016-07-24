@@ -165,7 +165,7 @@ Sample Response
    "last_login":null,
    "organization":1,
    "is_admin":false,
-   "company":"example_domain Media India Pvt ltd",
+   "company":"Company Name",
    "image":null,
    "first_letter":"H",
    "full_name":"Himesh khan",

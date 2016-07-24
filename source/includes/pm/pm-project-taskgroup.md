@@ -31,7 +31,7 @@ Sample Object
       "corp_email":true,
       "organization":{
          "id":1,
-         "name":"example_domain Media India Pvt ltd",
+         "name":"Company Name",
          "domain":"example_domain",
          "logo":"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg",
          "email":"sathish@example_domain.com",
@@ -70,7 +70,7 @@ Sample Object
       "corp_email":true,
       "organization":{
          "id":1,
-         "name":"example_domain Media India Pvt ltd",
+         "name":"Company Name",
          "domain":"example_domain",
          "logo":"https://twprofile.s3.amazonaws.com/image.jpg",
          "email":"sathish@example_domain.com",
@@ -116,7 +116,7 @@ Sample Object
             "corp_email":false,
             "organization":{
                "id":1,
-               "name":"example_domain Media India Pvt ltd",
+               "name":"Company Name",
                "domain":"example_domain",
                "logo":"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg",
                "email":"sathish@example_domain.com",
@@ -158,7 +158,7 @@ Sample Object
             "corp_email":true,
             "organization":{
                "id":1,
-               "name":"example_domain Media India Pvt ltd",
+               "name":"Company Name",
                "domain":"example_domain",
                "logo":"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg",
                "email":"sathish@example_domain.com",
@@ -237,7 +237,7 @@ Sample Object
                   "corp_email":true,
                   "organization":{
                      "id":1,
-                     "name":"example_domain Media India Pvt ltd",
+                     "name":"Company Name",
                      "domain":"example_domain",
                      "logo":"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg",
                      "email":"sathish@example_domain.com",
