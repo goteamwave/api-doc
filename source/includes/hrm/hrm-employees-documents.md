@@ -14,7 +14,7 @@
         "label_txt": "s",
         "image": "https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg",
         "full_name": "sathish",
-        "email": "sathish@doublespring.com",
+        "email": "sathish@example_domain.com",
         "upcoming_birthday": "2017-03-15"
     },
     "size": "4612",
@@ -23,7 +23,7 @@
         "label_txt": "s",
         "image": "https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg",
         "full_name": "sathish",
-        "email": "sathish@doublespring.com",
+        "email": "sathish@example_domain.com",
         "upcoming_birthday": "2017-03-15"
     },
     "thumbnail": null,

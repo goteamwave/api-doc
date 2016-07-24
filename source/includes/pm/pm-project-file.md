@@ -27,10 +27,10 @@
         "organization": {
             "id": 1,
             "name": "Dsqqqqqqq ds 2123",
-            "domain": "doublespring",
+            "domain": "example_domain",
             "logo": "https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg",
-            "email": "geo.jacob@doublespring.com",
-            "tenant_domain": "doublespring.com",
+            "email": "geo.jacob@example_domain.com",
+            "tenant_domain": "example_domain.com",
             "created_on": "2015-03-10",
             "default_currency": "USD",
             "default_currency_symbol": "$",
@@ -40,7 +40,7 @@
             "trial_end_on": "2016-07-07"
         },
         "image": "https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg",
-        "email": "sathish@doublespring.com",
+        "email": "sathish@example_domain.com",
         "full_name": "sathish ",
         "is_owner": true,
         "is_admin": true,

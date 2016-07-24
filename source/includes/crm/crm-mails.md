@@ -15,7 +15,7 @@
          "image":"",
          "id":221,
          "full_name":"Prasad Vara",
-         "email":"prasad@doublespring.com",
+         "email":"prasad@example_domain.com",
          "label_txt":"PV"
       },
       "id":3244,
@@ -31,7 +31,7 @@
   "people":[
      {
         "id":1,
-        "email":"sachin@doublespring.com",
+        "email":"sachin@example_domain.com",
         "first_name":"Sachin",
         "last_name":"N",
         "phone":"8884546564",
@@ -56,11 +56,11 @@
         "tags":null
      }
   ],
-  "from_str":"Sathish Kumar <sathish@doublespring.com>",
+  "from_str":"Sathish Kumar <sathish@example_domain.com>",
   "subject":"test",
   "body_html":"<div dir=\"ltr\">test<br clear=\"all\"><div><br></div
 	>-- <br><div class=\"gmail_signature\"><div><font color=\"#333333\">Regards,</font><div><font color=
-	\"#333333\">Sathishkumar V</font></div></div><font color=\"#333333\"><a href=\"http://www.doublespring
+	\"#333333\">Sathishkumar V</font></div></div><font color=\"#333333\"><a href=\"http://www.example_domain
 	.com/\" target=\"_blank\">Double Spring Media India  (P) Ltd</a></font><div><font color=\"#333333\">
 	<br></font><div><font color=\"#333333\" face=\"arial, sans-serif\" size=\"3\"><br></font></div></div
 	></div>\r\n</div>\r\n",
@@ -69,7 +69,7 @@
      "image":"https://twprofile.s3.amazonaws.com/image.jpg",
      "id":1,
      "full_name":"Sathish Venkat",
-     "email":"sathish@doublespring.com",
+     "email":"sathish@example_domain.com",
      "label_txt":"SV"
   },
   "received":"2015-10-30T13:50:31.081463Z",
@@ -163,7 +163,7 @@ Sample Response
          "image":"",
          "id":221,
          "full_name":"Prasad Vara",
-         "email":"prasad@doublespring.com",
+         "email":"prasad@example_domain.com",
          "label_txt":"PV"
       },
       "id":3244,
@@ -179,7 +179,7 @@ Sample Response
    "people":[
 
    ],
-   "from_str":"Sathish Kumar <sathish@doublespring.com>",
+   "from_str":"Sathish Kumar <sathish@example_domain.com>",
    "subject":"test",
    "body_html":"<div dir=\"ltr\">test<br clear=\"all\"><div><br></div>-- <br><div class=\"gmail_signature
      \><div><font color=\"#333333\">Regards,</font><div><font color=\"#333333\">Sathishkumar V</font></div
@@ -190,7 +190,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/users/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "received":"2015-10-30T13:22:55.528585Z",

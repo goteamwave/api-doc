@@ -24,7 +24,7 @@
             "mns":0,
             "hrs":17
          },
-         "owner__name":"DoubleSpring",
+         "owner__name":"example_domain",
          "c_tasks":483,
          "t_tasks":601,
          "id":253,
@@ -49,7 +49,7 @@
             "mns":0,
             "hrs":17
          },
-         "owner__name":"DoubleSpring",
+         "owner__name":"example_domain",
          "c_tasks":12,
          "t_tasks":17,
          "id":280,

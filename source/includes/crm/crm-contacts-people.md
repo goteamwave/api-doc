@@ -17,12 +17,12 @@
       "id":1,
       "full_name":"Sathish
  Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "company":{
       "domain":null,
-      "name":"Doublespring",
+      "name":"example_domain",
       "image":null,
       "ctype":"company",
       "phone":null,
@@ -34,7 +34,7 @@
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "created_on":"2015-12-23T07:51:45.948099Z",
@@ -97,10 +97,10 @@ Sample Request
    "owner":1,
    "first_name":"Ajith",
    "last_name":"Paul",
-   "email":"ajithpaul@doublespring.com",
+   "email":"ajithpaul@example_domain.com",
    "phone":"9995584542",
    "job_title":"SW",
-   "companyName":"Doublespring"
+   "companyName":"example_domain"
 }
 ```
 
@@ -111,7 +111,7 @@ Sample Response
 ```json
 {
    "id":17784,
-   "email":"ajithp@doublespring.com",
+   "email":"ajithp@example_domain.com",
    "first_name":"Ajith",
    "last_name":"Paul",
    "phone":"8452145555",
@@ -122,12 +122,12 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "company":{
       "domain":"sdfzsdfdsf.com",
-      "name":"doublespring",
+      "name":"example_domain",
       "image":null,
       "ctype":"company",
       "phone":"894fd646",
@@ -139,7 +139,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "created_on":"2016-07-18T12:40:48.810179Z",
@@ -189,7 +189,7 @@ Sample Request
 ```json
 {
    "id":17782,
-   "email":"ajithpaul@doublespring.com",
+   "email":"ajithpaul@example_domain.com",
    "first_name":"Ajith",
    "last_name":"Paul M",
    "phone":"4568595442",
@@ -202,7 +202,7 @@ Sample Request
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "created_on":"2016-07-18T12:28:02.165162Z",
@@ -237,7 +237,7 @@ Sample Response
 ```json
 {
    "id":17782,
-   "email":"ajithpaul@doublespring.com",
+   "email":"ajithpaul@example_domain.com",
    "first_name":"Ajith",
    "last_name":"Paul M",
    "phone":"4568595442",
@@ -248,12 +248,12 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"SathishVenkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "company":{
       "domain":null,
-      "name":"Doublespring",
+      "name":"example_domain",
       "image":null,
       "ctype":"company",
       "phone":null,
@@ -265,7 +265,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "created_on":"2016-07-18T12:28:02.165162Z",

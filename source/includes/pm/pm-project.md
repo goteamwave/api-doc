@@ -14,16 +14,16 @@ Sample Object
    "logo":"https://twprofile.s3.amazonaws.com/image.jpg",
    "owner":{
       "id":2,
-      "name":"DoubleSpring",
-      "domain":"doublespring",
+      "name":"example_domain",
+      "domain":"example_domain",
       "logo":null,
-      "email":"shuhaib@doublespring.com",
-      "tenant_domain":"doublespring.com",
+      "email":"shuhaib@example_domain.com",
+      "tenant_domain":"example_domain.com",
       "created_on":"2015-06-04",
       "default_currency":"USD",
       "default_currency_symbol":"$",
       "label_txt":null,
-      "orgkey":"doublespring",
+      "orgkey":"example_domain",
       "status":"paying",
       "trial_end_on":"2016-07-07"
    },
@@ -89,7 +89,7 @@ Sample Object
    "drive_access":null,
    "drop_box_access":null,
    "is_active":true,
-   "owner_name":"DoubleSpring",
+   "owner_name":"example_domain",
    "is_template":false,
    "creating":false,
    "tags":null
@@ -232,7 +232,7 @@ Content-Type: application/json
       "resource_url":"/projects/280",
       "last_updated":"2016-07-22T09:36:11.442229Z",
       "is_active":true,
-      "owner_name":"DoubleSpring",
+      "owner_name":"example_domain",
       "creating":false
    },
    {
@@ -252,7 +252,7 @@ Content-Type: application/json
       "resource_url":"/projects/253",
       "last_updated":"2016-07-22T08:09:24.534065Z",
       "is_active":true,
-      "owner_name":"DoubleSpring",
+      "owner_name":"example_domain",
       "creating":false
    }
 ]

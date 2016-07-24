@@ -10,16 +10,16 @@
    </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"example_domain"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"example_domain"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"logo"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"shuhaib@doublespring.com"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"shuhaib@example_domain.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"example_domain.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-06-04"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"example_domain"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
    </span><span class="p">},</span><span class="w">
@@ -85,7 +85,7 @@
    </span><span class="nt">"drive_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
    </span><span class="nt">"drop_box_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
    </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"example_domain"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"is_template"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
    </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
    </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
@@ -430,7 +430,7 @@ Content-Type: application/json
       </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/280"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="s2">"2016-07-22T09:36:11.442229Z"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"example_domain"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="w">
    </span><span class="p">},</span><span class="w">
    </span><span class="p">{</span><span class="w">
@@ -450,7 +450,7 @@ Content-Type: application/json
       </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/253"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="s2">"2016-07-22T08:09:24.534065Z"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"DoubleSpring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"example_domain"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="w">
    </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">

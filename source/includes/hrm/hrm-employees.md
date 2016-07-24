@@ -53,10 +53,10 @@ Content-Type: application/json
     "organization": {
         "id": 1,
         "name": "Dsqqqqqqq",
-        "domain": "doublespring",
+        "domain": "example_domain",
         "logo": "http://pexels.com/img.png",
-        "email": "geo.jacob@doublespring.com",
-        "tenant_domain": "doublespring.com",
+        "email": "geo.jacob@example_domain.com",
+        "tenant_domain": "example_domain.com",
         "created_on": "2015-03-10",
         "default_currency": "USD",
         "default_currency_symbol": "$",
@@ -145,7 +145,7 @@ Sample Request
    "verifying":true,
    "error":false,
    "msg":"",
-   "email":"himesh@doublespring.com",
+   "email":"himesh@example_domain.com",
    "job_title":"SW",
    "time_zone":"Europe/Kaliningrad"
 }
@@ -160,12 +160,12 @@ Sample Response
    "id":282,
    "first_name":"Himesh",
    "last_name":"khan",
-   "email":"himesh@doublespring.com",
+   "email":"himesh@example_domain.com",
    "job_title":"SW",
    "last_login":null,
    "organization":1,
    "is_admin":false,
-   "company":"Doublespring Media India Pvt ltd",
+   "company":"example_domain Media India Pvt ltd",
    "image":null,
    "first_letter":"H",
    "full_name":"Himesh khan",
@@ -226,7 +226,7 @@ Sample Request
       "about":null,
       "full_name":"Ajith Paul",
       "label_txt":"AP",
-      "email":"ajith.paul@doublespring.com",
+      "email":"ajith.paul@example_domain.com",
       "is_owner":false,
       "is_admin":false,
       "is_crm_admin":false,
@@ -237,7 +237,7 @@ Sample Request
          "image":"https://pixels.com/e.jpg",
          "id":1,
          "full_name":"Sathish Venkat",
-         "email":"sathish@doublespring.com",
+         "email":"sathish@example_domain.com",
          "label_txt":"SV"
       },
       "account_status":"AV"
@@ -271,7 +271,7 @@ Sample Response
       "about":null,
       "full_name":"Ajith Paul M",
       "label_txt":"AP",
-      "email":"ajith.paul@doublespring.com",
+      "email":"ajith.paul@example_domain.com",
       "is_owner":false,
       "is_admin":false,
       "is_crm_admin":false,
@@ -281,7 +281,7 @@ Sample Response
          "image":"http://pixels.com/image.jpg",
          "id":11,
          "full_name":"Aravind dsSpring",
-         "email":"aravind@doublespring.com",
+         "email":"aravind@example_domain.com",
          "label_txt":"AD"
       },
       "owner":{
@@ -289,7 +289,7 @@ Sample Response
          "image":"https://pixels.com/image.jpg",
          "id":1,
          "full_name":"Sathish Venkat",
-         "email":"sathish@doublespring.com",
+         "email":"sathish@example_domain.com",
          "label_txt":"SV"
       },
       "account_status":"AV"

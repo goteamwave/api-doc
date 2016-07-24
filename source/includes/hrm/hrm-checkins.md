@@ -29,7 +29,7 @@ Samle Object
             "image":"",
             "id":201,
             "full_name":"Geo Jacob",
-            "email":"geo.jacob11@doublespring.com",
+            "email":"geo.jacob11@example_domain.com",
             "label_txt":"GJ"
          }
       },
@@ -45,7 +45,7 @@ Samle Object
             "image":"https://twprofile.s3.amazonaws.com/image.jpg",
             "id":274,
             "full_name":"Ajith Paul",
-            "email":"ajith.paul@doublespring.com",
+            "email":"ajith.paul@example_domain.com",
             "label_txt":"AP"
          }
       }
@@ -139,7 +139,7 @@ Sample Response
             "image":"",
             "id":186,
             "full_name":"sachin n",
-            "email":"sachin@doublespring.com",
+            "email":"sachin@example_domain.com",
             "label_txt":"SN"
          }
       },
@@ -155,7 +155,7 @@ Sample Response
             "image":"https://twprofile.s3.amazonaws.com/image.jpg",
             "id":274,
             "full_name":"Ajith Paul",
-            "email":"ajith.paul@doublespring.com",
+            "email":"ajith.paul@example_domain.com",
             "label_txt":"AP"
          }
       }
@@ -230,7 +230,7 @@ Sample Response
             "image":"",
             "id":17,
             "full_name":"Jerrin Tom",
-            "email":"jerry@doublespring.com",
+            "email":"jerry@example_domain.com",
             "label_txt":"JT"
          }
       },
@@ -246,7 +246,7 @@ Sample Response
             "image":"",
             "id":186,
             "full_name":"sachin n",
-            "email":"sachin@doublespring.com",
+            "email":"sachin@example_domain.com",
             "label_txt":"SN"
          }
       },
@@ -264,7 +264,7 @@ Sample Response
             "id":274,
             "full_name":"Ajith Paul",
             "email":"ajith
-.paul@doublespring.com",
+.paul@example_domain.com",
             "label_txt":"AP"
          }
       }

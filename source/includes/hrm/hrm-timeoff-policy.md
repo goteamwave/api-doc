@@ -41,7 +41,7 @@ Content-Type: application/json
             "modified_by": 1
         },
         "total_timeoff": 20,
-        "name": "DoubleSpring",
+        "name": "example_domain",
         "policy_renew_type": "YF",
         "renew_date": "2017-01-01",
         "carry_over": false,

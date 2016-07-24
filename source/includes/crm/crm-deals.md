@@ -10,7 +10,7 @@
     "image":"https://twprofile.s3.amazonaws.com/image.jpg",
     "id":1,
     "full_name":"Sathish Venkat",
-    "email":"sathish@doublespring.com",
+    "email":"sathish@example_domain.com",
     "label_txt":"SV"
  },
  "owner":{
@@ -18,7 +18,7 @@
     "image":"https://twprofile.s3.amazonaws.com/image.jpg",
     "id":1,
     "full_name":"Sathish Venkat",
-    "email":"sathish@doublespring.com",
+    "email":"sathish@example_domain.com",
     "label_txt":"SV"
  },
  "title":"d3",
@@ -270,7 +270,7 @@ Sample Response
 .jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "title":"test deal",
@@ -359,7 +359,7 @@ Sample Request
 .jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "owner":{
@@ -463,7 +463,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.comimage.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "owner":{
@@ -471,7 +471,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "title":"test deal",
@@ -571,7 +571,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "owner":{
@@ -579,7 +579,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "title":"DA10",
@@ -668,7 +668,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "owner":{
@@ -676,7 +676,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "title":"test deal",

@@ -12,7 +12,7 @@
         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-03-15"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="nt">"size"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4612"</span><span class="p">,</span><span class="w">
@@ -21,7 +21,7 @@
         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-03-15"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="nt">"thumbnail"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">

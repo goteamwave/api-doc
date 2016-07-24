@@ -12,7 +12,7 @@
         "image":"https://twprofile.s3.amazonaws.com/image.jpg",
         "id":1,
         "full_name":"Sathish Venkat",
-        "email":"sathish@doublespring.com",
+        "email":"sathish@example_domain.com",
         "label_txt":"SV"
      },
      "owner":{
@@ -20,7 +20,7 @@
         "image":"https://twprofile.s3.amazonaws.com/image.jpg",
         "id":1,
         "full_name":"Sathish Venkat",
-        "email":"sathish@doublespring.com",
+        "email":"sathish@example_domain.com",
         "label_txt":"SV"
      },
      "created_on":"2015-08-29T14:49:13.838853Z",
@@ -107,7 +107,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "owner":{
@@ -115,7 +115,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":274,
       "full_name":"Ajith Paul",
-      "email":"ajith.paul@doublespring.com",
+      "email":"ajith.paul@example_domain.com",
       "label_txt":"AP"
    },
    "created_on":"2016-07-19T07:26:57.157037Z",
@@ -172,7 +172,7 @@ Sample Request
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "owner":274,
@@ -216,7 +216,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "owner":{
@@ -224,7 +224,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":274,
       "full_name":"Ajith Paul",
-      "email":"ajith.paul@doublespring.com",
+      "email":"ajith.paul@example_domain.com",
       "label_txt":"AP"
    },
    "created_on":"2016-07-19T07:26:57.157037Z",

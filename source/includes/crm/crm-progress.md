@@ -17,7 +17,7 @@
       "url":"/users/1",
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":"1",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "full_name":"Sathish Venkat",
       "label_txt":"SV"
    },

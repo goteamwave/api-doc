@@ -15,7 +15,7 @@
          "image":"",
          "id":272,
          "full_name":"Rajdeep Sharma",
-         "email":"rajdeep@doublespring.com",
+         "email":"rajdeep@example_domain.com",
          "label_txt":"RS"
       },
       "person":{
@@ -30,7 +30,7 @@
       },
       "company":{
          "domain":null,
-         "name":"Doublespring",
+         "name":"example_domain",
          "image":null,
          "ctype":"company",
          "phone":"96633",
@@ -175,7 +175,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/users/user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "person":{
@@ -186,11 +186,11 @@ Sample Response
       "job_title":"Designer",
       "id":1,
       "ctype":"person",
-      "email":"sachin@doublespring.com"
+      "email":"sachin@example_domain.com"
    },
    "company":{
       "domain":"www.google.com",
-      "name":"DoubleSpring
+      "name":"example_domain
  Media India pvt Ltd",
       "image":null,
       "ctype":"company",
@@ -286,7 +286,7 @@ Sample Response
       "image":"",
       "id":221,
       "full_name":"Prasad Vara",
-      "email":"prasad@doublespring.com",
+      "email":"prasad@example_domain.com",
       "label_txt":"PV"
    },
    "person":{

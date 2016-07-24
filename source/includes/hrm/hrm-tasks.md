@@ -36,7 +36,7 @@ Content-Type: application/json
      "id":1,
      "full_name":"Sathish
 Venkat",
-     "email":"sathish@doublespring.com",
+     "email":"sathish@example_domain.com",
      "label_txt":"SV"
   },
   "task_url":"tasks/11",
@@ -110,7 +110,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "task_url":"tasks/274",
@@ -152,7 +152,7 @@ Content-Type: application/json
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "task_url":"tasks/274",
@@ -185,7 +185,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@doublespring.com",
+      "email":"sathish@example_domain.com",
       "label_txt":"SV"
    },
    "task_url":"tasks/96",

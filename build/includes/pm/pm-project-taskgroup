@@ -26,21 +26,21 @@
       </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
       </span><span class="nt">"organization"</span><span class="p">:{</span><span class="w">
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Doublespring Media India Pvt ltd"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"example_domain Media India Pvt ltd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"example_domain"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"example_domain.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"doublespringmediaindiapvtltd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"example_domainmediaindiapvtltd"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/ user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -65,21 +65,21 @@
       </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
       </span><span class="nt">"organization"</span><span class="p">:{</span><span class="w">
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Doublespring Media India Pvt ltd"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"example_domain Media India Pvt ltd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"example_domain"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"example_domain.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"doublespringmediaindiapvtltd"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"example_domainmediaindiapvtltd"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -111,16 +111,16 @@
             </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
             </span><span class="nt">"organization"</span><span class="p">:{</span><span class="w">
                </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Doublespring Media India Pvt ltd"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"example_domain Media India Pvt ltd"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"example_domain"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"example_domain.com"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"doublespringmediaindiapvtltd"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"example_domainmediaindiapvtltd"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
             </span><span class="p">},</span><span class="w">
@@ -153,21 +153,21 @@
             </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
             </span><span class="nt">"organization"</span><span class="p">:{</span><span class="w">
                </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Doublespring Media India Pvt ltd"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"example_domain Media India Pvt ltd"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"example_domain"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"example_domain.com"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"doublespringmediaindiapvtltd"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"example_domainmediaindiapvtltd"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
             </span><span class="p">},</span><span class="w">
             </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
             </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -232,21 +232,21 @@
                   </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"organization"</span><span class="p">:{</span><span class="w">
                      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-                     </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Doublespring Media India Pvt ltd"</span><span class="p">,</span><span class="w">
-                     </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+                     </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"example_domain Media India Pvt ltd"</span><span class="p">,</span><span class="w">
+                     </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"example_domain"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
-                     </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
-                     </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+                     </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+                     </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"example_domain.com"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-                     </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"doublespringmediaindiapvtltd"</span><span class="p">,</span><span class="w">
+                     </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"example_domainmediaindiapvtltd"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
                   </span><span class="p">},</span><span class="w">
                   </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg"</span><span class="p">,</span><span class="w">
-                  </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+                  </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
