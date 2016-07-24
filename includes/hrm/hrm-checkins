@@ -25,7 +25,7 @@
             </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
             </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">201</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo Jacob"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geo.jacob11@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geo.jacob11@example_domain.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"GJ"</span><span class="w">
          </span><span class="p">}</span><span class="w">
       </span><span class="p">},</span><span class="w">
@@ -41,7 +41,7 @@
             </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@example_domain.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="w">
          </span><span class="p">}</span><span class="w">
       </span><span class="p">}</span><span class="w">
@@ -193,7 +193,7 @@ Content-Type: application/json
             </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
             </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">186</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"sachin n"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sachin@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sachin@example_domain.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SN"</span><span class="w">
          </span><span class="p">}</span><span class="w">
       </span><span class="p">},</span><span class="w">
@@ -209,7 +209,7 @@ Content-Type: application/json
             </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@example_domain.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="w">
          </span><span class="p">}</span><span class="w">
       </span><span class="p">}</span><span class="w">
@@ -272,7 +272,7 @@ Content-Type: application/json
             </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
             </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">17</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Jerrin Tom"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"jerry@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"jerry@example_domain.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"JT"</span><span class="w">
          </span><span class="p">}</span><span class="w">
       </span><span class="p">},</span><span class="w">
@@ -288,7 +288,7 @@ Content-Type: application/json
             </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
             </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">186</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"sachin n"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sachin@doublespring.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sachin@example_domain.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SN"</span><span class="w">
          </span><span class="p">}</span><span class="w">
       </span><span class="p">},</span><span class="w">
@@ -306,7 +306,7 @@ Content-Type: application/json
             </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith
-.paul@doublespring.com"</span><span class="p">,</span><span class="w">
+.paul@example_domain.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="w">
          </span><span class="p">}</span><span class="w">
       </span><span class="p">}</span><span class="w">

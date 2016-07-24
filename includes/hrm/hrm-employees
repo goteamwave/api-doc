@@ -47,10 +47,10 @@ Content-Type: application/json
     </span><span class="nt">"organization"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
         </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"example_domain"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pexels.com/img.png"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@doublespring.com"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@example_domain.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"example_domain.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$"</span><span class="p">,</span><span class="w">
@@ -233,7 +233,7 @@ Content-Type: application/json
    </span><span class="nt">"verifying"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
    </span><span class="nt">"error"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
    </span><span class="nt">"msg"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"himesh@doublespring.com"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"himesh@example_domain.com"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"SW"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="s2">"Europe/Kaliningrad"</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -244,12 +244,12 @@ Content-Type: application/json
    </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">282</span><span class="p">,</span><span class="w">
    </span><span class="nt">"first_name"</span><span class="p">:</span><span class="s2">"Himesh"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"last_name"</span><span class="p">:</span><span class="s2">"khan"</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"himesh@doublespring.com"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"himesh@example_domain.com"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"SW"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"last_login"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
    </span><span class="nt">"organization"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
    </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"company"</span><span class="p">:</span><span class="s2">"Doublespring Media India Pvt ltd"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"company"</span><span class="p">:</span><span class="s2">"example_domain Media India Pvt ltd"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
    </span><span class="nt">"first_letter"</span><span class="p">:</span><span class="s2">"H"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Himesh khan"</span><span class="p">,</span><span class="w">
@@ -328,7 +328,7 @@ Content-Type: application/json
       </span><span class="nt">"about"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@example_domain.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_crm_admin"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
@@ -339,7 +339,7 @@ Content-Type: application/json
          </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://pixels.com/e.jpg"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
          </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="nt">"account_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="w">
@@ -369,7 +369,7 @@ Content-Type: application/json
       </span><span class="nt">"about"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul M"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@example_domain.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_crm_admin"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
@@ -379,7 +379,7 @@ Content-Type: application/json
          </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"http://pixels.com/image.jpg"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">11</span><span class="p">,</span><span class="w">
          </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Aravind dsSpring"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"aravind@doublespring.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"aravind@example_domain.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AD"</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
@@ -387,7 +387,7 @@ Content-Type: application/json
          </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://pixels.com/image.jpg"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
          </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="nt">"account_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="w">

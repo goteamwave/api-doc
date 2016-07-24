@@ -13,7 +13,7 @@
          </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">221</span><span class="p">,</span><span class="w">
          </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Prasad Vara"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"prasad@doublespring.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"prasad@example_domain.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"PV"</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3244</span><span class="p">,</span><span class="w">
@@ -29,7 +29,7 @@
   </span><span class="nt">"people"</span><span class="p">:[</span><span class="w">
      </span><span class="p">{</span><span class="w">
         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sachin@doublespring.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sachin@example_domain.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"first_name"</span><span class="p">:</span><span class="s2">"Sachin"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"last_name"</span><span class="p">:</span><span class="s2">"N"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"phone"</span><span class="p">:</span><span class="s2">"8884546564"</span><span class="p">,</span><span class="w">
@@ -54,11 +54,11 @@
         </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
      </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
-  </span><span class="nt">"from_str"</span><span class="p">:</span><span class="s2">"Sathish Kumar &lt;sathish@doublespring.com&gt;"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"from_str"</span><span class="p">:</span><span class="s2">"Sathish Kumar &lt;sathish@example_domain.com&gt;"</span><span class="p">,</span><span class="w">
   </span><span class="nt">"subject"</span><span class="p">:</span><span class="s2">"test"</span><span class="p">,</span><span class="w">
   </span><span class="nt">"body_html"</span><span class="p">:</span><span class="s2">"&lt;div dir=\"ltr\"&gt;test&lt;br clear=\"all\"&gt;&lt;div&gt;&lt;br&gt;&lt;/div
     &gt;-- &lt;br&gt;&lt;div class=\"gmail_signature\"&gt;&lt;div&gt;&lt;font color=\"#333333\"&gt;Regards,&lt;/font&gt;&lt;div&gt;&lt;font color=
-    \"#333333\"&gt;Sathishkumar V&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;font color=\"#333333\"&gt;&lt;a href=\"http://www.doublespring
+    \"#333333\"&gt;Sathishkumar V&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;font color=\"#333333\"&gt;&lt;a href=\"http://www.example_domain
     .com/\" target=\"_blank\"&gt;Double Spring Media India  (P) Ltd&lt;/a&gt;&lt;/font&gt;&lt;div&gt;&lt;font color=\"#333333\"&gt;
     &lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font color=\"#333333\" face=\"arial, sans-serif\" size=\"3\"&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div
     &gt;&lt;/div&gt;\r\n&lt;/div&gt;\r\n"</span><span class="p">,</span><span class="w">
@@ -67,7 +67,7 @@
      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
      </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
-     </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nt">"received"</span><span class="p">:</span><span class="s2">"2015-10-30T13:50:31.081463Z"</span><span class="p">,</span><span class="w">
@@ -254,7 +254,7 @@ Content-Type: application/json
          </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">221</span><span class="p">,</span><span class="w">
          </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Prasad Vara"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"prasad@doublespring.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"prasad@example_domain.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"PV"</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3244</span><span class="p">,</span><span class="w">
@@ -270,7 +270,7 @@ Content-Type: application/json
    </span><span class="nt">"people"</span><span class="p">:[</span><span class="w">
 
    </span><span class="p">],</span><span class="w">
-   </span><span class="nt">"from_str"</span><span class="p">:</span><span class="s2">"Sathish Kumar &lt;sathish@doublespring.com&gt;"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"from_str"</span><span class="p">:</span><span class="s2">"Sathish Kumar &lt;sathish@example_domain.com&gt;"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"subject"</span><span class="p">:</span><span class="s2">"test"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"body_html"</span><span class="p">:</span><span class="s2">"&lt;div dir=\"ltr\"&gt;test&lt;br clear=\"all\"&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;-- &lt;br&gt;&lt;div class=\"gmail_signature
      \&gt;&lt;div&gt;&lt;font color=\"#333333\"&gt;Regards,&lt;/font&gt;&lt;div&gt;&lt;font color=\"#333333\"&gt;Sathishkumar V&lt;/font&gt;&lt;/div
@@ -281,7 +281,7 @@ Content-Type: application/json
       </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/image.jpg"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
    </span><span class="p">},</span><span class="w">
    </span><span class="nt">"received"</span><span class="p">:</span><span class="s2">"2015-10-30T13:22:55.528585Z"</span><span class="p">,</span><span class="w">
