@@ -1,3 +1,3 @@
 <h1 id="crm">CRM</h1>
 
-<p>CRM will have all the endpoints for the <a href="#activities">activities</a>, <a href="#mails">mails</a>, <a href="#contacts">contacts</a> and <a href="#deal">deals</a>.</p>
+<p>CRM provides various Customer related operations using the <code class="prettyprint">/crm</code> resource and related sub-resources. Use HRM for managing new employees, timeoff, and automatic check-ins. You can also use sub-resources to get employees, timeoff, tasks and automatic check-ins related details.</p>
