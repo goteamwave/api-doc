@@ -1,3 +1,3 @@
 # PM
 
-Project Management api contains [projects](#projects), [milestones](#milestone), [events](#events), [notes](#notes), [files](#files), [tasks](#tasks) and [timelog](#time-log).
+Projects provides various project management related operations using the `/projects` resource and related sub-resources. Use projects for managing new projects and existing projects. You can also use sub-resources to get tasks, milestones, events, files, reports, timelog and notes related details.

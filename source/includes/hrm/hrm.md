@@ -1,3 +1,3 @@
 # HRMS
 
-Human Resource Management System(HRMS) has got api endpoints for [employees](#employees), [time off](#time-off-requests), [tasks](#tasks) and [check-ins](#automatic-check-ins).
+HRMS provides various HRM related operations using the `/hrm` resource and related sub-resources. Use HRM for managing new employees, timeoff, and automatic check-ins. You can also use sub-resources to get employees, timeoff, tasks and automatic check-ins related details.
