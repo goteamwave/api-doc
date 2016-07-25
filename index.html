@@ -5543,19 +5543,19 @@ Content-Type: application/json
 </tr>
 </thead><tbody>
 <tr>
-<td>id</td>
+<td>id (<em>integer</em>)</td>
 <td>ID of the policy</td>
 </tr>
 <tr>
-<td>name</td>
+<td>name (<em>string</em>)</td>
 <td>name of the policy</td>
 </tr>
 <tr>
-<td>policy_effective_date</td>
+<td>policy_effective_date (<em>string</em>)</td>
 <td>policy effective-from date</td>
 </tr>
 <tr>
-<td>total_timeoff</td>
+<td>total_timeoff (<em>integer</em>)</td>
 <td>total number of timeoff</td>
 </tr>
 <tr>
@@ -5563,8 +5563,8 @@ Content-Type: application/json
 <td></td>
 </tr>
 <tr>
-<td>timeoff_interval</td>
-<td></td>
+<td>timeoff_interval (<em>integer</em>)</td>
+<td>days after which new employee can apply for timeoff</td>
 </tr>
 <tr>
 <td>timeoff_type</td>
@@ -5575,32 +5575,32 @@ Content-Type: application/json
 <td></td>
 </tr>
 <tr>
-<td>day_hours</td>
-<td></td>
+<td>day_hours (<em>integer</em>)</td>
+<td>hours of work per day</td>
 </tr>
 <tr>
-<td>policy_renew_type</td>
-<td></td>
+<td>policy_renew_type (<em>string</em>)</td>
+<td>Policy renewal type- first of every year (&lsquo;YF&rsquo;) or half year (&#39;YH&rsquo;)</td>
 </tr>
 <tr>
-<td>total_employees</td>
-<td></td>
+<td>total_employees (<em>integer</em>)</td>
+<td>total number of employees</td>
 </tr>
 <tr>
-<td>modified_on</td>
-<td></td>
+<td>modified_on (<em>string</em>)</td>
+<td>date of modification</td>
 </tr>
 <tr>
-<td>is_active</td>
-<td></td>
+<td>is_active (<em>boolean</em>)</td>
+<td>is the policy active</td>
 </tr>
 <tr>
-<td>is_default</td>
-<td></td>
+<td>is_default (<em>boolean</em>)</td>
+<td>is the policy default for the organization</td>
 </tr>
 <tr>
-<td>assigned_users</td>
-<td></td>
+<td><a href="#assigned-users-object">assigned_users</a> (<em>array of objects</em>)</td>
+<td>assigned user details</td>
 </tr>
 </tbody></table>
 
@@ -5613,23 +5613,23 @@ Content-Type: application/json
 </tr>
 </thead><tbody>
 <tr>
-<td>id</td>
+<td>id (<em>integer</em>)</td>
 <td>ID for the user</td>
 </tr>
 <tr>
-<td>label_txt</td>
+<td>label_txt (<em>string</em>)</td>
 <td>label text for avatar</td>
 </tr>
 <tr>
-<td>image</td>
+<td>image (<em>string</em>)</td>
 <td>image url for the profile picture</td>
 </tr>
 <tr>
-<td>full_name</td>
+<td>full_name (<em>string</em>)</td>
 <td>full name of the user</td>
 </tr>
 <tr>
-<td>email</td>
+<td>email (<em>string</em>)</td>
 <td>email ID</td>
 </tr>
 <tr>
