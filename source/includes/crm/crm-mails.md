@@ -15,7 +15,7 @@
          "image":"",
          "id":221,
          "full_name":"Prasad Vara",
-         "email":"prasad@example_domain.com",
+         "email":"prasad@adhome.com",
          "label_txt":"PV"
       },
       "id":3244,
@@ -31,7 +31,7 @@
   "people":[
      {
         "id":1,
-        "email":"sachin@example_domain.com",
+        "email":"sachin@adhome.com",
         "first_name":"Sachin",
         "last_name":"N",
         "phone":"8884546564",
@@ -56,11 +56,11 @@
         "tags":null
      }
   ],
-  "from_str":"Sathish Kumar <sathish@example_domain.com>",
+  "from_str":"Sathish Kumar <sathish@adhome.com>",
   "subject":"test",
   "body_html":"<div dir=\"ltr\">test<br clear=\"all\"><div><br></div
 	>-- <br><div class=\"gmail_signature\"><div><font color=\"#333333\">Regards,</font><div><font color=
-	\"#333333\">Sathishkumar V</font></div></div><font color=\"#333333\"><a href=\"http://www.example_domain
+	\"#333333\">Sathishkumar V</font></div></div><font color=\"#333333\"><a href=\"http://www.adhome
 	.com/\" target=\"_blank\">Double Spring Media India  (P) Ltd</a></font><div><font color=\"#333333\">
 	<br></font><div><font color=\"#333333\" face=\"arial, sans-serif\" size=\"3\"><br></font></div></div
 	></div>\r\n</div>\r\n",
@@ -69,7 +69,7 @@
      "image":"https://twprofile.s3.amazonaws.com/image.jpg",
      "id":1,
      "full_name":"Sathish Venkat",
-     "email":"sathish@example_domain.com",
+     "email":"sathish@adhome.com",
      "label_txt":"SV"
   },
   "received":"2015-10-30T13:50:31.081463Z",
@@ -83,12 +83,12 @@
 Attribute | Description
 ---------| -----------
 id (*integer*)| ID of the mail
-[deal](#deals-object) | object with data about deal or company.
-[people](#people-object) | array of contacts connected to the mail(To,CC)
-from_str (*string*)| Name and mail of the sender
+[deal](#deals-object) (*object*)| object with data about deal or company.
+[people](#people-object) (*object*)| array of contacts connected to the mail(To,CC)
+from_str (*string*) | Name and mail of the sender
 subject (*string*)| subject for the mail
 body_html (*string*)| body content in html format
-[created_by](#user-object) | user details of creator
+[created_by](#user-object) (*object*)| user details of creator
 received (*string*)| date of receiving the mail
 is_archived (*boolean*)| is the mail archived
 is_private (*boolean*)| is the mail private
@@ -103,9 +103,9 @@ title (*string*)| title of the deal connected
 ctype (*string*)| it will change according to the content it is sending to the frontend. 
 deal_value (*integer*)| value of the deal
 currency_symbol (*string*)| currency symbol
-[owner](#user-object) | owner data 
+[owner](#user-object) (*object*)| owner data 
 id (*integer*)| ID for the deal
-[stage](#stage-object) | stage info 
+[stage](#stage-object) (*object*)| stage info 
 
 
 #### People Object 
@@ -163,7 +163,7 @@ Sample Response
          "image":"",
          "id":221,
          "full_name":"Prasad Vara",
-         "email":"prasad@example_domain.com",
+         "email":"prasad@adhome.com",
          "label_txt":"PV"
       },
       "id":3244,
@@ -179,7 +179,7 @@ Sample Response
    "people":[
 
    ],
-   "from_str":"Sathish Kumar <sathish@example_domain.com>",
+   "from_str":"Sathish Kumar <sathish@adhome.com>",
    "subject":"test",
    "body_html":"<div dir=\"ltr\">test<br clear=\"all\"><div><br></div>-- <br><div class=\"gmail_signature
      \><div><font color=\"#333333\">Regards,</font><div><font color=\"#333333\">Sathishkumar V</font></div
@@ -190,7 +190,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/users/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "received":"2015-10-30T13:22:55.528585Z",

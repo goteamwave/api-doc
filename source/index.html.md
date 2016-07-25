@@ -1,5 +1,5 @@
 ---
-title: Teamwave API Documentation
+title: TeamWave API Documentation
 
 <!-- language_tabs:
   - HTTP
@@ -7,7 +7,7 @@ title: Teamwave API Documentation
   - javascript -->
 
 toc_footers:
-  - <a href='http://teamwave.com'>Sign Up Today</a>
+  - <a href='http://TeamWave.com'>Sign Up Today</a>
 
 includes:
   - introduction

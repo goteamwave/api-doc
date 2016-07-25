@@ -10,21 +10,21 @@ Sample Object
 ```json
 {
    "id":280,
-   "name":"Explore teamwave",
+   "name":"Explore TeamWave",
    "description":"This template will give you to create sample project",
    "logo":"https://twprofile.s3.amazonaws.com/image.jpg",
    "owner":{
       "id":2,
-      "name":"example_domain",
-      "domain":"example_domain",
+      "name":"adhome",
+      "domain":"adhome",
       "logo":null,
-      "email":"shuhaib@example_domain.com",
-      "tenant_domain":"example_domain.com",
+      "email":"sam@adhome.com",
+      "tenant_domain":"adhome.com",
       "created_on":"2015-06-04",
       "default_currency":"USD",
       "default_currency_symbol":"$",
       "label_txt":null,
-      "orgkey":"example_domain",
+      "orgkey":"adhome",
       "status":"paying",
       "trial_end_on":"2016-07-07"
    },
@@ -90,7 +90,7 @@ Sample Object
    "drive_access":null,
    "drop_box_access":null,
    "is_active":true,
-   "owner_name":"example_domain",
+   "owner_name":"adhome",
    "is_template":false,
    "creating":false,
    "tags":null
@@ -174,7 +174,7 @@ Content-Type: application/json
 
  ```json
 {
-	"name": "Explore teamwave",
+	"name": "Explore TeamWave",
 	"description": "Unified Platform for Collaboration, Sales, 
 	Marketing & Support",
 	"logo": "https://twprofile.s3.amazonaws.com/image.jpg",
@@ -223,7 +223,7 @@ Content-Type: application/json
 [
    {
       "id":280,
-      "name":"Explore teamwave",
+      "name":"Explore TeamWave",
       "description":"This template will give you to create sample project",
       "logo":"https://twprofile.s3.amazonaws.com/image.jpg",
       "label_color":null,
@@ -233,7 +233,7 @@ Content-Type: application/json
       "resource_url":"/projects/280",
       "last_updated":"2016-07-22T09:36:11.442229Z",
       "is_active":true,
-      "owner_name":"example_domain",
+      "owner_name":"adhome",
       "creating":false
    },
    {
@@ -253,7 +253,7 @@ Content-Type: application/json
       "resource_url":"/projects/253",
       "last_updated":"2016-07-22T08:09:24.534065Z",
       "is_active":true,
-      "owner_name":"example_domain",
+      "owner_name":"adhome",
       "creating":false
    }
 ]

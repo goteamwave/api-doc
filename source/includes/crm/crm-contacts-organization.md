@@ -12,7 +12,7 @@
         "image":"https://twprofile.s3.amazonaws.com/image.jpg",
         "id":1,
         "full_name":"Sathish Venkat",
-        "email":"sathish@example_domain.com",
+        "email":"sathish@adhome.com",
         "label_txt":"SV"
      },
      "owner":{
@@ -20,7 +20,7 @@
         "image":"https://twprofile.s3.amazonaws.com/image.jpg",
         "id":1,
         "full_name":"Sathish Venkat",
-        "email":"sathish@example_domain.com",
+        "email":"sathish@adhome.com",
         "label_txt":"SV"
      },
      "created_on":"2015-08-29T14:49:13.838853Z",
@@ -38,13 +38,13 @@ domain (*string*)| domain used by the organization
 name (*string*)| name of organization
 address (*string*)| address of organization
 phone (*string*)| phone number
-[created_by](#user-object) | organization added-by user details
-[owner](#user-object) | owner details
+[created_by](#user-object) (*object*)| organization added-by user details
+[owner](#user-object) (*object*)| owner details
 created_on (*string*)| creation date 
 people (*integer*)(*integer*)| total people added to the organization
 deals (*integer*)| total deals added
 tags (*string*)| tags related to organization
-[custom_fields](#custom_fields-object) | custom fields added to the organization add-form
+[custom_fields](#custom_fields-object) (*object*)| custom fields added to the organization add-form
 
 
 ### Create Organization
@@ -107,7 +107,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "owner":{
@@ -115,7 +115,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":274,
       "full_name":"Ajith Paul",
-      "email":"ajith.paul@example_domain.com",
+      "email":"ajith.paul@adhome.com",
       "label_txt":"AP"
    },
    "created_on":"2016-07-19T07:26:57.157037Z",
@@ -172,7 +172,7 @@ Sample Request
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "owner":274,
@@ -216,7 +216,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "owner":{
@@ -224,7 +224,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":274,
       "full_name":"Ajith Paul",
-      "email":"ajith.paul@example_domain.com",
+      "email":"ajith.paul@adhome.com",
       "label_txt":"AP"
    },
    "created_on":"2016-07-19T07:26:57.157037Z",

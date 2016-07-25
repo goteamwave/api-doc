@@ -15,7 +15,7 @@
          "image":"",
          "id":272,
          "full_name":"Rajdeep Sharma",
-         "email":"rajdeep@example_domain.com",
+         "email":"rajdeep@adhome.com",
          "label_txt":"RS"
       },
       "person":{
@@ -30,7 +30,7 @@
       },
       "company":{
          "domain":null,
-         "name":"example_domain",
+         "name":"adhome",
          "image":null,
          "ctype":"company",
          "phone":"96633",
@@ -62,62 +62,62 @@
 Attribute | Description
 ----------| -----------
 id (*integer*)| Activity ID
-[act_type](#activity-type-object) | activity type
-[assigned_to](#user-object) | list of people assigned to the activity
-[person](#person-object) | contact person details
-[company](#company-object) | organisation details
-[deal](#deals-object) | deals info
-activity_due_on | due date-time for the activity
-due_time | due time of the activity
-due_date | due date of the activity
-add_next | if the activity added next
-title | title of the activity
-note | description of the activity
-duration | duration of the activity
-is_completed | is the activity completed
-completed_on | date of complete
-is_trashed | is the activity deleted
+[act_type](#activity-type-object) (*object*)| activity type
+[assigned_to](#user-object) (*object*)| list of people assigned to the activity
+[person](#person-object) (*object*)| contact person details
+[company](#company-object) (*object*)| organisation details
+[deal](#deals-object) (*object*)| deals info
+activity_due_on (*date string*)| due date-time for the activity
+due_time (*date string*)| due time of the activity
+due_date (*date string*)| due date of the activity
+add_next (*boolean*)| if the activity added next
+title (*string*)| title of the activity
+note (*string*)| description of the activity
+duration (*string*)| duration of the activity in hrs
+is_completed (*boolean*)| is the activity completed
+completed_on (*string*)| date of complete
+is_trashed (*boolean*)| is the activity deleted
 
 #### Activity Type Object
 
 Attribute | Description 
 ----------| -----------
-icon | icon name for the activity type
-id | ID of the activity type
-title | title of the activity type
+icon (*string*)| icon name for the activity type
+id (*integer*)| ID of the activity type
+title (*string*)| title of the activity type
 
 #### Person Object
 
 Attribute | Description
 ----------| -----------
-phone | phone number of the contact person
-name | name of the contact person
-full_name | full name of the contact person
-image | image url for the contact
-job_title | Desgination
-id | ID of the contact person
-ctype | content type ('person')
-email | email address
+phone (*string*)| phone number of the contact person
+name (*string*)| name of the contact person
+full_name (*string*)| full name of the contact person
+image (*url string*)| image url for the contact
+job_title (*string*)| Desgination
+id (*integer*)| ID of the contact person
+ctype (*string*)| content type ('person')
+email (*string*)| email address
 
 #### Company Object
 
 Attribute | Description
 ----------| -----------
-domain | domain name for the company
-name | name of the company
-image | image url for the company logo
-ctype | content type ('company')
-phone | phone number
-address | Company address
-id | Company ID
+domain (*string*)| domain name for the company
+name (*string*)| name of the company
+image (*string*)| image url for the company logo
+ctype (*string*)| content type ('company')
+phone (*string*)| phone number
+address (*string*)| Company address
+id (*integer*)| Company ID
 
 #### Deals object 
 
 Attribute | Description
 ----------| -----------
-id | ID of the deal
-ctype | content type ('deal')
-dealname | Deal name
+id (*integer*)| ID of the deal
+ctype (*string*)| content type ('deal')
+dealname (*string*)| Deal name
 
 ### Create Activity 
 
@@ -175,7 +175,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/users/user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "person":{
@@ -186,11 +186,11 @@ Sample Response
       "job_title":"Designer",
       "id":1,
       "ctype":"person",
-      "email":"sachin@example_domain.com"
+      "email":"sachin@adhome.com"
    },
    "company":{
       "domain":"www.google.com",
-      "name":"example_domain
+      "name":"adhome
  Media India pvt Ltd",
       "image":null,
       "ctype":"company",
@@ -286,7 +286,7 @@ Sample Response
       "image":"",
       "id":221,
       "full_name":"Prasad Vara",
-      "email":"prasad@example_domain.com",
+      "email":"prasad@adhome.com",
       "label_txt":"PV"
    },
    "person":{

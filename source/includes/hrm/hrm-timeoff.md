@@ -10,7 +10,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-```json
+ ```json
 [
    {
       "id":208,
@@ -26,7 +26,7 @@ Content-Type: application/json
          "image":"https://pexels.com/image.jpg",
          "id":1,
          "full_name":"Sathish Venkat",
-         "email":"sathish@example_domain.com",
+         "email":"sathish@adhome.com",
          "label_txt":"SV"
       },
       "days_of_leave":3.0,
@@ -45,7 +45,7 @@ Content-Type: application/json
                "url":"/users/1",
                "image":"https://example.com/image.jpg",
                "id":"1",
-               "email":"sathish@example_domain.com",
+               "email":"sathish@adhome.com",
                "full_name":"Sathish Venkat",
                "label_txt":"SV"
             },
@@ -74,7 +74,7 @@ Content-Type: application/json
                "url":"/users/1",
                "image":"https://example.com/image.jpg",
                "id":"1",
-               "email":"sathish@example_domain.com",
+               "email":"sathish@adhome.com",
                "full_name":"Sathish Venkat",
                "label_txt":"SV"
             },
@@ -96,27 +96,27 @@ Content-Type: application/json
          "image":"https://example.com/mage.jpg",
          "id":274,
          "full_name":"Ajith Paul",
-         "email":"ajith.paul@example_domain.com",
+         "email":"ajith.paul@adhome.com",
          "label_txt":"AP"
       },
       "created_on":"2016-06-22T11:57:19.296021Z",
       "policy_detail":{
          "is_expired":false,
          "id":1,
-         "name":"example_domain"
+         "name":"adhome"
       },
       "entered_by":{
          "url":"/users/1",
          "image":"https://example.com/image.jpg",
          "id":1,
          "full_name":"Sathish Venkat",
-         "email":"sathish@example_domain.com",
+         "email":"sathish@adhome.com",
          "label_txt":"SV"
       },
       "is_entered":true
    }
 ]
-```
+``` 
 API endpoint for the list of all time-off requests made by the employee.
 
 <aside>GET /api/hrm/people/{id}/time-off-request</aside>
@@ -235,7 +235,7 @@ Sample Response
       "image":"https://pexels.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "days_of_leave":3.0,
@@ -254,7 +254,7 @@ Sample Response
             "url":"/users/1",
             "image":"https://example.com/image.jpg",
             "id":"1",
-            "email":"sathish@example_domain.com",
+            "email":"sathish@adhome.com",
             "full_name":"Sathish Venkat",
             "label_txt":"SV"
          },
@@ -283,7 +283,7 @@ Sample Response
             "url":"/users/1",
             "image":"https://example.com/image.jpg",
             "id":"1",
-            "email":"sathish@example_domain.com",
+            "email":"sathish@adhome.com",
             "full_name":"Sathish Venkat",
             "label_txt":"SV"
          },
@@ -305,21 +305,21 @@ Sample Response
       "image":"https://example.com/mage.jpg",
       "id":274,
       "full_name":"Ajith Paul",
-      "email":"ajith.paul@example_domain.com",
+      "email":"ajith.paul@adhome.com",
       "label_txt":"AP"
    },
    "created_on":"2016-06-22T11:57:19.296021Z",
    "policy_detail":{
       "is_expired":false,
       "id":1,
-      "name":"example_domain"
+      "name":"adhome"
    },
    "entered_by":{
       "url":"/users/1",
       "image":"https://example.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "is_entered":true
@@ -365,7 +365,7 @@ Content-Type: application/json
 .jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "days_of_leave":1,
@@ -379,14 +379,14 @@ Content-Type: application/json
 .com/users/user-77abb729-773e-41f5-9244-4a5fd337bdba-image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "created_on":"2016-07-12T09:42:45.303024Z",
    "policy_detail":{
       "is_expired":false,
       "id":1,
-      "name":"example_domain"
+      "name":"adhome"
    },
    "entered_by":{
       "url":"/users/1",
@@ -395,7 +395,7 @@ Content-Type: application/json
       "id":1,
       "full_name":"Sathish
  Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "is_entered":true,

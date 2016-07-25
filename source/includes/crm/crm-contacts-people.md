@@ -17,12 +17,12 @@
       "id":1,
       "full_name":"Sathish
  Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "company":{
       "domain":null,
-      "name":"example_domain",
+      "name":"adhome",
       "image":null,
       "ctype":"company",
       "phone":null,
@@ -34,7 +34,7 @@
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "created_on":"2015-12-23T07:51:45.948099Z",
@@ -52,12 +52,12 @@ last_name (*string*)| last name of the contact
 phone (*string*)| phone number of the contact
 full_name (*string*)| full name of the contact
 job_title (*string*)| Designation 
-[owner](#user-object) | owner info
-[company](#company-object) | company details
-[created_by](#user-object) | creator of the contact
+[owner](#user-object) (*object*)| owner info
+[company](#company-object) (*object*)| company details
+[created_by](#user-object) (*object*)| creator of the contact
 created_on (*string*)| datetime of the creation 
 tags (*string*)| tag names given for the contact
-[custom_fields](#custom-fields-object) | all custom fields for the CRM contacts
+[custom_fields](#custom-fields-object) (*object*)| all custom fields for the CRM contacts
 
 
 ### Create People
@@ -97,10 +97,10 @@ Sample Request
    "owner":1,
    "first_name":"Ajith",
    "last_name":"Paul",
-   "email":"ajithpaul@example_domain.com",
+   "email":"ajithpaul@adhome.com",
    "phone":"9995584542",
    "job_title":"SW",
-   "companyName":"example_domain"
+   "companyName":"adhome"
 }
 ```
 
@@ -111,7 +111,7 @@ Sample Response
 ```json
 {
    "id":17784,
-   "email":"ajithp@example_domain.com",
+   "email":"ajithp@adhome.com",
    "first_name":"Ajith",
    "last_name":"Paul",
    "phone":"8452145555",
@@ -122,12 +122,12 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "company":{
       "domain":"sdfzsdfdsf.com",
-      "name":"example_domain",
+      "name":"adhome",
       "image":null,
       "ctype":"company",
       "phone":"894fd646",
@@ -139,7 +139,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "created_on":"2016-07-18T12:40:48.810179Z",
@@ -169,7 +169,7 @@ Sample Response
 
 #### Returns
 
-If call succeeds, it will send the [contacts object](#contacts-object) back. 
+If call succeeds, it will send the [people object](#people-object) back. 
 
 ### Update People
 
@@ -189,7 +189,7 @@ Sample Request
 ```json
 {
    "id":17782,
-   "email":"ajithpaul@example_domain.com",
+   "email":"ajithpaul@adhome.com",
    "first_name":"Ajith",
    "last_name":"Paul M",
    "phone":"4568595442",
@@ -202,7 +202,7 @@ Sample Request
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "created_on":"2016-07-18T12:28:02.165162Z",
@@ -237,7 +237,7 @@ Sample Response
 ```json
 {
    "id":17782,
-   "email":"ajithpaul@example_domain.com",
+   "email":"ajithpaul@adhome.com",
    "first_name":"Ajith",
    "last_name":"Paul M",
    "phone":"4568595442",
@@ -248,12 +248,12 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"SathishVenkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "company":{
       "domain":null,
-      "name":"example_domain",
+      "name":"adhome",
       "image":null,
       "ctype":"company",
       "phone":null,
@@ -265,7 +265,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "created_on":"2016-07-18T12:28:02.165162Z",

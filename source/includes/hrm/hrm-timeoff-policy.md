@@ -4,59 +4,116 @@
 ### Time off Policy Object
 
 ```http
-GET /api/hrm/people/{id}/timeoff HTTP/1.1
+GET /api/hrm/organization/settings/timeoff-policy/{timeoff_policy_id} HTTP/1.1
 Accept: application/json
 Authorization: Token "YOUR ACCESS TOKEN"
 
 HTTP/1.1 200 OK
 Content-Type: application/json
 ```
-```json
- {
-    "used_timeoff": 0,
-    "availabale_timeoff": 13.0,
-    "policy_status": "AV",
-    "policy_details": {
-        "working_hours": {
-            "id": 130,
-            "created_on": "2016-06-20T12:47:22.427736Z",
-            "modified_on": "2016-06-20T12:47:58.514672Z",
-            "notes": null,
-            "mon_start": "09:00 AM",
-            "mon_end": "05:00 PM",
-            "tue_start": "09:00 AM",
-            "tue_end": "05:00 PM",
-            "wed_start": "09:00 AM",
-            "wed_end": "05:00 PM",
-            "thu_start": "09:00 AM",
-            "thu_end": "05:00 PM",
-            "fri_start": "09:00 AM",
-            "fri_end": "05:00 PM",
-            "sat_start": null,
-            "sat_end": null,
-            "sun_start": null,
-            "sun_end": null,
-            "status": "P",
-            "created_by": 1,
-            "modified_by": 1
-        },
-        "total_timeoff": 20,
-        "name": "example_domain",
-        "policy_renew_type": "YF",
-        "renew_date": "2017-01-01",
-        "carry_over": false,
-        "id": 123,
-        "timeoff_interval": 1
-    },
-    "policy_emp_timeoff": 20.0,
-    "policy": true,
-    "pending_timeoff": 7.0,
-    "approved_timeoff": 0,
-    "id": 123
-    }
-```
-<aside>GET /api/hrm/people/{id}/timeoff </aside>
 
+```json
+{
+   "id":51,
+   "name":"Sick leave policy",
+   "policy_effective_date":"2016-03-01",
+   "total_timeoff":21,
+   "schedule":51,
+   "timeoff_interval":1,
+   "is_public":true,
+   "timeoff_type":"D",
+   "timeoff_disply_type":"D",
+   "day_hours":8,
+   "policy_renew_type":"YF",
+   "total_employees":10,
+   "modified_on":"2016-06-10T11:10:53.824171Z",
+   "is_active":false,
+   "is_default":false,
+   "assigned_users":[
+      {
+         "id":19,
+         "label_txt":"rt",
+         "image":null,
+         "full_name":"rajmohan",
+         "email":"rajmohantestmail@gmail.com",
+         "upcoming_birthday":null
+      },
+      {
+         "id":74,
+         "label_txt":"Ac",
+         "image":null,
+         "full_name":"Aravind cse",
+         "email":"arvindcse2014@gmail.com",
+         "upcoming_birthday":null
+      },
+      {
+         "id":76,
+         "label_txt":"GY",
+         "image":null,
+         "full_name":"Geo Yahoo",
+         "email":"geojacobm6@yahoo.com",
+         "upcoming_birthday":null
+      },
+      {
+         "id":72,
+         "label_txt":"ym",
+         "image":null,
+         "full_name":"yolanda messina",
+         "email":"yolandamessina364@gmail.com",
+         "upcoming_birthday":null
+      },
+      {
+         "id":201,
+         "label_txt":"GJ",
+         "image":null,
+         "full_name":"Geo Jacob",
+         "email":"geo.jacob11@adhome.com",
+         "upcoming_birthday":null
+      },
+      {
+         "id":1,
+         "label_txt":"SV",
+         "image":"https://twprofile.s3.amazonaws.com/usersuser-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg",
+         "full_name":"Sathish Venkat",
+         "email":"sathish@adhome.com",
+         "upcoming_birthday":null
+      }
+   ]
+}
+```
+
+<aside>GET /api/hrm/organization/settings/timeoff-policy/{timeoff_policy_id} </aside>
+
+Attribute | Description 
+--------- | ----------- 
+id | ID of the policy
+name | name of the policy
+policy_effective_date |  policy effective-from date
+total_timeoff | total number of timeoff
+schedule | 
+timeoff_interval | 
+timeoff_type | 
+timeoff_display_type | 
+day_hours | 
+policy_renew_type |
+total_employees | 
+modified_on | 
+is_active |
+is_default | 
+assigned_users |
+
+#### Assigned Users Object
+
+Attribute | Description
+----------| -----------
+id | ID for the user
+label_txt | label text for avatar
+image | image url for the profile picture
+full_name | full name of the user
+email | email ID
+upcoming_birthday | upcoming birthday 
+
+<!-- 
 Attribute | Description 
 --------- | ----------- 
 used_timeoff (*integer*) | Number of used timeoff days
@@ -108,11 +165,11 @@ sun_end (*string*)| work end time on sunday
 status (*string*)|
 created_by (*integer*)| ID of user who created the working hours
 modified_by (*integer*)| ID of user who modified the working hours
-
+ -->
 ### Create Time off Policy
 
 ```http
-POST /api/hrm/people/{id}/timeoff HTTP/1.1
+POST /api/hrm/organization/settings/timeoff-policy HTTP/1.1
 Accept: application/json
 Authorization: Token "YOUR ACCESS TOKEN"
 
@@ -179,8 +236,134 @@ timeoff_interval | number of days after which new hire can apply for leave
 
 If the call succeeds, the [timeoff policy](#time-off-policy-object) object is returned with all the information about the timeoff policy.
 
+### Update Time Off Policy
+
+```http
+PATCH /api/hrm/organization/settings/timeoff-policy/{timeoff_policy_id} HTTP/1.1
+Accept: application/json
+Authorization: Token "YOUR ACCESS TOKEN"
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+```
+Sample Request
+```
+
+```json
+{
+   "id":71,
+   "name":"test",
+   "policy_effective_date":"2016-05-31",
+   "total_timeoff":30,
+   "schedule":71,
+   "timeoff_interval":15,
+   "is_public":true,
+   "timeoff_type":"D",
+   "timeoff_disply_type":"D",
+   "day_hours":9,
+   "policy_renew_type":"YF",
+   "total_employees":3,
+   "modified_on":"2016-06-02T12:32:24.887566Z",
+   "is_active":false,
+   "is_default":false,
+   "assigned_users":[
+      {
+         "id":202,
+         "label_txt":"GT",
+         "image":null,
+         "full_name":"Geo Test 12",
+         "email":"geo.jacob12@adhome.com",
+         "upcoming_birthday":null
+      },
+      {
+         "id":76,
+         "label_txt":"GY",
+         "image":null,
+         "full_name":"Geo Yahoo",
+         "email":"geojacobm6@yahoo.com",
+         "upcoming_birthday":null
+      },
+      {
+         "id":77,
+         "label_txt":"Go",
+         "image":null,
+         "full_name":"Geo outlook",
+         "email":"geojacobm6@outlook.com",
+         "upcoming_birthday":null
+      }
+   ]
+}
+```
+
+``` 
+Sample Response
+```
+
+```json
+{
+   "id":71,
+   "name":"test",
+   "policy_effective_date":"2016-05-31",
+   "total_timeoff":30,
+   "schedule":71,
+   "timeoff_interval":15,
+   "is_public":true,
+   "timeoff_type":"D",
+   "timeoff_disply_type":"D",
+   "day_hours":9,
+   "policy_renew_type":"YF",
+   "total_employees":3,
+   "modified_on":"2016-07-25T07:04:23.225067Z",
+   "is_active":false,
+   "is_default":false,
+   "assigned_users":[
+      {
+         "id":202,
+         "label_txt":"GT",
+         "image":null,
+         "full_name":"Geo Test 12",
+         "email":"geo.jacob12
+@adhome.com",
+         "upcoming_birthday":null
+      },
+      {
+         "id":76,
+         "label_txt":"GY",
+         "image":null,
+         "full_name":"Geo
+ Yahoo",
+         "email":"geojacobm6@yahoo.com",
+         "upcoming_birthday":null
+      },
+      {
+         "id":77,
+         "label_txt":"Go",
+         "image":null,
+         "full_name":"Geo outlook",
+         "email":"geojacobm6@outlook.com",
+         "upcoming_birthday":null
+      }
+   ]
+}
+```
+
+#### Returns 
+
+If the call succeeds, the [timeoff policy](#time-off-policy-object) object is returned with all the information about the updated timeoff policy.
+
 ### Delete Time Off Policy
 
-<aside>DELETE api/hrm/organization/settings/timeoff-policy/{id}</aside>
+```http
+DELETE /api/hrm/organization/settings/timeoff-policy/{timeoff_policy_id} HTTP/1.1
+Accept: application/json
+Authorization: Token "YOUR ACCESS TOKEN"
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+<aside>DELETE api/hrm/organization/settings/timeoff-policy/{timeoff_policy_id}</aside>
 
 

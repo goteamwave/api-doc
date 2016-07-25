@@ -10,7 +10,7 @@
     "image":"https://twprofile.s3.amazonaws.com/image.jpg",
     "id":1,
     "full_name":"Sathish Venkat",
-    "email":"sathish@example_domain.com",
+    "email":"sathish@adhome.com",
     "label_txt":"SV"
  },
  "owner":{
@@ -18,7 +18,7 @@
     "image":"https://twprofile.s3.amazonaws.com/image.jpg",
     "id":1,
     "full_name":"Sathish Venkat",
-    "email":"sathish@example_domain.com",
+    "email":"sathish@adhome.com",
     "label_txt":"SV"
  },
  "title":"d3",
@@ -104,22 +104,22 @@
 Attribute | Description
 --------- | -----------
 id (*integer*)| ID of the deal
-[created_by](#user-object) | info about the creator of the deal
-[owner](#user-object) | info about the owner of the deal, can be changed(by default, owner is creator)
+[created_by](#user-object) (*object*)| info about the creator of the deal
+[owner](#user-object) (*object*)| info about the owner of the deal, can be changed(by default, owner is creator)
 title (*string*)| title of the deal
 index (*integer*)| order of the deal to show
-[stage](#stage-object) | stage details
+[stage](#stage-object) (*object*)| stage details
 deal_value (*integer*)| Value set for the deal
-[currency](#currency-object) | Currency set for the deal
+[currency](#currency-object) (*object*)| Currency set for the deal
 expected_close (*string*)| expected closing date for the deal
 last_activity_on (*string*)| date of the last activity done on the deal
 next_activity_on (*string*)| date of the next activity on the deal
 is_trashed (*boolean*)| is the deal removed
-[people](#people-object) | contacts involved in the deal
-[company](#company-object) | company info
+[people](#people-object) (*object*)| contacts involved in the deal
+[company](#company-object) (*object*)| company info
 created_on (*string*)| date of creation of the deal
 tags (*string*)| tags added to the deal
-[custom_fields](#custom_fields-object) | objects of custom fields
+[custom_fields](#custom_fields-object) (*object*)| objects of custom fields
 won_on (*string*)| date of winning the deal
 lost_on (*string*)| date of losing the deal
 closed_on (*string*)| date of closing the deal
@@ -270,7 +270,7 @@ Sample Response
 .jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "title":"test deal",
@@ -359,7 +359,7 @@ Sample Request
 .jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "owner":{
@@ -463,7 +463,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.comimage.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "owner":{
@@ -471,7 +471,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "title":"test deal",
@@ -571,7 +571,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "owner":{
@@ -579,7 +579,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "title":"DA10",
@@ -668,7 +668,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "owner":{
@@ -676,7 +676,7 @@ Sample Response
       "image":"https://twprofile.s3.amazonaws.com/image.jpg",
       "id":1,
       "full_name":"Sathish Venkat",
-      "email":"sathish@example_domain.com",
+      "email":"sathish@adhome.com",
       "label_txt":"SV"
    },
    "title":"test deal",

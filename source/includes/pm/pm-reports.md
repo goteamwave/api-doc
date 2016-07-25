@@ -24,7 +24,7 @@
             "mns":0,
             "hrs":17
          },
-         "owner__name":"example_domain",
+         "owner__name":"adhome",
          "c_tasks":483,
          "t_tasks":601,
          "id":253,
@@ -33,7 +33,7 @@
       {
          "com_per":70.5882,
          "od_tasks":0,
-         "name":"Explore teamwave",
+         "name":"Explore TeamWave",
          "t_time":{
             "mns":0,
             "hrs":27
@@ -49,7 +49,7 @@
             "mns":0,
             "hrs":17
          },
-         "owner__name":"example_domain",
+         "owner__name":"adhome",
          "c_tasks":12,
          "t_tasks":17,
          "id":280,
@@ -69,7 +69,7 @@
       {
          "tasks":4,
          "project_id":280,
-         "project__name":"Explore teamwave"
+         "project__name":"Explore TeamWave"
       }
    ],
    "t_milestones":1,
