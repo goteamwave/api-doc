@@ -131,13 +131,13 @@ status (*string*)| status of the timeoff(approved)
 modified_on (*string*)| datetime on which modified
 act_on (*string*) | datetime of Action to timeoff(approve or reject)
 comment (*string*)| comment on the timeoff
-[modified_by] (#user-object)| details of the person who modified the timeoff request
+[modified_by](#user-object)| details of the person who modified the timeoff request
 days_of_leave (*integer*)| number of days of leave applied
 [activities](#activities-object) | array of all activities of the request
 can_approve (*boolean*)| possible to approve or not
-[created_by] (#user-object) | Details about the creator of the request
+[created_by](#user-object) | Details about the creator of the request
 created_on (*string*) | datetime of the creation
-[policy_detail](#policy-detail) | Info on the policy (id,name ..)
+[policy_detail](#policy-detail-object) | Info on the policy (id,name ..)
 [entered_by](#user-object) (object) | details about the user who entered the timeoff
 is_entered (*boolean*)| is the timeoff entered (timeoff entered by admin or owner)
 
