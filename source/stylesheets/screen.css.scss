@@ -632,3 +632,11 @@ html, body {
 .highlight, .highlight .w {
   background-color: $code-bg;
 }
+
+.tocify-wrapper .tocify-subheader .tocify-item > a {
+    color: #fff;
+}
+
+.tocify-header > li > a{
+  color: #fff;
+}
