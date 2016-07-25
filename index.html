@@ -110,6 +110,7 @@
       </div>
         <ul class="toc-footer">
             <li><a href='http://TeamWave.com'>Sign Up Today</a></li>
+            <li><a href="mailto:support@teamwave.com" target="_top">Contact Us</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -241,7 +242,7 @@
 <td>logo url for the project logo</td>
 </tr>
 <tr>
-<td><a href="#pm-user-object">owner</a></td>
+<td><a href="#pm-user-object">owner</a> (<em>object</em>)</td>
 <td>owner details</td>
 </tr>
 <tr>
@@ -273,7 +274,7 @@
 <td>if privacy is enabled or not</td>
 </tr>
 <tr>
-<td><a href="#permissions-object">permissions</a></td>
+<td><a href="#permissions-object">permissions</a> (<em>object</em>)</td>
 <td>array of all the permissions for the project</td>
 </tr>
 <tr>
@@ -5560,7 +5561,7 @@ Content-Type: application/json
 </tr>
 <tr>
 <td>schedule</td>
-<td></td>
+<td>schedule ID</td>
 </tr>
 <tr>
 <td>timeoff_interval (<em>integer</em>)</td>
@@ -5568,11 +5569,11 @@ Content-Type: application/json
 </tr>
 <tr>
 <td>timeoff_type</td>
-<td></td>
+<td>timeoff displayed in days (&rsquo;D&rsquo;) and displayed in hours (&lsquo;H&rsquo;)</td>
 </tr>
 <tr>
 <td>timeoff_display_type</td>
-<td></td>
+<td>timeoff displayed in days (&rsquo;D&rsquo;) and displayed in hours (&#39;H&rsquo;)</td>
 </tr>
 <tr>
 <td>day_hours (<em>integer</em>)</td>
@@ -5580,7 +5581,7 @@ Content-Type: application/json
 </tr>
 <tr>
 <td>policy_renew_type (<em>string</em>)</td>
-<td>Policy renewal type- first of every year (&lsquo;YF&rsquo;) or half year (&#39;YH&rsquo;)</td>
+<td>Policy renewal type- first of every year (&#39;YF&rsquo;) or half year (&#39;YH&rsquo;)</td>
 </tr>
 <tr>
 <td>total_employees (<em>integer</em>)</td>
@@ -5633,7 +5634,7 @@ Content-Type: application/json
 <td>email ID</td>
 </tr>
 <tr>
-<td>upcoming_birthday</td>
+<td>upcoming_birthday (<em>array</em>)</td>
 <td>upcoming birthday</td>
 </tr>
 </tbody></table>

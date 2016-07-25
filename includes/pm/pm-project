@@ -115,7 +115,7 @@
 <td>logo url for the project logo</td>
 </tr>
 <tr>
-<td><a href="#pm-user-object">owner</a></td>
+<td><a href="#pm-user-object">owner</a> (<em>object</em>)</td>
 <td>owner details</td>
 </tr>
 <tr>
@@ -147,7 +147,7 @@
 <td>if privacy is enabled or not</td>
 </tr>
 <tr>
-<td><a href="#permissions-object">permissions</a></td>
+<td><a href="#permissions-object">permissions</a> (<em>object</em>)</td>
 <td>array of all the permissions for the project</td>
 </tr>
 <tr>
