@@ -289,27 +289,27 @@ Content-Type: application/json
 </tr>
 </thead><tbody>
 <tr>
-<td>name</td>
+<td>name (<em>string</em>)</td>
 <td>Name of the Time off policy</td>
 </tr>
 <tr>
-<td>total_timeoff</td>
+<td>total_timeoff (<em>integer</em>)</td>
 <td>total number of timeoff</td>
 </tr>
 <tr>
-<td>policy_effective_date</td>
+<td>policy_effective_date (<em>date string</em>)</td>
 <td>policy effective from date</td>
 </tr>
 <tr>
-<td>policy_renew_type</td>
+<td>policy_renew_type (<em>string</em>)</td>
 <td>time of renewal of policy</td>
 </tr>
 <tr>
-<td>day_hours</td>
+<td>day_hours (<em>string</em>)</td>
 <td>total work hours per day</td>
 </tr>
 <tr>
-<td>timeoff_interval</td>
+<td>timeoff_interval (<em>integer</em>)</td>
 <td>number of days after which new hire can apply for leave</td>
 </tr>
 </tbody></table>

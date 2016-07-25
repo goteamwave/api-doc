@@ -93,7 +93,7 @@
 <td>number of people assigned</td>
 </tr>
 <tr>
-<td><a href="#assigned_to-object">assigned_to</a></td>
+<td><a href="#assigned_to-object">assigned_to</a> (<em>object</em>)</td>
 <td>info about people assigned to the checkin</td>
 </tr>
 <tr>
