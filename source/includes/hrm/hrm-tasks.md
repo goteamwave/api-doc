@@ -53,11 +53,11 @@ title (*string*)| task title
 description (*string*)| Description of the task to be completed
 created_on (*string*)| creation date
 due_date (*string*)| Date before task needs to be completed
-[assigned_to](#asigned_to-object) | task assigned to employee details
+[assigned_to](#asigned_to-object) (*object*)| task assigned to employee details
 task_type (*string*)| Type of task ('G' for general task,..)
 timeoff_id | timeoff id for timeoff task
 can_edit | if task can be edited
-[created_by](#created_by-object) | info about the creator of the task
+[created_by](#created_by-object) (*object*)| info about the creator of the task
 task_url (*string*)| url of the task
 default_policy_id (*integer*)| default policy ID
 

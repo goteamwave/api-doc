@@ -67,7 +67,7 @@ created_by (*integer*)| ID of the creator of the checkin
 schedule_day (*string*)| day on which checkin mail will be sent
 schedule_time (*string*)| time of the day, to send the mail
 people_count (*integer*)| number of people assigned
-[assigned_to](#assigned_to-object) | info about people assigned to the checkin
+[assigned_to](#assigned_to-object) (*object*)| info about people assigned to the checkin
 created_on (*string*)| date of creation of checkin
 schedule_on (*string*)| date of next schedule the checkin
 is_responded (*boolean*)| if user has responded to the scheduled checkin
