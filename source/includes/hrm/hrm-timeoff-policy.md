@@ -86,31 +86,31 @@ Content-Type: application/json
 
 Attribute | Description 
 --------- | ----------- 
-id | ID of the policy
-name | name of the policy
-policy_effective_date |  policy effective-from date
-total_timeoff | total number of timeoff
+id (*integer*)| ID of the policy
+name (*string*)| name of the policy
+policy_effective_date (*string*)|  policy effective-from date
+total_timeoff (*integer*)| total number of timeoff
 schedule | 
-timeoff_interval | 
+timeoff_interval (*integer*)| days after which new employee can apply for timeoff
 timeoff_type | 
 timeoff_display_type | 
-day_hours | 
-policy_renew_type |
-total_employees | 
-modified_on | 
-is_active |
-is_default | 
-assigned_users |
+day_hours (*integer*)| hours of work per day
+policy_renew_type (*string*)| Policy renewal type- first of every year ('YF') or half year ('YH')
+total_employees (*integer*)| total number of employees
+modified_on (*string*)| date of modification
+is_active (*boolean*)| is the policy active
+is_default (*boolean*)| is the policy default for the organization
+[assigned_users](#assigned-users-object) (*array of objects*)| assigned user details
 
 #### Assigned Users Object
 
 Attribute | Description
 ----------| -----------
-id | ID for the user
-label_txt | label text for avatar
-image | image url for the profile picture
-full_name | full name of the user
-email | email ID
+id (*integer*)| ID for the user
+label_txt (*string*)| label text for avatar
+image (*string*)| image url for the profile picture
+full_name (*string*)| full name of the user
+email (*string*)| email ID
 upcoming_birthday | upcoming birthday 
 
 <!-- 
