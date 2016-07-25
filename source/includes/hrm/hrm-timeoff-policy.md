@@ -225,12 +225,12 @@ Create new Time off Policy.
 
 Attribute | Description 
 --------- | ----------- 
-name | Name of the Time off policy
-total_timeoff | total number of timeoff
-policy_effective_date | policy effective from date
-policy_renew_type | time of renewal of policy
-day_hours | total work hours per day 
-timeoff_interval | number of days after which new hire can apply for leave
+name (*string*)| Name of the Time off policy
+total_timeoff (*integer*)| total number of timeoff
+policy_effective_date (*date string*)| policy effective from date
+policy_renew_type (*string*)| time of renewal of policy
+day_hours (*string*)| total work hours per day 
+timeoff_interval (*integer*)| number of days after which new hire can apply for leave
 
 #### Returns 
 
