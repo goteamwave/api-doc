@@ -8,7 +8,7 @@ title: TeamWave API Documentation
 
 toc_footers:
   - <a href='http://TeamWave.com'>Sign Up Today</a>
-
+  - <a href="mailto:support@teamwave.com" target="_top">Contact Us</a>
 includes:
   - introduction
   - pm/pm

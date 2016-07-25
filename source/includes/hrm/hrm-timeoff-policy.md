@@ -90,10 +90,10 @@ id (*integer*)| ID of the policy
 name (*string*)| name of the policy
 policy_effective_date (*string*)|  policy effective-from date
 total_timeoff (*integer*)| total number of timeoff
-schedule | 
+schedule | schedule ID
 timeoff_interval (*integer*)| days after which new employee can apply for timeoff
-timeoff_type | 
-timeoff_display_type | 
+timeoff_type | timeoff displayed in days ('D') and displayed in hours ('H')
+timeoff_display_type | timeoff displayed in days ('D') and displayed in hours ('H')
 day_hours (*integer*)| hours of work per day
 policy_renew_type (*string*)| Policy renewal type- first of every year ('YF') or half year ('YH')
 total_employees (*integer*)| total number of employees
@@ -111,7 +111,7 @@ label_txt (*string*)| label text for avatar
 image (*string*)| image url for the profile picture
 full_name (*string*)| full name of the user
 email (*string*)| email ID
-upcoming_birthday | upcoming birthday 
+upcoming_birthday (*array*)| upcoming birthday 
 
 <!-- 
 Attribute | Description 

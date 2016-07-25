@@ -103,7 +103,7 @@ id (*integer*)| ID for the project
 name (*string*)| Name of the project
 description (*string*)| description for the project
 logo (*url string*)| logo url for the project logo
-[owner](#pm-user-object) | owner details
+[owner](#pm-user-object) (*object*)| owner details
 clients (*integer*)| clients ID's
 users (*array*)| users(ID) involved with projects
 is_trashed (*boolean*)| if the project is trashed
@@ -111,7 +111,7 @@ start_date (*string*)| starting date for the project
 end_date (*string*)| project end date
 budget (*integer*)| budget value
 privacy_enabled (*boolean*)| if privacy is enabled or not
-[permissions](#permissions-object) | array of all the permissions for the project
+[permissions](#permissions-object) (*object*)| array of all the permissions for the project
 last_updated (*string*)| last updated datetime
 taskes_enabled (*boolean*)| if the tasks are enabled for the project
 created_by (*integer*)| ID of the creator
