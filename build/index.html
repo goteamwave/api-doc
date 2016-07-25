@@ -118,13 +118,11 @@
         
           <h1 id="introduction">Introduction</h1>
 
-<p>Welcome to the TeamWaveAPI! You can use our API to access TeamWave API endpoints, which can get you all the information on PM, CRM, and HRMS in our database.</p>
-
-<p>You can view request/response examples in the dark area to the right.</p>
+<p>The TeamWave API is organized around REST. Our API has predictable, resource-oriented URLs, and uses HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which are understood by off-the-shelf HTTP clients. We support cross-origin resource sharing, allowing you to interact securely with our API from a client-side (though you should never expose your secret API key). This API reference provides information on available endpoints and how to interact with it. JSON is returned by all API responses, including errors, although our API libraries convert responses to appropriate language-specific objects.</p>
 
           <h1 id="pm">PM</h1>
 
-<p>Project Management api contains <a href="#projects">projects</a>, <a href="#milestone">milestones</a>, <a href="#events">events</a>, <a href="#notes">notes</a>, <a href="#files">files</a>, <a href="#tasks">tasks</a> and <a href="#time-log">timelog</a>.</p>
+<p>Projects provides various project management related operations using the <code class="prettyprint">/projects</code> resource and related sub-resources. Use projects for managing new projects and existing projects. You can also use sub-resources to get tasks, milestones, events, files, reports, timelog and notes related details.</p>
 
           <h2 id="projects">Projects</h2>
 
@@ -3182,7 +3180,7 @@ Content-Type: application/json
           
           <h1 id="crm">CRM</h1>
 
-<p>CRM will have all the endpoints for the <a href="#activities">activities</a>, <a href="#mails">mails</a>, <a href="#contacts">contacts</a> and <a href="#deal">deals</a>.</p>
+<p>CRM provides various Customer related operations using the <code class="prettyprint">/crm</code> resource and related sub-resources. Use HRM for managing new employees, timeoff, and automatic check-ins. You can also use sub-resources to get employees, timeoff, tasks and automatic check-ins related details.</p>
 
           <h2 id="deal">Deal</h2>
 
@@ -3297,11 +3295,11 @@ Content-Type: application/json
 <td>ID of the deal</td>
 </tr>
 <tr>
-<td><a href="#user-object">created_by</a></td>
+<td><a href="#user-object">created_by</a> (<em>object</em>)</td>
 <td>info about the creator of the deal</td>
 </tr>
 <tr>
-<td><a href="#user-object">owner</a></td>
+<td><a href="#user-object">owner</a> (<em>object</em>)</td>
 <td>info about the owner of the deal, can be changed(by default, owner is creator)</td>
 </tr>
 <tr>
@@ -3313,7 +3311,7 @@ Content-Type: application/json
 <td>order of the deal to show</td>
 </tr>
 <tr>
-<td><a href="#stage-object">stage</a></td>
+<td><a href="#stage-object">stage</a> (<em>object</em>)</td>
 <td>stage details</td>
 </tr>
 <tr>
@@ -3321,7 +3319,7 @@ Content-Type: application/json
 <td>Value set for the deal</td>
 </tr>
 <tr>
-<td><a href="#currency-object">currency</a></td>
+<td><a href="#currency-object">currency</a> (<em>object</em>)</td>
 <td>Currency set for the deal</td>
 </tr>
 <tr>
@@ -3341,11 +3339,11 @@ Content-Type: application/json
 <td>is the deal removed</td>
 </tr>
 <tr>
-<td><a href="#people-object">people</a></td>
+<td><a href="#people-object">people</a> (<em>object</em>)</td>
 <td>contacts involved in the deal</td>
 </tr>
 <tr>
-<td><a href="#company-object">company</a></td>
+<td><a href="#company-object">company</a> (<em>object</em>)</td>
 <td>company info</td>
 </tr>
 <tr>
@@ -3357,7 +3355,7 @@ Content-Type: application/json
 <td>tags added to the deal</td>
 </tr>
 <tr>
-<td><a href="#custom_fields-object">custom_fields</a></td>
+<td><a href="#custom_fields-object">custom_fields</a> (<em>object</em>)</td>
 <td>objects of custom fields</td>
 </tr>
 <tr>
@@ -4162,11 +4160,11 @@ Content-Type: application/json
 <td>ID of the mail</td>
 </tr>
 <tr>
-<td><a href="#deals-object">deal</a></td>
+<td><a href="#deals-object">deal</a> (<em>object</em>)</td>
 <td>object with data about deal or company.</td>
 </tr>
 <tr>
-<td><a href="#people-object">people</a></td>
+<td><a href="#people-object">people</a> (<em>object</em>)</td>
 <td>array of contacts connected to the mail(To,CC)</td>
 </tr>
 <tr>
@@ -4182,7 +4180,7 @@ Content-Type: application/json
 <td>body content in html format</td>
 </tr>
 <tr>
-<td><a href="#user-object">created_by</a></td>
+<td><a href="#user-object">created_by</a> (<em>object</em>)</td>
 <td>user details of creator</td>
 </tr>
 <tr>
@@ -4232,7 +4230,7 @@ Content-Type: application/json
 <td>currency symbol</td>
 </tr>
 <tr>
-<td><a href="#user-object">owner</a></td>
+<td><a href="#user-object">owner</a> (<em>object</em>)</td>
 <td>owner data</td>
 </tr>
 <tr>
@@ -4240,7 +4238,7 @@ Content-Type: application/json
 <td>ID for the deal</td>
 </tr>
 <tr>
-<td><a href="#stage-object">stage</a></td>
+<td><a href="#stage-object">stage</a> (<em>object</em>)</td>
 <td>stage info</td>
 </tr>
 </tbody></table>
@@ -4439,63 +4437,63 @@ Content-Type: application/json
 <td>Activity ID</td>
 </tr>
 <tr>
-<td><a href="#activity-type-object">act_type</a></td>
+<td><a href="#activity-type-object">act_type</a> (<em>object</em>)</td>
 <td>activity type</td>
 </tr>
 <tr>
-<td><a href="#user-object">assigned_to</a></td>
+<td><a href="#user-object">assigned_to</a> (<em>object</em>)</td>
 <td>list of people assigned to the activity</td>
 </tr>
 <tr>
-<td><a href="#person-object">person</a></td>
+<td><a href="#person-object">person</a> (<em>object</em>)</td>
 <td>contact person details</td>
 </tr>
 <tr>
-<td><a href="#company-object">company</a></td>
+<td><a href="#company-object">company</a> (<em>object</em>)</td>
 <td>organisation details</td>
 </tr>
 <tr>
-<td><a href="#deals-object">deal</a></td>
+<td><a href="#deals-object">deal</a> (<em>object</em>)</td>
 <td>deals info</td>
 </tr>
 <tr>
-<td>activity_due_on</td>
+<td>activity_due_on (<em>date string</em>)</td>
 <td>due date-time for the activity</td>
 </tr>
 <tr>
-<td>due_time</td>
+<td>due_time (<em>date string</em>)</td>
 <td>due time of the activity</td>
 </tr>
 <tr>
-<td>due_date</td>
+<td>due_date (<em>date string</em>)</td>
 <td>due date of the activity</td>
 </tr>
 <tr>
-<td>add_next</td>
+<td>add_next (<em>boolean</em>)</td>
 <td>if the activity added next</td>
 </tr>
 <tr>
-<td>title</td>
+<td>title (<em>string</em>)</td>
 <td>title of the activity</td>
 </tr>
 <tr>
-<td>note</td>
+<td>note (<em>string</em>)</td>
 <td>description of the activity</td>
 </tr>
 <tr>
-<td>duration</td>
-<td>duration of the activity</td>
+<td>duration (<em>string</em>)</td>
+<td>duration of the activity in hrs</td>
 </tr>
 <tr>
-<td>is_completed</td>
+<td>is_completed (<em>boolean</em>)</td>
 <td>is the activity completed</td>
 </tr>
 <tr>
-<td>completed_on</td>
+<td>completed_on (<em>string</em>)</td>
 <td>date of complete</td>
 </tr>
 <tr>
-<td>is_trashed</td>
+<td>is_trashed (<em>boolean</em>)</td>
 <td>is the activity deleted</td>
 </tr>
 </tbody></table>
@@ -4509,15 +4507,15 @@ Content-Type: application/json
 </tr>
 </thead><tbody>
 <tr>
-<td>icon</td>
+<td>icon (<em>string</em>)</td>
 <td>icon name for the activity type</td>
 </tr>
 <tr>
-<td>id</td>
+<td>id (<em>integer</em>)</td>
 <td>ID of the activity type</td>
 </tr>
 <tr>
-<td>title</td>
+<td>title (<em>string</em>)</td>
 <td>title of the activity type</td>
 </tr>
 </tbody></table>
@@ -4531,35 +4529,35 @@ Content-Type: application/json
 </tr>
 </thead><tbody>
 <tr>
-<td>phone</td>
+<td>phone (<em>string</em>)</td>
 <td>phone number of the contact person</td>
 </tr>
 <tr>
-<td>name</td>
+<td>name (<em>string</em>)</td>
 <td>name of the contact person</td>
 </tr>
 <tr>
-<td>full_name</td>
+<td>full_name (<em>string</em>)</td>
 <td>full name of the contact person</td>
 </tr>
 <tr>
-<td>image</td>
+<td>image (<em>url string</em>)</td>
 <td>image url for the contact</td>
 </tr>
 <tr>
-<td>job_title</td>
+<td>job_title (<em>string</em>)</td>
 <td>Desgination</td>
 </tr>
 <tr>
-<td>id</td>
+<td>id (<em>integer</em>)</td>
 <td>ID of the contact person</td>
 </tr>
 <tr>
-<td>ctype</td>
+<td>ctype (<em>string</em>)</td>
 <td>content type (&lsquo;person&rsquo;)</td>
 </tr>
 <tr>
-<td>email</td>
+<td>email (<em>string</em>)</td>
 <td>email address</td>
 </tr>
 </tbody></table>
@@ -4573,31 +4571,31 @@ Content-Type: application/json
 </tr>
 </thead><tbody>
 <tr>
-<td>domain</td>
+<td>domain (<em>string</em>)</td>
 <td>domain name for the company</td>
 </tr>
 <tr>
-<td>name</td>
+<td>name (<em>string</em>)</td>
 <td>name of the company</td>
 </tr>
 <tr>
-<td>image</td>
+<td>image (<em>string</em>)</td>
 <td>image url for the company logo</td>
 </tr>
 <tr>
-<td>ctype</td>
+<td>ctype (<em>string</em>)</td>
 <td>content type (&#39;company&rsquo;)</td>
 </tr>
 <tr>
-<td>phone</td>
+<td>phone (<em>string</em>)</td>
 <td>phone number</td>
 </tr>
 <tr>
-<td>address</td>
+<td>address (<em>string</em>)</td>
 <td>Company address</td>
 </tr>
 <tr>
-<td>id</td>
+<td>id (<em>integer</em>)</td>
 <td>Company ID</td>
 </tr>
 </tbody></table>
@@ -4611,15 +4609,15 @@ Content-Type: application/json
 </tr>
 </thead><tbody>
 <tr>
-<td>id</td>
+<td>id (<em>integer</em>)</td>
 <td>ID of the deal</td>
 </tr>
 <tr>
-<td>ctype</td>
+<td>ctype (<em>string</em>)</td>
 <td>content type (&#39;deal&rsquo;)</td>
 </tr>
 <tr>
-<td>dealname</td>
+<td>dealname (<em>string</em>)</td>
 <td>Deal name</td>
 </tr>
 </tbody></table>
@@ -4908,15 +4906,15 @@ Content-Type: application/json
 <td>Designation</td>
 </tr>
 <tr>
-<td><a href="#user-object">owner</a></td>
+<td><a href="#user-object">owner</a> (<em>object</em>)</td>
 <td>owner info</td>
 </tr>
 <tr>
-<td><a href="#company-object">company</a></td>
+<td><a href="#company-object">company</a> (<em>object</em>)</td>
 <td>company details</td>
 </tr>
 <tr>
-<td><a href="#user-object">created_by</a></td>
+<td><a href="#user-object">created_by</a> (<em>object</em>)</td>
 <td>creator of the contact</td>
 </tr>
 <tr>
@@ -4928,7 +4926,7 @@ Content-Type: application/json
 <td>tag names given for the contact</td>
 </tr>
 <tr>
-<td><a href="#custom-fields-object">custom_fields</a></td>
+<td><a href="#custom-fields-object">custom_fields</a> (<em>object</em>)</td>
 <td>all custom fields for the CRM contacts</td>
 </tr>
 </tbody></table>
@@ -5033,7 +5031,7 @@ Content-Type: application/json
 
 <h4 id="returns">Returns</h4>
 
-<p>If call succeeds, it will send the <a href="#contacts-object">contacts object</a> back. </p>
+<p>If call succeeds, it will send the <a href="#people-object">people object</a> back. </p>
 
 <h3 id="update-people">Update People</h3>
 <pre class="highlight http"><code><span class="nf">PUT</span> <span class="nn">api/contacts/people/{contact_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
@@ -5224,11 +5222,11 @@ Content-Type: application/json
 <td>phone number</td>
 </tr>
 <tr>
-<td><a href="#user-object">created_by</a></td>
+<td><a href="#user-object">created_by</a> (<em>object</em>)</td>
 <td>organization added-by user details</td>
 </tr>
 <tr>
-<td><a href="#user-object">owner</a></td>
+<td><a href="#user-object">owner</a> (<em>object</em>)</td>
 <td>owner details</td>
 </tr>
 <tr>
@@ -5248,7 +5246,7 @@ Content-Type: application/json
 <td>tags related to organization</td>
 </tr>
 <tr>
-<td><a href="#custom_fields-object">custom_fields</a></td>
+<td><a href="#custom_fields-object">custom_fields</a> (<em>object</em>)</td>
 <td>custom fields added to the organization add-form</td>
 </tr>
 </tbody></table>
@@ -5455,63 +5453,88 @@ Content-Type: application/json
 
           <h1 id="hrms">HRMS</h1>
 
-<p>Human Resource Management System(HRMS) has got api endpoints for <a href="#employees">employees</a>, <a href="#time-off-requests">time off</a>, <a href="#tasks">tasks</a> and <a href="#automatic-check-ins">check-ins</a>.</p>
+<p>HRMS provides various HRM related operations using the <code class="prettyprint">/hrm</code> resource and related sub-resources. Use HRM for managing new employees, timeoff, and automatic check-ins. You can also use sub-resources to get employees, timeoff, tasks and automatic check-ins related details.</p>
 
           <h2 id="time-off-policy">Time Off Policy</h2>
 
 <h3 id="time-off-policy-object">Time off Policy Object</h3>
-<pre class="highlight http"><code><span class="nf">GET</span> <span class="nn">/api/hrm/people/{id}/timeoff</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<pre class="highlight http"><code><span class="nf">GET</span> <span class="nn">/api/hrm/organization/settings/timeoff-policy/{timeoff_policy_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 <span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
 
 HTTP/1.1 200 OK
 Content-Type: application/json
 </code></pre>
-<pre class="highlight json"><code><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"used_timeoff"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"availabale_timeoff"</span><span class="p">:</span><span class="w"> </span><span class="mf">13.0</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"policy_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"policy_details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"working_hours"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">130</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-06-20T12:47:22.427736Z"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-06-20T12:47:58.514672Z"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"notes"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"mon_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"09:00 AM"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"mon_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05:00 PM"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"tue_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"09:00 AM"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"tue_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05:00 PM"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"wed_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"09:00 AM"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"wed_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05:00 PM"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"thu_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"09:00 AM"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"thu_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05:00 PM"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"fri_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"09:00 AM"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"fri_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05:00 PM"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"sat_start"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"sat_end"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"sun_start"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"sun_end"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"P"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"created_by"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"modified_by"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nt">"total_timeoff"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"policy_renew_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"YF"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"renew_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-01"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"carry_over"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"timeoff_interval"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nt">"policy_emp_timeoff"</span><span class="p">:</span><span class="w"> </span><span class="mf">20.0</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"policy"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"pending_timeoff"</span><span class="p">:</span><span class="w"> </span><span class="mf">7.0</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"approved_timeoff"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="w">
-    </span><span class="p">}</span><span class="w">
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">51</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Sick leave policy"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"policy_effective_date"</span><span class="p">:</span><span class="s2">"2016-03-01"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"total_timeoff"</span><span class="p">:</span><span class="mi">21</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"schedule"</span><span class="p">:</span><span class="mi">51</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_interval"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_public"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_type"</span><span class="p">:</span><span class="s2">"D"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_disply_type"</span><span class="p">:</span><span class="s2">"D"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"day_hours"</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"policy_renew_type"</span><span class="p">:</span><span class="s2">"YF"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"total_employees"</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-06-10T11:10:53.824171Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_default"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"assigned_users"</span><span class="p">:[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">19</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"rt"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"rajmohan"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"rajmohantestmail@gmail.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">74</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Ac"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Aravind cse"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"arvindcse2014@gmail.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">76</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"GY"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo Yahoo"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geojacobm6@yahoo.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">72</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"ym"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"yolanda messina"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"yolandamessina364@gmail.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">201</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"GJ"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo Jacob"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geo.jacob11@adhome.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/usersuser-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre>
 
-<aside>GET /api/hrm/people/{id}/timeoff </aside>
+<aside>GET /api/hrm/organization/settings/timeoff-policy/{timeoff_policy_id} </aside>
 
 <table><thead>
 <tr>
@@ -5519,87 +5542,69 @@ Content-Type: application/json
 <th>Description</th>
 </tr>
 </thead><tbody>
-<tr>
-<td>used_timeoff (<em>integer</em>)</td>
-<td>Number of used timeoff days</td>
-</tr>
-<tr>
-<td>available_timeoff (<em>integer</em>)</td>
-<td>Number of available timeoff days</td>
-</tr>
-<tr>
-<td>policy_status (<em>boolean</em>)</td>
-<td>Policy active or not</td>
-</tr>
-<tr>
-<td><a href="#policy-details-object">policy_details</a> (<em>object</em>)</td>
-<td>Details about the policy</td>
-</tr>
-<tr>
-<td>policy_emp_timeoff (<em>integer</em>)</td>
-<td>total number of timeoff days</td>
-</tr>
-<tr>
-<td>policy (<em>boolean</em>)</td>
-<td>is policy is activated for the specific employee</td>
-</tr>
-<tr>
-<td>pending_timeoff (<em>integer</em>)</td>
-<td>Number of timeoff days left</td>
-</tr>
-<tr>
-<td>approved_timeoff (<em>integer</em>)</td>
-<td>Number of timeoff days approved</td>
-</tr>
 <tr>
 <td>id</td>
-<td>ID of the Timeoff policy</td>
-</tr>
-</tbody></table>
-
-<h4 id="policy-details-object">Policy Details Object</h4>
-
-<table><thead>
-<tr>
-<th>Attribute</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td><a href="#working-hours-object">working_hours</a> (<em>object</em>)</td>
-<td>details about the working hours</td>
+<td>ID of the policy</td>
 </tr>
 <tr>
-<td>total_timeoff (<em>integer</em>)</td>
-<td>total number of timeoff days</td>
-</tr>
-<tr>
-<td>name (<em>string</em>)</td>
+<td>name</td>
 <td>name of the policy</td>
 </tr>
 <tr>
-<td>policy_renew_type (<em>string</em>)</td>
-<td>Policy renewal type- first of every year or half year</td>
+<td>policy_effective_date</td>
+<td>policy effective-from date</td>
 </tr>
 <tr>
-<td>renew_date (<em>string</em>)</td>
-<td>next renewal date</td>
+<td>total_timeoff</td>
+<td>total number of timeoff</td>
 </tr>
 <tr>
-<td>carry_over (<em>boolean</em>)</td>
-<td>is timeoff balance can be carried over to next year</td>
+<td>schedule</td>
+<td></td>
 </tr>
 <tr>
-<td>id (<em>integer</em>)</td>
-<td>ID of the timeoff policy</td>
+<td>timeoff_interval</td>
+<td></td>
 </tr>
 <tr>
-<td>timeoff_interval (<em>integer</em>)</td>
+<td>timeoff_type</td>
+<td></td>
+</tr>
+<tr>
+<td>timeoff_display_type</td>
+<td></td>
+</tr>
+<tr>
+<td>day_hours</td>
+<td></td>
+</tr>
+<tr>
+<td>policy_renew_type</td>
+<td></td>
+</tr>
+<tr>
+<td>total_employees</td>
+<td></td>
+</tr>
+<tr>
+<td>modified_on</td>
+<td></td>
+</tr>
+<tr>
+<td>is_active</td>
+<td></td>
+</tr>
+<tr>
+<td>is_default</td>
+<td></td>
+</tr>
+<tr>
+<td>assigned_users</td>
 <td></td>
 </tr>
 </tbody></table>
 
-<h4 id="working-hours-object">Working Hours Object</h4>
+<h4 id="assigned-users-object">Assigned Users Object</h4>
 
 <table><thead>
 <tr>
@@ -5608,93 +5613,87 @@ Content-Type: application/json
 </tr>
 </thead><tbody>
 <tr>
-<td>id (<em>integer</em>)</td>
-<td>id of the object</td>
+<td>id</td>
+<td>ID for the user</td>
 </tr>
 <tr>
-<td>created_on (<em>datefield</em>)</td>
-<td>working hours creation date</td>
+<td>label_txt</td>
+<td>label text for avatar</td>
 </tr>
 <tr>
-<td>modified_on</td>
-<td>date on which modified the working hours</td>
+<td>image</td>
+<td>image url for the profile picture</td>
 </tr>
 <tr>
-<td>notes</td>
-<td>description of the working hours</td>
+<td>full_name</td>
+<td>full name of the user</td>
 </tr>
 <tr>
-<td>mon_start (<em>string</em>)</td>
-<td>work start time on monday</td>
+<td>email</td>
+<td>email ID</td>
 </tr>
 <tr>
-<td>mon_end (<em>string</em>)</td>
-<td>work end time on monday</td>
-</tr>
-<tr>
-<td>tue_start (<em>string</em>)</td>
-<td>work start time on tuesday</td>
-</tr>
-<tr>
-<td>tue_end (<em>string</em>)</td>
-<td>work end time on tuesday</td>
-</tr>
-<tr>
-<td>wed_start (<em>string</em>)</td>
-<td>work start time on wednesday</td>
-</tr>
-<tr>
-<td>wed_end (<em>string</em>)</td>
-<td>work end time on wednesday</td>
-</tr>
-<tr>
-<td>thu_start (<em>string</em>)</td>
-<td>work start time on thursday</td>
-</tr>
-<tr>
-<td>thu_end (<em>string</em>)</td>
-<td>work end time on thursday</td>
-</tr>
-<tr>
-<td>fri_start (<em>string</em>)</td>
-<td>work start time on friday</td>
-</tr>
-<tr>
-<td>fri_end (<em>string</em>)</td>
-<td>work end time on friday</td>
-</tr>
-<tr>
-<td>sat_start (<em>string</em>)</td>
-<td>work start time on saturday</td>
-</tr>
-<tr>
-<td>sat_end (<em>string</em>)</td>
-<td>work end time on saturday</td>
-</tr>
-<tr>
-<td>sun_start (<em>string</em>)</td>
-<td>work start time on sunday</td>
-</tr>
-<tr>
-<td>sun_end (<em>string</em>)</td>
-<td>work end time on sunday</td>
-</tr>
-<tr>
-<td>status (<em>string</em>)</td>
-<td></td>
-</tr>
-<tr>
-<td>created_by (<em>integer</em>)</td>
-<td>ID of user who created the working hours</td>
-</tr>
-<tr>
-<td>modified_by (<em>integer</em>)</td>
-<td>ID of user who modified the working hours</td>
+<td>upcoming_birthday</td>
+<td>upcoming birthday</td>
 </tr>
 </tbody></table>
 
+<!-- 
+Attribute | Description 
+--------- | ----------- 
+used_timeoff (*integer*) | Number of used timeoff days
+available_timeoff (*integer*) | Number of available timeoff days
+policy_status (*boolean*)| Policy active or not
+[policy_details](#policy-details-object) (*object*) | Details about the policy
+policy_emp_timeoff (*integer*) | total number of timeoff days
+policy (*boolean*) | is policy is activated for the specific employee
+pending_timeoff (*integer*)| Number of timeoff days left
+approved_timeoff (*integer*)| Number of timeoff days approved
+id | ID of the Timeoff policy
+
+
+#### Policy Details Object
+
+Attribute | Description 
+--------- | ----------- 
+[working_hours](#working-hours-object) (*object*)| details about the working hours
+total_timeoff (*integer*)| total number of timeoff days
+name (*string*) | name of the policy
+policy_renew_type (*string*)| Policy renewal type- first of every year or half year
+renew_date (*string*)| next renewal date
+carry_over (*boolean*)| is timeoff balance can be carried over to next year
+id (*integer*) | ID of the timeoff policy
+timeoff_interval (*integer*) | 
+
+#### Working Hours Object
+
+Attribute | Description 
+--------- | ----------- 
+id (*integer*) | id of the object
+created_on (*datefield*) | working hours creation date
+modified_on | date on which modified the working hours
+notes | description of the working hours
+mon_start (*string*)| work start time on monday
+mon_end (*string*)| work end time on monday
+tue_start (*string*)| work start time on tuesday
+tue_end (*string*)| work end time on tuesday 
+wed_start (*string*)| work start time on wednesday
+wed_end (*string*)| work end time on wednesday
+thu_start (*string*)| work start time on thursday
+thu_end (*string*)| work end time on thursday 
+fri_start (*string*)| work start time on friday
+fri_end (*string*)| work end time on friday
+sat_start (*string*)| work start time on saturday
+sat_end (*string*)| work end time on saturday
+sun_start (*string*)| work start time on sunday
+sun_end (*string*)| work end time on sunday
+status (*string*)|
+created_by (*integer*)| ID of user who created the working hours
+modified_by (*integer*)| ID of user who modified the working hours
+ -->
+
 <h3 id="create-time-off-policy">Create Time off Policy</h3>
-<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">/api/hrm/people/{id}/timeoff</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">/api/hrm/organization/settings/timeoff-policy</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 <span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
 
@@ -5776,9 +5775,123 @@ Content-Type: application/json
 
 <p>If the call succeeds, the <a href="#time-off-policy-object">timeoff policy</a> object is returned with all the information about the timeoff policy.</p>
 
-<h3 id="delete-time-off-policy">Delete Time Off Policy</h3>
+<h3 id="update-time-off-policy">Update Time Off Policy</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span> <span class="nn">/api/hrm/organization/settings/timeoff-policy/{timeoff_policy_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
 
-<aside>DELETE api/hrm/organization/settings/timeoff-policy/{id}</aside>
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">71</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"test"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"policy_effective_date"</span><span class="p">:</span><span class="s2">"2016-05-31"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"total_timeoff"</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"schedule"</span><span class="p">:</span><span class="mi">71</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_interval"</span><span class="p">:</span><span class="mi">15</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_public"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_type"</span><span class="p">:</span><span class="s2">"D"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_disply_type"</span><span class="p">:</span><span class="s2">"D"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"day_hours"</span><span class="p">:</span><span class="mi">9</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"policy_renew_type"</span><span class="p">:</span><span class="s2">"YF"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"total_employees"</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-06-02T12:32:24.887566Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_default"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"assigned_users"</span><span class="p">:[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">202</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"GT"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo Test 12"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geo.jacob12@adhome.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">76</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"GY"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo Yahoo"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geojacobm6@yahoo.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">77</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Go"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo outlook"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geojacobm6@outlook.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">71</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"test"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"policy_effective_date"</span><span class="p">:</span><span class="s2">"2016-05-31"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"total_timeoff"</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"schedule"</span><span class="p">:</span><span class="mi">71</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_interval"</span><span class="p">:</span><span class="mi">15</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_public"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_type"</span><span class="p">:</span><span class="s2">"D"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"timeoff_disply_type"</span><span class="p">:</span><span class="s2">"D"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"day_hours"</span><span class="p">:</span><span class="mi">9</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"policy_renew_type"</span><span class="p">:</span><span class="s2">"YF"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"total_employees"</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-07-25T07:04:23.225067Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_default"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"assigned_users"</span><span class="p">:[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">202</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"GT"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo Test 12"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geo.jacob12
+@adhome.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">76</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"GY"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo
+ Yahoo"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geojacobm6@yahoo.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">77</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Go"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo outlook"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geojacobm6@outlook.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<h4 id="returns">Returns</h4>
+
+<p>If the call succeeds, the <a href="#time-off-policy-object">timeoff policy</a> object is returned with all the information about the updated timeoff policy.</p>
+
+<h3 id="delete-time-off-policy">Delete Time Off Policy</h3>
+<pre class="highlight http"><code><span class="nf">DELETE</span> <span class="nn">/api/hrm/organization/settings/timeoff-policy/{timeoff_policy_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+
+<aside>DELETE api/hrm/organization/settings/timeoff-policy/{timeoff_policy_id}</aside>
 
           <h2 id="time-off-requests">Time Off Requests</h2>
 <pre class="highlight http"><code><span class="nf">GET</span> <span class="nn">/api/hrm/people/{id}/time-off-request</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
