@@ -269,7 +269,7 @@
                </span><span class="nt">"content_type"</span><span class="p">:</span><span class="s2">"task"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"ext"</span><span class="p">:</span><span class="s2">"png"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/565/files/3781"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"download_url"</span><span class="p">:</span><span class="s2">"https://app.goTeamWave.com/api/projects/565/files/download/3781"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"download_url"</span><span class="p">:</span><span class="s2">"https://app.goAdHome.com/api/projects/565/files/download/3781"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"is_private"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
                </span><span class="nt">"tgs"</span><span class="p">:</span><span class="kc">null</span><span class="w">
             </span><span class="p">}</span><span class="w">
@@ -563,7 +563,7 @@
 </tr>
 <tr>
 <td>trial_end_on (<em>date</em>)</td>
-<td>Date on which TeamWave account will end.</td>
+<td>Date on which AdHome account will end.</td>
 </tr>
 </tbody></table>
 

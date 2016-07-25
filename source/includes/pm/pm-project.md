@@ -10,7 +10,7 @@ Sample Object
 ```json
 {
    "id":280,
-   "name":"Explore TeamWave",
+   "name":"Explore AdHome",
    "description":"This template will give you to create sample project",
    "logo":"https://twprofile.s3.amazonaws.com/image.jpg",
    "owner":{
@@ -174,7 +174,7 @@ Content-Type: application/json
 
  ```json
 {
-	"name": "Explore TeamWave",
+	"name": "Explore AdHome",
 	"description": "Unified Platform for Collaboration, Sales, 
 	Marketing & Support",
 	"logo": "https://twprofile.s3.amazonaws.com/image.jpg",
@@ -184,8 +184,8 @@ Content-Type: application/json
 	"label_txt": "Ex",
 	"new_invite_data": [ ],
 	"share_data": null,
-	"share_note": "We invite you to collaborate with us on TeamWave 
-	for this project. We use TeamWave to manage tasks, share ideas and discuss issues.",
+	"share_note": "We invite you to collaborate with us on AdHome 
+	for this project. We use AdHome to manage tasks, share ideas and discuss issues.",
 	"share_type": "c"
  }
 ```
@@ -223,7 +223,7 @@ Content-Type: application/json
 [
    {
       "id":280,
-      "name":"Explore TeamWave",
+      "name":"Explore AdHome",
       "description":"This template will give you to create sample project",
       "logo":"https://twprofile.s3.amazonaws.com/image.jpg",
       "label_color":null,
@@ -238,14 +238,14 @@ Content-Type: application/json
    },
    {
       "id":253,
-      "name":"TeamWave",
+      "name":"AdHome",
       "description":"Unified Platform for Collaboration, Sales, Marketing & Support",
       "logo":"https://twprofile.s3.amazonaws.com/image.jpg",
       "label_color":"#9da2a6",
       "tags":{
          "28":{
             "color":"label-color-6",
-            "tag":"TeamWave"
+            "tag":"AdHome"
          }
       },
       "owner_id":2,

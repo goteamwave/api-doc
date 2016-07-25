@@ -274,7 +274,7 @@ Sample Object
                "content_type":"task",
                "ext":"png",
                "resource_url":"/projects/565/files/3781",
-               "download_url":"https://app.goTeamWave.com/api/projects/565/files/download/3781",
+               "download_url":"https://app.goAdHome.com/api/projects/565/files/download/3781",
                "is_private":false,
                "tgs":null
             }
@@ -373,7 +373,7 @@ default_currency_symbol (*string*) | Default Currency symbol of the Organization
 label_txt (*string*) | Label text of the Organization,
 orgkey (*string*) | Organization key,
 status (*string*) | Status of the organization . eg,.paying,
-trial_end_on (*date*) | Date on which TeamWave account will end.
+trial_end_on (*date*) | Date on which AdHome account will end.
 
 
 ### Create Task Group

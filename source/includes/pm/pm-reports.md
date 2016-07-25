@@ -8,7 +8,7 @@
       {
          "com_per":80.3661,
          "od_tasks":18,
-         "name":"TeamWave",
+         "name":"AdHome",
          "t_time":{
             "mns":0,
             "hrs":19
@@ -33,7 +33,7 @@
       {
          "com_per":70.5882,
          "od_tasks":0,
-         "name":"Explore TeamWave",
+         "name":"Explore AdHome",
          "t_time":{
             "mns":0,
             "hrs":27
@@ -64,12 +64,12 @@
       {
          "tasks":29,
          "project_id":253,
-         "project__name":"TeamWave"
+         "project__name":"AdHome"
       },
       {
          "tasks":4,
          "project_id":280,
-         "project__name":"Explore TeamWave"
+         "project__name":"Explore AdHome"
       }
    ],
    "t_milestones":1,
