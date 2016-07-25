@@ -110,6 +110,7 @@
       </div>
         <ul class="toc-footer">
             <li><a href='http://TeamWave.com'>Sign Up Today</a></li>
+            <li><a href="mailto:support@teamwave.com" target="_top">Contact Us</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -120,7 +121,7 @@
 
 <p>The TeamWave API is organized around REST. Our API has predictable, resource-oriented URLs, and uses HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which are understood by off-the-shelf HTTP clients. We support cross-origin resource sharing, allowing you to interact securely with our API from a client-side (though you should never expose your secret API key). This API reference provides information on available endpoints and how to interact with it. JSON is returned by all API responses, including errors, although our API libraries convert responses to appropriate language-specific objects.</p>
 
-          <h1 id="pm">PM</h1>
+          <h1 id="projects">Projects</h1>
 
 <p>Projects provides various project management related operations using the <code class="prettyprint">/projects</code> resource and related sub-resources. Use projects for managing new projects and existing projects. You can also use sub-resources to get tasks, milestones, events, files, reports, timelog and notes related details.</p>
 
@@ -241,7 +242,7 @@
 <td>logo url for the project logo</td>
 </tr>
 <tr>
-<td><a href="#pm-user-object">owner</a></td>
+<td><a href="#pm-user-object">owner</a> (<em>object</em>)</td>
 <td>owner details</td>
 </tr>
 <tr>
@@ -273,7 +274,7 @@
 <td>if privacy is enabled or not</td>
 </tr>
 <tr>
-<td><a href="#permissions-object">permissions</a></td>
+<td><a href="#permissions-object">permissions</a> (<em>object</em>)</td>
 <td>array of all the permissions for the project</td>
 </tr>
 <tr>
@@ -5543,64 +5544,64 @@ Content-Type: application/json
 </tr>
 </thead><tbody>
 <tr>
-<td>id</td>
+<td>id (<em>integer</em>)</td>
 <td>ID of the policy</td>
 </tr>
 <tr>
-<td>name</td>
+<td>name (<em>string</em>)</td>
 <td>name of the policy</td>
 </tr>
 <tr>
-<td>policy_effective_date</td>
+<td>policy_effective_date (<em>string</em>)</td>
 <td>policy effective-from date</td>
 </tr>
 <tr>
-<td>total_timeoff</td>
+<td>total_timeoff (<em>integer</em>)</td>
 <td>total number of timeoff</td>
 </tr>
 <tr>
 <td>schedule</td>
-<td></td>
+<td>schedule ID</td>
 </tr>
 <tr>
-<td>timeoff_interval</td>
-<td></td>
+<td>timeoff_interval (<em>integer</em>)</td>
+<td>days after which new employee can apply for timeoff</td>
 </tr>
 <tr>
 <td>timeoff_type</td>
-<td></td>
+<td>timeoff displayed in days (&rsquo;D&rsquo;) and displayed in hours (&lsquo;H&rsquo;)</td>
 </tr>
 <tr>
 <td>timeoff_display_type</td>
-<td></td>
+<td>timeoff displayed in days (&rsquo;D&rsquo;) and displayed in hours (&#39;H&rsquo;)</td>
 </tr>
 <tr>
-<td>day_hours</td>
-<td></td>
+<td>day_hours (<em>integer</em>)</td>
+<td>hours of work per day</td>
 </tr>
 <tr>
-<td>policy_renew_type</td>
-<td></td>
+<td>policy_renew_type (<em>string</em>)</td>
+<td>Policy renewal type- first of every year (&#39;YF&rsquo;) or half year (&#39;YH&rsquo;)</td>
 </tr>
 <tr>
-<td>total_employees</td>
-<td></td>
+<td>total_employees (<em>integer</em>)</td>
+<td>total number of employees</td>
 </tr>
 <tr>
-<td>modified_on</td>
-<td></td>
+<td>modified_on (<em>string</em>)</td>
+<td>date of modification</td>
 </tr>
 <tr>
-<td>is_active</td>
-<td></td>
+<td>is_active (<em>boolean</em>)</td>
+<td>is the policy active</td>
 </tr>
 <tr>
-<td>is_default</td>
-<td></td>
+<td>is_default (<em>boolean</em>)</td>
+<td>is the policy default for the organization</td>
 </tr>
 <tr>
-<td>assigned_users</td>
-<td></td>
+<td><a href="#assigned-users-object">assigned_users</a> (<em>array of objects</em>)</td>
+<td>assigned user details</td>
 </tr>
 </tbody></table>
 
@@ -5613,27 +5614,27 @@ Content-Type: application/json
 </tr>
 </thead><tbody>
 <tr>
-<td>id</td>
+<td>id (<em>integer</em>)</td>
 <td>ID for the user</td>
 </tr>
 <tr>
-<td>label_txt</td>
+<td>label_txt (<em>string</em>)</td>
 <td>label text for avatar</td>
 </tr>
 <tr>
-<td>image</td>
+<td>image (<em>string</em>)</td>
 <td>image url for the profile picture</td>
 </tr>
 <tr>
-<td>full_name</td>
+<td>full_name (<em>string</em>)</td>
 <td>full name of the user</td>
 </tr>
 <tr>
-<td>email</td>
+<td>email (<em>string</em>)</td>
 <td>email ID</td>
 </tr>
 <tr>
-<td>upcoming_birthday</td>
+<td>upcoming_birthday (<em>array</em>)</td>
 <td>upcoming birthday</td>
 </tr>
 </tbody></table>
@@ -5746,27 +5747,27 @@ Content-Type: application/json
 </tr>
 </thead><tbody>
 <tr>
-<td>name</td>
+<td>name (<em>string</em>)</td>
 <td>Name of the Time off policy</td>
 </tr>
 <tr>
-<td>total_timeoff</td>
+<td>total_timeoff (<em>integer</em>)</td>
 <td>total number of timeoff</td>
 </tr>
 <tr>
-<td>policy_effective_date</td>
+<td>policy_effective_date (<em>date string</em>)</td>
 <td>policy effective from date</td>
 </tr>
 <tr>
-<td>policy_renew_type</td>
+<td>policy_renew_type (<em>string</em>)</td>
 <td>time of renewal of policy</td>
 </tr>
 <tr>
-<td>day_hours</td>
+<td>day_hours (<em>string</em>)</td>
 <td>total work hours per day</td>
 </tr>
 <tr>
-<td>timeoff_interval</td>
+<td>timeoff_interval (<em>integer</em>)</td>
 <td>number of days after which new hire can apply for leave</td>
 </tr>
 </tbody></table>
@@ -6051,7 +6052,7 @@ Content-Type: application/json
 <td>comment on the timeoff</td>
 </tr>
 <tr>
-<td><a href="#user-object">modified_by</a></td>
+<td><a href="#user-object">modified_by</a> (<em>object</em>)</td>
 <td>details of the person who modified the timeoff request</td>
 </tr>
 <tr>
@@ -6059,7 +6060,7 @@ Content-Type: application/json
 <td>number of days of leave applied</td>
 </tr>
 <tr>
-<td><a href="#activities-object">activities</a></td>
+<td><a href="#activities-object">activities</a> (<em>object</em>)</td>
 <td>array of all activities of the request</td>
 </tr>
 <tr>
@@ -6067,7 +6068,7 @@ Content-Type: application/json
 <td>possible to approve or not</td>
 </tr>
 <tr>
-<td><a href="#user-object">created_by</a></td>
+<td><a href="#user-object">created_by</a> (<em>object</em>)</td>
 <td>Details about the creator of the request</td>
 </tr>
 <tr>
@@ -6075,7 +6076,7 @@ Content-Type: application/json
 <td>datetime of the creation</td>
 </tr>
 <tr>
-<td><a href="#policy-detail">policy_detail</a></td>
+<td><a href="#policy-detail-object">policy_detail</a> (<em>object</em>)</td>
 <td>Info on the policy (id,name ..)</td>
 </tr>
 <tr>
@@ -7230,7 +7231,7 @@ Venkat"</span><span class="p">,</span><span class="w">
 <td>Date before task needs to be completed</td>
 </tr>
 <tr>
-<td><a href="#asigned_to-object">assigned_to</a></td>
+<td><a href="#asigned_to-object">assigned_to</a> (<em>object</em>)</td>
 <td>task assigned to employee details</td>
 </tr>
 <tr>
@@ -7246,7 +7247,7 @@ Venkat"</span><span class="p">,</span><span class="w">
 <td>if task can be edited</td>
 </tr>
 <tr>
-<td><a href="#created_by-object">created_by</a></td>
+<td><a href="#created_by-object">created_by</a> (<em>object</em>)</td>
 <td>info about the creator of the task</td>
 </tr>
 <tr>
@@ -7485,7 +7486,7 @@ Content-Type: application/json
 <td>number of people assigned</td>
 </tr>
 <tr>
-<td><a href="#assigned_to-object">assigned_to</a></td>
+<td><a href="#assigned_to-object">assigned_to</a> (<em>object</em>)</td>
 <td>info about people assigned to the checkin</td>
 </tr>
 <tr>

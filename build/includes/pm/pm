@@ -1,3 +1,3 @@
-<h1 id="pm">PM</h1>
+<h1 id="projects">Projects</h1>
 
 <p>Projects provides various project management related operations using the <code class="prettyprint">/projects</code> resource and related sub-resources. Use projects for managing new projects and existing projects. You can also use sub-resources to get tasks, milestones, events, files, reports, timelog and notes related details.</p>
