@@ -8,7 +8,7 @@
     </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
  </span><span class="p">},</span><span class="w">
  </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
@@ -16,7 +16,7 @@
     </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
  </span><span class="p">},</span><span class="w">
  </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"d3"</span><span class="p">,</span><span class="w">
@@ -111,11 +111,11 @@
 <td>ID of the deal</td>
 </tr>
 <tr>
-<td><a href="#user-object">created_by</a></td>
+<td><a href="#user-object">created_by</a> (<em>object</em>)</td>
 <td>info about the creator of the deal</td>
 </tr>
 <tr>
-<td><a href="#user-object">owner</a></td>
+<td><a href="#user-object">owner</a> (<em>object</em>)</td>
 <td>info about the owner of the deal, can be changed(by default, owner is creator)</td>
 </tr>
 <tr>
@@ -127,7 +127,7 @@
 <td>order of the deal to show</td>
 </tr>
 <tr>
-<td><a href="#stage-object">stage</a></td>
+<td><a href="#stage-object">stage</a> (<em>object</em>)</td>
 <td>stage details</td>
 </tr>
 <tr>
@@ -135,7 +135,7 @@
 <td>Value set for the deal</td>
 </tr>
 <tr>
-<td><a href="#currency-object">currency</a></td>
+<td><a href="#currency-object">currency</a> (<em>object</em>)</td>
 <td>Currency set for the deal</td>
 </tr>
 <tr>
@@ -155,11 +155,11 @@
 <td>is the deal removed</td>
 </tr>
 <tr>
-<td><a href="#people-object">people</a></td>
+<td><a href="#people-object">people</a> (<em>object</em>)</td>
 <td>contacts involved in the deal</td>
 </tr>
 <tr>
-<td><a href="#company-object">company</a></td>
+<td><a href="#company-object">company</a> (<em>object</em>)</td>
 <td>company info</td>
 </tr>
 <tr>
@@ -171,7 +171,7 @@
 <td>tags added to the deal</td>
 </tr>
 <tr>
-<td><a href="#custom_fields-object">custom_fields</a></td>
+<td><a href="#custom_fields-object">custom_fields</a> (<em>object</em>)</td>
 <td>objects of custom fields</td>
 </tr>
 <tr>
@@ -422,7 +422,7 @@ Content-Type: application/json
 .jpg"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
    </span><span class="p">},</span><span class="w">
    </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"test deal"</span><span class="p">,</span><span class="w">
@@ -506,7 +506,7 @@ Content-Type: application/json
 .jpg"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
    </span><span class="p">},</span><span class="w">
    </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
@@ -606,7 +606,7 @@ Content-Type: application/json
       </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.comimage.jpg"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
    </span><span class="p">},</span><span class="w">
    </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
@@ -614,7 +614,7 @@ Content-Type: application/json
       </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
    </span><span class="p">},</span><span class="w">
    </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"test deal"</span><span class="p">,</span><span class="w">
@@ -704,7 +704,7 @@ Content-Type: application/json
       </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
    </span><span class="p">},</span><span class="w">
    </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
@@ -712,7 +712,7 @@ Content-Type: application/json
       </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
    </span><span class="p">},</span><span class="w">
    </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"DA10"</span><span class="p">,</span><span class="w">
@@ -791,7 +791,7 @@ Content-Type: application/json
       </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
    </span><span class="p">},</span><span class="w">
    </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
@@ -799,7 +799,7 @@ Content-Type: application/json
       </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@example_domain.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
    </span><span class="p">},</span><span class="w">
    </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"test deal"</span><span class="p">,</span><span class="w">
