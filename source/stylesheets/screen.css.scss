@@ -126,6 +126,7 @@ html, body {
     &.visible {
       height: 30%;
       margin-bottom: 1em;
+      color: #fff
     }
 
     @include embossed-bg;
@@ -136,7 +137,7 @@ html, body {
     }
 
     a {
-      color: $nav-text;
+      color: #7f7f7f;
       text-decoration: none;
 
       &:hover {

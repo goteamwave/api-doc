@@ -20,7 +20,7 @@ includes:
   - pm/pm-project-milestone
   - pm/pm-project-timelog
   - pm/pm-project-events
-  - pm/pm-project-templates
+  - pm/pm-templates
   - crm/crm
   - crm/crm-deals
   - crm/crm-mails
