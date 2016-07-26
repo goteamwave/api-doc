@@ -294,7 +294,7 @@
 </tr>
 <tr>
 <td>company_name (<em>string</em>)</td>
-<td>company name of the contact</td>
+<td>Company name of the contact</td>
 </tr>
 <tr>
 <td>tags (<em>string</em>)</td>

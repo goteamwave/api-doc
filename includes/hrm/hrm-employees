@@ -249,7 +249,7 @@ Content-Type: application/json
    </span><span class="nt">"last_login"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
    </span><span class="nt">"organization"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
    </span><span class="nt">"is_admin"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"company"</span><span class="p">:</span><span class="s2">"Company Name"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"company"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
    </span><span class="nt">"first_letter"</span><span class="p">:</span><span class="s2">"H"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Himesh khan"</span><span class="p">,</span><span class="w">

@@ -156,7 +156,7 @@ Content-Type: application/json
             </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
             </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpeg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -167,7 +167,7 @@ Content-Type: application/json
             </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
         </span><span class="p">},</span><span class="w">
-        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
         </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">

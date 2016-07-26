@@ -1,5 +1,7 @@
 <h2 id="templates">Templates</h2>
 
+<p>A project is added to templates, if the boolean variable <code class="prettyprint">is_template</code> becomes true. </p>
+
 <h3 id="template-object">Template Object</h3>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
    </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">929</span><span class="p">,</span><span class="w">
@@ -8,9 +10,9 @@
    </span><span class="nt">"logo"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
    </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Company Name"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Sam Johnson"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -53,13 +55,209 @@
    </span><span class="nt">"drive_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
    </span><span class="nt">"drop_box_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
    </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"Company Name"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"is_template"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
    </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
    </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
-
-</span><span class="err">This</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">project</span><span class="w"> </span><span class="err">object(refer</span><span class="w"> </span><span class="p">[</span><span class="err">Project</span><span class="w"> </span><span class="err">Object</span><span class="p">]</span><span class="err">(#project-object)).</span><span class="w">
-
-</span><span class="err">###</span><span class="w"> 
 </span></code></pre>
+
+<p>This is the project object(refer <a href="#project-object">Project Object</a>).</p>
+
+<h3 id="create-template">Create Template</h3>
+<pre class="highlight http"><code><span class="nf">POST</span>  <span class="nn">/api/projects</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test template"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Te"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"this is a test template"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"share_data"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"invite_data"</span><span class="p">:[</span><span class="w">
+      </span><span class="mi">273</span><span class="p">,</span><span class="w">
+      </span><span class="mi">67</span><span class="p">,</span><span class="w">
+      </span><span class="mi">262</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"new_invite_data"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"invite_note"</span><span class="p">:</span><span class="s2">"I invite you to work with me on this project. Please
+    feel free to share ideas, participate in discussions and give feedback."</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"share_note"</span><span class="p">:</span><span class="s2">"We invite you to collaborate with us on TeamWave for this 
+   project. We use TeamWave to manage tasks, share ideas and
+ discuss issues."</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"share_type"</span><span class="p">:</span><span class="s2">"C"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_template"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">950</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test template"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"this is a test template"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"logo"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Doublespring Media India Pvt ltd"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"doublespringmediaindiapvtltd"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"clients"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"users"</span><span class="p">:[</span><span class="w">
+      </span><span class="mi">1</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"start_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"end_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"budget"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"privacy_enabled"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"permissions"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"all_permission"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="s2">"2016-07-26T07:28:08.717738Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tasks_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"milestones_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"messages_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"files_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"time_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"notes_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"calendar_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_color"</span><span class="p">:</span><span class="s2">"#9da2a6"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Te"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-26T07:28:07.872298Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-07-26T07:28:08.717710Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects
+/950"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drive_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drop_box_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"Doublespring Media India
+ Pvt ltd"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_template"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST   api/projects</aside>
+
+<h3 id="update-template">Update Template</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span>  <span class="nn">/api/projects/{project_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Te"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_color"</span><span class="p">:</span><span class="s2">"#9da2a6"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"this is a test template and this the updated
+ template"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test template Updated"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"logo"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">950</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test template Updated"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"this is a test template and this the updated
+ template"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"logo"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Doublespring Media India Pvt ltd"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"doublespringmediaindiapvtltd"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"clients"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"users"</span><span class="p">:[</span><span class="w">
+      </span><span class="mi">262</span><span class="p">,</span><span class="w">
+      </span><span class="mi">273</span><span class="p">,</span><span class="w">
+      </span><span class="mi">67</span><span class="p">,</span><span class="w">
+      </span><span class="mi">1</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"start_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"end_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"budget"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"privacy_enabled"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"permissions"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"all_permission"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="s2">"2016-07-26T07:32:33.177241Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tasks_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"milestones_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"messages_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"files_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"time_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"notes_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"calendar_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_color"</span><span class="p">:</span><span class="s2">"#9da2a6"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Te"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-26T07:28:07.872298Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-07-26T07:32:33.177220Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/950"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drive_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drop_box_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"Doublespring Media India Pvt ltd"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_template"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH  /api/projects/{project_id}</aside>
+
+<h3 id="delete-template">Delete Template</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span>  <span class="nn">/api/projects/{project_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH  /api/projects/{project_id}</aside>
