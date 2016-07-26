@@ -165,7 +165,7 @@ Sample Response
    "last_login":null,
    "organization":1,
    "is_admin":false,
-   "company":"Company Name",
+   "company":"adhome",
    "image":null,
    "first_letter":"H",
    "full_name":"Himesh khan",

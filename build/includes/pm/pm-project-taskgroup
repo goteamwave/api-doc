@@ -26,7 +26,7 @@
       </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
       </span><span class="nt">"organization"</span><span class="p">:{</span><span class="w">
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Company Name"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
@@ -65,7 +65,7 @@
       </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
       </span><span class="nt">"organization"</span><span class="p">:{</span><span class="w">
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Company Name"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
@@ -111,7 +111,7 @@
             </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
             </span><span class="nt">"organization"</span><span class="p">:{</span><span class="w">
                </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Company Name"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
@@ -153,7 +153,7 @@
             </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
             </span><span class="nt">"organization"</span><span class="p">:{</span><span class="w">
                </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Company Name"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
@@ -232,7 +232,7 @@
                   </span><span class="nt">"corp_email"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"organization"</span><span class="p">:{</span><span class="w">
                      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-                     </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Company Name"</span><span class="p">,</span><span class="w">
+                     </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">

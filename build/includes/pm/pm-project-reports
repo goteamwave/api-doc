@@ -1,0 +1,121 @@
+<h2 id="reports">Reports</h2>
+
+<h3 id="project-report-object">Project Report Object</h3>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"overview"</span><span class="p">:[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"com_per"</span><span class="p">:</span><span class="mf">80.3661</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"od_tasks"</span><span class="p">:</span><span class="mi">18</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"TeamWave"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"t_time"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"mns"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"hrs"</span><span class="p">:</span><span class="mi">19</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"od_per"</span><span class="p">:</span><span class="mf">2.995</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"billable"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"mns"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"hrs"</span><span class="p">:</span><span class="mi">2</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"inp_per"</span><span class="p">:</span><span class="mf">16.6389</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"inp_tasks"</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"non_billable"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"mns"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"hrs"</span><span class="p">:</span><span class="mi">17</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"owner__name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"c_tasks"</span><span class="p">:</span><span class="mi">483</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"t_tasks"</span><span class="p">:</span><span class="mi">601</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">253</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"owner_id"</span><span class="p">:</span><span class="mi">2</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"com_per"</span><span class="p">:</span><span class="mf">70.5882</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"od_tasks"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Explore TeamWave"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"t_time"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"mns"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"hrs"</span><span class="p">:</span><span class="mi">27</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"od_per"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"billable"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"mns"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"hrs"</span><span class="p">:</span><span class="mi">10</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"inp_per"</span><span class="p">:</span><span class="mf">29.4118</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"inp_tasks"</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"non_billable"</span><span class="p">:{</span><span class="w">
+            </span><span class="nt">"mns"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"hrs"</span><span class="p">:</span><span class="mi">17</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"owner__name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"c_tasks"</span><span class="p">:</span><span class="mi">12</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"t_tasks"</span><span class="p">:</span><span class="mi">17</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">280</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"owner_id"</span><span class="p">:</span><span class="mi">2</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"t_time"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"hours__sum"</span><span class="p">:</span><span class="mi">12</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"mins__sum"</span><span class="p">:</span><span class="mi">0</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"projects_with_unassigned_tasks"</span><span class="p">:[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"tasks"</span><span class="p">:</span><span class="mi">29</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"project_id"</span><span class="p">:</span><span class="mi">253</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"project__name"</span><span class="p">:</span><span class="s2">"TeamWave"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"tasks"</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"project_id"</span><span class="p">:</span><span class="mi">280</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"project__name"</span><span class="p">:</span><span class="s2">"Explore TeamWave"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"t_milestones"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"pieChartData"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"od_tasks"</span><span class="p">:</span><span class="mf">2.91</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"inp_tasks_count"</span><span class="p">:</span><span class="mi">105</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"od_tasks_count"</span><span class="p">:</span><span class="mi">18</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"inp_tasks"</span><span class="p">:</span><span class="mf">16.99</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"c_tasks_count"</span><span class="p">:</span><span class="mi">495</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"c_tasks"</span><span class="p">:</span><span class="mf">80.1</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="#overview-object">overview</a> (<em>array of objects</em>)</td>
+<td>List of all projects with its overview</td>
+</tr>
+<tr>
+<td><a href="#total time object">t_time</a></td>
+<td>total time</td>
+</tr>
+<tr>
+<td><a href="#projects_with_unassigned_tasks-object">projects_with_unassigned_tasks</a></td>
+<td>project list with unassigned tasks</td>
+</tr>
+<tr>
+<td>t_milestones</td>
+<td>total milestones</td>
+</tr>
+<tr>
+<td><a href="#pie-chart-data-object">pieChartData</a></td>
+<td>pie chart data</td>
+</tr>
+</tbody></table>
+
+<h4 id="overview-object">Overview Object</h4>
+
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
