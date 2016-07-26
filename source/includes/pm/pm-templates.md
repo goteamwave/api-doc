@@ -10,7 +10,7 @@
    "logo":null,
    "owner":{
       "id":1,
-      "name":"adhome",
+      "name":"Sam Johnson",
       "domain":"adhome",
       "logo":"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg",
       "email":"sathish@adhome.com",

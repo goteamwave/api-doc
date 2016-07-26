@@ -157,7 +157,7 @@ job_title (*string*)| Desgination of the contact
 full_name (*string*)| full name of the contact
 profile_image (*string*)| image url for the contact
 company (*string*)| company ID of the contact
-company_name (*string*)| adhome of the contact
+company_name (*string*)| Company name of the contact
 tags (*string*)| tags for the contact
 
 
