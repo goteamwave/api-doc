@@ -161,6 +161,22 @@ milestones_enabled (*boolean*)| milestones feature enable in the project
 files_enabled (*boolean*)| files are enabled for this project
 time_enabled (*boolean*)| time is enabled for the project
 
+
+### List all Projects
+
+```http
+GET  api/projects HTTP/1.1
+Accept: application/json
+Authorization: Token "YOUR ACCESS TOKEN"
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+
+<aside>GET api/projects</aside>
+
+
 ### Create Project
 
 ```http
@@ -273,3 +289,4 @@ resource_url (*url string*)| project access url
 last_updated (*date string*)| Last updated time of the project 
 owner_name (*string*)| Project’s organization Name
 creating (*boolean*)| status whether the project is still creating by the celery or not. If it is still creating , the status is True else false
+
