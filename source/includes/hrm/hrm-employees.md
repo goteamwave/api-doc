@@ -12,18 +12,6 @@ GET   /api/hrm/people
 
 The list contains only employees who are **ACTIVE** `emp_status='AV'`.
 
-<!-- Attribute | Value | Description 
---------- | ----- | -----------------------------------------
-emp_type  | 'FT'  | Full Time 
-          | 'IN'  | Internship
-          | 'PT'  | Part Time 
-          | 'CR'  | Contractor
-          | null  | Uncategorized
-emp_status| 'AV'  | Active/Employed
-          | 'RS'  | Resigned
-          | 'TR'  | Terminated
- -->
-
 ### Employee Object
 
 

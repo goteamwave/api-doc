@@ -31,11 +31,9 @@ Content-Type: application/json
   "can_edit":true,
   "created_by":{
      "url":"/users/1",
-     "image":"https://twprofile.s3
-.amazonaws.com/users/user-77abb729-773e-41f5-9244-4a5fd337bdba-image.jpg",
+     "image":"https://twprofile.s3.amazonaws.com/image.jpg",
      "id":1,
-     "full_name":"Sathish
-Venkat",
+     "full_name":"SathishVenkat",
      "email":"sathish@adhome.com",
      "label_txt":"SV"
   },

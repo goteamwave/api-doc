@@ -259,12 +259,10 @@ Sample Response
          "job_title":"Developer",
          "user":{
             "url":"/users/274",
-            "image":"https://twprofile.s3.amazonaws.com/users
-/user-ad08f561-54a1-4623-975e-c996ddca7416-image.jpg",
+            "image":"https://twprofile.s3.amazonaws.com/16-image.jpg",
             "id":274,
             "full_name":"Ajith Paul",
-            "email":"ajith
-.paul@adhome.com",
+            "email":"ajith.paul@adhome.com",
             "label_txt":"AP"
          }
       }

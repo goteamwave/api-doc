@@ -309,14 +309,14 @@ resource_url (*string*)  | Taskgroup detail page access url,
 modified_on (*date*) | Task group modified date,
 is_trashed (*boolean*)  | Task group trashed status whether it is deleted or not,
 [tasks](#task-object) (*list of objects*) | List of Tasks belonging to the Task Group,
-index (*int*) | index no of the task group,
-total (*int*) | Total no of task belongs to the task group,
-completed (*int*) | No of completed tasks,
-incompleted (*int*) | No of incomplete tasks,
-comment_count (*int*) | No of comments for the task group,
+index (*integer*) | index no of the task group,
+total (*integer*) | Total no of task belongs to the task group,
+completed (*integer*) | No of completed tasks,
+incompleted (*integer*) | No of incomplete tasks,
+comment_count (*integer*) | No of comments for the task group,
 is_private (*boolean*) | Status of the Task Group.	If it is True ,this task group won't be visible to shared people. Default the value is False, 
 [default_asignee](#pm-user-object) (*object*) | user object who is assigned for this task group,
-default_duedays (*int*) | no of duedays given for the particular Task Group
+default_duedays (*integer*) | no of duedays given for the particular Task Group
 
 #### Milestones Object
 

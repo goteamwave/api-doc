@@ -297,6 +297,8 @@ Sample Request
 }
 ```
 
+<aside>PATCH /api/hrm/organization/settings/timeoff-policy/{timeoff_policy_id}</aside>
+
 ``` 
 Sample Response
 ```
@@ -324,16 +326,14 @@ Sample Response
          "label_txt":"GT",
          "image":null,
          "full_name":"Geo Test 12",
-         "email":"geo.jacob12
-@adhome.com",
+         "email":"geo.jacob12@adhome.com",
          "upcoming_birthday":null
       },
       {
          "id":76,
          "label_txt":"GY",
          "image":null,
-         "full_name":"Geo
- Yahoo",
+         "full_name":"Geo Yahoo",
          "email":"geojacobm6@yahoo.com",
          "upcoming_birthday":null
       },
