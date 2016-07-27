@@ -121,6 +121,8 @@
 
 <p>The TeamWave API is organized around REST. Our API has predictable, resource-oriented URLs, and uses HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which are understood by off-the-shelf HTTP clients. We support cross-origin resource sharing, allowing you to interact securely with our API from a client-side (though you should never expose your secret API key). This API reference provides information on available endpoints and how to interact with it. JSON is returned by all API responses, including errors, although our API libraries convert responses to appropriate language-specific objects.</p>
 
+<aside class="success">Root Url  https://app.teamwave.com/api/ </aside>
+
           <h1 id="projects">Projects</h1>
 
 <p>Projects provides various project management related operations using the <code class="prettyprint">/projects</code> resource and related sub-resources. Use projects for managing new projects and existing projects. You can also use sub-resources to get tasks, milestones, events, files, reports, timelog and notes related details.</p>
@@ -461,6 +463,17 @@
 </tr>
 </tbody></table>
 
+<h3 id="list-all-projects">List all Projects</h3>
+<pre class="highlight http"><code><span class="nf">GET</span>  <span class="nn">api/projects</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+
+<aside>GET api/projects</aside>
+
 <h3 id="create-project">Create Project</h3>
 <pre class="highlight http"><code><span class="nf">POST</span>  <span class="nn">api/projects</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
@@ -663,7 +676,7 @@ Content-Type: application/json
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
          </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -674,7 +687,7 @@ Content-Type: application/json
          </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
       </span><span class="p">},</span><span class="w">
-      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/ user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.commage.jpg"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -748,7 +761,7 @@ Content-Type: application/json
                </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
                </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -790,7 +803,7 @@ Content-Type: application/json
                </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
                </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -801,7 +814,7 @@ Content-Type: application/json
                </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
             </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -839,7 +852,7 @@ Content-Type: application/json
             </span><span class="p">{</span><span class="w">
                </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3781</span><span class="p">,</span><span class="w">
                </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"canceled.png"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"attachment"</span><span class="p">:</span><span class="s2">"https://mediatw.s3.amazonaws.com/projects/565/1469081412471_canceled.png?Signature=LcpcsUDJm5vcDqy0kWl%2Fqsq90uk%3D&amp;Expires=1469086474&amp;AWSAccessKeyId=AKIAJ3L5LCTCJXCFVTYA"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"attachment"</span><span class="p">:</span><span class="s2">"https://mediatw.s3.amazonaws.com/projects/565/1469081412471_canceled.png?Signature=LcpcsUDJm5vcDqy0kWl%2Fqsq90uk%3D&amp;Expires=1469086474&amp;AWSAccessKeyId=AKIAJ3XCFVTYA"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"object_id"</span><span class="p">:</span><span class="mi">3164</span><span class="p">,</span><span class="w">
                </span><span class="nt">"is_drivebox"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
                </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
@@ -869,7 +882,7 @@ Content-Type: application/json
                      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-                     </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
+                     </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -880,7 +893,7 @@ Content-Type: application/json
                      </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
                   </span><span class="p">},</span><span class="w">
-                  </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg"</span><span class="p">,</span><span class="w">
+                  </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -896,29 +909,29 @@ Content-Type: application/json
                </span><span class="p">},</span><span class="w">
                </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-21T06:10:16.516429Z"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"is_live"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"thumbnail"</span><span class="p">:</span><span class="s2">"https://mediatw.s3.amazonaws.com/projects/565/1469081412471_canceled.png.png?Signature=pKlak5mgEj9bdoDbMx1%2Bnhcdpao%3D&amp;Expires=1469086475&amp;AWSAccessKeyId=AKIAJ3L5LCTCJXCFVTYA"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"comment_count"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-07-21T06:10:31.077537Z"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"is_shared"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"shared_note"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"content_type"</span><span class="p">:</span><span class="s2">"task"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"ext"</span><span class="p">:</span><span class="s2">"png"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/565/files/3781"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"download_url"</span><span class="p">:</span><span class="s2">"https://app.goAdHome.com/api/projects/565/files/download/3781"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"is_private"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"tgs"</span><span class="p">:</span><span class="kc">null</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-         </span><span class="p">]</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-   </span><span class="p">],</span><span class="w">
-   </span><span class="nt">"index"</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"total"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"completed"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"incompleted"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"comment_count"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"is_private"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"default_asignee"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"default_duedays"</span><span class="p">:</span><span class="mi">8</span><span class="w">
+               </span><span class="nt">"thumbnail"</span><span class="p">:</span><span class="s2">"https://mediatw.s3.amazonaws.com/projects/565,
+               "</span><span class="err">comment_count</span><span class="s2">":0,
+               "</span><span class="err">modified_on</span><span class="s2">":"</span><span class="mi">2016-07-21</span><span class="err">T</span><span class="mi">06</span><span class="err">:</span><span class="mi">10</span><span class="err">:</span><span class="mf">31.077537</span><span class="err">Z</span><span class="s2">",
+               "</span><span class="err">is_shared</span><span class="s2">":false,
+               "</span><span class="err">shared_note</span><span class="s2">":null,
+               "</span><span class="err">content_type</span><span class="s2">":"</span><span class="err">task</span><span class="s2">",
+               "</span><span class="err">ext</span><span class="s2">":"</span><span class="err">png</span><span class="s2">",
+               "</span><span class="err">resource_url</span><span class="s2">":"</span><span class="err">/projects/</span><span class="mi">565</span><span class="err">/files/</span><span class="mi">3781</span><span class="s2">",
+               "</span><span class="err">download_url</span><span class="s2">":"</span><span class="err">https://app.goAdHome.com/api/projects/</span><span class="mi">565</span><span class="err">/files/download/</span><span class="mi">3781</span><span class="s2">",
+               "</span><span class="err">is_private</span><span class="s2">":false,
+               "</span><span class="err">tgs</span><span class="s2">":null
+            }
+         ]
+      }
+   ],
+   "</span><span class="err">index</span><span class="s2">":3,
+   "</span><span class="err">total</span><span class="s2">":1,
+   "</span><span class="err">completed</span><span class="s2">":0,
+   "</span><span class="err">incompleted</span><span class="s2">":1,
+   "</span><span class="err">comment_count</span><span class="s2">":0,
+   "</span><span class="err">is_private</span><span class="s2">":true,
+   "</span><span class="err">default_asignee</span><span class="s2">":null,
+   "</span><span class="err">default_duedays":</span><span class="mi">8</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
