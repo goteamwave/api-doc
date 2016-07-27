@@ -301,12 +301,10 @@ Content-Type: application/json
          </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
             </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/274"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users
-/user-ad08f561-54a1-4623-975e-c996ddca7416-image.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/16-image.jpg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith
-.paul@adhome.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="w">
          </span><span class="p">}</span><span class="w">
       </span><span class="p">}</span><span class="w">

@@ -10,18 +10,6 @@ GET   /api/hrm/people
 
 <p>The list contains only employees who are <strong>ACTIVE</strong> <code class="prettyprint">emp_status=&#39;AV&#39;</code>.</p>
 
-<!-- Attribute | Value | Description 
---------- | ----- | -----------------------------------------
-emp_type  | 'FT'  | Full Time 
-          | 'IN'  | Internship
-          | 'PT'  | Part Time 
-          | 'CR'  | Contractor
-          | null  | Uncategorized
-emp_status| 'AV'  | Active/Employed
-          | 'RS'  | Resigned
-          | 'TR'  | Terminated
- -->
-
 <h3 id="employee-object">Employee Object</h3>
 <pre class="highlight http"><code><span class="nf">GET</span> <span class="nn">/api/hrm/people/{profile_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>

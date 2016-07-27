@@ -988,23 +988,23 @@ Content-Type: application/json
 <td>List of Tasks belonging to the Task Group,</td>
 </tr>
 <tr>
-<td>index (<em>int</em>)</td>
+<td>index (<em>integer</em>)</td>
 <td>index no of the task group,</td>
 </tr>
 <tr>
-<td>total (<em>int</em>)</td>
+<td>total (<em>integer</em>)</td>
 <td>Total no of task belongs to the task group,</td>
 </tr>
 <tr>
-<td>completed (<em>int</em>)</td>
+<td>completed (<em>integer</em>)</td>
 <td>No of completed tasks,</td>
 </tr>
 <tr>
-<td>incompleted (<em>int</em>)</td>
+<td>incompleted (<em>integer</em>)</td>
 <td>No of incomplete tasks,</td>
 </tr>
 <tr>
-<td>comment_count (<em>int</em>)</td>
+<td>comment_count (<em>integer</em>)</td>
 <td>No of comments for the task group,</td>
 </tr>
 <tr>
@@ -1016,7 +1016,7 @@ Content-Type: application/json
 <td>user object who is assigned for this task group,</td>
 </tr>
 <tr>
-<td>default_duedays (<em>int</em>)</td>
+<td>default_duedays (<em>integer</em>)</td>
 <td>no of duedays given for the particular Task Group</td>
 </tr>
 </tbody></table>
@@ -6106,6 +6106,8 @@ Content-Type: application/json
    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+
+<aside>PATCH /api/hrm/organization/settings/timeoff-policy/{timeoff_policy_id}</aside>
 <pre class="highlight plaintext"><code>Sample Response
 </code></pre>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
@@ -6130,16 +6132,14 @@ Content-Type: application/json
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"GT"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
          </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo Test 12"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geo.jacob12
-@adhome.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geo.jacob12@adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="p">{</span><span class="w">
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">76</span><span class="p">,</span><span class="w">
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"GY"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo
- Yahoo"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo Yahoo"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geojacobm6@yahoo.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
       </span><span class="p">},</span><span class="w">
@@ -6765,18 +6765,6 @@ GET   /api/hrm/people
 </aside>
 
 <p>The list contains only employees who are <strong>ACTIVE</strong> <code class="prettyprint">emp_status=&#39;AV&#39;</code>.</p>
-
-<!-- Attribute | Value | Description 
---------- | ----- | -----------------------------------------
-emp_type  | 'FT'  | Full Time 
-          | 'IN'  | Internship
-          | 'PT'  | Part Time 
-          | 'CR'  | Contractor
-          | null  | Uncategorized
-emp_status| 'AV'  | Active/Employed
-          | 'RS'  | Resigned
-          | 'TR'  | Terminated
- -->
 
 <h3 id="employee-object">Employee Object</h3>
 <pre class="highlight http"><code><span class="nf">GET</span> <span class="nn">/api/hrm/people/{profile_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
@@ -7465,11 +7453,9 @@ Content-Type: application/json
   </span><span class="nt">"can_edit"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
-     </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3
-.amazonaws.com/users/user-77abb729-773e-41f5-9244-4a5fd337bdba-image.jpg"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-     </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish
-Venkat"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"SathishVenkat"</span><span class="p">,</span><span class="w">
      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
   </span><span class="p">},</span><span class="w">
@@ -7970,12 +7956,10 @@ Content-Type: application/json
          </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
             </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/274"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users
-/user-ad08f561-54a1-4623-975e-c996ddca7416-image.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/16-image.jpg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith
-.paul@adhome.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="w">
          </span><span class="p">}</span><span class="w">
       </span><span class="p">}</span><span class="w">

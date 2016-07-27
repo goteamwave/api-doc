@@ -340,23 +340,23 @@
 <td>List of Tasks belonging to the Task Group,</td>
 </tr>
 <tr>
-<td>index (<em>int</em>)</td>
+<td>index (<em>integer</em>)</td>
 <td>index no of the task group,</td>
 </tr>
 <tr>
-<td>total (<em>int</em>)</td>
+<td>total (<em>integer</em>)</td>
 <td>Total no of task belongs to the task group,</td>
 </tr>
 <tr>
-<td>completed (<em>int</em>)</td>
+<td>completed (<em>integer</em>)</td>
 <td>No of completed tasks,</td>
 </tr>
 <tr>
-<td>incompleted (<em>int</em>)</td>
+<td>incompleted (<em>integer</em>)</td>
 <td>No of incomplete tasks,</td>
 </tr>
 <tr>
-<td>comment_count (<em>int</em>)</td>
+<td>comment_count (<em>integer</em>)</td>
 <td>No of comments for the task group,</td>
 </tr>
 <tr>
@@ -368,7 +368,7 @@
 <td>user object who is assigned for this task group,</td>
 </tr>
 <tr>
-<td>default_duedays (<em>int</em>)</td>
+<td>default_duedays (<em>integer</em>)</td>
 <td>no of duedays given for the particular Task Group</td>
 </tr>
 </tbody></table>

@@ -372,6 +372,8 @@ Content-Type: application/json
    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+
+<aside>PATCH /api/hrm/organization/settings/timeoff-policy/{timeoff_policy_id}</aside>
 <pre class="highlight plaintext"><code>Sample Response
 </code></pre>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
@@ -396,16 +398,14 @@ Content-Type: application/json
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"GT"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
          </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo Test 12"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geo.jacob12
-@adhome.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geo.jacob12@adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="p">{</span><span class="w">
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">76</span><span class="p">,</span><span class="w">
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"GY"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo
- Yahoo"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo Yahoo"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geojacobm6@yahoo.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
       </span><span class="p">},</span><span class="w">
