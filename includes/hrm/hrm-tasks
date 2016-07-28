@@ -67,7 +67,7 @@ Content-Type: application/json
 <td>Date before task needs to be completed</td>
 </tr>
 <tr>
-<td><a href="#asigned_to-object">assigned_to</a> (<em>object</em>)</td>
+<td><a href="#user-object">assigned_to</a> (<em>object</em>)</td>
 <td>task assigned to employee details</td>
 </tr>
 <tr>
@@ -83,7 +83,7 @@ Content-Type: application/json
 <td>if task can be edited</td>
 </tr>
 <tr>
-<td><a href="#created_by-object">created_by</a> (<em>object</em>)</td>
+<td><a href="#user-object">created_by</a> (<em>object</em>)</td>
 <td>info about the creator of the task</td>
 </tr>
 <tr>

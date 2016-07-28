@@ -7,7 +7,7 @@
    </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">280</span><span class="p">,</span><span class="w">
    </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Explore AdHome"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"This template will give you to create sample project"</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpg"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
       </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">

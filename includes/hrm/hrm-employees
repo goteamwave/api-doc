@@ -193,14 +193,21 @@ Content-Type: application/json
 </tbody></table>
 
 <h3 id="retrieve-an-employee">Retrieve an Employee</h3>
+<pre class="highlight http"><code><span class="nf">GET</span> <span class="nn">api/hrm/people/{profile_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
 
 <aside> GET api/hrm/people/{profile_id} </aside>
 
-<p>Retrieve an employee using the unique id of the employee.</p>
+<p>Retrieve an employee using the unique ID of the employee.</p>
 
 <h4 id="returns">Returns</h4>
 
-<p><a href="#employee-object">Employee</a> object</p>
+<p><a href="#employee-object">Employee</a> object, else throws an error.</p>
 
 <h3 id="create-employee">Create Employee</h3>
 
