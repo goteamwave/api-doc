@@ -12,7 +12,7 @@ Sample Object
    "id":280,
    "name":"Explore AdHome",
    "description":"This template will give you to create sample project",
-   "logo":"https://twprofile.s3.amazonaws.com/image.jpg",
+   "logo":"https://twprofile.s3.amazonaws.com/logo.jpg",
    "owner":{
       "id":2,
       "name":"adhome",

@@ -101,13 +101,22 @@ orgkey (*string*)| organisation key
 
 ### Retrieve an Employee
 
+```http
+GET api/hrm/people/{profile_id} HTTP/1.1
+Accept: application/json
+Authorization: Token "YOUR ACCESS TOKEN"
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
 <aside> GET api/hrm/people/{profile_id} </aside>
 
-Retrieve an employee using the unique id of the employee.
+Retrieve an employee using the unique ID of the employee.
 
 #### Returns
 
-[Employee](#employee-object) object
+[Employee](#employee-object) object, else throws an error.
 
 ### Create Employee
 Creates an employee object
