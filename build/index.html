@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>AdHome API Documentation</title>
+    <title>TeamWave API Documentation</title>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -109,8 +109,8 @@
       <div id="toc">
       </div>
         <ul class="toc-footer">
-            <li><a href='http://AdHome.com'>Sign Up Today</a></li>
-            <li><a href="mailto:support@AdHome.com" target="_top">Contact Us</a></li>
+            <li><a href='http://teamwave.com'>Sign Up Today</a></li>
+            <li><a href="mailto:support@teamwave.com" target="_top">Contact Us</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -119,7 +119,9 @@
         
           <h1 id="introduction">Introduction</h1>
 
-<p>The AdHome API is organized around REST. Our API has predictable, resource-oriented URLs, and uses HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which are understood by off-the-shelf HTTP clients. We support cross-origin resource sharing, allowing you to interact securely with our API from a client-side (though you should never expose your secret API key). This API reference provides information on available endpoints and how to interact with it. JSON is returned by all API responses, including errors, although our API libraries convert responses to appropriate language-specific objects.</p>
+<p>The TeamWave API is organized around REST. Our API has predictable, resource-oriented URLs, and uses HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which are understood by off-the-shelf HTTP clients. We support cross-origin resource sharing, allowing you to interact securely with our API from a client-side (though you should never expose your secret API key). This API reference provides information on available endpoints and how to interact with it. JSON is returned by all API responses, including errors, although our API libraries convert responses to appropriate language-specific objects.</p>
+
+<aside class="success">Root Url  https://app.teamwave.com/api/ </aside>
 
           <h1 id="projects">Projects</h1>
 
@@ -134,7 +136,7 @@
    </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">280</span><span class="p">,</span><span class="w">
    </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Explore AdHome"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"This template will give you to create sample project"</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpg"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
       </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
@@ -461,6 +463,17 @@
 </tr>
 </tbody></table>
 
+<h3 id="list-all-projects">List all Projects</h3>
+<pre class="highlight http"><code><span class="nf">GET</span>  <span class="nn">api/projects</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+
+<aside>GET api/projects</aside>
+
 <h3 id="create-project">Create Project</h3>
 <pre class="highlight http"><code><span class="nf">POST</span>  <span class="nn">api/projects</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
@@ -663,7 +676,7 @@ Content-Type: application/json
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
          </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpg"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -674,7 +687,7 @@ Content-Type: application/json
          </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
       </span><span class="p">},</span><span class="w">
-      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/ user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -702,7 +715,7 @@ Content-Type: application/json
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
          </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpg"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -748,7 +761,7 @@ Content-Type: application/json
                </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
                </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpg"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -790,7 +803,7 @@ Content-Type: application/json
                </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
                </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpg"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -801,7 +814,7 @@ Content-Type: application/json
                </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
             </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -839,7 +852,7 @@ Content-Type: application/json
             </span><span class="p">{</span><span class="w">
                </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3781</span><span class="p">,</span><span class="w">
                </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"canceled.png"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"attachment"</span><span class="p">:</span><span class="s2">"https://mediatw.s3.amazonaws.com/projects/565/1469081412471_canceled.png?Signature=LcpcsUDJm5vcDqy0kWl%2Fqsq90uk%3D&amp;Expires=1469086474&amp;AWSAccessKeyId=AKIAJ3L5LCTCJXCFVTYA"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"attachment"</span><span class="p">:</span><span class="s2">"https://mediatw.s3.amazonaws.com/projects/565/1469081412471_canceled.png?Signature=LcpcsUDJm5vcDqy0kWl%2Fqsq90uk%3D&amp;Expires=1469086474&amp;AWSAccessKeyId=AKIAJ3XCFVTYA"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"object_id"</span><span class="p">:</span><span class="mi">3164</span><span class="p">,</span><span class="w">
                </span><span class="nt">"is_drivebox"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
                </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
@@ -869,7 +882,7 @@ Content-Type: application/json
                      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-                     </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
+                     </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpg"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -880,7 +893,7 @@ Content-Type: application/json
                      </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
                   </span><span class="p">},</span><span class="w">
-                  </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg"</span><span class="p">,</span><span class="w">
+                  </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -896,7 +909,7 @@ Content-Type: application/json
                </span><span class="p">},</span><span class="w">
                </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-21T06:10:16.516429Z"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"is_live"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"thumbnail"</span><span class="p">:</span><span class="s2">"https://mediatw.s3.amazonaws.com/projects/565/1469081412471_canceled.png.png?Signature=pKlak5mgEj9bdoDbMx1%2Bnhcdpao%3D&amp;Expires=1469086475&amp;AWSAccessKeyId=AKIAJ3L5LCTCJXCFVTYA"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"thumbnail"</span><span class="p">:</span><span class="s2">"https://mediatw.s3.amazonaws.com/projects/565"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"comment_count"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
                </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-07-21T06:10:31.077537Z"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"is_shared"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
@@ -975,23 +988,23 @@ Content-Type: application/json
 <td>List of Tasks belonging to the Task Group,</td>
 </tr>
 <tr>
-<td>index (<em>int</em>)</td>
+<td>index (<em>integer</em>)</td>
 <td>index no of the task group,</td>
 </tr>
 <tr>
-<td>total (<em>int</em>)</td>
+<td>total (<em>integer</em>)</td>
 <td>Total no of task belongs to the task group,</td>
 </tr>
 <tr>
-<td>completed (<em>int</em>)</td>
+<td>completed (<em>integer</em>)</td>
 <td>No of completed tasks,</td>
 </tr>
 <tr>
-<td>incompleted (<em>int</em>)</td>
+<td>incompleted (<em>integer</em>)</td>
 <td>No of incomplete tasks,</td>
 </tr>
 <tr>
-<td>comment_count (<em>int</em>)</td>
+<td>comment_count (<em>integer</em>)</td>
 <td>No of comments for the task group,</td>
 </tr>
 <tr>
@@ -1003,7 +1016,7 @@ Content-Type: application/json
 <td>user object who is assigned for this task group,</td>
 </tr>
 <tr>
-<td>default_duedays (<em>int</em>)</td>
+<td>default_duedays (<em>integer</em>)</td>
 <td>no of duedays given for the particular Task Group</td>
 </tr>
 </tbody></table>
@@ -1274,7 +1287,7 @@ Content-Type: application/json
             </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
             </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpeg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -1316,7 +1329,7 @@ Content-Type: application/json
             </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
             </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpeg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -1327,7 +1340,7 @@ Content-Type: application/json
             </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
         </span><span class="p">},</span><span class="w">
-        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
         </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -1723,7 +1736,7 @@ Content-Type: application/json
             </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
             </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpeg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -1734,7 +1747,7 @@ Content-Type: application/json
             </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
         </span><span class="p">},</span><span class="w">
-        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
         </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -1954,7 +1967,7 @@ Content-Type: application/json
             </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
             </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/image.jpeg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -1965,7 +1978,7 @@ Content-Type: application/json
             </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
         </span><span class="p">},</span><span class="w">
-        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/image.jpg"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
         </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -2000,7 +2013,7 @@ Content-Type: application/json
                     </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
                     </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
                     </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-                    </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/image.jpeg"</span><span class="p">,</span><span class="w">
                     </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
                     </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
                     </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -2011,7 +2024,7 @@ Content-Type: application/json
                     </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
                     </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
                 </span><span class="p">},</span><span class="w">
-                </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/image.jpg"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -2187,7 +2200,7 @@ Content-Type: application/json
         </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
         </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpeg"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -2198,7 +2211,7 @@ Content-Type: application/json
         </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
     </span><span class="p">},</span><span class="w">
-    </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
     </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -2233,7 +2246,7 @@ Content-Type: application/json
                 </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpeg"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -2244,7 +2257,7 @@ Content-Type: application/json
                 </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
             </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
             </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -2309,7 +2322,7 @@ Content-Type: application/json
             </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
             </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpeg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -2320,7 +2333,7 @@ Content-Type: application/json
             </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
         </span><span class="p">},</span><span class="w">
-        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
         </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -2354,7 +2367,7 @@ Content-Type: application/json
             </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
             </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpeg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -2365,7 +2378,7 @@ Content-Type: application/json
             </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
         </span><span class="p">},</span><span class="w">
-        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
         </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -2537,7 +2550,7 @@ Content-Type: application/json
             </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
             </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpeg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -2548,7 +2561,7 @@ Content-Type: application/json
             </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
         </span><span class="p">},</span><span class="w">
-        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
         </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -2582,7 +2595,7 @@ Content-Type: application/json
             </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
             </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpeg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -2593,7 +2606,7 @@ Content-Type: application/json
             </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
         </span><span class="p">},</span><span class="w">
-        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
         </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -2691,7 +2704,7 @@ Content-Type: application/json
                 </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpeg"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -2733,7 +2746,7 @@ Content-Type: application/json
                 </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpeg"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -2744,7 +2757,7 @@ Content-Type: application/json
                 </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
             </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
             </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -2794,7 +2807,7 @@ Content-Type: application/json
             </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
             </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpeg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -3101,7 +3114,7 @@ Content-Type: application/json
             </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
             </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsqqqqqqq ds 2123"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-1ae4b5e4-457f-4b0a-aad6-370b542fe1ce-image.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpeg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo.jacob@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"created_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-03-10"</span><span class="p">,</span><span class="w">
@@ -3112,7 +3125,7 @@ Content-Type: application/json
             </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-07"</span><span class="w">
         </span><span class="p">},</span><span class="w">
-        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-61ddc395-8145-493c-a72f-df70ac205783-image.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sathish "</span><span class="p">,</span><span class="w">
         </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -3178,7 +3191,270 @@ Content-Type: application/json
 
 <aside>DELETE api/projects/{project_id}/events/{event_id}</aside>
 
-          
+          <h2 id="templates">Templates</h2>
+
+<p>A project is added to templates, if the boolean variable <code class="prettyprint">is_template</code> becomes true. </p>
+
+<h3 id="template-object">Template Object</h3>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">929</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"cv"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"logo"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Sam Johnson"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"adhomemediaindiapvtltd"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"clients"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"users"</span><span class="p">:[</span><span class="w">
+      </span><span class="mi">272</span><span class="p">,</span><span class="w">
+      </span><span class="mi">1</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"start_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"end_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"budget"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"privacy_enabled"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"permissions"</span><span class="p">:{</span><span class="w">
+
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="s2">"2016-06-14T06:37:43.336521Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tasks_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"milestones_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"messages_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"files_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"time_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"notes_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"calendar_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_color"</span><span class="p">:</span><span class="s2">"#9da2a6"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"cv"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-06-14T06:37:42.617356Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-06-14T06:37:43.336495Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/929"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drive_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drop_box_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_template"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This is the project object(refer <a href="#project-object">Project Object</a>).</p>
+
+<h3 id="create-template">Create Template</h3>
+<pre class="highlight http"><code><span class="nf">POST</span>  <span class="nn">/api/projects</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test template"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Te"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"this is a test template"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"share_data"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"invite_data"</span><span class="p">:[</span><span class="w">
+      </span><span class="mi">273</span><span class="p">,</span><span class="w">
+      </span><span class="mi">67</span><span class="p">,</span><span class="w">
+      </span><span class="mi">262</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"new_invite_data"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"invite_note"</span><span class="p">:</span><span class="s2">"I invite you to work with me on this project. Please
+    feel free to share ideas, participate in discussions and give feedback."</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"share_note"</span><span class="p">:</span><span class="s2">"We invite you to collaborate with us on TeamWave for this 
+   project. We use TeamWave to manage tasks, share ideas and
+ discuss issues."</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"share_type"</span><span class="p">:</span><span class="s2">"C"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_template"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">950</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test template"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"this is a test template"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"logo"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Doublespring Media India Pvt ltd"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"doublespringmediaindiapvtltd"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"clients"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"users"</span><span class="p">:[</span><span class="w">
+      </span><span class="mi">1</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"start_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"end_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"budget"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"privacy_enabled"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"permissions"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"all_permission"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="s2">"2016-07-26T07:28:08.717738Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tasks_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"milestones_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"messages_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"files_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"time_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"notes_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"calendar_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_color"</span><span class="p">:</span><span class="s2">"#9da2a6"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Te"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-26T07:28:07.872298Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-07-26T07:28:08.717710Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects
+/950"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drive_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drop_box_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"Doublespring Media India
+ Pvt ltd"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_template"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>POST   api/projects</aside>
+
+<h3 id="update-template">Update Template</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span>  <span class="nn">/api/projects/{project_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Te"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_color"</span><span class="p">:</span><span class="s2">"#9da2a6"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"this is a test template and this the updated
+ template"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test template Updated"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"logo"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Response
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+   </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">950</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Test template Updated"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"this is a test template and this the updated
+ template"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"logo"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Doublespring Media India Pvt ltd"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"doublespring"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"doublespring.com"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency"</span><span class="p">:</span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"default_currency_symbol"</span><span class="p">:</span><span class="s2">"$"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"orgkey"</span><span class="p">:</span><span class="s2">"doublespringmediaindiapvtltd"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"clients"</span><span class="p">:[</span><span class="w">
+
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"users"</span><span class="p">:[</span><span class="w">
+      </span><span class="mi">262</span><span class="p">,</span><span class="w">
+      </span><span class="mi">273</span><span class="p">,</span><span class="w">
+      </span><span class="mi">67</span><span class="p">,</span><span class="w">
+      </span><span class="mi">1</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"start_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"end_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"budget"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"privacy_enabled"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"permissions"</span><span class="p">:{</span><span class="w">
+      </span><span class="nt">"all_permission"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="nt">"last_updated"</span><span class="p">:</span><span class="s2">"2016-07-26T07:32:33.177241Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tasks_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_by"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"milestones_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"messages_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"files_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"time_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"notes_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"calendar_enabled"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_color"</span><span class="p">:</span><span class="s2">"#9da2a6"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"Te"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-26T07:28:07.872298Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-07-26T07:32:33.177220Z"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"resource_url"</span><span class="p">:</span><span class="s2">"/projects/950"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drive_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"drop_box_access"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"owner_name"</span><span class="p">:</span><span class="s2">"Doublespring Media India Pvt ltd"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"is_template"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"creating"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"tags"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH  /api/projects/{project_id}</aside>
+
+<h3 id="delete-template">Delete Template</h3>
+<pre class="highlight http"><code><span class="nf">PATCH</span>  <span class="nn">/api/projects/{project_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside>PATCH  /api/projects/{project_id}</aside>
+
           <h1 id="crm">CRM</h1>
 
 <p>CRM provides various Customer related operations using the <code class="prettyprint">/crm</code> resource and related sub-resources. Use HRM for managing new employees, timeoff, and automatic check-ins. You can also use sub-resources to get employees, timeoff, tasks and automatic check-ins related details.</p>
@@ -3479,7 +3755,7 @@ Content-Type: application/json
 </tr>
 <tr>
 <td>company_name (<em>string</em>)</td>
-<td>adhome of the contact</td>
+<td>Company name of the contact</td>
 </tr>
 <tr>
 <td>tags (<em>string</em>)</td>
@@ -4290,7 +4566,7 @@ Content-Type: application/json
 </tr>
 <tr>
 <td>company (<em>string</em>)</td>
-<td>adhome</td>
+<td>Company name</td>
 </tr>
 <tr>
 <td>tags (<em>string</em>)</td>
@@ -5830,6 +6106,8 @@ Content-Type: application/json
    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+
+<aside>PATCH /api/hrm/organization/settings/timeoff-policy/{timeoff_policy_id}</aside>
 <pre class="highlight plaintext"><code>Sample Response
 </code></pre>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
@@ -5854,16 +6132,14 @@ Content-Type: application/json
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"GT"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
          </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo Test 12"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geo.jacob12
-@adhome.com"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geo.jacob12@adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="p">{</span><span class="w">
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">76</span><span class="p">,</span><span class="w">
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"GY"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo
- Yahoo"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Geo Yahoo"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"geojacobm6@yahoo.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"upcoming_birthday"</span><span class="p">:</span><span class="kc">null</span><span class="w">
       </span><span class="p">},</span><span class="w">
@@ -6490,18 +6766,6 @@ GET   /api/hrm/people
 
 <p>The list contains only employees who are <strong>ACTIVE</strong> <code class="prettyprint">emp_status=&#39;AV&#39;</code>.</p>
 
-<!-- Attribute | Value | Description 
---------- | ----- | -----------------------------------------
-emp_type  | 'FT'  | Full Time 
-          | 'IN'  | Internship
-          | 'PT'  | Part Time 
-          | 'CR'  | Contractor
-          | null  | Uncategorized
-emp_status| 'AV'  | Active/Employed
-          | 'RS'  | Resigned
-          | 'TR'  | Terminated
- -->
-
 <h3 id="employee-object">Employee Object</h3>
 <pre class="highlight http"><code><span class="nf">GET</span> <span class="nn">/api/hrm/people/{profile_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
@@ -6685,14 +6949,21 @@ Content-Type: application/json
 </tbody></table>
 
 <h3 id="retrieve-an-employee">Retrieve an Employee</h3>
+<pre class="highlight http"><code><span class="nf">GET</span> <span class="nn">api/hrm/people/{profile_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
 
 <aside> GET api/hrm/people/{profile_id} </aside>
 
-<p>Retrieve an employee using the unique id of the employee.</p>
+<p>Retrieve an employee using the unique ID of the employee.</p>
 
 <h4 id="returns">Returns</h4>
 
-<p><a href="#employee-object">Employee</a> object</p>
+<p><a href="#employee-object">Employee</a> object, else throws an error.</p>
 
 <h3 id="create-employee">Create Employee</h3>
 
@@ -7189,11 +7460,9 @@ Content-Type: application/json
   </span><span class="nt">"can_edit"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
   </span><span class="nt">"created_by"</span><span class="p">:{</span><span class="w">
      </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/1"</span><span class="p">,</span><span class="w">
-     </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3
-.amazonaws.com/users/user-77abb729-773e-41f5-9244-4a5fd337bdba-image.jpg"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-     </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish
-Venkat"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"SathishVenkat"</span><span class="p">,</span><span class="w">
      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
      </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
   </span><span class="p">},</span><span class="w">
@@ -7231,7 +7500,7 @@ Venkat"</span><span class="p">,</span><span class="w">
 <td>Date before task needs to be completed</td>
 </tr>
 <tr>
-<td><a href="#asigned_to-object">assigned_to</a> (<em>object</em>)</td>
+<td><a href="#user-object">assigned_to</a> (<em>object</em>)</td>
 <td>task assigned to employee details</td>
 </tr>
 <tr>
@@ -7247,7 +7516,7 @@ Venkat"</span><span class="p">,</span><span class="w">
 <td>if task can be edited</td>
 </tr>
 <tr>
-<td><a href="#created_by-object">created_by</a> (<em>object</em>)</td>
+<td><a href="#user-object">created_by</a> (<em>object</em>)</td>
 <td>info about the creator of the task</td>
 </tr>
 <tr>
@@ -7694,12 +7963,10 @@ Content-Type: application/json
          </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
             </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/274"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users
-/user-ad08f561-54a1-4623-975e-c996ddca7416-image.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/16-image.jpg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">274</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Ajith Paul"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith
-.paul@adhome.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"ajith.paul@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"AP"</span><span class="w">
          </span><span class="p">}</span><span class="w">
       </span><span class="p">}</span><span class="w">

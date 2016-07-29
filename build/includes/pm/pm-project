@@ -7,7 +7,7 @@
    </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">280</span><span class="p">,</span><span class="w">
    </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"Explore AdHome"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"This template will give you to create sample project"</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpg"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"owner"</span><span class="p">:{</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
       </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
@@ -333,6 +333,17 @@
 <td>time is enabled for the project</td>
 </tr>
 </tbody></table>
+
+<h3 id="list-all-projects">List all Projects</h3>
+<pre class="highlight http"><code><span class="nf">GET</span>  <span class="nn">api/projects</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+
+<aside>GET api/projects</aside>
 
 <h3 id="create-project">Create Project</h3>
 <pre class="highlight http"><code><span class="nf">POST</span>  <span class="nn">api/projects</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>

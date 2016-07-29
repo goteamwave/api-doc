@@ -28,7 +28,7 @@
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
          </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpg"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -39,7 +39,7 @@
          </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
       </span><span class="p">},</span><span class="w">
-      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/ user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -67,7 +67,7 @@
          </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
          </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpg"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -113,7 +113,7 @@
                </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
                </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpg"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -155,7 +155,7 @@
                </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
                </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpg"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -166,7 +166,7 @@
                </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
             </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -204,7 +204,7 @@
             </span><span class="p">{</span><span class="w">
                </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">3781</span><span class="p">,</span><span class="w">
                </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"canceled.png"</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"attachment"</span><span class="p">:</span><span class="s2">"https://mediatw.s3.amazonaws.com/projects/565/1469081412471_canceled.png?Signature=LcpcsUDJm5vcDqy0kWl%2Fqsq90uk%3D&amp;Expires=1469086474&amp;AWSAccessKeyId=AKIAJ3L5LCTCJXCFVTYA"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"attachment"</span><span class="p">:</span><span class="s2">"https://mediatw.s3.amazonaws.com/projects/565/1469081412471_canceled.png?Signature=LcpcsUDJm5vcDqy0kWl%2Fqsq90uk%3D&amp;Expires=1469086474&amp;AWSAccessKeyId=AKIAJ3XCFVTYA"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"object_id"</span><span class="p">:</span><span class="mi">3164</span><span class="p">,</span><span class="w">
                </span><span class="nt">"is_drivebox"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
                </span><span class="nt">"is_trashed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
@@ -234,7 +234,7 @@
                      </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"domain"</span><span class="p">:</span><span class="s2">"adhome"</span><span class="p">,</span><span class="w">
-                     </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logos/organization-662f7425-f900-48e7-a265-e4083ce30ae0-image.jpg"</span><span class="p">,</span><span class="w">
+                     </span><span class="nt">"logo"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/logo.jpg"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"tenant_domain"</span><span class="p">:</span><span class="s2">"adhome.com"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2015-03-07"</span><span class="p">,</span><span class="w">
@@ -245,7 +245,7 @@
                      </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"paying"</span><span class="p">,</span><span class="w">
                      </span><span class="nt">"trial_end_on"</span><span class="p">:</span><span class="s2">"2016-07-07"</span><span class="w">
                   </span><span class="p">},</span><span class="w">
-                  </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/users/user-8011f79c-007c-4943-a968-1d13dd13b1d9-image.jpg"</span><span class="p">,</span><span class="w">
+                  </span><span class="nt">"image"</span><span class="p">:</span><span class="s2">"https://twprofile.s3.amazonaws.com/image.jpg"</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"is_owner"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -261,7 +261,7 @@
                </span><span class="p">},</span><span class="w">
                </span><span class="nt">"created_on"</span><span class="p">:</span><span class="s2">"2016-07-21T06:10:16.516429Z"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"is_live"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
-               </span><span class="nt">"thumbnail"</span><span class="p">:</span><span class="s2">"https://mediatw.s3.amazonaws.com/projects/565/1469081412471_canceled.png.png?Signature=pKlak5mgEj9bdoDbMx1%2Bnhcdpao%3D&amp;Expires=1469086475&amp;AWSAccessKeyId=AKIAJ3L5LCTCJXCFVTYA"</span><span class="p">,</span><span class="w">
+               </span><span class="nt">"thumbnail"</span><span class="p">:</span><span class="s2">"https://mediatw.s3.amazonaws.com/projects/565"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"comment_count"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
                </span><span class="nt">"modified_on"</span><span class="p">:</span><span class="s2">"2016-07-21T06:10:31.077537Z"</span><span class="p">,</span><span class="w">
                </span><span class="nt">"is_shared"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
@@ -340,23 +340,23 @@
 <td>List of Tasks belonging to the Task Group,</td>
 </tr>
 <tr>
-<td>index (<em>int</em>)</td>
+<td>index (<em>integer</em>)</td>
 <td>index no of the task group,</td>
 </tr>
 <tr>
-<td>total (<em>int</em>)</td>
+<td>total (<em>integer</em>)</td>
 <td>Total no of task belongs to the task group,</td>
 </tr>
 <tr>
-<td>completed (<em>int</em>)</td>
+<td>completed (<em>integer</em>)</td>
 <td>No of completed tasks,</td>
 </tr>
 <tr>
-<td>incompleted (<em>int</em>)</td>
+<td>incompleted (<em>integer</em>)</td>
 <td>No of incomplete tasks,</td>
 </tr>
 <tr>
-<td>comment_count (<em>int</em>)</td>
+<td>comment_count (<em>integer</em>)</td>
 <td>No of comments for the task group,</td>
 </tr>
 <tr>
@@ -368,7 +368,7 @@
 <td>user object who is assigned for this task group,</td>
 </tr>
 <tr>
-<td>default_duedays (<em>int</em>)</td>
+<td>default_duedays (<em>integer</em>)</td>
 <td>no of duedays given for the particular Task Group</td>
 </tr>
 </tbody></table>
