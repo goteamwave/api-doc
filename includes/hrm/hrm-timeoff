@@ -177,14 +177,14 @@ Content-Type: application/json
 </tr>
 <tr>
 <td>created_on (<em>string</em>)</td>
-<td>datetime of the creation</td>
+<td>date-time of the creation</td>
 </tr>
 <tr>
 <td><a href="#policy-detail-object">policy_detail</a> (<em>object</em>)</td>
 <td>Info on the policy (id,name ..)</td>
 </tr>
 <tr>
-<td><a href="#user-object">entered_by</a> (object)</td>
+<td><a href="#user-object">entered_by</a> (<em>object</em>)</td>
 <td>details about the user who entered the timeoff</td>
 </tr>
 <tr>

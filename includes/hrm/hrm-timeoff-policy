@@ -102,7 +102,7 @@ Content-Type: application/json
 <td>total number of timeoff</td>
 </tr>
 <tr>
-<td>schedule</td>
+<td>schedule (<em>integer</em>)</td>
 <td>schedule ID</td>
 </tr>
 <tr>
@@ -110,11 +110,11 @@ Content-Type: application/json
 <td>days after which new employee can apply for timeoff</td>
 </tr>
 <tr>
-<td>timeoff_type</td>
+<td>timeoff_type (<em>string</em>)</td>
 <td>timeoff displayed in days (&rsquo;D&rsquo;) and displayed in hours (&lsquo;H&rsquo;)</td>
 </tr>
 <tr>
-<td>timeoff_display_type</td>
+<td>timeoff_display_type (<em>string</em>)</td>
 <td>timeoff displayed in days (&rsquo;D&rsquo;) and displayed in hours (&#39;H&rsquo;)</td>
 </tr>
 <tr>
@@ -176,8 +176,8 @@ Content-Type: application/json
 <td>email ID</td>
 </tr>
 <tr>
-<td>upcoming_birthday (<em>array</em>)</td>
-<td>upcoming birthday</td>
+<td>upcoming_birthday (<em>string</em>)</td>
+<td>Next birthday of this user</td>
 </tr>
 </tbody></table>
 
