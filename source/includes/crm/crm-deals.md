@@ -81,17 +81,17 @@
     "id":10206
  },
  "created_on":"2016-07-13T10:04:51.246672Z",
- "tags":'Cloud',
+ "tags": "Cloud",
  "custom_fields":{
     "77":{
        "field_type":"checkbox",
-       "name":"wedwd",
+       "name":"Priority",
        "value":{
-          "wedwd":false
+          "High":false
        },
-       "key":"wedwd",
+       "key":"Low Priority",
        "options":[
-          "wedwd"
+          "Low"
        ],
        "is_add_field":true
     }

@@ -11,6 +11,7 @@ toc_footers:
   - <a href="mailto:support@teamwave.com" target="_top">Contact Us</a>
 includes:
   - introduction
+  - authentication
   - pm/pm
   - pm/pm-project
   - pm/pm-project-taskgroup
@@ -20,7 +21,6 @@ includes:
   - pm/pm-project-milestone
   - pm/pm-project-timelog
   - pm/pm-project-events
-  - pm/pm-templates
   - crm/crm
   - crm/crm-deals
   - crm/crm-mails

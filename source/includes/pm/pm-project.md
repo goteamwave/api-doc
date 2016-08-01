@@ -130,10 +130,12 @@ drop_box_access | drop box access details
 is_active (*boolean*)| if the project is active or not
 owner_name (*string*)| Owner of the project
 is_template (*boolean*)| if the project is also a template in templates section
-creating (*boolean*)| creating 
-tags (*string*)| tags given for the project
+creating (*boolean*)| if the project is under creation, it will be true. After creating, it will be false.
+tags (*string*)| tags given for the project.
 
 #### Permissions Object
+
+Following permission fields are set for the project.
 
 Attrbute | Description
 ---------| -----------
@@ -203,7 +205,7 @@ Content-Type: application/json
 	"share_note": "We invite you to collaborate with us on AdHome 
 	for this project. We use AdHome to manage tasks, share ideas and discuss issues.",
 	"share_type": "c"
- }
+}
 ```
 
 <aside>POST  api/projects</aside>
@@ -288,5 +290,5 @@ owner_id | owner of the project
 resource_url (*url string*)| project access url 
 last_updated (*date string*)| Last updated time of the project 
 owner_name (*string*)| Project’s organization Name
-creating (*boolean*)| status whether the project is still creating by the celery or not. If it is still creating , the status is True else false
+creating (*boolean*)| status whether the project is still creating by the celery or not. If it is still creating, the status is True else false
 

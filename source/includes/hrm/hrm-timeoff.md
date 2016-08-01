@@ -136,9 +136,9 @@ days_of_leave (*integer*)| number of days of leave applied
 [activities](#activities-object) (*object*)| array of all activities of the request
 can_approve (*boolean*)| possible to approve or not
 [created_by](#user-object) (*object*)| Details about the creator of the request
-created_on (*string*) | datetime of the creation
+created_on (*string*) | date-time of the creation
 [policy_detail](#policy-detail-object) (*object*)| Info on the policy (id,name ..)
-[entered_by](#user-object) (object) | details about the user who entered the timeoff
+[entered_by](#user-object) (*object*) | details about the user who entered the timeoff
 is_entered (*boolean*)| is the timeoff entered (timeoff entered by admin or owner)
 
 #### User Object
