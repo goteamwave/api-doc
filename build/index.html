@@ -123,7 +123,33 @@
 
 <aside class="success">Root Url  https://app.teamwave.com/api/ </aside>
 
-          
+          <h1 id="authentication">Authentication</h1>
+
+<p>Authenticate your account when using the API by including your secret API key in the request. You can manage your API keys in the <code class="prettyprint">You</code> tab. Your API keys carry many privileges, so be sure to keep them secret! Do not share your secret API key in publicly accessible areas.</p>
+
+<h2 id="get-api-key">Get API Key</h2>
+
+<p>You can get your API key from <code class="prettyprint">Profile --&gt; You --&gt; API Key</code>. Copy the API key.</p>
+
+<h2 id="make-an-api-call">Make an API Call</h2>
+<pre class="highlight plaintext"><code>Sample Request
+
+https://app.teamwave.com/api/crm/deals/{deal_id}?api_key=Your_API_Key&amp;format=json
+</code></pre>
+<pre class="highlight http"><code><span class="nf">GET</span> <span class="nn">/api/crm/deals/{deal_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+
+<p>To make an API call, use this key as url parameter with the root url of the API (http://app.teamwave.com/api/)</p>
+
+<p>Add <code class="prettyprint">api_key=Your API Key</code> to your API url link for requests (POST, PATCH, GET, PUT).</p>
+
+<p>All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication(api_key) will also fail. </p>
+
           <h1 id="projects">Projects</h1>
 
 <p>Projects provides various project management related operations using the <code class="prettyprint">/projects</code> resource and related sub-resources. Use projects for managing new projects and existing projects. You can also use sub-resources to get tasks, milestones, events, files, reports, timelog and notes related details.</p>
