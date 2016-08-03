@@ -11,7 +11,7 @@ toc_footers:
   - <a href="mailto:support@teamwave.com" target="_top">Contact Us</a>
 includes:
   - introduction
-  - authentication
+  - authentication 
   - pm/pm
   - pm/pm-project
   - pm/pm-project-taskgroup
@@ -34,7 +34,7 @@ includes:
   - hrm/hrm-employees-documents
   - hrm/hrm-tasks
   - hrm/hrm-checkins
-  - errors
+
 
 
 search: true
