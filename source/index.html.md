@@ -23,6 +23,7 @@ includes:
   - pm/pm-project-events
   - crm/crm
   - crm/crm-deals
+  - crm/crm-deals-sub
   - crm/crm-mails
   - crm/crm-activities
   - crm/crm-contacts-people
