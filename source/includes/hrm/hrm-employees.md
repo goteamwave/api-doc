@@ -236,8 +236,7 @@ Sample Request
          "full_name":"Sathish Venkat",
          "email":"sathish@adhome.com",
          "label_txt":"SV"
-      },
-      "account_status":"AV"
+      }
    },
    "emp_type":"FT",
    "start_date":"2016-05-13",
@@ -322,7 +321,6 @@ Attribute | Description
 id (*integer*) | Employee Profile ID 
 about (*string*) | short description about the employee (comes under Bio)
 email (*string*) | email address of the employee
-account_status (*string*)| current status of the account (Active, Suspended, Terminated ..)
 first_name (*string*) | Employee first name 
 last_name (*string*) | Employee Last name 
 is_admin (*boolean*)| Employee is Administrator or not
