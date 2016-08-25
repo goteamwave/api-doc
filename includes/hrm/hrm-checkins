@@ -18,7 +18,6 @@
          </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
          </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2015-10-26"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"dev"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
             </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/201"</span><span class="p">,</span><span class="w">
@@ -34,7 +33,6 @@
          </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="s2">"FT"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2016-05-13"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
             </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/274"</span><span class="p">,</span><span class="w">
@@ -135,10 +133,6 @@
 <td>description of the job</td>
 </tr>
 <tr>
-<td>emp_status (<em>string</em>)</td>
-<td>active or resigned or terminated</td>
-</tr>
-<tr>
 <td>job_title (<em>string</em>)</td>
 <td>Designation</td>
 </tr>
@@ -186,7 +180,6 @@ Content-Type: application/json
          </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
          </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2015-09-12"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Designr1"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
             </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/186"</span><span class="p">,</span><span class="w">
@@ -202,7 +195,6 @@ Content-Type: application/json
          </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="s2">"FT"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2016-05-13"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
             </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/274"</span><span class="p">,</span><span class="w">
@@ -265,7 +257,6 @@ Content-Type: application/json
          </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
          </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2015-04-02"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Admin"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
             </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/17"</span><span class="p">,</span><span class="w">
@@ -281,7 +272,6 @@ Content-Type: application/json
          </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
          </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2015-09-12"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Designr1"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
             </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/186"</span><span class="p">,</span><span class="w">
@@ -297,7 +287,6 @@ Content-Type: application/json
          </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="s2">"FT"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2016-05-13"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-         </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"job_title"</span><span class="p">:</span><span class="s2">"Developer"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"user"</span><span class="p">:{</span><span class="w">
             </span><span class="nt">"url"</span><span class="p">:</span><span class="s2">"/users/274"</span><span class="p">,</span><span class="w">

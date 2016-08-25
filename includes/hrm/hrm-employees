@@ -8,7 +8,7 @@
 GET   /api/hrm/people
 </aside>
 
-<p>The list contains only employees who are <strong>ACTIVE</strong> <code class="prettyprint">emp_status=&#39;AV&#39;</code>.</p>
+<p>The list contains only employees who are ACTIVE.</p>
 
 <h3 id="employee-object">Employee Object</h3>
 <pre class="highlight http"><code><span class="nf">GET</span> <span class="nn">/api/hrm/people/{profile_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
@@ -47,7 +47,6 @@ Content-Type: application/json
     </span><span class="p">},</span><span class="w">
     </span><span class="nt">"about"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
     </span><span class="nt">"employee_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
@@ -127,10 +126,6 @@ Content-Type: application/json
 <tr>
 <td>employee_id (<em>integer</em>)</td>
 <td>Employee ID Number</td>
-</tr>
-<tr>
-<td>emp_status (<em>String</em>)</td>
-<td>employee status (Active,Resigned,..)</td>
 </tr>
 <tr>
 <td>emp_type (<em>String</em>)</td>
@@ -336,13 +331,11 @@ Content-Type: application/json
          </span><span class="nt">"full_name"</span><span class="p">:</span><span class="s2">"Sathish Venkat"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-      </span><span class="nt">"account_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
    </span><span class="p">},</span><span class="w">
    </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="s2">"FT"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2016-05-13"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"accuracy"</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"last_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
    </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
    </span><span class="nt">"policy"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
@@ -385,12 +378,10 @@ Content-Type: application/json
          </span><span class="nt">"email"</span><span class="p">:</span><span class="s2">"sathish@adhome.com"</span><span class="p">,</span><span class="w">
          </span><span class="nt">"label_txt"</span><span class="p">:</span><span class="s2">"SV"</span><span class="w">
       </span><span class="p">},</span><span class="w">
-      </span><span class="nt">"account_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="w">
-   </span><span class="p">},</span><span class="w">
+   </span><span class="err">}</span><span class="p">,</span><span class="w">
    </span><span class="nt">"emp_type"</span><span class="p">:</span><span class="s2">"FT"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"start_date"</span><span class="p">:</span><span class="s2">"2016-05-13"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"accuracy"</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"emp_status"</span><span class="p">:</span><span class="s2">"AV"</span><span class="p">,</span><span class="w">
    </span><span class="nt">"last_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
    </span><span class="nt">"job_description"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
    </span><span class="nt">"policy"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
@@ -413,10 +404,6 @@ Content-Type: application/json
 <tr>
 <td>emp_id (<em>integer</em>)</td>
 <td>employee ID card number</td>
-</tr>
-<tr>
-<td>emp_status (<em>String</em>)</td>
-<td>employee status (Active,Resigned,..)</td>
 </tr>
 <tr>
 <td>emp_type (<em>String</em>)</td>
@@ -467,10 +454,6 @@ Content-Type: application/json
 <tr>
 <td>email (<em>string</em>)</td>
 <td>email address of the employee</td>
-</tr>
-<tr>
-<td>account_status (<em>string</em>)</td>
-<td>current status of the account (Active, Suspended, Terminated ..)</td>
 </tr>
 <tr>
 <td>first_name (<em>string</em>)</td>
