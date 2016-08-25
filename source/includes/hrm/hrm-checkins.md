@@ -22,7 +22,6 @@ Samle Object
          "emp_type":null,
          "start_date":"2015-10-26",
          "job_description":null,
-         "emp_status":"AV",
          "job_title":"dev",
          "user":{
             "url":"/users/201",
@@ -38,7 +37,6 @@ Samle Object
          "emp_type":"FT",
          "start_date":"2016-05-13",
          "job_description":null,
-         "emp_status":"AV",
          "job_title":"Developer",
          "user":{
             "url":"/users/274",
@@ -80,7 +78,6 @@ id (*integer*)| ID of the employee
 emp_type (*string*)| employment type
 start_date (*string*)| employee joining date
 job_description (*string*)| description of the job	
-emp_status (*string*)| active or resigned or terminated
 job_title (*string*)| Designation
 [user](#user-object) | employee info details
 
@@ -132,7 +129,6 @@ Sample Response
          "emp_type":null,
          "start_date":"2015-09-12",
          "job_description":null,
-         "emp_status":"AV",
          "job_title":"Designr1",
          "user":{
             "url":"/users/186",
@@ -148,7 +144,6 @@ Sample Response
          "emp_type":"FT",
          "start_date":"2016-05-13",
          "job_description":null,
-         "emp_status":"AV",
          "job_title":"Developer",
          "user":{
             "url":"/users/274",
@@ -223,7 +218,6 @@ Sample Response
          "emp_type":null,
          "start_date":"2015-04-02",
          "job_description":null,
-         "emp_status":"AV",
          "job_title":"Admin",
          "user":{
             "url":"/users/17",
@@ -239,7 +233,6 @@ Sample Response
          "emp_type":null,
          "start_date":"2015-09-12",
          "job_description":null,
-         "emp_status":"AV",
          "job_title":"Designr1",
          "user":{
             "url":"/users/186",
@@ -255,7 +248,6 @@ Sample Response
          "emp_type":"FT",
          "start_date":"2016-05-13",
          "job_description":null,
-         "emp_status":"AV",
          "job_title":"Developer",
          "user":{
             "url":"/users/274",

@@ -10,7 +10,7 @@ Returns a list of all **Employees** associated with a specific **Organization**.
 GET   /api/hrm/people
 </aside>
 
-The list contains only employees who are **ACTIVE** `emp_status='AV'`.
+The list contains only employees who are ACTIVE.
 
 ### Employee Object
 
@@ -53,7 +53,6 @@ Content-Type: application/json
     },
     "about": null,
     "employee_id": 42,
-    "emp_status": "AV",
     "emp_type": null
 }
 ```
@@ -81,7 +80,6 @@ job_title (*String*)| Job Title/Designation
 [organisation](#organisation-object) (*object*)| Company Data 
 about (*String*)| Short description of the employee 
 employee_id (*integer*)| Employee ID Number 
-emp_status (*String*)| employee status (Active,Resigned,..) 
 emp_type (*String*)| Employee Type (Fulltime,Parttime,..)
 
 #### Organisation object 
@@ -241,7 +239,6 @@ Sample Request
    "emp_type":"FT",
    "start_date":"2016-05-13",
    "accuracy":20,
-   "emp_status":"AV",
    "last_date":null,
    "job_description":null,
    "policy":false,
@@ -288,12 +285,10 @@ Sample Response
          "email":"sathish@adhome.com",
          "label_txt":"SV"
       },
-      "account_status":"AV"
    },
    "emp_type":"FT",
    "start_date":"2016-05-13",
    "accuracy":20,
-   "emp_status":"AV",
    "last_date":null,
    "job_description":null,
    "policy":false,
@@ -306,7 +301,6 @@ Attribute | Description
 --------- | ----------- 
 id (*integer*)| ID for the employee
 emp_id (*integer*)|  employee ID card number 
-emp_status (*String*)| employee status (Active,Resigned,..) 
 emp_type (*String*)| Employee Type (Fulltime,Parttime,..)
 policy (*boolean*) | is policy is activated for the specific employee
 start_date (*string*) | joining date of the employee
