@@ -42,3 +42,41 @@ Sample Response
 ```
 
 <aside>POST  api/crm/deals/{deal_id}/notes</aside>
+
+
+
+### Link Person to Deal
+
+<aside>POST api/crm/deals/{deal-id}/link-people?api_key= </aside>
+
+
+```http
+POST api/crm/deals/{deal_id}/link-people HTTP/1.1
+Accept: application/json
+Authorization: Token "YOUR ACCESS TOKEN"
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+```
+Sample Request (Existing contact)
+```
+
+```json
+  {
+  "first_name":"sunil",
+  "personId":12345
+  }
+```
+
+```
+Sample Request (New contact)
+```
+
+```json
+{
+  "first_name":"sunil"
+}
+
+```
