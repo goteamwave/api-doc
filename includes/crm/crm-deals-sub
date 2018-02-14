@@ -31,3 +31,28 @@ Content-Type: application/json
 </span></code></pre>
 
 <aside>POST  api/crm/deals/{deal_id}/notes</aside>
+
+<h3 id="link-person-to-deal">Link Person to Deal</h3>
+
+<aside>POST api/crm/deals/{deal-id}/link-people?api_key= </aside>
+<pre class="highlight http"><code><span class="nf">POST</span> <span class="nn">api/crm/deals/{deal_id}/link-people</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token "YOUR ACCESS TOKEN"</span>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+<pre class="highlight plaintext"><code>Sample Request (Existing contact)
+</code></pre>
+<pre class="highlight json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+  </span><span class="nt">"first_name"</span><span class="p">:</span><span class="s2">"sunil"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"personId"</span><span class="p">:</span><span class="mi">12345</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight plaintext"><code>Sample Request (New contact)
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"first_name"</span><span class="p">:</span><span class="s2">"sunil"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
